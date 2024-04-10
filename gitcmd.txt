@@ -1,0 +1,26 @@
+cd зайти в папку
+cd .. выйти из папки
+
+-------------------------------
+
+cd desktop
+
+--------------------------------
+
+cd TARpv23ab
+git config --global user.name "Martin Sild"
+git config --global user.email "martinsild.mr@gmail.com"
+git config --global --list
+
+git status
+
+--------------------------------
+
+git branch Martin_Sild
+git checkout Martin_Sild
+
+
+--------------------------------
+git add . 
+git commit -a -m "Põhi ab on lisatud"
+git push
