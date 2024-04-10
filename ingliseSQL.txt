@@ -1,28 +1,28 @@
 
-SQL - 
-DDL -ccc
-DML - 
-Database - 
-Database management system - 
+SQL - Structured Query Language
+DDL -Data Definition Language
+DML - Data Manipulation Language
+Database - база данных
+Database management system - Система управления базами данных
 Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
+Relational database - связанная таблица
+Relationship - связи различных таблиц
+Record - запись относится к одной строке или кортежу в таблице базы данных
+Primary Key - первичный ключ
+Foreign Key - вторичный ключ
+One-to-many relationship - это тип связи между двумя таблицами в базе данных, где каждая запись в одной таблице может иметь несколько соответствующих записей в другой таблице, но каждая запись во второй таблице соответствует только одной записи в первой таблице.
+One-to-one relationship - это тип связи между двумя таблицами в базе данных, где каждая запись в одной таблице соответствует не более чем одной записи в другой таблице, и наоборот
+Query - запрос
+Report - отчет
+Form - форм для просмотра, редактирования,просмотра данных.
 Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
 --------------------------
-Constraints - 
+Constraints - ограничение
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+NOT NULL - Обязывает поля в таблице содержать непустые значения (не допускает значения NULL).
+UNIQUE - это означает, что в этом столбце не может быть двух одинаковых значений
+PRIMARY KEY - PRIMARY KEY (первичный ключ) в SQL используется для уникальной идентификации записей в таблице
+FOREIGN KEY -  используется для связи данных между двумя таблицами. 
+CHECK - CHECK позволяет задать ограничения на значения столбцов, чтобы гарантировать их соответствие определенным условиям.
+DEFAULT - используется для задания значения по умолчанию для столбца в случае, если значение не указано при вставке новой строки или обновлении существующей.
+CREATE INDEX - используется для создания индекса на одном или нескольких столбцах таблицы.
