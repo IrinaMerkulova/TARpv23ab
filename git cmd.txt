@@ -1,0 +1,14 @@
+cd desktop
+git clone https://github.com/IrinaMerkulova/TARpv23ab.git
+cd TARpv23ab
+git status
+git config --global user.name "Erik Gerega"
+git config --global user.email "erik.gerega@gmail.com"
+git config --global --list
+git branch Erik_Gerega
+git checkout Erik_Gerega
+git add .
+git commit -a -m "git käsut on kirjas"
+git push
+git push (полученная ссылка)
+

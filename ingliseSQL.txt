@@ -1,28 +1,38 @@
 
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
-Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
---------------------------
-Constraints - 
+SQL - Structured query language - Структурированный язык запросов 
+DDL - Data Definition Language - Язык определения данных
+DML - Data Manipulation Language - Язык манипулирования данными
+Database - База данных
+Database management system - Система управления базой данных
+Related table - Связанная таблица
+Relational database - Реляционная база данных
+Relationship - связь
+Record - Записывать
+Primary Key - первичный ключ
+Foreign Key - вторичный ключ
+One-to-many relationship - связь «один ко многим»
+One-to-one relationship - связь один на один
+Query - Запрос
+Report - Отчет 
+Form - вид
+Data type / varchar - тип данных в SQL, содержащий символы переменной длины (до 255 символов), 
+char - тип данных в SQL, который может хранить символы фиксированной длины, 
+int - числовое значение без десятичной дроби, 
+decimal - числовое значение с десятичной дробью, 
+binary - двоичная строка фиксированной длины, 
+varbinary - аналогичен типу VARCHAR, но хранит двоичные байтовые строки, а не недвоичные символьные строки.,
+text - тип данных символьной строки переменной ширины, 
+blob - большой двоичный объект, который может содержать переменный объем данных, 
+enum - строковый объект со значением, выбранным из списка разрешенных значений, которые явно перечисляются в спецификации столбца во время создания таблицы, 
+set - используется с UPDATE, чтобы указать, какие столбцы и значения следует обновить в таблице.
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+--------------------------
+Constraints - Ограничения 
+
+NOT NULL - обязательно заполненая
+UNIQUE - уникальное значение
+PRIMARY KEY - служат уникальными идентификаторами для каждой строки в таблице базы данных.
+FOREIGN KEY - связать данные одной таблицы с данными другой таблицы.
+CHECK - используется для ограничения диапазона значений, которые можно поместить в столбец 
+DEFAULT - устанавливает значение по умолчанию
+CREATE INDEX - используется для создания индексов в таблицах (допускает дублирование значений).
