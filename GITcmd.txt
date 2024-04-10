@@ -6,5 +6,6 @@ git config --global user.email "nadvornyjaleksandr74@gmail.com"
 git config --global --list
 git branch NadvornõiA
 git checkout NadvornõiA
+git add .
 git commit -a -m "git käsud on kirjas"
 git push
