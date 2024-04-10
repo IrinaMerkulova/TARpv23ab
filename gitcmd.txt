@@ -1,0 +1,19 @@
+cd desktop-зайди в папку
+cd .. - вернутся на папку назад
+git clone https://github.com/IrinaMerkulova/TARpv23ab.git - брали
+cd TARpv23ab
+git status
+git config --global user.name "Vsevolod Tsarev"
+git config --global user.email "seva.tsarev@gmail.com"
+git config --global --list
+git status
+----
+git branch Vsevolod
+git checkout Vsevolod
+git status
+----
+kui tekkinud uus fail salvestatud,siis on vaja add ja commit
+git add .
+git commit -a -m "Põhi ab sõnad on lisatud"
+git push
+----
