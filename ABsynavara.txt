@@ -1,0 +1,46 @@
+Andmebaas - 
+Andmebaasihaldur - 
+Andmebaasi haldamise tarkvara - 
+Kirje - 
+Väli - 
+Tabel - 
+Päring - 
+Veerg - 
+Rida - 
+Seosed - 
+Piirangud -
+Primaarvõti -
+Andmemudel - 
+Varukoopia - 
+Kasutusjuhend - 
+Turvalisus - 
+Kättesaadavus - 
+Andmete õigusus - 
+Sisestusvorm - 
+
+--------------------------------------------
+Näide - 
+Näidis - 
+Sõltuvus - 
+Seadustus - 
+Paigaldus -
+Hooldus - 
+Lisamine - 
+Kustutamine - 
+Uuendamine - 
+Sorteerimine - 
+Pärimine - 
+Kasutaja - 
+Kasutajate õigused - 
+Haldamine - 
+Pästik - 
+Käivita - 
+Salvesta - 
+Sisesta - 
+Moodusa - 
+laadi alla/laadi üles - 
+Kävitatud päring - 
+Salvestatud protseduur - 
+Muutused 
+Tõrketeade - 
+Värskendus - 
