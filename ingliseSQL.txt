@@ -1,28 +1,28 @@
 
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
-Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
+SQL - Structured Query Language - язык структурированных запросов
+DDL - Data Definition Language - язык определенния данных
+DML - Data Manipulation Language - язык манипулирования данных
+Database - база данных
+Database management system - ситема управления базой данных 
+Related table - связанная таблица
+Relational database - связанная база данных
+Relationship - связь
+Record - запись
+Primary Key - Первичный ключ
+Foreign Key - Вторичный ключ
+One-to-many relationship - один к многим связь
+One-to-one relationship - один к одному связь
+Query - запрос
+Report - Репорт
+Form - форма
+Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set - тип данных/символы(буквы,цифры,символы),символы(фиксированные),целые числа,числа с плавающей запятой,бинарные(1 и 0),бинарные(макс 8000 байт),текст(не ограниченный),бинарный(длинный),хранит одно значение,хранит до 64 значений 
 --------------------------
-Constraints - 
+Constraints - ограничения
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+NOT NULL - не может равняться нулю
+UNIQUE - должно быть уникальным
+PRIMARY KEY - набор полей со значениями,уникальные для всей таблицы
+FOREIGN KEY - для создание связи между таблицами
+CHECK - ставит ограничение ввода данных
+DEFAULT - ставит дефолтный значение
+CREATE INDEX - создает индексы в таблице для быстрого находа данных
