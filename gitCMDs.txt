@@ -1,0 +1,16 @@
+cd desktop #Вход в рабочий стол
+
+git clone https://github.com/IrinaMerkulova/TARpv23ab.git #Вход в репозиторий(папку)
+
+git config --global user.name "Bogdan Sergachev" #Добавление пользователя
+
+git config --global user.email "kseeyz@gmail.com" #Добавление почтового ящика
+
+git config --global --list #Просмотр листа
+
+git branch BogdanS #Создание связи
+
+git checkout BogdanS #Переключение связи
+
+git status #Посмотреть статус
+

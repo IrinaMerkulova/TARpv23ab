@@ -1,28 +1,39 @@
 
-SQL - 
-DDL -ccc
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
+SQL - Structured query language
+DDL -Data defenition Language
+DML - Data Manipulation Language
+Database - база данных
+Database management system - Система управления базой данных
+Related table - Связанная таблица
+Relational database - Реляционная база данных
+Relationship - связь
+Record - Записывать
+Primary Key - первичный ключ 
+Foreign Key - вторичный ключ
+One-to-many relationship - связь «один ко многим»
+One-to-one relationship - связь "один на один"
+Query - Запрос
+Report - Отчет
+Form - Форма
 Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
---------------------------
-Constraints - 
+VARCHAR: Это тип данных для хранения строк переменной длины.
+CHAR: Это тип данных для хранения строк фиксированной длины.
+INT: Это целочисленный тип данных для хранения целых чисел.
+DECIMAL: Это тип данных, предназначенный для хранения чисел с плавающей запятой с фиксированной точностью.
+BINARY: Это тип данных для хранения бинарных данных фиксированной длины.
+VARBINARY: Это тип данных для хранения бинарных данных переменной длины.
+TEXT: Это тип данных для хранения текстовых данных переменной длины.
+BLOB: Это тип данных для хранения больших бинарных объектов (Binary Large Objects).
+ENUM: Это тип данных, который ограничивает значение столбца на набор возможных значений, которые вы определяете при создании таблицы.
+SET: Это тип данных, подобный ENUM, который также ограничивает значение столбца на набор возможных значений, но позволяет выбирать несколько значений из этого набора.
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+--------------------------
+Constraints - Ограничения
+
+NOT NULL - обязательнo к запонению инпут
+UNIQUE - должно быть уникальным
+PRIMARY KEY - авто заполнение
+FOREIGN KEY - импорт из друого источника
+CHECK - проверка
+DEFAULT - обычный\по умолчанию
+CREATE INDEX - используется для создания индексов в таблицах. Индексы используются для извлечения данных из базы данных.
