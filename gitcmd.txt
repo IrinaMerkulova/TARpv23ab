@@ -1,0 +1,12 @@
+cd TARpv23ab
+git config --global user.name "Vladislav Kudriashev"
+git config --global user.email ""
+git config --global --list
+git status
+
+git branch VladislavKudriashev
+git checkout VladislavKudriashev
+
+git add .
+git commit -a
+git push
