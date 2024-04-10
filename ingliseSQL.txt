@@ -1,28 +1,28 @@
 
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
-Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
+SQL - Structured Query Language — язык структурированных запросов
+DDL - Data Definition Language - язык описания данных
+DML - Data Manipulation Language - язык управления (манипулирования) данными
+Database - База данных
+Database management system - Система управления базой данных 
+Related table - Связанная таблица 
+Relational database - Реляционная база данных 
+Relationship - Отношение
+Record - Записывать
+Primary Key - Основной ключ
+Foreign Key - Внешний ключ
+One-to-many relationship - Отношения «один ко многим»
+One-to-one relationship - Отношения один на один 
+Query - Запрос
+Report - Отчет
+Form - Форма
+Data type - Тип данных / varchar - переменное символьное поле, char - Символьный тип, int - Целое, целочисленный тип данных, decimal - Десяти́чная систе́ма счисле́ния , binary - Двои́чная систе́ма счисле́ния, varbinary - хранит двоичные строки байтов, text - предназначены для хранения символьных и двоичных данных, blob - может содержать различное количество данны, enum - Перечисляемый тип, set
 --------------------------
-Constraints - 
+Constraints - Ограничения 
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+NOT NULL - Ограничение позволяет определить, что значение в столбце не может быть NULL. Это означает, что при добавлении записи в таблицу обязательно должно быть заполнено значение для данного столбца.
+UNIQUE - это типа ограничений, которые можно использовать для обеспечения целостности данных в таблицах SQL Server.
+PRIMARY KEY - в реляционной модели данных один из потенциальных ключей отношения, выбранный в качестве основного ключа.
+FOREIGN KEY - понятие теории реляционных баз данных, относящееся к ограничениям целостности базы данных.
+CHECK - Проверочное ограничение — это тип ограничения целостности
+DEFAULT - Руководство по эффективному использованию ограничений по умолчанию.
+CREATE INDEX - это семейство компьютерных языков, используемых в компьютерных программах для описания структуры баз данных.
