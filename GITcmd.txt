@@ -1,9 +1,9 @@
-cd desktop     #go to dekstop
-git clone https://github.com/IrinaMerkulova/TARpv23ab.git     #clone to repository
-cd TARpv23ab     #go to folder
+cd desktop     #
+git clone https://github.com/IrinaMerkulova/TARpv23ab.git    
+cd TARpv23ab 
 git status    #check status
-git config --global user.name "Aleksandr Nadvornõi"   # add user
-git config --global user.email "nadvornyjaleksandr74@gmail.com"   # add email
-git config --global --list   #check that you add
-git branch NadvornõiA   # crete branch
-git checkout   #go to you new branch
+git config --global user.name "Lev Jegorov"
+git config --global user.email "levjegorov22@gmail.com"
+git config --global --list   
+git branch 
+git checkout   
