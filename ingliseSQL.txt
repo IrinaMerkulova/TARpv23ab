@@ -1,28 +1,39 @@
 
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
-Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
---------------------------
-Constraints - 
+SQL - Structured Query Language / Структурированный язык запросов
+DDL - Data Definition Language / Язык определения данных
+DML - Data Manipulation Language / Язык манипулирования данными
+Database - база данных / организованная коллекция данных
+Database management system - система управления базами данных / ПО
+Related table - связанная таблица
+Relational database - связанная база данных
+Relationship - связи
+Record - Запись
+Primary Key - Первичный ключ / Главный
+Foreign Key - Вторичный ключ / Второстепенный
+One-to-many relationship - один-ко-многим связям
+One-to-one relationship - один-ко-одному связям
+Query - Запрос 
+Report - Отчет
+Form - Форма
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+Data type - Тип Данных
+varchar - Формат "abc" не фиксированный  
+char - Формат "abc" фиксированный 
+int - Цифровой формат
+decimal - Формат "301.14" , 
+binary -  для хранения двоичных данных фиксированной длины
+varbinary - позволяет хранить двоичные данные переменной длины.
+text - для хранения текстовых данных переменной длины
+blob - Binary Large Object / для хранения больших объемов двоичных данных
+enum - перечисляемый тип / для создания перечислений
+set - для хранения множественных значений в одном столбце
+ 
+Constraints - Ограничения
+
+NOT NULL - Указывает, что в этом столбце не может быть нулевых (NULL) значений
+UNIQUE - Уникальный / Возвращает уникальные строки
+PRIMARY KEY - Первичный ключ / Главный
+FOREIGN KEY - Вторичный ключ / Второстепенный
+CHECK - Проверка / Ограничение - используется для проверки допустимости значений в столбце
+DEFAULT - По умолчанию
+CREATE INDEX - Создать Индекс / используется для создания индекса в базе данных. 

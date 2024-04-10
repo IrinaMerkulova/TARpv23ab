@@ -1,0 +1,9 @@
+C:\Users\opilane>cd desktop - переход в папку desktop
+C:\Users\opilane\Desktop>git clone https://github.com/IrinaMerkulova/TARpv23ab.git - клонируем репозиторий в папку desktop
+C:\Users\opilane\Desktop>cd TARpv23ab - заходим в склонированую папку "TARpv23ab" 
+C:\Users\opilane\Desktop\TARpv23ab>git status - проверка статуса
+C:\Users\opilane\Desktop\TARpv23ab>git config --global user.name "Timur Basirov" - определяем себя
+C:\Users\opilane\Desktop\TARpv23ab>git config --global user.email "atimur.basirov@gmail.com" - добавляем имя
+C:\Users\opilane\Desktop\TARpv23ab>git config --global --list - вывод данных о конфиге 
+C:\Users\opilane\Desktop\TARpv23ab>git branch TimurB - создаем ветку
+C:\Users\opilane\Desktop\TARpv23ab>git checkout TimurB - переходим в ветку "TimurB"
