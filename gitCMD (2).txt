@@ -1,0 +1,9 @@
+cd TARpv23
+git config --global user.name "Pavel Jegorov"
+git config --global user.email "pasatapa2@gmail.com"
+git config --global --list
+git status
+
+--
+git branch PavelJ
+git chekout PavelJ
