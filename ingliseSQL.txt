@@ -1,28 +1,40 @@
 
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
+SQL - Structured Query Language
+DDL - Data Definition Language
+DML - Data Manipulation Language
+Database - База данных
+Database management system - Система управления базой данных
+Related table - Соответствующая таблица
+Relational database - Взаимосвязь базы данных 
+Relationship - Связь
+Record - Запись 
+Primary Key - Первичный ключ
+Foreign Key - Вторичный ключ
+One-to-many relationship - Связь между многими
+One-to-one relationship - Связь одного к одному
+Query - Запрос
+Report - Доклад 
+Form - Формат/форма
 Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
---------------------------
-Constraints - 
+Это типы данных в базах данных:
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+    VARCHAR: Хранит строки переменной длины.
+    CHAR: Хранит строки фиксированной длины.
+    INT: Целочисленный тип данных.
+    DECIMAL: Хранит числа с фиксированной точностью и масштабом.
+    BINARY: Хранит двоичные данные фиксированной длины.
+    VARBINARY: Хранит двоичные данные переменной длины.
+    TEXT: Хранит текстовые данные переменной длины.
+    BLOB: Хранит двоичные большие объекты, такие как изображения или звуки.
+    ENUM: Хранит одно значение из списка предопределенных возможностей.
+    SET: Хранит набор значений из списка предопределенных возможностей.
+--------------------------
+Constraints - Помогает сохранять точность, целостность и надежность данных таблицы.
+
+NOT NULL - Гарантирует, что столбец не может содержать значение NULL.
+UNIQUE - Обеспечивает уникальность всех значений в столбце.
+PRIMARY KEY - Уникально идентифицирует каждую запись в таблице.
+FOREIGN KEY -  Устанавливает взаимосвязь между таблицами.
+CHECK - Устанавливает условие, которому должна соответствовать каждая строка.
+DEFAULT - Назначает значение по умолчанию для столбца.
+CREATE INDEX - Создает индекс в таблице для более быстрого извлечения данных.

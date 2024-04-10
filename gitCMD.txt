@@ -1,0 +1,21 @@
+cd TARpv23ab
+git config --global user.name "Valeria Allik"
+git config --global user.email "allikvaleria@gmail.com"
+git config --global --list
+
+---------------------------------------------------------
+
+git branch ValeriaA
+git checkout ValeriaA
+git status
+on brunch main
+Your branch is up to date with 'origin/main'
+
+---------------------------------------------------------
+
+git add .
+git commit -a -m "git käsud on kirjes"
+git push
+git push --set-upstream origin ValeriaA
+
+---------------------------------------------------------
