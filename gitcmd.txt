@@ -1,0 +1,9 @@
+git config --global user.name "Gleb Sotsjov"
+git config --global user.email "glebsotjov@gmail.com"
+git config --global --list
+------------------------------------------
+git branch GlebSotsjov
+git checkout GlebSotsjov
+------------------------------------------
+git status    
+                                                                                                
