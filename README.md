@@ -1,6 +1,7 @@
 # Ülesanded
 
-1. Tee selles repositooriumis omanimeline oks (branch)
-2. Kirjuta antud failides vene keelne tõlge
-3. Õpi Pähe kõik sõnad, lühendid ja laused
-4. git push
+1. Kasuta GIT CMD ja klooni antud repositoorium enda arvutile
+2. Tee selles repositooriumis omanimeline oks (branch)
+3. Kirjuta antud failides vene keelne tõlge ja/või vajalikud selgitused
+4. Õpi Pähe kõik sõnad, lühendid ja laused
+5. git push
