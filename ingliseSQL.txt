@@ -1,28 +1,27 @@
 
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
+SQL - декларативный язык программирования, применяемый для создания, модификации и управления данными в реляционной базе данных
+DDL - Data Definition Language  это семейство компьютерных языков, используемых в компьютерных программах для описания структуры баз данных
+DML - это семейство компьютерных языков, используемых в компьютерных программах или пользователями баз данных для получения, вставки, удаления или изменения данных в базах данных 
+Database - это имеющая название совокупность данных, которая отражает состояние объектов и их отношений в рассматриваемой предметной области.
+Database management system - это программа для управления данными
+Related table - The RELATED function requires that a relationship exists between the current table and the table with related information.
+Relational database - это набор данных с заданными взаимосвязями.
+Relationship -это способ связывать и организовывать информацию в базе данных, чтобы делать её более понятной и удобной 
+Record - это класс, предназначенный для хранения данных
+Primary Key - особенное поле в SQL-таблице, которое позволяет однозначно идентифицировать каждую запись в ней
+Foreign Key - понятие теории реляционных баз данных, относящееся к ограничениям целостности базы данных.
+One-to-many relationship - На одну запись таблицы employee могут ссылаться много строк таблицы task
+One-to-one relationship -  это связь между информацией из двух таблиц, когда каждая запись используется в каждой таблице только один раз 
+Query - Объект Запрос
+Report - Отчёт
 Form - 
 Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
---------------------------
-Constraints - 
-
-NOT NULL - 
-UNIQUE - 
+-------------------------- 
+Constraints - Ограничения
+NOT NULL - заставляет столбец не принимать нулевые значения.
+UNIQUE -  Определяет уникальность данных внутри столбца.
 PRIMARY KEY - 
 FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+CHECK - Позволяет проверять соответствие значений заданному критерию
+DEFAULT - Ограничение DEFAULT используется для предоставления значения по умолчанию для столбца.
+CREATE INDEX - оздаёт индексы по указанному столбцу(ам) заданного отношения, которым может быть таблица или материализованное представление.
