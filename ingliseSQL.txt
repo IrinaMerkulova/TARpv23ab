@@ -1,28 +1,27 @@
-
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
-Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
+SQL - structured query language
+DDL -Data Defention language-Язык определение данных
+DML -Data Manipulation language-Язык манипулирования данными
+Database -база данных 
+Database management system - система управление базами данных
+Related table -связание таблиц
+Relational database -Реляционная база даных
+Relationship -связь 
+Record - записывать
+Primary Key - первичный ключ
+Foreign Key - вторичный ключ
+One-to-many relationship - связь "один ео многим"
+One-to-one relationship - связь "один на один"
+Query - запрос
+Report - отчёт
+Form - форма
+Data type / varchar-Vatiable Character, char-Character, int-Integer, decimal, binary, varbinary, text, blob, enum, set
 --------------------------
-Constraints - 
+Constraints - ограничение
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+NOT NULL - обязательный к заполнению инпут
+UNIQUE -уникальный
+PRIMARY KEY - первичный ключ-авто заполнение
+FOREIGN KEY - вторичный ключ-импорт из др источника
+CHECK - ПРОВЕРЯТЬ
+DEFAULT - стандартный
+CREATE INDEX - СОЗДАТЬ ИНДЕКС
