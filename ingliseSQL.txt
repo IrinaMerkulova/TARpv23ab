@@ -1,28 +1,27 @@
-
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
-Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
+SQL - Structured query language ( SQL ) is a programming language for storing and processing information in a relational database.
+DDL - Data Definition Language ( DDL ) is a subset of SQL. It is a language for describing data and its relationships in a database.
+DML - is an abbreviation for Data Manipulation Language. Represents a collection of programming languages explicitly used to make changes to the database, such as: CRUD operations to create, read, update and delete data. Using INSERT, SELECT, UPDATE, and DELETE commands.
+Database - collection of some kind of datas
+Database management system - the system that can modife or add some data
+Related table - Relating tables defines a relationship between two tables—also based on a common field—but doesn't append the attributes of one to the other; instead, you can access the related data when necessary.
+Relational database - A relational database is a type of database that stores and provides access to data points that are related to one another. Relational databases are based on the relational model, an intuitive, straightforward way of representing data in tables.
+Relationship - is an association between tables.
+Record -  is a collection of information organized in a table that pertains to a specific topic or category.
+Primary Key - is the column or columns that contain values that uniquely identify each row in a table.
+Foreign Key - A FOREIGN KEY is a field ( or collection of fields ) in one table, that refers to the PRIMARY KEY in another table.
+One-to-many relationship - one record in a table can be associated with one or more records in another table. 
+One-to-one relationship - one record in a table is associated with one and only one record in another table.
+Query - a request for data results from your database or for action on the data, or for both.
+Report - a formatted presentation of data from a database that provides structured information for decision-making
+Form - A form is a database object that contains different fields
+Data type / varchar , char , int , decimal , binary , varbinary , text , blob , enum , set
 --------------------------
 Constraints - 
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+NOT NULL - It helps prevent invalid data from being stored in the column
+UNIQUE - UNIQUE constraint ensures that all values in a column are different
+PRIMARY KEY - a single, or a group of fields or columns that can uniquely identify a row in a table. 
+FOREIGN KEY - a column or combination of columns that is used to establish and enforce a link between the data in two tables to control the data that can be stored in the foreign key table
+CHECK - querying the DB_ID() function or the sys. databases catalog view
+DEFAULT - used to set a default value for a column
+CREATE INDEX - is used to create indexes in tables. Indexes are used to retrieve data from the database more quickly than otherwise
