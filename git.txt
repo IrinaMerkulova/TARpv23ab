@@ -1,0 +1,6 @@
+cd TARpv23ab
+git config --global user.name "Aleksander Milishenko"
+git config --global user.email "sans1999lorf@gmail.com"
+git status 
+git branch AM
+git checkout AM
