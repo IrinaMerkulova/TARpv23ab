@@ -1,0 +1,11 @@
+cd desktop
+cd TARpv23ab
+git config --global user.name "roman sandakov"
+git config --global user.email "r.sandakov@inbox.ru"
+git config --global --list
+git branch roman
+git checkout roman
+git add .
+git commit -a -m "git käsud on kirjas"
+git push
+git push --set-upstream origin roman

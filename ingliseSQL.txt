@@ -1,28 +1,28 @@
 
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
+SQL - a programming language for storing and processing information in a relational database(язык программирования для хранения и обработки информации в реляционной базе данных)
+DDL - is a family of computer languages ​​used in computer programs to describe the structure of databases.(это семейство компьютерных языков, используемых в компьютерных программах для описания структуры баз данных.)
+DML - is a family of computer languages ​​used to retrieve, insert, delete, or change data in databases(это семейство компьютерных языков, используемых для получения, вставки, удаления или изменения данных в базах данных)
+Database - an organized collection of structured information, or data, typically stored electronically in a computer system.(организованный набор структурированной информации или данных, обычно хранящихся в электронном виде в компьютерной системе)
+Database management system - software to store, manage, retrieve, and manipulate data effectively
+Related table - a table function, and returns a table of values that contains all of the rows on the many-side that are related to the current row on the one-side
+Relational database - database based on a relational data model
+Relationship - creates a two-column component for selecting one or more posts, pages, or a custom post type
+Record - management of organization documents from the moment of their creation to final destruction
+Primary Key -  a column in a relational database table that's distinctive for each record
+Foreign Key - points to a column with unique values in another table to create a way of cross-referencing the two tables.
+One-to-many relationship - one record in a table can be associated with one or more records in another table
+One-to-one relationship - a type of cardinality that refers to the relationship between two entities A and B in which one element of A may only be linked to one element of B, and vice versa.
+Query - a question, especially one expressing doubt or requesting information
+Report -  document or a statement that presents information in an organized format for a specific audience and purpose
+Form - the visible shape or configuration of something
 Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
 --------------------------
 Constraints - 
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+NOT NULL - enforces a column to not accept NULL values
+UNIQUE - When adding constraints to existing columns or column tables, by default the DBMS appends data to the columns to ensure that all values ​​are unique.
+PRIMARY KEY - a column in a relational database table that's distinctive for each record
+FOREIGN KEY - points to a column with unique values in another table to create a way of cross-referencing the two tables.
+CHECK - Allows you to set a logical condition that must be true (TRUE) when sending or updating data in the table. Позволяет задать некое логическое условие, которое должно быть истинным (TRUE) при отправке или обновлении данных в таблице.
+DEFAULT - specifies the value to assign to the column if there is no explicitly specified value when inserted
+CREATE INDEX - creates indexes on the specified column(s) of a given relationship, which can be a table or a materialized view
