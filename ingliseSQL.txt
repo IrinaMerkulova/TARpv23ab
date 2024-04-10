@@ -1,6 +1,6 @@
 
 SQL - 
-DDL -
+DDL -ccc
 DML - 
 Database - 
 Database management system - 
