@@ -1,28 +1,42 @@
 
-SQL - 
-DDL -
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
+SQL - Язык программирования
+DDL - Язык описания данных
+DML - Язык управления, манипулирования данными
+Database - Датабаза, база данных
+Database management system - Система управления баз данных
+Related table - Связанная таблица
+Relational database - Реляционная, связанная база данных
+Relationship - Отношения, связи
+Record - Запись
+Primary Key - Первичный, основной ключ
+Foreign Key - Вторичный, внешний ключ
+One-to-many relationship - Связь один ко многим
+One-to-one relationship - Связь один к одному
+Query - Запрос
+Report - Доклад, Репорт
+Form - Форма 
 Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
---------------------------
-Constraints - 
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+Типы данных / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set.
+
+varchar - переменная строка.
+char - фиксированная строка.
+int - целое число.
+decimal - десятичное число (с фиксированной точностью).
+binary - двоичные данные (фиксированная длина).
+varbinary - переменная длина двоичных данных.
+text - текстовое поле (длинный текст).
+blob - двоичные большие объекты (большие двоичные данные).
+enum - перечисление (набор строковых значений).
+set - множество (набор строковых значений, разделенных запятыми).
+
+--------------------------
+Constraints - Ограничения
+
+NOT NULL - Обязательное условие, которое гарантирует, что значение в столбце не может быть пустым (NULL).
+UNIQUE - Уникальное ограничение, гарантирующее уникальность значений в столбце.
+PRIMARY KEY - Основной ключ, уникальный идентификатор записи в таблице.
+FOREIGN KEY - Внешний ключ, связывающий значения в одной таблице с значениями в другой таблице.
+CHECK - Ограничение, которое проверяет, соответствуют ли значения столбца определенному условию.
+DEFAULT - Значение по умолчанию для столбца, которое будет использоваться, если значение не указано явно.
+CREATE INDEX - Команда для создания индекса, ускоряющего поиск значений в столбцах для оптимизации производительности запросов.
