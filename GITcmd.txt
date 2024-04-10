@@ -1,0 +1,10 @@
+cd desktop
+git clone https://github.com/IrinaMerkulova/TARpv23ab.git
+git status
+git config --global user.name "Aleksandr Nadvornõi"
+git config --global user.email "nadvornyjaleksandr74@gmail.com"
+git config --global --list
+git branch NadvornõiA
+git checkout NadvornõiA
+git commit -a -m "git käsud on kirjas"
+git push
