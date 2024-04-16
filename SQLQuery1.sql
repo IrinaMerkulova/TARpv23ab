@@ -178,3 +178,20 @@ values(@uue_disc,@uue_maxCapacity);
 select * from room_type;
 end
 exec uueRoom_type_ @uue_disc='Best of the best super mega VIP LUX', @uue_maxCapacity=20
+
+--3. Guest tabeli asendamine klientide poolt
+create procedure asenaGuest
+@uuename varchar(80),
+@uuelast_name varchar(80),
+@asenaId int
+
+as
+begin 
+select * from guest;
+update guest
+set first_name = @uuename,
+last_name=@uuelast_name
+where @asenaId=id;
+select * from guest;
+end
+exec asenaGuest @uuename='Joe', @uuelast_name='Skib', @asenaId=2
