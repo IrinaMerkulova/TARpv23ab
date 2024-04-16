@@ -50,3 +50,19 @@ select * from reservation
 select * from guest
 insert into reservation(date_in, date_out, made_by, guest_id)
 values('2024.04.01', '2024.04.10', 'Timur Bashirov', 1)
+
+
+--tabel reserved_room
+create table reserved_room(
+id int primary key identity (1,1),
+number_of_rooms int,
+room_type_id int,
+reservation_id int,
+status varchar(20),
+foreign key (reservation_id) references reservation(id),
+foreign key (room_type_id) references room_type(id));
+select * from reserved_room
+select * from reservation
+select * from room_type
+insert into reserved_room(number_of_rooms, room_type_id, reservation_id, status)
+values('10', '1', '1','booked')
