@@ -95,3 +95,18 @@ select * from occupled_room
 select * from guest
 insert into hosted_at(guest_id, occupled_room_id)
 values('1', '4');
+
+--
+--protseduur lisab uue guesti
+create procedure add_guest(
+@new_first_name varchar(80),
+@new_last_name varchar(80),
+@new_member_since date)
+as
+begin
+	insert into guest(first_name, last_name, member_since)
+	values(@new_first_name, @new_last_name, @new_member_since);
+end
+
+exec add_guest 'Erik', 'Gerega','2024-02-16'
+select * from guest
