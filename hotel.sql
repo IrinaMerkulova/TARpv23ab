@@ -23,8 +23,8 @@ status varchar(10),
 smoke bit,
 room_type_id int
 foreign key references room_type(id));
-
 insert into room(number, name, status, smoke,room_type_id) VALUES ('101','classroom','vaba',0,1);
+SELECT * FROM room
 
 CREATE TABLE guest(
 id int primary key identity(1,1),
@@ -32,8 +32,8 @@ first_name varchar(80),
 last_name varchar(80),
 member_since date);
 
-
 INSERT INTO guest(first_name, last_name, member_since) VALUES ('Aleksander','Milisheno','2020-02-20');
+SELECT * FROM guest
 
 CREATE TABLE reservation(
 id int primary key identity(1,1),
@@ -41,9 +41,8 @@ date_in date,
 date_out date,
 made_by varchar(20),
 guest_id int foreign key references guest(id));
-
-INSERT INTO reservation(date_in,date_out, made_by, guest_id) VALUES ('2024-04-15','2024-04-17','xz',1);
-
+INSERT INTO reservation(date_in,date_out, made_by, guest_id) VALUES ('2020-02-20','2020-02-20','xz',1);
+SELECT * FROM reservation
 CREATE TABLE reserved_room(
 id int primary key identity(1,1),
 number_of_rooms int,
@@ -51,17 +50,16 @@ room_type_id int foreign key references room_type(id),
 reservation_id int foreign key references reservation(id),
 status varchar(20)
 );
-INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id) VALUES (0, 1, 1, 'vaba');
+INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id, status) VALUES (0, 1, 1, 'vaba');
 
 CREATE TABLE occupied_room(
 id int primary key identity(1,1),
-check_in timestamp,
-check_out timestamp,
+check_in datetime,
+check_out datetime,
 room_id int foreign key references room(id),
 reservation_id int foreign key references reservation(id)
 );
-INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id) VALUES ('','',1,1);
-
+INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id) VALUES ('2020-02-20','2020-02-20 15:55:55',1,1);
 CREATE TABLE hosted_at(
 id int primary key identity(1,1),
 guest_id int foreign key references guest(id),
