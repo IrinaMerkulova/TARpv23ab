@@ -110,3 +110,17 @@ end
 
 exec add_guest 'Erik', 'Gerega','2024-02-16'
 select * from guest
+
+--protsedur lisab uus reservation
+CREATE PROCEDURE add_reservation(
+@new_date_in date,
+@new_date_out date,
+@new_made_by varchar(20),
+@guest_id int)
+as
+BEGIN
+    INSERT INTO reservation(date_in, date_out, made_by, guest_id)
+    VALUES (@new_date_in, @new_date_out, @new_made_by, @guest_id)
+END
+exec add_reservation '2024-04-04', '2024-04-05', 'Timur Bashirov', 2
+select * from reservation
