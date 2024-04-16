@@ -162,3 +162,14 @@ begin
 end;
 go
 exec otsingitaht 'i';
+
+--Delete reservation 
+create procedure Kustuta
+	@kustutumisID int
+as 
+begin
+	delete from reservation
+	where id = @kustutumisID;
+end;
+go
+exec Kustuta 2;
