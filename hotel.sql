@@ -146,3 +146,20 @@ END;
 
 -- kontroll 
 EXEC guestLisamine  'Vlad', 'Kudriaðev', '2024-11-14';
+
+
+--Uuendamis protseduur. Kasutaja sisestab uuendatud made_by sisestatud id järgi.( Table reservation)
+CREATE PROCEDURE reservationUuendamines
+@id int,
+@uusmade_by varchar (100)
+AS
+BEGIN 
+UPDATE reservation 
+SET made_by=@uusmade_by
+WHERE id=@id;
+SELECT * FROM reservation;
+END;
+
+-- kontroll
+
+EXEC  reservationUuendamines 3, 'Eleonora';
