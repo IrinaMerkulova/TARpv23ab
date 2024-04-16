@@ -61,3 +61,12 @@ room_id int foreign key references room(id),
 reservation_id int foreign key references reservation(id)
 );
 INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id) VALUES ('','',1,1);
+
+CREATE TABLE hosted_at(
+id int primary key identity(1,1),
+guest_id int foreign key references guest(id),
+occupied_room_id int foreign key references occupied_room(id)
+);
+
+INSERT INTO hosted_at(guest_id, occupied_room_id) VALUES (1,1);
+
