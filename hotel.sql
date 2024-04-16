@@ -70,7 +70,7 @@ FOREIGN KEY (guest_id) REFERENCES guest(id));
 select * from reservation
 select * from guest
 insert into reservation(date_in,date_out,made_by,guest_id)
-values ('2024.04.16','2024.04.23','Kolja Veelo',2)
+values ('2024.04.16','2024.04.23','Kolja Veelo',1)
 insert into reservation(date_in,date_out,made_by,guest_id)
 values ('2023.02.20','2023.02.27','Kirill Kavalenko',2)
 insert into reservation(date_in,date_out,made_by,guest_id)
@@ -142,3 +142,5 @@ values(4,4);
 insert into hosted_at(guest_id,occupied_room_id)
 values(5,5);
 select * from hosted_at
+
+--
