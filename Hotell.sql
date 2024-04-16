@@ -45,6 +45,7 @@ date_out date,
 made_by varchar(20),
 guest_id int,
 foreign key(guest_id)references guest(id));
+values('2024-04-21','2024-05-12', 'Pavel');
 select * from reservation
 
 
@@ -59,3 +60,12 @@ status varchar (20));
 select * from reserved_room
 
 
+CREATE TABLE occupied_room(
+id int primary key identity(1,1),
+check_in date,
+check_out date,
+room_id int,
+foreign key(room_id) references room(id),
+reservation_id int,
+foreign key(reservation_id) references reservation(id));
+select *from occupied_room
