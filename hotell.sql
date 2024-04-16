@@ -127,5 +127,5 @@ VALUES (1, 1);
 
 -- CTRL + S
 -- git add .
--- git commit -a -m "tabel hosted_at on lisatud"
+-- git commit -a -m "tabel  hosted_at on lisatud"
 -- git push
