@@ -39,6 +39,12 @@ insert into room(number,name_,status_,smoke,room_type_id)
 values('A232','LUX','open','True',1)
 insert into room(number,name_,status_,smoke,room_type_id)
 values('A102','Alone','open','True',2)
+insert into room(number,name_,status_,smoke,room_type_id)
+values('B209','Basic','open','False',3)
+insert into room(number,name_,status_,smoke,room_type_id)
+values('A111','Super VIP LUX','open','True',4)
+insert into room(number,name_,status_,smoke,room_type_id)
+values('A302','Basic +','open','True',5)
 
 
 --tabeli guest
