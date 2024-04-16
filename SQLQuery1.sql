@@ -152,7 +152,7 @@ values(4,12);
 insert into hosted_at(guest_id,occupied_room_id)
 values(5,13);
 
---otsingitaht
+--Procedure otsingitaht
 Create procedure otsingitaht
 	@taht char(1)
 as 
@@ -163,7 +163,7 @@ end;
 go
 exec otsingitaht 'i';
 
---Delete reservation 
+--Delete procedure reservation 
 create procedure Kustuta
 	@kustutumisID int
 as 
