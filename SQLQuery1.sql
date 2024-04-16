@@ -12,6 +12,14 @@ Insert into room_type(description_,max_capacity)
 Values('Super VIP LUX','5')
 Insert into room_type(description_,max_capacity)
 Values('Alone','1')
+Insert into room_type(description_,max_capacity)
+Values('LUX','4')
+Insert into room_type(description_,max_capacity)
+Values('Basic','3')
+Insert into room_type(description_,max_capacity)
+Values('Basic +','6')
+
+
 
 alter table room_type
 add primary key (id)
