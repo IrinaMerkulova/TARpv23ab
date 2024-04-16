@@ -94,10 +94,15 @@ SELECT * FROM reserved_room;
 SELECT * FROM room_type;
 SELECT * FROM reservation;
 INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id, status)
-VALUES(20 , 1, 1, 'Avatud');
+VALUES(20 , 1, 1, 'Avatud'),
+(15 , 2, 2, 'Avatud'),
+(25 , 3, 3, 'Suletud'),
+(10 , 4, 4, 'Avatud'),
+(5 , 5, 5, 'Suletud');
 --CTRL + S
 --git add .
 --git commit -a -m "tabel reserved_room on lisatud"
+--git commit -a -m "täidetud tabel reserved_room"
 --git push
 --6. occupied_room
 CREATE TABLE occupied_room(
