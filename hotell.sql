@@ -73,3 +73,20 @@ INSERT INTO reservation_room (number_of_rooms,room_type_id,status)
 VALUES ('10','1','open');
 
 
+--tabel occupied_room
+CREATE TABLE occupied_room (
+id int primary key identity(1,1),
+check_in date,
+check_out date,
+room_id int,
+reservation_id int,
+
+foreign key (room_id) references room(id),
+foreign key(reservation_id) references reservation(id));
+
+insert into occupied_room (check_in,check_out,room_id,reservation_id)
+VALUES ('2019-03-22','2023-03-25','1','1')
+
+
+
+
