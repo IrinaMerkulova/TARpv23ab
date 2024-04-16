@@ -33,7 +33,7 @@ VALUES ('E10','sv','open',1,1),
 ('B144','jp','open',1,4),
 ('B222','ur','open',0,3);
 
---tabel room
+--tabel guest
 CREATE TABLE guest(
 id int PRIMARY KEY identity(1,1),
 first_name varchar(80),
@@ -119,19 +119,6 @@ VALUES (1,1),
 (4,3),
 (5,2);
 
-CREATE TABLE guest(
-id int PRIMARY KEY identity(1,1),
-first_name varchar(80),
-last_name varchar(80),
-member_since date);
-SELECT * FROM guest;
-INSERT INTO guest(first_name,last_name,member_since)
-VALUES ('Vladislav','Kudriaðev','2007-02-25'),
-('David','Lennuk','2022-03-21'),
-('Marija','Gorbunova','2021-06-10'),
-('Kirill','Sats','2022-04-12'),
-('Tarrare','The French','1798-02-25');
-
 --proceduur guestLisamine
 CREATE PROCEDURE guestLisamine
 @first_name varchar(80),
@@ -145,3 +132,25 @@ SELECT * FROM guest;
 END;
 
 EXEC guestLisamine 'Lev','Egorov','2022-04-05'
+
+--proceduur roomUpdate
+CREATE PROCEDURE roomUpdate
+@id int,
+@uus_number varchar(10),
+@uus_name varchar(10),
+@uus_status varchar(10),
+@uus_smoke bit,
+@uus_room_type_id int
+AS
+BEGIN
+UPDATE room
+SET number = @uus_number,
+name = @uus_name,
+status = @uus_status,
+smoke = @uus_smoke,
+room_type_id = @uus_room_type_id
+WHERE id = @id;
+SELECT * FROM room;
+END;
+
+EXEC roomUpdate 1,'E10','im','closed',0,1
