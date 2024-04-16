@@ -84,3 +84,29 @@ foreign key (ocupied_room_id) references ocupied_room(id));
 SELECT * FROM hosted_at;
 INSERT INTO hosted_at(guest_id, ocupied_room_id)
 VALUES (1, 1)
+
+CREATE PROCEDURE CreateReservation
+    @date_in date,
+    @date_out date,
+    @made_by varchar(20),
+    @guest_id int,
+    @room_type_id int,
+    @number_of_rooms int
+AS
+BEGIN
+    DECLARE @reservation_id int;
+    
+    -- insert reservation
+    INSERT INTO reservation (date_in, date_out, made_by, guest_id)
+    VALUES (@date_in, @date_out, @made_by, @guest_id);
+    
+    SET @reservation_id = SCOPE_IDENTITY();
+    
+    -- insert reserved_room
+    INSERT INTO reserved_room (number_of_rooms, room_type_id, reservation_id, status)
+    VALUES (@number_of_rooms, @room_type_id, @reservation_id, 'booked');
+END;
+GO
+
+
+
