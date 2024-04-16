@@ -159,7 +159,7 @@ END;
 --kontroll
 Exec RoomTypeLisamine 'super super lux',10
 
---2 proceduur Külalise kustutamise protseduur guest tabelist tema ID järgi
+--2 proceduur Toatüübi eemaldamine tabelist room_type selle ID järgi
 CREATE PROCEDURE RoomTypeKustutamine
 @KustutaID int
 AS
@@ -173,3 +173,19 @@ SELECT * FROM room_type;
 END;
 
 EXEC RoomTypeKustutamine 6
+
+--3 protceduur Protseduur toa staatuse uuendamiseks tema ID-tabelis
+CREATE PROCEDURE RoomStatusUuendamine
+@uusStatus varchar(50),
+@ID int
+AS
+BEGIN
+
+UPDATE room
+SET status=@uusStatus
+WHERE id=@ID;
+SELECT * FROM room;
+
+END;
+
+EXEC RoomStatusUuendamine 'close',1
