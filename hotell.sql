@@ -130,7 +130,7 @@ EXECUTE AddGuest @first_name = 'Kirill', @last_name = 'Sats', @member_since = '2
 select * from guest
 
 --Uue numbritüübi lisamine
---Procedure lisab kirjelduse ja maksimaalse mahu
+--Protseduur AddRoomType lisab andmebaasi uue toatüübi, mis põhineb määratud kirjeldusel ja maksimaalsel mahutavusel.
 
 CREATE PROCEDURE AddRoomType
     @description VARCHAR(80),
@@ -150,7 +150,7 @@ select * from room_type
 
 
 --Uue broneeringu loomine
---Procedur lisab sisse kuupäev, välja kuupaev, kes on ja id 
+--Protseduur AddReservation lisab andmebaasi uue broneeringu, võttes arvesse saabumis- ja lahkumise kuupäeva, broneeringu teinud kasutaja nime ja külalise ID.
 
 CREATE PROCEDURE AddReservation
     @date_in DATE,
