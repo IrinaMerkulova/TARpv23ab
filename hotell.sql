@@ -95,12 +95,37 @@ DROP TABLE reserved_room;
 -- tabel occupied_room
 CREATE TABLE occupied_room(
 id int Primary key identity (1,1),
-number_of_rooms int,
-room_type_id int,
+check_in datetime,
+check_out datetime,
+room_id int,
 reservation_id int,
-foreign key (room_type_id) references room_type(id),
+foreign key (room_id) references room(id),
 foreign key (reservation_id) references reservation(id));
 SELECT * FROM occupied_room;
 
-INSERT INTO occupied_room(number_of_rooms, room_type_id, reservation_id)
-VALUES ('505', 1, 1);
+INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id)
+VALUES ('2024-04-23 15:30:45', '2024-05-01 12:15:40', 1, 1);
+
+DROP TABLE occupied_room;
+
+-- CTRL + S
+-- git add .
+-- git commit -a -m "tabel occupied_room on lisatud"
+-- git push
+
+-- table hosted_at
+CREATE TABLE hosted_at(
+id int Primary key identity (1,1),
+guest_id int,
+occupied_room_id int,
+FOREIGN KEY (guest_id) REFERENCES guest(id),
+FOREIGN KEY (occupied_room_id) REFERENCES occupied_room(id));
+SELECT * FROM hosted_at; 
+
+INSERT INTO hosted_at(guest_id, occupied_room_id)
+VALUES (1, 1);
+
+-- CTRL + S
+-- git add .
+-- git commit -a -m "tabel hosted_at on lisatud"
+-- git push
