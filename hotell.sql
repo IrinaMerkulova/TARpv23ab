@@ -165,3 +165,20 @@ EXEC RoomTypeLisamine 'duplex', 2;
 --git add .
 --git commit -a -m "lõi protseduuri RoomTypeLisamine"
 --git push
+
+--2. Kustutamis protseduur, kustutab room_type tema ID järgi (kasutaja sisestab ID ja siis room_type kustutakse)
+CREATE PROCEDURE RoomTypeKustutamine
+@room_typeID int
+AS
+BEGIN
+SELECT * FROM room_type;
+DELETE FROM room_type
+WHERE id=@room_typeID;
+SELECT * FROM room_type;
+END;
+--kontroll
+EXEC RoomTypeKustutamine 7;
+--CTRL + S
+--git add .
+--git commit -a -m "lõi protseduuri RoomTypeKustutamine"
+--git push
