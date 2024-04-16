@@ -46,3 +46,19 @@ Insert into guest(first_name,last_name,member_since)
 values('Klark','Kent','2024-01-12')
 Insert into guest(first_name,last_name,member_since)
 values('Jolin','Kudjo','2024-02-19')
+
+--tabeli reservation
+create table reservation(
+id int primary key identity(1,1),
+date_in date,
+date_out date,
+made_by varchar(20),
+guest_id int foreign key (guest_id) references guest(id))
+
+
+select * from reservation;
+
+insert into reservation(date_in,date_out,made_by,guest_id)
+values('2024-01-12','2024-01-15','Worker: Allan Smitt',1)
+insert into reservation(date_in,date_out,made_by,guest_id)
+values('2024-02-19','2024-02-29','Worker: Allan Smitt',2)
