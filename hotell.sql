@@ -125,3 +125,27 @@ values('2024-04-02', '2024-06-02', 1, 12),
 -- git push
 
 -- 7. hosted_at
+
+create table hosted_at(
+id int primary key identity(1,1),
+guest_id int,
+occupied_room_id int,
+foreign key (guest_id) references guest(id),
+foreign key (occupied_room_id) references occupied_room(id));
+
+select * from hosted_at;
+select * from guest;
+select * from occupied_room;
+
+insert into hosted_at(guest_id, occupied_room_id)
+values (7, 1),
+(9, 2),
+(8, 4),
+(10, 5),
+(11, 3);
+
+
+--CTRL +S
+-- git add . 
+-- git commit -a -m "tabeli room on listatud"
+-- git push
