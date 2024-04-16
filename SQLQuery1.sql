@@ -135,4 +135,12 @@ select * from guest
 select * from occupied_room
 insert into hosted_at(guest_id,occupied_room_id)
 values(1,3);
+insert into hosted_at(guest_id,occupied_room_id)
+values(2,10);
+insert into hosted_at(guest_id,occupied_room_id)
+values(3,11);
+insert into hosted_at(guest_id,occupied_room_id)
+values(4,12);
+insert into hosted_at(guest_id,occupied_room_id)
+values(5,13);
 
