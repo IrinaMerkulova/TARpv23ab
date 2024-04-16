@@ -156,7 +156,7 @@ insert into hosted_at(guest_id, occupied_room_id)
 values(5,5)
 
 --protseduurid
---1. osti klienti tema perekonnanimi tähte järgi olenemata selle asukohast
+--1. otsi klienti tema perekonnanimi tähte järgi olenemata selle asukohast
 create procedure guestOtsi_
 @taht char(1)
 as
@@ -165,3 +165,16 @@ select * from guest
 where last_name like '%' + @taht + '%';
 end
 exec guestOtsi_ @taht=n
+
+--2. uue rekordi lisamine room_type tabelise 
+create procedure uueRoom_type_
+@uue_disc varchar(80),
+@uue_maxCapacity int
+as
+begin 
+select * from room_type;
+Insert into room_type(description_,max_capacity)
+values(@uue_disc,@uue_maxCapacity);
+select * from room_type;
+end
+exec uueRoom_type_ @uue_disc='Best of the best super mega VIP LUX', @uue_maxCapacity=20
