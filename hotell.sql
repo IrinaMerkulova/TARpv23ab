@@ -8,7 +8,11 @@ description varchar(80),
 max_capacity int)
 select * from room_type;
 insert into room_type(description, max_capacity)
-values('super lux', 1);
+values('Super Luxury Suite', 2),
+('Deluxe Room', 3),
+('Standard Room', 4),
+('Economy Room', 1),
+('Executive Suite', 2);
 -- cntr s
 -- git add .
 -- git commit -a -m "tabel room_type on lisatud"
