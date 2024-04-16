@@ -87,6 +87,15 @@ foreign key(reservation_id) references reservation(id));
 insert into occupied_room (check_in,check_out,room_id,reservation_id)
 VALUES ('2019-03-22','2023-03-25','1','1')
 
+--tabel hosted_at
+create table hosted_at(
+id int primary key identity(1,1),
+guest_id int,
+occupied_room_id int,
 
+foreign key(guest_id) references guest(id),
+foreign key(occupied_room_id) references occupied_room(id));
+insert into hosted_at (guest_id,occupied_room_id)
+values (1,1)
 
 
