@@ -83,5 +83,23 @@ VALUES (12, 1, 1, 'open');
 --git commit -a -m "tabel room on lisatud"
 --git push
 
---6.occipied_room
+--6.occupied_room
+CREATE TABLE occupied_room(
+id int Primary key identity(1,1),
+cheãk_in datetime,
+chek_out datetime,
+room_id int,
+reservation_id int,
+FOREIGN KEY (room_id) references room(id), 
+FOREIGN KEY (reservation_id) references reservation(id));
+SELECT * FROM occupied_room;
+INSERT INTO occupied_room(cheãk_in,chek_out, room_id, reservation_id)
+VALUES ('2024-12-12', '2024-12-14', 1, 1);
+--CTRL + S
+--git add .
+--git commit -a -m "tabel room on lisatud"
+--git push
+
+
+
 --7.hosted_at
