@@ -62,3 +62,32 @@ insert into reservation(date_in,date_out,made_by,guest_id)
 values('2024-01-12','2024-01-15','Worker: Allan Smitt',1)
 insert into reservation(date_in,date_out,made_by,guest_id)
 values('2024-02-19','2024-02-29','Worker: Allan Smitt',2)
+
+--tabeli reserved_room
+create table reserved_room(
+id int primary key identity(1,1),
+number_of_rooms int,
+room_type_id int foreign key (room_type_id) references room_type(id),
+reservation_id int foreign key (reservation_id) references reservation(id),
+satus varchar(20));
+
+Select * from reserved_room;
+
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,satus)
+values(1,1,1,'not reserved')
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,satus)
+values(1,2,2,'not reserved')
+
+
+--tabeli occupied_room
+create table occupied_room(
+id int primary key identity(1,1),
+check_in datetime,
+check_out datetime,
+room_id int foreign key (room_id) references room(id),
+reservation_id int foreign key (reservation_id) references reservation(id))
+
+Select * from occupied_room
+
+insert into occupied_room(check_in, check_out, room_id,reservation_id)
+values('2024-01-12 23:12:28','2024-01-15 12:23:56', 1, 1)
