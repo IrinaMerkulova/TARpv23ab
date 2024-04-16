@@ -153,7 +153,7 @@ values (7, 1),
 
 -- Hinne 5. sql serveri lisa 3 proceduuri (kirjuta mida nad teevad, käivita neid)
 
--- Lisa guest tabelisse
+-- Uue kasutaja lisamine tabelisse "Külaline" koos eesnime, perekonnanime ja kuupäevaga
 create procedure guest_lisamine
 
 @first_name varchar(80),
@@ -169,7 +169,7 @@ select * from guest;
 
 end;
 exec guest_lisamine 'Gleb', 'Sotsev', '03-05-2024';
--- delete
+-- Kasutaja eemaldamine tema ID järgi tabelist "Külaline".
 
 create procedure delete_guest
 @deleteID int
@@ -184,7 +184,7 @@ end;
 
 exec delete_guest 12;
 
--- hostitud külalise kustutamine
+-- Hosted_guest eemaldamine tabelist "Hosted_at" selle ID järgi
 
 create procedure hostitud_külalise_kustutamine
 @id int
