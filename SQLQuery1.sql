@@ -8,7 +8,15 @@ description varchar(80),
 max_capacity int);
 SELECT * FROM room_type;
 INSERT INTO room_type(description, max_capacity)
+VALUES ('super ', 1);
+INSERT INTO room_type(description, max_capacity)
 VALUES ('super lux', 1);
+INSERT INTO room_type(description, max_capacity)
+VALUES ('lux', 1);
+INSERT INTO room_type(description, max_capacity)
+VALUES ('super top', 1);
+INSERT INTO room_type(description, max_capacity)
+VALUES ('toper', 1);
 
 
 DROP TABLE room_type;
