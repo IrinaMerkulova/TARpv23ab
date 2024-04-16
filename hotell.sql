@@ -147,3 +147,28 @@ EXECUTE AddRoomType @description = 'Lux', @max_capacity = 5;
 
 select * from room_type
 
+
+--Uue broneeringu loomine
+
+CREATE PROCEDURE AddReservation
+    @date_in DATE,
+    @date_out DATE,
+    @made_by VARCHAR(20),
+    @guest_id INT
+AS
+BEGIN
+    INSERT INTO reservation (date_in, date_out, made_by, guest_id)
+    VALUES (@date_in, @date_out, @made_by, @guest_id);
+END;
+
+
+EXECUTE AddReservation @date_in = '2023-07-20', @date_out = '2023-08-05', @made_by = 'Geba', @guest_id = 2;
+EXECUTE AddReservation @date_in = '2023-09-20', @date_out = '2023-10-11', @made_by = 'MyHotell', @guest_id = 3;
+EXECUTE AddReservation @date_in = '2023-10-20', @date_out = '2023-11-08', @made_by = '5Since', @guest_id = 4;
+EXECUTE AddReservation @date_in = '2023-11-20', @date_out = '2023-12-02', @made_by = 'Gigerat', @guest_id = 5;
+
+select * from reservation
+
+
+DELETE FROM reservation
+WHERE id = 9;
