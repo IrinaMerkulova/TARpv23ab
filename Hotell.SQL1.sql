@@ -80,3 +80,14 @@ SELECT * FROM occupied_room;
 INSERT INTO occupied_room(check_id, check_out, room_id, reservation_id)
 VALUES ('10:30:10', '13:20:15', 1, 1);
 --7.hostel_at
+create table hosted_at(
+id int primary key identity(1,1),
+guest_id int,
+occupied_room_id int,
+FOREIGN KEY (guest_id) REFERENCES gues(id),
+FOREIGN KEY (occupied_room_id) REFERENCES occupied_room(id));
+select * from hosted_at
+select * from gues
+select * from occupied_room
+insert into hosted_at(guest_id,occupied_room_id)
+values(1,1);
