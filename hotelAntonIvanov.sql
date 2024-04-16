@@ -2,6 +2,8 @@
 create database hotelAntonIvanov
 use hotelAntonIvanov;
 
+-- room type 
+
 create table room_type(
 id int Primary key identity (1,1),
 description varchar(80),
@@ -12,6 +14,9 @@ values ('lux', 1);
 
 --drop table room_type;
 --delete from room_type;
+
+-- room
+
 
 create table room(
 id int Primary key identity (1,1),
@@ -27,7 +32,7 @@ select * from room_type;
 Insert into room (number,name,status,smoke,room_type_id)
 values ('E10', 'sv', 'open', 1, 1);
 
--- table room on lisatud
+-- guest
 
 create table guest(
 id int Primary key identity (1,1),
@@ -36,6 +41,20 @@ last_name varchar(80),
 member_since date);
 
 select * from guest;
+
+insert into guest (first_name,last_name,member_since)
+values ('Vasili', 'Efremov', '12-2-2009');
+
+
+create table reservation(
+id int Primary key identity (1,1),
+date_in date,
+date_out date,
+made_by varchar(20),
+guest_id int,
+foreign key (id) references guest(id));
+
+select * from reservation;
 
 insert into guest (first_name,last_name,member_since)
 values ('Vasili', 'Efremov', '12-2-2009');
