@@ -73,3 +73,14 @@ foreign key (reservation_id) references reservation(id));
 SELECT * FROM ocupied_room;
 INSERT INTO ocupied_room(check_in, check_out, room_id, reservation_id)
 VALUES ('1999-10-16 17:15:01', '1999-10-17 10:10:22', 1 , 1)
+
+CREATE TABLE hosted_at(
+id int Primary key identity(1,1),
+guest_id int,
+foreign key (guest_id) references guest(id),
+ocupied_room_id int,
+foreign key (ocupied_room_id) references ocupied_room(id));
+
+SELECT * FROM hosted_at;
+INSERT INTO hosted_at(guest_id, ocupied_room_id)
+VALUES (1, 1)
