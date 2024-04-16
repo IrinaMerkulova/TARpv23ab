@@ -156,7 +156,7 @@ insert into hosted_at(guest_id, occupied_room_id)
 values(5,5)
 
 --protseduurid
---1. otsi klienti tema perekonnanimi t‰hte j‰rgi olenemata selle asukohast
+--1. otsi klienti tema perekonnanimi t√§hte j√§rgi olenemata selle asukohast
 create procedure guestOtsi_
 @taht char(1)
 as
@@ -178,6 +178,7 @@ values(@uue_disc,@uue_maxCapacity);
 select * from room_type;
 end
 exec uueRoom_type_ @uue_disc='Best of the best super mega VIP LUX', @uue_maxCapacity=20
+<<<<<<< HEAD:SQLQuery1.sql
 
 --3. Guest tabeli asendamine klientide poolt
 create procedure asenaGuest
@@ -195,3 +196,5 @@ where @asenaId=id;
 select * from guest;
 end
 exec asenaGuest @uuename='Joe', @uuelast_name='Skib', @asenaId=2
+=======
+>>>>>>> 4d1baaa2e92006dd924dd403741a40cf2296c104:hotell.sql
