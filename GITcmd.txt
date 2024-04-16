@@ -9,3 +9,5 @@ git checkout NadvornõiA
 git add .
 git commit -a -m "git käsud on kirjas"
 git push
+cd TARpv23ab
+git pull
