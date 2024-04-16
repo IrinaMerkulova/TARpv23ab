@@ -47,6 +47,11 @@ last_name varchar (80),
 member_since date);
 SELECT * FROM guest;
 INSERT INTO guest(first_name, last_name, member_since) 
+Values ('Darja', 'Jermitsova', '2024-04-21'),
+('Sofiia', 'Halchenko', '2024-04-24'),
+('Valeria', 'Allik', '2024-04-21'),
+('Anton', 'Ivanov', '2024-04-17');
+INSERT INTO guest(first_name, last_name, member_since) 
 Values ('Daria', 'Halchenko', '2024-10-4');
 
 --reservation
