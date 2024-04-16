@@ -129,6 +129,8 @@ EXECUTE AddGuest @first_name = 'Kirill', @last_name = 'Sats', @member_since = '2
 
 select * from guest
 
+--Uue numbritüübi lisamine ja kirjelduse
+
 CREATE PROCEDURE AddRoomType
     @description VARCHAR(80),
     @max_capacity INT
