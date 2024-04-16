@@ -104,3 +104,15 @@ create table hosted_at(
 id int primary key identity(1,1),
 guest_id int,
 foreign key (guest_id) references guest(id));
+
+
+create procedure AddGuest
+    @first_name varchar(80),
+    @last_name varchar(80),
+    @member_since date
+as
+begin
+    insert into guest (first_name, last_name, member_since)
+    values(@first_name, @last_name, @member_since);
+end; 
+
