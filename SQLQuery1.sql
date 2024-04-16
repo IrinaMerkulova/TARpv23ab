@@ -1,6 +1,6 @@
 --Slavestame TARpv23ab kausta sisse CTRL+S
 create database hotellAleksandra;
-
+use hotellAleksandra;
 --tabel room_type
 CREATE TABLE room_type(
 id int Primary key identity(1,1),
@@ -54,3 +54,18 @@ select * from reservation
 select * from guest
 insert into reservation(date_in,date_out,made_by,guest_id)
 values ('2007.12.04','2024.04.23','Aleksandra Semjonova',1);
+
+--tabel reserved_room
+create table reserved_room(
+id int PRIMARY KEY identity(1,1),
+number_of_rooms int,
+room_type_id int,
+reservation_id int,
+status varchar(20),
+FOREIGN KEY (room_type_id) REFERENCES room_type(id),
+FOREIGN KEY (reservation_id) REFERENCES reservation(id));
+Select * from reserved_room
+select * from reservation
+select * from room_type
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+values(12,1,1,'occupied');
