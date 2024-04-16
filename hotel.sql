@@ -25,3 +25,13 @@ room_type_id int
 foreign key references room_type(id));
 
 insert into room(number, name, status, smoke,room_type_id) VALUES ('101','classroom','vaba',0,1);
+
+CREATE TABLE guest(
+id int primary key identity(1,1),
+first_name varchar(80),
+last_name varchar(80),
+member_since date);
+
+
+INSERT INTO guest(first_name, last_name, member_since) VALUES ('','','');
+
