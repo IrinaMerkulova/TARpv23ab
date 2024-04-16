@@ -29,7 +29,11 @@ foreign key (room_type_id) references room_type(id));
 select *from room;
 
 insert into room(number, name, status, smoke, room_type_id)
-values('E11', 'sv', 'open', 1, 1);
+values('E12', 'sv', 'open', 1, 2),
+('E13', 'sv', 'open', 1, 4),
+('E14', 'sv', 'open', 1, 3),
+('E15', 'sv', 'open', 1, 5);
+
 
 --CTRL +S
 -- git add . 
@@ -95,8 +99,29 @@ values(10, 1, 13, 'Lux'),
 -- git push
 
 -- 6. occupied_room
+create table occupied_room(
+id int primary key identity(1,1),
+check_in datetime,
+check_out datetime,
+room_id int,
+reservation_id int,
+foreign key (room_id) references room(id),
+foreign key (reservation_id) references reservation(id));
+
+select * from occupied_room;
+
+insert into occupied_room(check_in, check_out, room_id, reservation_id)
+values('2024-04-02', '2024-06-02', 1, 12),
+('2024-04-02', '2024-06-02', 5, 13),
+('2024-04-02', '2024-06-02', 4, 14),
+('2024-04-02', '2024-06-02', 3, 15),
+('2024-04-02', '2024-06-02', 2, 16);
 
 
 
+--CTRL +S
+-- git add . 
+-- git commit -a -m "tabeli room on listatud"
+-- git push
 
 -- 7. hosted_at
