@@ -41,6 +41,14 @@ member_since date);
 Select * from guest;
 insert into guest(first_name,last_name,member_since)
 values ('Illya','Heino','2007.07.03');
+insert into guest(first_name,last_name,member_since)
+values ('Aleksandra','Heino','2007.07.03');
+insert into guest(first_name,last_name,member_since)
+values ('Aleksandr','Jurev','2009.10.13');
+insert into guest(first_name,last_name,member_since)
+values ('Dima','Jurev','2019.12.16');
+insert into guest(first_name,last_name,member_since)
+values ('Arina','Illmso','2005.07.16');
 
 --tabel reservation
 create table reservation(
@@ -83,6 +91,7 @@ select * from occupied_room
 insert into occupied_room(check_in,check_out,room_id,reservation_id)
 values('12:50:10 ','15:31:05 ',1,1);
 
+
 --tabel hosted_at
 create table hosted_at(
 id int primary key identity(1,1),
@@ -95,3 +104,4 @@ select * from guest
 select * from occupied_room
 insert into hosted_at(guest_id,occupied_room_id)
 values(1,3);
+
