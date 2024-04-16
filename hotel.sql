@@ -113,3 +113,15 @@ EXEC (@STMT);
 EXEC (@STFT);
 END;
 EXEC tabeli_uuendamine 'room_type', 'DELETE', 'None', 'None', 2;
+
+create procedure tabeli_kustuta
+@tabeli_nimi varchar(50)
+AS
+BEGIN 
+DECLARE @STMT AS VARCHAR(MAX);
+SET @STMT = CONCAT('DROP TABLE ', @tabeli_nimi);
+END;
+BEGIN;
+EXEC (@STMT);
+END;
+EXEC tabeli_kustuta 'hosted_at'
