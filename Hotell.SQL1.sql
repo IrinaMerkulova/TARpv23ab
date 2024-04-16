@@ -176,9 +176,7 @@ go
 exec Kustuta_reservation 2;
 
 
---3)
-
---Procedure Lisamise kord uue guest
+--3)Procedure lisab Guesisse uue kliendi
 create procedure Uue_gues
  @first_name varchar(80),
  @last_name varchar(80),
