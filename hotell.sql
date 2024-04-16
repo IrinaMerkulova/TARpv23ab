@@ -10,7 +10,11 @@ max_capacity int);
 select * from room_type;
 
 insert into room_type( description, max_capacity)
-values('super lux', 1);
+values('Delux', 1),
+('Cheap', 1),
+('Expensive', 4),
+('Eco', 3);
+
 
 -- tabel room
 create table room(
@@ -42,7 +46,8 @@ member_since date);
 select * from guest;
 
 insert into guest(first_name, last_name, member_since)
-values ('Kirill', 'Sats', '03-03-2024');
+values ('Lev', 'Egorov', '02-02-2024');
+
 
 -- 4. reservation
 create table reservation(
@@ -57,7 +62,14 @@ select * from reservation;
 
 
 insert into reservation(date_in, date_out, made_by, guest_id)
-values('2024-03-03', '2024-03-04', 'Abudabi', 1);
+values('2024-02-03', '2024-12-03', 'London', 10),
+('2024-02-03', '2024-12-03', 'Lost Angeles', 11);
+
+--CTRL +S
+-- git add . 
+-- git commit -a -m "tabeli room on listatud"
+-- git push
+
 
 -- 5. reserved_room
 create table reserved_room(
@@ -72,7 +84,19 @@ foreign key(reservation_id) references reservation(id));
 select * from reserved_room;
 
 insert into reserved_room(number_of_rooms, room_type_id, reservation_id, status)
-values(11, 11, 1, 'good');
+values(10, 1, 13, 'Lux'),
+(11, 1, 14, 'ECO'),
+(12, 1, 15, 'Perfect');
+
+
+--CTRL +S
+-- git add . 
+-- git commit -a -m "tabeli room on listatud"
+-- git push
+
 -- 6. occupied_room
+
+
+
 
 -- 7. hosted_at
