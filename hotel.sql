@@ -88,3 +88,28 @@ DELETE FROM room_type WHERE id like @room_type_id;
 SELECT * FROM room_type;
 END;
 EXEC room_type_kustuta 3
+
+create procedure tabeli_uuendamine 
+@tabeli_nimi varchar(50),
+@valik varchar(100),
+@veerunimi varchar(100),
+@tyyp varchar(100),
+@kustutaks_id int
+AS
+BEGIN
+DECLARE @STMT AS VARCHAR(MAX);
+DECLARE @STFT AS VARCHAR(MAX);
+SET @STFT = concat('SELECT * FROM ', @tabeli_nimi);
+IF @valik = 'ADD'
+SET @STMT = concat('ALTER TABLE ', @tabeli_nimi, ' ADD ', @veerunimi, ' ', @tyyp);
+ELSE IF @valik = 'DELETE'
+SET @STMT = CONCAT('DELETE FROM ', @tabeli_nimi , ' WHERE id like ', @kustutaks_id );
+ELSE IF @valik = 'DROP'
+SET @STMT = CONCAT('ALTER TABLE ', @tabeli_nimi, ' DROP ', @veerunimi, ' ');
+END;
+BEGIN;
+EXEC (@STFT);
+EXEC (@STMT);
+EXEC (@STFT);
+END;
+EXEC tabeli_uuendamine 'room_type', 'DELETE', 'None', 'None', 2;
