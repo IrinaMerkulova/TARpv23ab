@@ -118,3 +118,30 @@ VALUES (1,1),
 (3,4),
 (4,3),
 (5,2);
+
+CREATE TABLE guest(
+id int PRIMARY KEY identity(1,1),
+first_name varchar(80),
+last_name varchar(80),
+member_since date);
+SELECT * FROM guest;
+INSERT INTO guest(first_name,last_name,member_since)
+VALUES ('Vladislav','Kudriaðev','2007-02-25'),
+('David','Lennuk','2022-03-21'),
+('Marija','Gorbunova','2021-06-10'),
+('Kirill','Sats','2022-04-12'),
+('Tarrare','The French','1798-02-25');
+
+--proceduur guestLisamine
+CREATE PROCEDURE guestLisamine
+@first_name varchar(80),
+@last_name varchar(80),
+@member_since date
+AS
+BEGIN
+INSERT INTO guest(first_name,last_name,member_since) VALUES
+(@first_name,@last_name,@member_since);
+SELECT * FROM guest;
+END;
+
+EXEC guestLisamine 'Lev','Egorov','2022-04-05'
