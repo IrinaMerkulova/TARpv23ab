@@ -62,3 +62,18 @@ SELECT * FROM reservation;
 SELECT * FROM reserved_room;
 INSERT INTO reserved_room(number_of_rooms,room_type_id,reservation_id,status)
 VALUES ('250',1,1,'puhastus');
+
+--tabel occupied_room
+CREATE TABLE occupied_room(
+id int PRIMARY KEY identity(1,1),
+check_in date,
+check_out date,
+room_id int,
+FOREIGN KEY (room_id) references room(id),
+reservation_id int,
+FOREIGN KEY (reservation_id) references reservation(id));
+SELECT * FROM room;
+SELECT * FROM reservation;
+SELECT * FROM occupied_room;
+INSERT INTO occupied_room(check_in,check_out,room_id,reservation_id)
+VALUES ('2007-02-25','2024-04-16',1,1);
