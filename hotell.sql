@@ -174,3 +174,5 @@ select * from reservation
 
 DELETE FROM reservation
 WHERE id = 9;
+
+--Ülesanne Hotell.sql on tehtud
