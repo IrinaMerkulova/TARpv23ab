@@ -92,6 +92,12 @@ room_id int,
 foreign key (room_id) references room(id),
 reservation_id int,
 foreign key (reservation_id) references reservation(id));
+INSERT INTO occupied_room (check_in, check_out, room_id, reservation_id)
+VALUES('2023-05-16', '2023-05-18', 1, 1), 
+('2023-06-20', '2023-06-25', 2, 2),
+('2023-07-10', '2023-07-15', 3, 3),  
+('2023-08-05', '2023-08-08', 4, 4),  
+('2023-09-12', '2023-09-18', 5, 5);  
 
 --luuan hosted_at
 create table hosted_at(
