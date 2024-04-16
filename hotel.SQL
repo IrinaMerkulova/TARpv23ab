@@ -7,7 +7,9 @@ CREATE TABLE room_type(
 id int Primary key identity(1,1),
 description varchar(80),
 max_capacity int);
+
 SELECT * FROM room_type;
+
 INSERT INTO room_type(description, max_capacity)
 VALUES ('super lux', 1);
 
@@ -44,15 +46,23 @@ id int Primary key identity(1,1),
 first_name Varchar(80),
 last_name Varchar(80) not null,
 member_since date)
+
 SELECT * FROM guest;
 
+Insert into guest(first_name,last_name,member_since)
+values('Gery','Brat','2024-01-10')
+Insert into guest(first_name,last_name,member_since)
+values('Dzamal','Badboy','2024-02-21')
+
 --4. reservation
+DROP TABLE reservation
 CREATE TABLE reservation(
 id int primary key identity(1,1),
 date_in date,
 date_out date,
 made_by varchar(20),
 guest_id int foreign key (guest_id) references guest(id))
+
 SELECT * FROM reservation;
 
 insert into reservation(date_in,date_out,made_by,guest_id)
@@ -61,6 +71,7 @@ insert into reservation(date_in,date_out,made_by,guest_id)
 values('2024-02-21','2024-02-29','Worker: Mikro Mikle',2)
 
 --5. reserved_room
+drop table reserved_room
 create table reserved_room(
 id int primary key identity(1,1),
 number_of_rooms int,
@@ -68,15 +79,30 @@ room_type_id int foreign key (room_type_id) references room_type(id),
 reservation_id int foreign key (reservation_id) references reservation(id),
 satus varchar(20));
 
-SELECT * FROM reserved_room;
+Select * from reserved_room;
 
 insert into reserved_room(number_of_rooms,room_type_id,reservation_id,satus)
-values(1,1,1,'not reserved')
+values(1,1,5,'not reserved')
 insert into reserved_room(number_of_rooms,room_type_id,reservation_id,satus)
-values(1,2,2,'not reserved')
+values(1,1,6,'not reserved')
 
 --6. occupied_room
 CREATE TABLE occupied_room(
+id int primary key identity(1,1),
+check_in timestamp,
+check_out datetime,
+room_id int foreign key (room_id) references room(id),
+reservation_id int foreign key (reservation_id) references reservation(id))
+
+select * from occupied_room;
 
 --7. hosted_at
 CREATE TABLE hosted_at(
+id int primary key identity(1,1),
+guest_id int foreign key (guest_id) references guest(id),
+occupied_room_id int foreign key (occupied_room_id) references occupied_room(id))
+
+select * from hosted_at;
+
+insert into hosted_at(guest_id, occupied_room_id)
+values(1,1)
