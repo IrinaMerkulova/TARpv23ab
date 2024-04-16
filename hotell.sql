@@ -149,3 +149,38 @@ values (7, 1),
 -- git add . 
 -- git commit -a -m "tabeli room on listatud"
 -- git push
+
+
+-- Hinne 5. sql serveri lisa 3 proceduuri (kirjuta mida nad teevad, käivita neid)
+
+-- Lisa guest tabelisse
+create procedure guest_lisamine
+
+@first_name varchar(80),
+@last_name varchar(80),
+@member_since date
+as
+begin
+
+insert into guest(first_name, last_name, member_since)
+values (@first_name, @last_name, @member_since)
+select * from guest;
+
+
+end;
+exec guest_lisamine 'Gleb', 'Sotsev', '03-05-2024';
+-- delete
+
+create procedure delete_guest
+@deleteID int
+as
+
+begin
+select * from guest;
+delete from guest 
+where id = @deleteID;
+select * from guest;
+end;
+
+exec delete_guest 12;
+
