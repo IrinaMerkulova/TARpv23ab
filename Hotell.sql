@@ -69,3 +69,11 @@ foreign key(room_id) references room(id),
 reservation_id int,
 foreign key(reservation_id) references reservation(id));
 select *from occupied_room
+
+
+CREATE TABLE hosted_at(
+id int primary key identity(1,1),
+guest_id int 
+foreign key(guest_id) references guest(id),
+occupied_room_id int 
+foreign key(occupied_room_id) references occupied_room(id));
