@@ -66,3 +66,18 @@ select * from reservation
 select * from room_type
 insert into reserved_room(number_of_rooms, room_type_id, reservation_id, status)
 values('10', '1', '1','booked')
+
+--tabel occupled_room
+create table occupled_room(
+id int primary key identity (1,1),
+check_in datetime,
+check_out datetime,
+room_id int,
+foreign key(room_id) references room(id),
+reservation_id int,
+foreign key(reservation_id) references reservation(id));
+select * from occupled_room
+select * from reservation
+select * from room
+insert into occupled_room(check_in, check_out, room_id, reservation_id)
+values('2024-04-01 08:30', '2024-04-10 20:45', '1','1')
