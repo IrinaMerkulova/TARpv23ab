@@ -77,3 +77,16 @@ SELECT * FROM reservation;
 SELECT * FROM occupied_room;
 INSERT INTO occupied_room(check_in,check_out,room_id,reservation_id)
 VALUES ('2007-02-25','2024-04-16',1,1);
+
+--tabel hosted_at
+CREATE TABLE hosted_at(
+id int PRIMARY KEY identity(1,1),
+guest_id int,
+FOREIGN KEY (guest_id) references guest(id),
+occupied_room_id int,
+FOREIGN KEY (occupied_room_id) references occupied_room(id));
+SELECT * FROM guest;
+SELECT * FROM occupied_room;
+SELECT * FROM hosted_at;
+INSERT INTO hosted_at(guest_id,occupied_room_id)
+VALUES (1,1);
