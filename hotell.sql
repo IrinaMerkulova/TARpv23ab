@@ -27,3 +27,27 @@ select *from room;
 insert into room(number, name, status, smoke, room_type_id)
 values('E10', 'sv', 'open', 1, 1);
 
+--CTRL +S
+-- git add . 
+-- git commit -a -m "tabeli room on listatud"
+-- git push
+
+-- 3. guest
+create table guest(
+id int Primary key identity(1,1),
+first_name varchar(80),
+last_name varchar(80),
+member_since date);
+
+select * from guest;
+
+insert into guest(first_name, last_name, member_since)
+values ('Kirill', 'Sats', '03-03-2024');
+
+-- 4. reservation
+
+-- 5. reserved_room
+
+-- 6. occupied_room
+
+-- 7. hosted_at
