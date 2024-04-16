@@ -117,10 +117,15 @@ SELECT * FROM occupied_room;
 SELECT * FROM room;
 SELECT * FROM reservation;
 INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id)
-VALUES('2024-03-25' , '2024-04-05' , 1, 1);
+VALUES('2024-03-25' , '2024-04-05' , 1, 1),
+('2024-03-12' , '2024-04-03' , 2, 2),
+('2024-03-31' , '2024-03-12' , 3, 3),
+('2024-03-22' , '2024-04-02' , 4, 4),
+('2024-03-11' , '2024-03-21' , 5, 5);
 --CTRL + S
 --git add .
 --git commit -a -m "tabel occupied_room on lisatud"
+--git commit -a -m "täidetud tabel occupied_room"
 --git push
 --7. hosted_at
 CREATE TABLE hosted_at(
