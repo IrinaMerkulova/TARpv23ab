@@ -84,6 +84,11 @@ FOREIGN KEY (reservation_id) REFERENCES reservation(id));
 SELECT * FROM reserved_room;
 SELECT * FROM room_type;
 SELECT * FROM reservation;
+INSERT INTO reserved_room (number_of_rooms, room_type_id, reservation_id, status) 
+VALUES ( '102', 1, 1, 'open'), 
+( '103', 2, 4, 'open'), 
+('211', 4, 3, 'open'), 
+( '106', 3, 5, 'open');
 INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id, status)
 VALUES ('101', 1, 1, 'puhastamine');
 
