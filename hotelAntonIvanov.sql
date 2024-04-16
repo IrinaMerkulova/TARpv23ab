@@ -28,3 +28,14 @@ Insert into room (number,name,status,smoke,room_type_id)
 values ('E10', 'sv', 'open', 1, 1);
 
 -- table room on lisatud
+
+create table guest(
+id int Primary key identity (1,1),
+first_name varchar(80),
+last_name varchar(80),
+member_since date);
+
+select * from guest;
+
+insert into guest (first_name,last_name,member_since)
+values ('Vasili', 'Efremov', '12-2-2009');
