@@ -60,6 +60,12 @@ Insert into guest(first_name,last_name,member_since)
 values('Klark','Kent','2024-01-12')
 Insert into guest(first_name,last_name,member_since)
 values('Jolin','Kudjo','2024-02-19')
+Insert into guest(first_name,last_name,member_since)
+values('Chun','Li','2024-03-12')
+Insert into guest(first_name,last_name,member_since)
+values('Senjo','Kudjo','2024-01-08')
+Insert into guest(first_name,last_name,member_since)
+values('Fen','Kan','2024-03-09')
 
 --tabeli reservation
 create table reservation(
