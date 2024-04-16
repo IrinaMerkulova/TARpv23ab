@@ -76,3 +76,13 @@ select * from occupied_room
 insert into occupied_room(check_in,check_out,room_id,reservation_id)
 values('2024-04-16 12:59:32','2024-04-23 15:30:00',1,1);
 
+--tabel hosted-at
+create table hosted_at(
+id int PRIMARY KEY identity(1,1),
+guest_id int,
+occupied_room_id int,
+FOREIGN KEY (guest_id) REFERENCES guest(id),
+FOREIGN KEY (occupied_room_id) REFERENCES occupied_room(id));
+insert into hosted_at(guest_id,occupied_room_id)
+values(1,1);
+select * from hosted_at
