@@ -76,3 +76,17 @@ values (2, 1, 1 , 'reserved');
 select * from reserved_room;
 
 -- occupied room
+
+create table occupied_room(
+id int Primary key identity (1,1),
+check_in datetime,
+check_out datetime,
+room_id int,
+foreign key (room_id) references room(id),
+reservation_id int,
+foreign key (reservation_id) references reservation(id));
+
+insert into occupied_room (check_in,check_out,room_id,reservation_id)
+values ('2019-2-24 12:00', '2019-3-24 06:00', 1 , 1);
+
+select * from occupied_room;
