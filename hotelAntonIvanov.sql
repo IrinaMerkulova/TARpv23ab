@@ -90,3 +90,17 @@ insert into occupied_room (check_in,check_out,room_id,reservation_id)
 values ('2019-2-24 12:00', '2019-3-24 06:00', 1 , 1);
 
 select * from occupied_room;
+
+-- hosted_at
+
+create table hosted_at(
+id int Primary key identity (1,1),
+guest_id int,
+foreign key (guest_id) references guest(id),
+occupied_room_id int,
+foreign key (occupied_room_id) references occupied_room(id));
+
+select * from hosted_at;
+
+insert into hosted_at (guest_id,occupied_room_id)
+values (1,1);
