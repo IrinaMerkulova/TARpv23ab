@@ -92,8 +92,15 @@ Select * from reserved_room
 select * from reservation
 select * from room_type
 insert into reserved_room(number_of_rooms,room_type_id,reservation_id,status)
-values(12,1,1,'occupied');
-
+values(12,1,1,'cpied');
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+values(12,1,1,'cupied');
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+values(12,1,1,'occupi');
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+values(12,1,1,'ied');
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+values(12,1,1,'olsll');
 --tabel occupied_room
 create table occupied_room(
 id int PRIMARY KEY identity(1,1),
