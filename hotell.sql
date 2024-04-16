@@ -156,7 +156,7 @@ insert into hosted_at(guest_id, occupied_room_id)
 values(5,5)
 
 --protseduurid
---1. otsi klienti tema perekonnanimi t‰hte j‰rgi olenemata selle asukohast
+--1. otsi klienti tema perekonnanimi t√§hte j√§rgi olenemata selle asukohast
 create procedure guestOtsi_
 @taht char(1)
 as
