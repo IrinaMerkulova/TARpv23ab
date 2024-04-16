@@ -64,3 +64,21 @@ foreign key (guest_id) references guest(id));
 SELECT * FROM reservation;
 INSERT INTO reservation(date_in, date_out, made_by, guest_id)
 VALUES('2024-04-16', '2024-04-30', 'TallinnHotell', 1);
+
+--CTRL S
+--git add .
+--git commit -a -m "tabel room_type on lisatud"
+--git push
+
+CREATE TABLE reserved_room(
+id int Primary key identity (1,1),
+number_of_rooms int,
+room_type_id int,
+reservation_id int,
+status varchar(20),
+foreign key (room_type_id) references room_type(id),
+foreign key (reservation_id) references reservation(id));
+
+INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id, status)
+VALUES(505, 1, 1, 'puhastamine');
+SELECT * FROM reserved_room;
