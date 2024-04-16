@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Loomise aeg: Aprill 16, 2024 kell 10:51 EL
+-- Loomise aeg: Aprill 16, 2024 kell 11:13 EL
 -- Serveri versioon: 10.4.27-MariaDB
 -- PHP versioon: 8.2.0
 
