@@ -52,3 +52,21 @@ VALUES ('Valeria', 'Allik', '2024-04-16');
 -- git add .
 -- git commit -a -m "tabel guest on lisatud"
 -- git push
+
+-- tabel reservation
+CREATE TABLE reservation(
+id int Primary key identity (1,1),
+date_in date,
+date_out date,
+made_by varchar (20),
+guest_id int,
+foreign key (guest_id) references guest(id));
+SELECT * FROM reservation;
+
+INSERT INTO reservation(date_in, date_out, made_by, guest_id)
+VALUES ('2024-04-16', '2024-04-26', 'TallinnHotell', 1);
+
+-- CTRL + S
+-- git add .
+-- git commit -a -m "tabel reservation on lisatud"
+-- git push
