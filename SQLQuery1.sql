@@ -186,3 +186,7 @@ begin
 end;
 go
 exec UueGuest 'Aleks', 'Sikk', '2006-05-17';
+exec UueGuest 'Aleksander', 'Smikk', '2006-05-17';
+exec UueGuest 'Aleksei', 'Sikk', '2007-05-07';
+exec UueGuest 'Aleks', 'koll', '2006-07-17';
+exec UueGuest 'Miron', 'Dilon', '2016-05-17';
