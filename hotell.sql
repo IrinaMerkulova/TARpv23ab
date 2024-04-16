@@ -17,7 +17,7 @@ VALUES('super lux', 1),
 --CTRL + S
 --git add .
 --git commit -a -m "tabel room_type on lisatud"
---git commit -a -m "t�idetud tabel room_type"
+--git commit -a -m "täidetud tabel room_type"
 --git push
 
 --tabel room
@@ -40,7 +40,7 @@ VALUES ('E10', 'sv', 'open', 1, 1),
 --CTRL + S
 --git add .
 --git commit -a -m "tabel room on lisatud"
---git commit -a -m "t�idetud tabel room"
+--git commit -a -m "täidetud tabel room"
 --git push
 --3. guest
 CREATE TABLE guest(
@@ -58,7 +58,7 @@ VALUES('Kirill', 'Sats', '2024-03-12'),
 --CTRL + S
 --git add .
 --git commit -a -m "tabel guest on lisatud"
---git commit -a -m "t�idetud tabel guest"
+--git commit -a -m "täidetud tabel guest"
 --git push
 --4. reservation
 CREATE TABLE reservation(
@@ -79,7 +79,7 @@ VALUES('2024-03-13', '2024-03-20', 'Three Crowns', 1),
 --CTRL + S
 --git add .
 --git commit -a -m "tabel reservation on lisatud"
---git commit -a -m "t�idetud tabel reservation"
+--git commit -a -m "täidetud tabel reservation"
 --git push
 --5. reserved_room
 CREATE TABLE reserved_room(
@@ -102,7 +102,7 @@ VALUES(20 , 1, 1, 'Avatud'),
 --CTRL + S
 --git add .
 --git commit -a -m "tabel reserved_room on lisatud"
---git commit -a -m "t�idetud tabel reserved_room"
+--git commit -a -m "täidetud tabel reserved_room"
 --git push
 --6. occupied_room
 CREATE TABLE occupied_room(
@@ -125,7 +125,7 @@ VALUES('2024-03-25' , '2024-04-05' , 1, 1),
 --CTRL + S
 --git add .
 --git commit -a -m "tabel occupied_room on lisatud"
---git commit -a -m "t�idetud tabel occupied_room"
+--git commit -a -m "täidetud tabel occupied_room"
 --git push
 --7. hosted_at
 CREATE TABLE hosted_at(
@@ -146,10 +146,10 @@ VALUES(1, 1),
 --CTRL + S
 --git add .
 --git commit -a -m "tabel hosted_at on lisatud"
---git commit -a -m "t�idetud tabel hosted_at"
+--git commit -a -m "täidetud tabel hosted_at"
 --git push
 
---1.Andmete lisamine tabelisse room_type (description ja max_capacity sisestab kasutaja kui k�ivatab protseduuri)
+--1.Andmete lisamine tabelisse room_type (description ja max_capacity sisestab kasutaja kui käivatab protseduuri)
 CREATE PROCEDURE RoomTypeLisamine
 @description varchar(100),
 @max_capacity int
@@ -163,10 +163,10 @@ END;
 EXEC RoomTypeLisamine 'duplex', 2;
 --CTRL + S
 --git add .
---git commit -a -m "l�i protseduuri RoomTypeLisamine"
+--git commit -a -m "lõi protseduuri RoomTypeLisamine"
 --git push
 
---2. Kustutamis protseduur, kustutab room_type tema ID j�rgi (kasutaja sisestab ID ja siis room_type kustutakse)
+--2. Kustutamis protseduur, kustutab room_type tema ID järgi (kasutaja sisestab ID ja siis room_type kustutakse)
 CREATE PROCEDURE RoomTypeKustutamine
 @room_typeID int
 AS
@@ -180,5 +180,30 @@ END;
 EXEC RoomTypeKustutamine 7;
 --CTRL + S
 --git add .
---git commit -a -m "l�i protseduuri RoomTypeKustutamine"
+--git commit -a -m "lõi protseduuri RoomTypeKustutamine"
+--git push
+
+--3. drop table protseduur, eemaldab tabelid, mille kasutaja sisestab
+CREATE TABLE test(
+testID int);
+SELECT * FROM test;
+--------------------------
+CREATE PROCEDURE tablekustuta
+@tableKustutamine varchar (100)
+AS
+BEGIN
+declare @STMT as varchar(max)
+SET @STMT=CONCAT('DROP TABLE ', @tableKustutamine);
+END;
+PRINT @STMT;
+BEGIN
+EXEC(@STMT);
+END
+--kontroll
+--придворитель советую создать таблицу тест!!!!
+EXEC tablekustuta test
+SELECT * FROM test;
+--CTRL + S
+--git add .
+--git commit -a -m "lõi protseduuri tablekustuta"
 --git push
