@@ -31,6 +31,14 @@ SELECT * FROM room;
 SELECT * FROM room_type;
 INSERT INTO room(number, name, status, smoke, room_type_id)
 VALUES ('E10', 'sv', 'open', 1, 1);
+INSERT INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E11', 'ytv', 'open', 1, 1);
+INSERT INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E12', 'sv', 'open', 1, 1);
+INSERT INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E13', 'sv', 'open', 1, 1);
+INSERT INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E14', 'sv', 'open', 1, 1);
 
 --table guest
 Create table guest(
