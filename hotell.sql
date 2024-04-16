@@ -129,7 +129,8 @@ EXECUTE AddGuest @first_name = 'Kirill', @last_name = 'Sats', @member_since = '2
 
 select * from guest
 
---Uue numbritüübi lisamine ja kirjelduse
+--Uue numbritüübi lisamine
+--Procedure lisab kirjelduse ja maksimaalse mahu
 
 CREATE PROCEDURE AddRoomType
     @description VARCHAR(80),
@@ -149,6 +150,7 @@ select * from room_type
 
 
 --Uue broneeringu loomine
+--Procedur lisab sisse kuupäev, välja kuupaev, kes on ja id 
 
 CREATE PROCEDURE AddReservation
     @date_in DATE,
