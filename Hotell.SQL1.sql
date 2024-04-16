@@ -150,3 +150,43 @@ insert into hosted_at(guest_id,occupied_room_id)
 values(7,5);
 insert into hosted_at(guest_id,occupied_room_id)
 values(8,6);
+
+
+
+--1)võimaldab leida arvutustes inimest, mis algab tähega i
+Create procedure otsingitaht_from_gues
+ @taht char(1)
+as 
+begin
+ select first_name, last_name, number_since from gues
+ where first_name like @taht + '%'
+end;
+go
+exec otsingitaht_from_gues 'i';
+
+--2)võimaldab broneeringu ID abil kustutada
+create procedure Kustuta_reservation
+ @kustutumisID int
+as 
+begin
+ delete from reservation
+ where id = @kustutumisID;
+end;
+go
+exec Kustuta_reservation 2;
+
+
+--3)
+
+--Procedure Lisamise kord uue guest
+create procedure Uue_gues
+ @first_name varchar(80),
+ @last_name varchar(80),
+ @member_since DATE
+as 
+begin 
+ insert into gues(first_name, last_name, number_since)
+ values(@first_name, @last_name, @member_since);
+end;
+go
+exec ('Daiv', 'Miki', '2007.05.09');
