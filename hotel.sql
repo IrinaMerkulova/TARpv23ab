@@ -125,3 +125,22 @@ BEGIN;
 EXEC (@STMT);
 END;
 EXEC tabeli_kustuta 'hosted_at'
+
+CREATE PROCEDURE tabeli_update
+@tabeli_nimi VARCHAR(255),
+@veerunimi varchar(80),
+@uus_veerunimi varchar(80),
+@id int
+AS
+BEGIN
+DECLARE @STMT AS VARCHAR(MAX);
+DECLARE @STFT AS VARCHAR(MAX);
+SET @STFT = CONCAT('SELECT * FROM ', @tabeli_nimi);
+SET @STMT = CONCAT('UPDATE ', @tabeli_nimi , ' SET ', @veerunimi, ' = ', @uus_veerunimi, ' WHERE id like ', @id );
+END;
+BEGIN;
+EXEC (@STFT);
+EXEC (@STMT);
+EXEC (@STFT);
+END
+EXEC tabeli_update 'room_type', 'max_capacity', '8', 1
