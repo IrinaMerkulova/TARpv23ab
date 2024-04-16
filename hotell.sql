@@ -30,7 +30,11 @@ foreign key (room_type_id) references room_type(id));
 select * from room;
 select * from room_type;
 insert into room (number, name, status, smoke, room_type_id)
-values ('E10', 'sv', 'open',1, 1);
+values ('E10', 'sv', 'open',1, 1),
+('E11', 'Room Deluxe', 'Occupied', 0, 2),
+('E12', 'Executive Suite', 'Reserved', 0, 5),
+('E13', 'Standard Room', 'Open', 0, 3),
+('E14', 'Economy Room', 'Vacant', 0, 4);
 -- teeme tabel guest
 create table guest(
 id int primary key identity(1,1),
@@ -38,7 +42,10 @@ first_name varchar(80),
 last_name varchar(80),
 member_since date)
 insert into guest(first_name, last_name, member_since)
-values('John',' Shmid', '2023-03-14');
+values('Alice', 'Johnson', '2022-09-28'),
+('Michael', 'Brown', '2023-01-10'),
+('Emily', 'Davis', '2023-04-02'),
+('David', 'Wilson', '2022-12-15');
 select * from guest
 
 -- luuan reservation
@@ -49,8 +56,13 @@ date_out date,
 made_by varchar(20),
 guest_id int,
 foreign key (guest_id) references guest(id));
-insert into reservation(date_in, date_out, made_by)
-values('2023-05-16',' 2023-05-18', 'alex');
+insert into reservation (date_in, date_out, made_by, guest_id)
+values('2023-05-16', '2023-05-18', 'Alex', 1),
+    ('2023-06-20', '2023-06-25', 'John', 2),
+    ('2023-07-10', '2023-07-15', 'Alice', 3),
+    ('2023-08-05', '2023-08-08', 'Michael', 4),
+    ('2023-09-12', '2023-09-18', 'Emily', 5);
+
 select * from reservation
 
 -- luuan tabel reserved_room 
