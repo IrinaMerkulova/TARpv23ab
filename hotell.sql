@@ -7,9 +7,9 @@ CREATE TABLE room_type(
 id int PRIMARY KEY identity(1,1),
 description varchar(80),
 max_capacity int);
-SELECT *FROM room_type;
+SELECT * FROM room_type;
 INSERT INTO room_type(description, max_capacity)
-values ('Super lux',1);
+values ('Super lux','premium','Suprerior','suite','duplex',1,2,3,4,5);
 
 --git add .
 --git commit -a -m ""
