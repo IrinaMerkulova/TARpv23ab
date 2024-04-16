@@ -31,6 +31,11 @@ room_type_id int,
 FOREIGN KEY (room_type_id) REFERENCES room_type(id));
 SELECT * FROM room;
 SELECT * FROM room_type;
+INSERT INTO room (number, name, status, smoke, room_type_id) 
+VALUES ('B220', 'Oksana', 'open', 1, 2), 
+('B340', 'Valeria', 'open', 1, 3), 
+('E312', 'Maks', 'open', 1, 4), 
+('A13', 'Vlad', 'open', 1, 5);
 INSERT INTO room(number, name, status, smoke, room_type_id) 
 Values ('E10', 'sv', 'open', 1, 1);
 
