@@ -41,7 +41,7 @@ last_name varchar(80),
 member_since date);
 SELECT * FROM guest;
 INSERT INTO guest(first_name,last_name,member_since)
-VALUES ('Vladislav','Kudria�ev','2007-02-25'),
+VALUES ('Vladislav','Kudriašev','2007-02-25'),
 ('David','Lennuk','2022-03-21'),
 ('Marija','Gorbunova','2021-06-10'),
 ('Kirill','Sats','2022-04-12'),
@@ -120,6 +120,8 @@ VALUES (1,1),
 (5,2);
 
 --proceduur guestLisamine
+-- Принимает имя (first_name), фамилию (last_name) и участник_с (member_since) и добавляет в конец таблицы введённые данные.
+
 CREATE PROCEDURE guestLisamine
 @first_name varchar(80),
 @last_name varchar(80),
@@ -134,6 +136,8 @@ END;
 EXEC guestLisamine 'Lev','Egorov','2022-04-05'
 
 --proceduur roomUpdate
+-- Принимает id, number, name, status, smoke и room_type_id, где заменяет все значения после id в значении где стоит введённый id.
+
 CREATE PROCEDURE roomUpdate
 @id int,
 @uus_number varchar(10),
@@ -156,6 +160,7 @@ END;
 EXEC roomUpdate 1,'E10','im','closed',0,1
 
 --proceduur reservationOtsimine
+-- Принимает букву и возвращает все made_by начинающиеся с этой буквы.
 
 CREATE PROCEDURE reservationOtsimine
 @taht char(1)
