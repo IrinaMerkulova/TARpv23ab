@@ -49,10 +49,23 @@ VALUES ('Kirill', 'Sats', '2024-04-21');
 --git push
 
 
-
-
-
 --4. reservation
+CREATE TABLE reservation(
+id int Primary key identity(1,1),
+date_in date ,
+date_out date,
+made_by varchar(20),
+guest_id int,
+FOREIGN KEY (guest_id) references guest(id));
+SELECT * FROM reservation;
+INSERT INTO reservation(date_in,date_out, made_by, guest_id)
+VALUES ('2024-01-01', '2024-01-07', 'DUBAI', '1');
+
+--CTRL + S
+--git add .
+--git commit -a -m "tabel room on lisatud"
+--git push
+
 --5. reserved_room
 --6.occipied_room
 --7.hosted_at
