@@ -104,6 +104,13 @@ insert into reserved_room(number_of_rooms,room_type_id,reservation_id,satus)
 values(1,1,1,'not reserved')
 insert into reserved_room(number_of_rooms,room_type_id,reservation_id,satus)
 values(1,2,2,'not reserved')
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,satus)
+values(1,3,1,'not reserved')
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,satus)
+values(1,4,2,'not reserved')
+insert into reserved_room(number_of_rooms,room_type_id,reservation_id,satus)
+values(1,5,1,'not reserved')
+
 
 
 --tabeli occupied_room
@@ -117,7 +124,15 @@ reservation_id int foreign key (reservation_id) references reservation(id))
 Select * from occupied_room
 
 insert into occupied_room(check_in, check_out, room_id,reservation_id)
-values('2024-01-12 23:12:28','2024-01-15 12:23:56', 1, 1)
+values('2024-01-12 23:12:28','2024-04-15 12:23:56', 1, 1)
+insert into occupied_room(check_in, check_out, room_id,reservation_id)
+values('2024-01-01 23:12:28','2024-04-15 12:23:56', 1, 1)
+insert into occupied_room(check_in, check_out, room_id,reservation_id)
+values('2024-01-01 23:12:28','2024-04-15 12:23:56', 1, 1)
+insert into occupied_room(check_in, check_out, room_id,reservation_id)
+values('2024-01-01 23:12:28','2024-04-15 12:23:56', 1, 1)
+insert into occupied_room(check_in, check_out, room_id,reservation_id)
+values('2024-01-01 23:12:28','2024-04-15 12:23:56', 1, 1)
 
 -- tabeli hosted_at
 create table hosted_at(
