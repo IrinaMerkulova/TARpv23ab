@@ -178,3 +178,23 @@ END;
 -- kontroll
 
 EXEC  hosted_atkustutamine 1;
+
+--Lisada andmed (INSERT) mis tahes suvalise tabeli hotell
+CREATE PROCEDURE roominsert
+@ID int,
+@numberKasutaja varchar (10),
+@nameKasutaja varchar (40),
+@statusKasutaja varchar (10),
+@smokeKasutaja bit,
+@room_type_idKasutaja int
+AS
+BEGIN
+INSERT INTO room (id, number, name, status, smoke, room_type_id )
+VALUES (@ID, @numberKasutaja, @nameKasutaja, @statusKasutaja, @smokeKasutaja, @room_type_idKasutaja);
+SELECT * FROM room;
+END;
+
+
+-- kontroll
+
+EXEC  roominsert 4, 'B29' , 'Timyr', 'open', 1, 1;
