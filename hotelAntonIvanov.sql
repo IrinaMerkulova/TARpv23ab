@@ -58,3 +58,21 @@ select * from reservation;
 
 insert into reservation (date_in,date_out,made_by,guest_id)
 values ('2019-2-24', '2019-3-24', 'Human Worker',1);
+
+-- reserved room
+
+create table reserved_room(
+id int Primary key identity (1,1),
+number_of_rooms int,
+room_type_id int,
+foreign key (room_type_id) references room_type(id),
+reservation_id int,
+foreign key (reservation_id) references reservation(id),
+status varchar(20));
+
+insert into reserved_room (number_of_rooms,room_type_id,reservation_id,status)
+values (2, 1, 1 , 'reserved');
+
+select * from reserved_room;
+
+-- occupied room
