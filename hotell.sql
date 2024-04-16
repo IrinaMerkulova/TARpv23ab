@@ -154,3 +154,16 @@ SELECT * FROM room;
 END;
 
 EXEC roomUpdate 1,'E10','im','closed',0,1
+
+--proceduur reservationOtsimine
+
+CREATE PROCEDURE reservationOtsimine
+@taht char(1)
+AS
+BEGIN
+SELECT guest_id,made_by
+FROM reservation
+WHERE made_by like concat(@taht, '%')
+END;
+
+EXEC reservationOtsimine A
