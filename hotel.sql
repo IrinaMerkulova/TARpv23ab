@@ -125,6 +125,11 @@ SELECT * FROM hosted_at;
 SELECT * FROM guest;
 SELECT * FROM occupied_room;
 INSERT INTO hosted_at(guest_id, occupied_room_id)
+VALUES (2, 5), 
+(4, 2), 
+(5, 3), 
+(3, 4);
+INSERT INTO hosted_at(guest_id, occupied_room_id)
 VALUES (1, 1);
 
 
