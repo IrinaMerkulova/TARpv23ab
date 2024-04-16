@@ -50,10 +50,15 @@ last_name nvarchar(80),
 member_since date);
 SELECT * FROM guest;
 INSERT INTO guest(first_name, last_name, member_since)
-VALUES('Kirill', 'Sats', '2024-03-12');
+VALUES('Kirill', 'Sats', '2024-03-12'),
+('Bogdan', 'Sergachev', '2024-03-12'),
+('Martin', 'Sild', '2024-03-12'),
+('Irina', 'Merkulova', '2024-03-12'),
+('Lev', 'Jegorov', '2024-03-12');
 --CTRL + S
 --git add .
 --git commit -a -m "tabel guest on lisatud"
+--git commit -a -m "täidetud tabel guest"
 --git push
 --4. reservation
 CREATE TABLE reservation(
