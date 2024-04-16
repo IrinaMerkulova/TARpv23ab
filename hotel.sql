@@ -106,6 +106,11 @@ foreign key (reservation_id) references reservation(id));
 SELECT * FROM occupied_room;
 SELECT * FROM room;
 SELECT * FROM reservation;
+INSERT INTO occupied_room (check_in, check_out, room_id, reservation_id) 
+VALUES ('2024-04-26 11:23:39', '2024-05-16 11:23:36', 2, 3), 
+('2024-04-26 14:23:36', '2024-04-27 14:23:36', 2, 5), 
+('2024-04-18 11:23:36', '2024-04-30 11:23:36', 5, 4), 
+( '2024-04-26 17:23:36', '2024-04-29 17:23:36', 1, 1);
 INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id)
 VALUES ('2024-9-23 12:30:56', '2024-10-24 13:45:13', 1, 1);
 
