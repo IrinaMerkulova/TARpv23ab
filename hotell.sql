@@ -45,8 +45,8 @@ date_out date,
 made_by varchar(20),
 guest_id int,
 foreign key (guest_id) references guest(id));
---insert into reservation(date_in, date_out, made_by)
---values('2023-05-16',' 2023-05-18', '');
+insert into reservation(date_in, date_out, made_by)
+values('2023-05-16',' 2023-05-18', 'alex');
 select * from reservation
 
 -- luuan tabel reserved_room 
@@ -58,7 +58,15 @@ foreign key (room_type_id) references room_type(id),
 reservation_id int,
 foreign key (reservation_id) references reservation(id),
 status varchar(20));
+INSERT INTO reserved_room (number_of_room, status)
+VALUES 
+(101, 'Booked'),   
+(102, 'Reserved'),  
+(103, 'Occupied'),  
+(104, 'Pending'),   
+(105, 'Confirmed'); 
 select * from reserved_room 
+
 --luuan occupied_room
 create table occupied_room(
 id int primary key identity(1,1),
