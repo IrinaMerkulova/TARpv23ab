@@ -73,3 +73,23 @@ foreign key (room_type_id) references room_type(id),
 foreign key (reservation_id) references reservation(id));
 
 select * from reservation_room
+
+insert into reservation_room (number_of_rooms, room_type_id,reservation_id,status)
+values (1,1,1,'open');
+
+--tabel occupied_room
+
+create table occupied_room(
+id int primary key identity(1,1),
+check_in date,
+check_out date,
+room_id int,
+reservation_id int,
+
+foreign key (room_id) references room(id),
+foreign key (reservation_id) references reservation(id));
+
+select * from occupied_room
+
+insert into occupied_room (check_in, check_out, room_id, reservation_id)
+values ('2023-08-23','2023-12-01',1,1);
