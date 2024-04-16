@@ -27,3 +27,11 @@ select * from room;
 select * from room_type;
 insert into room (number, name, status, smoke, room_type_id)
 values ('E10', 'sv', 'open',1, 1);
+-- teeme tabel guest
+create table guest(
+id int primary key identity(1,1),
+first_name varchar(80),
+last_name varchar(80),
+member_since date)
+select * from guest
+-- luuan reservation
