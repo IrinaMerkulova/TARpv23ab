@@ -30,6 +30,32 @@ Values ('E10', 'sv', 'open', 1, 1);
 
 
 
+CREATE TABLE guest(
+id int Primary key identity(1,1),
+first_name varchar(80),
+last_name varchar(80),
+member_since date)
+SELECT * FROM guest;
 
+
+CREATE TABLE reservation(
+id int Primary key identity(1,1),
+date_in date,
+date_out date,
+made_by varchar(20),
+guest_id int,
+foreign key(guest_id)references guest(id));
+select * from reservation
+
+
+CREATE TABLE reserved_room(
+id int Primary key identity(1,1),
+number_of_room int,
+room_type_id int
+foreign key(room_type_id) references room_type(id),
+reservation_id int,
+foreign key(reservation_id) references reservation(id),
+status varchar (20));
+select * from reserved_room
 
 
