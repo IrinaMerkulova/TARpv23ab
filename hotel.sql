@@ -64,6 +64,11 @@ guest_id int,
 FOREIGN KEY (guest_id) REFERENCES guest(id));
 SELECT * FROM reservation;
 SELECT * FROM guest;
+INSERT INTO reservation (date_in, date_out, made_by, guest_id)
+VALUES ('2024-10-11', '2024-04-17', 'Anton', 2), 
+('2024-05-16', '2024-05-16', 'Irina', 3), 
+('2024-04-17', '2024-04-26', 'Vlad', 4), 
+('2024-04-24', '2024-04-30', 'Maksim', 5);
 INSERT INTO reservation(date_in, date_out, made_by, guest_id) 
 Values ('2024-10-11', '2025-10-12', 'Eleon', 1);
 
