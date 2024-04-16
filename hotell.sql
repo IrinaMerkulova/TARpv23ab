@@ -108,3 +108,23 @@ insert into hosted_at (guest_id,occupied_room_id)
 values (1,1)
 
 select * from hosted_at
+
+--Uue külalise lisamine 
+--procedure lisab uue eesnime, perenime ja millal on tulnud
+
+CREATE PROCEDURE AddGuest
+    @first_name VARCHAR(80),
+    @last_name NVARCHAR(80),
+    @member_since DATE
+AS
+BEGIN
+    INSERT INTO guest (first_name, last_name, member_since)
+    VALUES (@first_name, @last_name, @member_since);
+END;
+
+EXECUTE AddGuest @first_name = 'Lev', @last_name = 'Jegorov', @member_since = '2023-01-15';
+EXECUTE AddGuest @first_name = 'Seva', @last_name = 'Tsarev', @member_since = '2023-12-12';
+EXECUTE AddGuest @first_name = 'Bogdan', @last_name = 'Sergatsov', @member_since = '2023-08-23';
+EXECUTE AddGuest @first_name = 'Kirill', @last_name = 'Sats', @member_since = '2023-11-20';
+
+select * from guest
