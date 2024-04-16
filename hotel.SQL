@@ -111,5 +111,20 @@ BEGIN
 END;
 GO
 
-
-
+-- See protseduur lisab uued (reservatsioon_id, room_id, check_in)
+CREATE PROCEDURE CheckInGuest
+    @reservation_id int,
+    @room_id int,
+    @check_in datetime
+AS
+BEGIN
+    -- siin ma lisan uued andmed tabelile ocupied_room --
+    INSERT INTO ocupied_room (check_in, check_out, room_id, reservation_id)
+    VALUES (@check_in, NULL, @room_id, @reservation_id);
+    -- maa kirjutan (NULL) (check_out) asemel sest hiljem ma teen erineva protseduuri selleks et lisada uus (check_out) --
+    -- siin ma lisan uued andmed tabelile (reserved_room) --
+    UPDATE reserved_room
+    SET status = 'occupied'
+    WHERE reservation_id = @reservation_id;
+END;
+GO
