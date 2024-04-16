@@ -146,3 +146,11 @@ select * from hosted_at;
 
 insert into hosted_at(guest_id, occupied_room_id)
 values(1,1)
+insert into hosted_at(guest_id, occupied_room_id)
+values(2,2)
+insert into hosted_at(guest_id, occupied_room_id)
+values(3,3)
+insert into hosted_at(guest_id, occupied_room_id)
+values(4,4)
+insert into hosted_at(guest_id, occupied_room_id)
+values(5,5)
