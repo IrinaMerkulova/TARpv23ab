@@ -9,13 +9,18 @@ description varchar(80),
 max_capacity int);
 SELECT * FROM room_type;
 INSERT INTO room_type(description, max_capacity)
-VALUES('super lux', 1);
+VALUES('super lux', 1),
+('mega lux', 3),
+('comfort', 4),
+('econom', 6),
+('premium', 2);
 --CTRL + S
 --git add .
 --git commit -a -m "tabel room_type on lisatud"
+--git commit -a -m "täidetud tabel room_type"
 --git push
 
---tabal room
+--tabel room
 CREATE TABLE room(
 id int Primary key identity(1,1),
 number varchar(10),
