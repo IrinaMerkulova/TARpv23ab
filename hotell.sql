@@ -71,10 +71,15 @@ foreign key(guest_id) references guest(id));
 SELECT * FROM reservation;
 SELECT * FROM guest;
 INSERT INTO reservation(date_in, date_out, made_by, guest_id)
-VALUES('2024-03-13', '2024-03-20', 'Three Crowns', 1);
+VALUES('2024-03-13', '2024-03-20', 'Three Crowns', 1),
+('2024-03-21', '2024-03-30', 'Citybox', 2),
+('2024-03-14', '2024-03-19', 'Ibis', 3),
+('2024-03-16', '2024-03-27', 'Hestia', 4),
+('2024-03-18', '2024-03-26', 'Radisson', 5);
 --CTRL + S
 --git add .
 --git commit -a -m "tabel reservation on lisatud"
+--git commit -a -m "täidetud tabel reservation"
 --git push
 --5. reserved_room
 CREATE TABLE reserved_room(
