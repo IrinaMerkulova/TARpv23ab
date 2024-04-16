@@ -47,3 +47,18 @@ SELECT * FROM reservation;
 SELECT * FROM guest;
 INSERT INTO reservation(date_in,date_out,made_by,guest_id)
 VALUES ('2007-02-25','2024-04-16','ADEO Hotels','1');
+
+--tabel reserved_room
+CREATE TABLE reserved_room(
+id int PRIMARY KEY identity(1,1),
+number_of_rooms int,
+room_type_id int,
+FOREIGN KEY (room_type_id) references room_type(id),
+reservation_id int,
+FOREIGN KEY (reservation_id) references reservation(id),
+status varchar(20));
+SELECT * FROM room_type;
+SELECT * FROM reservation;
+SELECT * FROM reserved_room;
+INSERT INTO reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+VALUES ('250',1,1,'puhastus');
