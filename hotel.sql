@@ -68,3 +68,13 @@ occupied_room_id int foreign key references occupied_room(id)
 
 INSERT INTO hosted_at(guest_id, occupied_room_id) VALUES (1,1);
 
+create procedure room_type_lisamine
+@description varchar(80),
+@max_capacity int
+AS
+BEGIN
+INSERT INTO room_type(description, max_capacity) VALUES(@description, @max_capacity);
+SELECT * FROM room_type;
+END;
+
+EXEC room_type_lisamine 'deluxe', 5;
