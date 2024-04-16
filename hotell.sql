@@ -34,3 +34,6 @@ VALUES ('E10','sv','open',1,1);
 --git add .
 --git commit -a -m ""
 --git push
+
+
+
