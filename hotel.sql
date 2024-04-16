@@ -159,4 +159,17 @@ END;
 --kontroll
 Exec RoomTypeLisamine 'super super lux',10
 
---2 proceduur
+--2 proceduur Külalise kustutamise protseduur guest tabelist tema ID järgi
+CREATE PROCEDURE RoomTypeKustutamine
+@KustutaID int
+AS
+BEGIN
+
+SELECT * FROM room_type;
+DELETE FROM room_type
+WHERE id=@KustutaID
+SELECT * FROM room_type;
+
+END;
+
+EXEC RoomTypeKustutamine 6
