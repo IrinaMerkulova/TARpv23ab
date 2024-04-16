@@ -161,5 +161,20 @@ SELECT * FROM reservation;
 END;
 
 -- kontroll
-
 EXEC  reservationUuendamines 3, 'Eleonora';
+
+
+-- hosted_at tabeli kirjete kustutamiseks sisestatud id järgi 
+CREATE PROCEDURE hosted_atkustutamine
+@deleteID int
+AS
+BEGIN
+SELECT * FROM hosted_at;
+DELETE FROM hosted_at
+WHERE id = @deleteID;
+SELECT * FROM hosted_at;
+END; 
+
+-- kontroll
+
+EXEC  hosted_atkustutamine 1;
