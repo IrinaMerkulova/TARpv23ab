@@ -138,8 +138,13 @@ SELECT * FROM hosted_at;
 SELECT * FROM guest;
 SELECT * FROM occupied_room;
 INSERT INTO hosted_at(guest_id, occupied_room_id)
-VALUES(1, 1);
+VALUES(1, 1),
+(2, 4),
+(3, 5),
+(4, 6),
+(5, 7);
 --CTRL + S
 --git add .
 --git commit -a -m "tabel hosted_at on lisatud"
+--git commit -a -m "täidetud tabel hosted_at"
 --git push
