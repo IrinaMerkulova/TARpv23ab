@@ -68,6 +68,8 @@ occupied_room_id int foreign key references occupied_room(id)
 
 INSERT INTO hosted_at(guest_id, occupied_room_id) VALUES (1,1);
 
+
+-- see protseduur lisab andmed "room_type" tabelisse 
 create procedure room_type_lisamine
 @description varchar(80),
 @max_capacity int
@@ -79,6 +81,8 @@ END;
 
 EXEC room_type_lisamine 'deluxe', 5;
 
+
+-- see protseduur kustutab andmed id abil, mille kasutaja kirjutab
 create procedure room_type_kustuta
 @room_type_id int
 AS
@@ -89,6 +93,8 @@ SELECT * FROM room_type;
 END;
 EXEC room_type_kustuta 3
 
+
+-- see protseduur võib muuta, lisada, kustuta veerud
 create procedure tabeli_uuendamine 
 @tabeli_nimi varchar(50),
 @valik varchar(100),
@@ -114,6 +120,7 @@ EXEC (@STFT);
 END;
 EXEC tabeli_uuendamine 'room_type', 'DELETE', 'None', 'None', 2;
 
+-- see protseduur kustutab tabeli, mille kasutaja kirjutab
 create procedure tabeli_kustuta
 @tabeli_nimi varchar(50)
 AS
@@ -126,6 +133,8 @@ EXEC (@STMT);
 END;
 EXEC tabeli_kustuta 'hosted_at'
 
+
+-- see protseduur uuendab tabeli veerud id abil, mille kasutaja kirjutab
 CREATE PROCEDURE tabeli_update
 @tabeli_nimi VARCHAR(255),
 @veerunimi varchar(80),
