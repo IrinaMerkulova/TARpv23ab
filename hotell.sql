@@ -70,3 +70,21 @@ VALUES ('2024-04-16', '2024-04-26', 'TallinnHotell', 1);
 -- git add .
 -- git commit -a -m "tabel reservation on lisatud"
 -- git push
+
+-- tabel reserved_room
+CREATE TABLE reserved_room(
+id int Primary key identity (1,1),
+number_of_rooms int,
+room_type_id int,
+reservation_id int,
+foreign key (room_type_id) references room_type(id),
+foreign key (reservation_id) references reservation(id));
+SELECT * FROM reserved_room;
+
+INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id)
+VALUES ('505', 1, 1);
+
+-- CTRL + S
+-- git add .
+-- git commit -a -m "tabel reserved_room on lisatud"
+-- git push
