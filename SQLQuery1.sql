@@ -173,3 +173,16 @@ begin
 end;
 go
 exec Kustuta 2;
+
+--Procedure Lisamise kord eue guest
+create procedure UueGuest
+	@first_name varchar(80),
+	@last_name varchar(80),
+	@member_since DATE
+as 
+begin 
+	insert into guest(first_name, last_name, member_since)
+	values(@first_name, @last_name, @member_since);
+end;
+go
+exec UueGuest 'Aleks', 'Sikk', '2006-05-17';
