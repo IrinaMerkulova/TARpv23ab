@@ -43,3 +43,12 @@ made_by varchar(20),
 guest_id int foreign key references guest(id));
 
 INSERT INTO reservation(date_in,date_out, made_by, guest_id) VALUES ('2024-04-15','2024-04-17','xz',1);
+
+CREATE TABLE reserved_room(
+id int primary key identity(1,1),
+number_of_rooms int,
+room_type_id int foreign key references room_type(id),
+reservation_id int foreign key references reservation(id),
+status varchar(20)
+);
+INSERT reserved_room(number_of_rooms, room_type_id, reservation_id) VALUES (0, 1, 1, 'vaba');
