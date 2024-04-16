@@ -59,10 +59,10 @@ guest_id int,
 foreign key (guest_id) references guest(id));
 insert into reservation (date_in, date_out, made_by, guest_id)
 values('2023-05-16', '2023-05-18', 'Alex', 1),
-    ('2023-06-20', '2023-06-25', 'John', 2),
-    ('2023-07-10', '2023-07-15', 'Alice', 3),
-    ('2023-08-05', '2023-08-08', 'Michael', 4),
-    ('2023-09-12', '2023-09-18', 'Emily', 5);
+('2023-06-20', '2023-06-25', 'John', 2),
+('2023-07-10', '2023-07-15', 'Alice', 3),
+('2023-08-05', '2023-08-08', 'Michael', 4),
+('2023-09-12', '2023-09-18', 'Emily', 5);
 
 select * from reservation
 
@@ -107,7 +107,7 @@ guest_id int,
 foreign key (guest_id) references guest(id));
 
 
-create procedure AddGuest
+create procedure AddGuest -- see funktsioon on külalise lisamiseks
     @first_name varchar(80),
     @last_name varchar(80),
     @member_since date
@@ -117,7 +117,7 @@ begin
     values(@first_name, @last_name, @member_since);
 end; 
 
-create procedure AddReservation
+create procedure AddReservation -- see funktsioon on ette nähtud broneeringu lisamiseks
 @date_in date,
 @date_out date,
 @made_by varchar(20),
@@ -128,3 +128,9 @@ begin
 	values(@date_in, @date_out, @made_by, @guest_id)
 end;
 
+create procedure DeleteGuest --funktsioon külalise eemaldamiseks
+    @guest_id int
+as
+begin
+    delete from guest where id = @guest_id;
+end;
