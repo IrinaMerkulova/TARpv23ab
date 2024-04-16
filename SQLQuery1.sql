@@ -69,7 +69,15 @@ FOREIGN KEY (guest_id) REFERENCES guest(id));
 select * from reservation
 select * from guest
 insert into reservation(date_in,date_out,made_by,guest_id)
-values ('2007.12.04','2024.04.23','Aleksandra Semjonova',1);
+values ('2007.12.04','2020.04.23','Dima Jurber',1);
+insert into reservation(date_in,date_out,made_by,guest_id)
+values ('2009.11.08','2009.07.23','Jelena Semjonova',1);
+insert into reservation(date_in,date_out,made_by,guest_id)
+values ('2008.10.07','2008.12.27','Gleb Semjonov',1);
+insert into reservation(date_in,date_out,made_by,guest_id)
+values ('2017.07.24','2014.08.03','David Egov',1);
+insert into reservation(date_in,date_out,made_by,guest_id)
+values ('2023.12.14','2024.04.13','Aleksandr Heino',1);
 
 --tabel reserved_room
 create table reserved_room(
