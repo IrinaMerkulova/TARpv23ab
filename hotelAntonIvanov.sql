@@ -52,9 +52,9 @@ date_in date,
 date_out date,
 made_by varchar(20),
 guest_id int,
-foreign key (id) references guest(id));
+foreign key (guest_id) references guest(id));
 
 select * from reservation;
 
-insert into guest (first_name,last_name,member_since)
-values ('Vasili', 'Efremov', '12-2-2009');
+insert into reservation (date_in,date_out,made_by,guest_id)
+values ('2019-2-24', '2019-3-24', 'Human Worker',1);
