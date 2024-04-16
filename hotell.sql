@@ -35,6 +35,7 @@ values ('E10', 'sv', 'open',1, 1),
 ('E12', 'Executive Suite', 'Reserved', 0, 5),
 ('E13', 'Standard Room', 'Open', 0, 3),
 ('E14', 'Economy Room', 'Vacant', 0, 4);
+
 -- teeme tabel guest
 create table guest(
 id int primary key identity(1,1),
@@ -115,4 +116,15 @@ begin
     insert into guest (first_name, last_name, member_since)
     values(@first_name, @last_name, @member_since);
 end; 
+
+create procedure AddReservation
+@date_in date,
+@date_out date,
+@made_by varchar(20),
+@guest_id int
+as
+begin
+	insert into reservation (date_in, date_out, made_by, guest_id)
+	values(@date_in, @date_out, @made_by, @guest_id)
+end;
 
