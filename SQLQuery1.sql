@@ -82,6 +82,13 @@ insert into reservation(date_in,date_out,made_by,guest_id)
 values('2024-01-12','2024-01-15','Worker: Allan Smitt',1)
 insert into reservation(date_in,date_out,made_by,guest_id)
 values('2024-02-19','2024-02-29','Worker: Allan Smitt',2)
+insert into reservation(date_in,date_out,made_by,guest_id)
+values('2024-03-12','2024-03-15','Worker: Allan Smitt',3)
+insert into reservation(date_in,date_out,made_by,guest_id)
+values('2024-01-08','2024-01-09','Worker: Allan Smitt',4)
+insert into reservation(date_in,date_out,made_by,guest_id)
+values('2024-03-09','2024-03-15','Worker: Allan Smitt',5)
+
 
 --tabeli reserved_room
 create table reserved_room(
