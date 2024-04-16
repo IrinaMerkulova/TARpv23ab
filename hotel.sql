@@ -68,3 +68,22 @@ INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id, status)
 VALUES ('101', 1, 1, 'puhastamine');
 
 
+
+-- tabel occupied_room
+CREATE TABLE occupied_room(
+id int Primary key identity (1,1),
+check_in datetime,
+check_out datetime,
+room_id int,
+reservation_id int,
+foreign key (room_id) references room(id),
+foreign key (reservation_id) references reservation(id));
+SELECT * FROM occupied_room;
+SELECT * FROM room;
+SELECT * FROM reservation;
+INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id)
+VALUES ('2024-9-23 12:30:56', '2024-10-24 13:45:13', 1, 1);
+
+
+
+
