@@ -31,3 +31,18 @@ insert into room(number,name_,status_,smoke,room_type_id)
 values('A232','LUX','open','True',1)
 insert into room(number,name_,status_,smoke,room_type_id)
 values('A102','Alone','open','True',2)
+
+
+--tabeli guest
+create table guest(
+id int primary key identity(1,1),
+first_name varchar(80),
+last_name varchar(80) not null,
+member_since date)
+
+select * from guest;
+
+Insert into guest(first_name,last_name,member_since)
+values('Klark','Kent','2024-01-12')
+Insert into guest(first_name,last_name,member_since)
+values('Jolin','Kudjo','2024-02-19')
