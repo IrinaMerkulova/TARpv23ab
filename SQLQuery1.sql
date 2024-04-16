@@ -105,7 +105,15 @@ FOREIGN KEY (room_id) REFERENCES room(id),
 FOREIGN KEY (reservation_id) REFERENCES reservation(id));
 select * from occupied_room
 insert into occupied_room(check_in,check_out,room_id,reservation_id)
-values('12:50:10 ','15:31:05 ',1,1);
+values('02:00:10 ','15:31:05 ',1,1);
+insert into occupied_room(check_in,check_out,room_id,reservation_id)
+values('17:50:16 ','15:31:05 ',1,1);
+insert into occupied_room(check_in,check_out,room_id,reservation_id)
+values('12:30:10 ','15:31:05 ',1,1);
+insert into occupied_room(check_in,check_out,room_id,reservation_id)
+values('10:45:11 ','15:55:15 ',1,1);
+insert into occupied_room(check_in,check_out,room_id,reservation_id)
+values('07:59:10 ','15:41:05 ',1,1);
 
 
 --tabel hosted_at
