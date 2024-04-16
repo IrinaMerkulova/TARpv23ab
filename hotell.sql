@@ -37,3 +37,18 @@ VALUES ('E10', 'sv', 'open', 1, 1);
 -- git add .
 -- git commit -a -m "tabel room on lisatud"
 -- git push
+
+-- tabel guest
+CREATE TABLE guest(
+id int Primary key identity (1,1),
+first_name varchar (80),
+last_name varchar (80),
+member_since date);
+SELECT * FROM guest;
+INSERT INTO guest(first_name, last_name, member_since)
+VALUES ('Valeria', 'Allik', '2024-04-16');
+
+-- CTRL + S
+-- git add .
+-- git commit -a -m "tabel guest on lisatud"
+-- git push
