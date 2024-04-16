@@ -36,3 +36,17 @@ member_since date);
 select * from guest
 insert into guest(first_name, last_name, member_since)
 values('Lev', 'Jegorov', '2000.07.14')
+
+
+--tabel reservation
+create table reservation(
+id int primary key identity (1,1),
+date_in date,
+date_out date,
+made_by varchar(20),
+guest_id int,
+foreign key (guest_id) references guest(id));
+select * from reservation
+select * from guest
+insert into reservation(date_in, date_out, made_by, guest_id)
+values('2024.04.01', '2024.04.10', 'Timur Bashirov', 1)
