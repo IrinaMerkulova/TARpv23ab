@@ -152,3 +152,13 @@ values(4,12);
 insert into hosted_at(guest_id,occupied_room_id)
 values(5,13);
 
+--otsingitaht
+Create procedure otsingitaht
+	@taht char(1)
+as 
+begin
+	select first_name, last_name, member_since from guest
+	where first_name like @taht + '%'
+end;
+go
+exec otsingitaht 'i';
