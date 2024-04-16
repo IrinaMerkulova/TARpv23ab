@@ -39,3 +39,15 @@ SELECT * FROM guest;
 INSERT INTO guest(first_name, last_name, member_since) 
 Values ('Daria', 'Halchenko', '2024-10-4');
 
+--reservation
+CREATE TABLE reservation(
+id int Primary key identity (1,1),
+date_in date,
+date_out date,
+made_by varchar (20),
+guest_id int,
+FOREIGN KEY (guest_id) REFERENCES guest(id));
+SELECT * FROM reservation;
+SELECT * FROM guest;
+INSERT INTO reservation(date_in, date_out, made_by, guest_id) 
+Values ('2024-10-11', '2025-10-12', 'Eleon', 1);
