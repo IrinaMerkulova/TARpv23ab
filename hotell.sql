@@ -77,14 +77,30 @@ id int Primary key identity (1,1),
 number_of_rooms int,
 room_type_id int,
 reservation_id int,
+status varchar(20),
 foreign key (room_type_id) references room_type(id),
 foreign key (reservation_id) references reservation(id));
 SELECT * FROM reserved_room;
 
-INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id)
-VALUES ('505', 1, 1);
+INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id, status)
+VALUES ('505', 1, 1 , 'puhastamine');
+
+DROP TABLE reserved_room;
 
 -- CTRL + S
 -- git add .
 -- git commit -a -m "tabel reserved_room on lisatud"
 -- git push
+
+-- tabel occupied_room
+CREATE TABLE occupied_room(
+id int Primary key identity (1,1),
+number_of_rooms int,
+room_type_id int,
+reservation_id int,
+foreign key (room_type_id) references room_type(id),
+foreign key (reservation_id) references reservation(id));
+SELECT * FROM occupied_room;
+
+INSERT INTO occupied_room(number_of_rooms, room_type_id, reservation_id)
+VALUES ('505', 1, 1);
