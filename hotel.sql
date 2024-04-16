@@ -143,4 +143,20 @@ insert into hosted_at(guest_id,occupied_room_id)
 values(5,5);
 select * from hosted_at
 
---
+--3 proceduuri
+--1 proceduur Uute kirjete lisamine tabelisse room_type
+CREATE PROCEDURE RoomTypeLisamine
+@description varchar(80),
+@max_capacity int
+AS
+BEGIN
+
+INSERT INTO room_type(description, max_capacity)
+VALUES (@description,@max_capacity);
+SELECT * FROM room_type;
+
+END;
+--kontroll
+Exec RoomTypeLisamine 'super super lux',10
+
+--2 proceduur
