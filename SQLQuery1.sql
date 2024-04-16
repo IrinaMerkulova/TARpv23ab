@@ -18,7 +18,7 @@ DELETE FROM room_type;
 --git commit -a -m "tabel room_type on lisatud"
 --git push
 
-
+--tabel room
 CREATE TABLE room(
 id int Primary key identity(1,1),
 number varchar(10),
@@ -31,3 +31,13 @@ SELECT * FROM room;
 SELECT * FROM room_type;
 INSERT INTO room(number, name, status, smoke, room_type_id)
 VALUES ('E10', 'sv', 'open', 1, 1);
+
+--table guest
+Create table guest(
+id int Primary key identity(1,1),
+first_name varchar(80),
+last_name varchar(80) not null,
+member_since date);
+Select * from guest;
+insert into guest(first_name,last_name,member_since)
+values ('Illya','Heino','2007.07.03');
