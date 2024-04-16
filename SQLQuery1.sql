@@ -82,3 +82,16 @@ FOREIGN KEY (reservation_id) REFERENCES reservation(id));
 select * from occupied_room
 insert into occupied_room(check_in,check_out,room_id,reservation_id)
 values('12:50:10 ','15:31:05 ',1,1);
+
+--tabel hosted_at
+create table hosted_at(
+id int primary key identity(1,1),
+guest_id int,
+occupied_room_id int,
+FOREIGN KEY (guest_id) REFERENCES guest(id),
+FOREIGN KEY (occupied_room_id) REFERENCES occupied_room(id));
+select * from hosted_at
+select * from guest 
+select * from occupied_room
+insert into hosted_at(guest_id,occupied_room_id)
+values(1,3);
