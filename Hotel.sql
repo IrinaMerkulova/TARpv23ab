@@ -124,3 +124,15 @@ BEGIN
 END
 exec add_reservation '2024-04-04', '2024-04-05', 'Timur Bashirov', 2
 select * from reservation
+
+--protsedur lisab uus room_type
+CREATE PROCEDURE add_roomtype(
+@new_description varchar(80),
+@new_max_capacity int)
+as
+BEGIN
+    INSERT INTO room_type(description, max_capacity)
+    VALUES (@new_description, @new_max_capacity)
+END
+exec add_roomtype 'ultra mega lux', 5
+select * from room_type
