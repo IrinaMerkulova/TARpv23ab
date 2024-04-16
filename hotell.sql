@@ -80,4 +80,21 @@ VALUES(20 , 1, 1, 'Avatud');
 --git commit -a -m "tabel reserved_room on lisatud"
 --git push
 --6. occupied_room
+CREATE TABLE occupied_room(
+id int Primary key identity(1,1),
+check_in datetime,
+check_out datetime,
+room_id int,
+foreign key(room_id) references room(id),
+reservation_id int,
+foreign key(reservation_id) references reservation(id));
+SELECT * FROM occupied_room;
+SELECT * FROM room;
+SELECT * FROM reservation;
+INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id)
+VALUES('2024-03-25' , '2024-04-05' , 1, 1);
+--CTRL + S
+--git add .
+--git commit -a -m "tabel occupied_room on lisatud"
+--git push
 --7. hosted_at
