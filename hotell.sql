@@ -24,3 +24,13 @@ SELECT * FROM room;
 SELECT * FROM room_type;
 INSERT INTO room(number,name,status,smoke,room_type_id)
 VALUES ('E10','sv','open',1,1);
+
+--tabel room
+CREATE TABLE guest(
+id int PRIMARY KEY identity(1,1),
+first_name varchar(80),
+last_name varchar(80),
+member_since date);
+SELECT * FROM guest;
+INSERT INTO guest(first_name,last_name,member_since)
+VALUES ('Vladislav','Kudriaðev','2007-02-25');
