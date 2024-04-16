@@ -132,4 +132,17 @@ VALUES (2, 5),
 INSERT INTO hosted_at(guest_id, occupied_room_id)
 VALUES (1, 1);
 
+-- Andmete lisamine tabelisse guest (guest ja Kirjeldus sisestab kasutaja kui käivatab protseduuri)
+CREATE PROCEDURE guestLisamine 
+@first_name varchar (80),
+@last_name varchar (80),
+@member_since date
+AS
+Begin 
+INSERT INTO guest(first_name, last_name, member_since) 
+Values (@first_name, @last_name, @member_since);
+SELECT * FROM guest;
+END;
 
+-- kontroll 
+EXEC guestLisamine  'Vlad', 'Kudriaðev', '2024-11-14';
