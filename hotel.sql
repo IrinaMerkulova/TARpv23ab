@@ -33,5 +33,13 @@ last_name varchar(80),
 member_since date);
 
 
-INSERT INTO guest(first_name, last_name, member_since) VALUES ('','','');
+INSERT INTO guest(first_name, last_name, member_since) VALUES ('Aleksander','Milisheno','2020-02-20');
 
+CREATE TABLE reservation(
+id int primary key identity(1,1),
+date_in date,
+date_out date,
+made_by varchar(20),
+guest_id int foreign key references guest(id));
+
+INSERT INTO reservation(date_in,date_out, made_by, guest_id) VALUES ('2024-04-15','2024-04-17','xz',1);
