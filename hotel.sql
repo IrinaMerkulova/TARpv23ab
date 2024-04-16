@@ -51,4 +51,13 @@ room_type_id int foreign key references room_type(id),
 reservation_id int foreign key references reservation(id),
 status varchar(20)
 );
-INSERT reserved_room(number_of_rooms, room_type_id, reservation_id) VALUES (0, 1, 1, 'vaba');
+INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id) VALUES (0, 1, 1, 'vaba');
+
+CREATE TABLE occupied_room(
+id int primary key identity(1,1),
+check_in timestamp,
+check_out timestamp,
+room_id int foreign key references room(id),
+reservation_id int foreign key references reservation(id)
+);
+INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id) VALUES ('','',1,1);
