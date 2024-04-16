@@ -33,6 +33,8 @@ id int primary key identity(1,1),
 first_name varchar(80),
 last_name varchar(80),
 member_since date)
+insert into guest(first_name, last_name, member_since)
+values('John',' Shmid', '2023-03-14');
 select * from guest
 
 -- luuan reservation
@@ -43,6 +45,8 @@ date_out date,
 made_by varchar(20),
 guest_id int,
 foreign key (guest_id) references guest(id));
+--insert into reservation(date_in, date_out, made_by)
+--values('2023-05-16',' 2023-05-18', '');
 select * from reservation
 
 -- luuan tabel reserved_room 
@@ -55,3 +59,18 @@ reservation_id int,
 foreign key (reservation_id) references reservation(id),
 status varchar(20));
 select * from reserved_room 
+--luuan occupied_room
+create table occupied_room(
+id int primary key identity(1,1),
+check_in date,
+check_out date,
+room_id int,
+foreign key (room_id) references room(id),
+reservation_id int,
+foreign key (reservation_id) references reservation(id));
+
+--luuan hosted_at
+create table hosted_at(
+id int primary key identity(1,1),
+guest_id int,
+foreign key (guest_id) references guest(id));
