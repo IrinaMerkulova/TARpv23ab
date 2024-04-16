@@ -101,3 +101,22 @@ INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id)
 VALUES('2024-04-25 17:38:24', '2024-04-30 19:20:30', 1, 1);
 
 DELETE FROM occupied_room WHERE id = 1;
+
+--CTRL S
+--git add .
+--git commit -a -m "tabel room_type on lisatud"
+--git push
+
+CREATE TABLE hosted_at(
+id int Primary key identity (1,1),
+guest_id int,
+occupied_room_id int,
+FOREIGN KEY (guest_id) REFERENCES guest(id),
+FOREIGN KEY (occupied_room_id) REFERENCES occupied_room(id));
+SELECT * FROM hosted_at; 
+
+INSERT INTO hosted_at(guest_id, occupied_room_id)
+VALUES (1, 2);
+SELECT * FROM hosted_at;
+DROP TABLE hosted_at;
+SELECT * FROM occupied_room;
