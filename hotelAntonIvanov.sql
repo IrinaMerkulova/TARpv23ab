@@ -171,3 +171,12 @@ insert into hosted_at (guest_id,occupied_room_id)
 values (4,4);
 insert into hosted_at (guest_id,occupied_room_id)
 values (5,5);
+
+
+-- lisatud protseduur mis lisab uus hotellituba
+
+BEGIN
+INSERT INTO room (number,name,status,smoke,room_type_id)
+VALUES (n_number,n_name,n_status,n_smoke,n_room_type_id);
+SELECT * FROM room;
+END
