@@ -25,3 +25,12 @@ SELECT * FROM room_type;
 INSERT INTO room(number, name, status, smoke, room_type_id)
 VALUES ('E10','sv', 'free', 1, 1);
 
+CREATE TABLE guest(
+id int Primary key identity(1,1),
+first_name varchar(80),
+last_name varchar(80),
+member_since date);
+
+SELECT * FROM guest;
+INSERT INTO guest(first_name, last_name, member_since)
+VALUES ('Tyler', 'Durden', '1999-10-15');
