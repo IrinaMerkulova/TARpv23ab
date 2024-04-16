@@ -120,7 +120,7 @@ VALUES (1,1),
 (5,2);
 
 --proceduur guestLisamine
--- Принимает имя (first_name), фамилию (last_name) и участник_с (member_since) и добавляет в конец таблицы введённые данные.
+-- Võtab eesnime (eesnimi), perekonnanime (perenimi) ja liikme_alates ning lisab sisestatud andmed tabeli lõppu.
 
 CREATE PROCEDURE guestLisamine
 @first_name varchar(80),
@@ -136,7 +136,7 @@ END;
 EXEC guestLisamine 'Lev','Egorov','2022-04-05'
 
 --proceduur roomUpdate
--- Принимает id, number, name, status, smoke и room_type_id, где заменяет все значения после id в значении где стоит введённый id.
+-- Aktsepteerib ID, numbri, nime, oleku, suitsu ja ruumi_tüübi_id, kus see asendab kõik väärtused pärast id selles väärtuses, kus on sisestatud ID.
 
 CREATE PROCEDURE roomUpdate
 @id int,
@@ -160,7 +160,7 @@ END;
 EXEC roomUpdate 1,'E10','im','closed',0,1
 
 --proceduur reservationOtsimine
--- Принимает букву и возвращает все made_by начинающиеся с этой буквы.
+-- Võtab kirja ja tagastab kõik made_bys, mis algavad selle tähega.
 
 CREATE PROCEDURE reservationOtsimine
 @taht char(1)
