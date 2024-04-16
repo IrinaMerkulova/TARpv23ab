@@ -128,3 +128,20 @@ EXECUTE AddGuest @first_name = 'Bogdan', @last_name = 'Sergatsov', @member_since
 EXECUTE AddGuest @first_name = 'Kirill', @last_name = 'Sats', @member_since = '2023-11-20';
 
 select * from guest
+
+CREATE PROCEDURE AddRoomType
+    @description VARCHAR(80),
+    @max_capacity INT
+AS
+BEGIN
+    INSERT INTO room_type (description, max_capacity)
+    VALUES (@description, @max_capacity);
+END;
+
+EXECUTE AddRoomType @description = 'Standard', @max_capacity = 10;
+EXECUTE AddRoomType @description = 'Econom', @max_capacity = 3;
+EXECUTE AddRoomType @description = 'Prime', @max_capacity = 4;
+EXECUTE AddRoomType @description = 'Lux', @max_capacity = 5;
+
+select * from room_type
+
