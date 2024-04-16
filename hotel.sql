@@ -78,3 +78,13 @@ SELECT * FROM room_type;
 END;
 
 EXEC room_type_lisamine 'deluxe', 5;
+
+create procedure room_type_kustuta
+@room_type_id int
+AS
+BEGIN
+SELECT * FROM room_type;
+DELETE FROM room_type WHERE id like @room_type_id;
+SELECT * FROM room_type;
+END;
+EXEC room_type_kustuta 3
