@@ -152,7 +152,7 @@ values(4,12);
 insert into hosted_at(guest_id,occupied_room_id)
 values(5,13);
 
---Procedure otsingitaht
+--Procedure otsi kirja järgi
 Create procedure otsingitaht
 	@taht char(1)
 as 
