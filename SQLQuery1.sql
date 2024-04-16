@@ -91,3 +91,16 @@ Select * from occupied_room
 
 insert into occupied_room(check_in, check_out, room_id,reservation_id)
 values('2024-01-12 23:12:28','2024-01-15 12:23:56', 1, 1)
+
+-- tabeli hosted_at
+create table hosted_at(
+id int primary key identity(1,1),
+guest_id int foreign key (guest_id) references guest(id),
+occupied_room_id int foreign key (occupied_room_id) references occupied_room(id))
+
+
+
+select * from hosted_at;
+
+insert into hosted_at(guest_id, occupied_room_id)
+values(1,1)
