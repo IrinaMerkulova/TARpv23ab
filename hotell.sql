@@ -148,3 +148,20 @@ VALUES(1, 1),
 --git commit -a -m "tabel hosted_at on lisatud"
 --git commit -a -m "täidetud tabel hosted_at"
 --git push
+
+--1.Andmete lisamine tabelisse room_type (description ja max_capacity sisestab kasutaja kui käivatab protseduuri)
+CREATE PROCEDURE RoomTypeLisamine
+@description varchar(100),
+@max_capacity int
+AS
+BEGIN
+INSERT INTO room_type (description, max_capacity)
+VALUES (@description, @max_capacity);
+SELECT * FROM room_type;
+END;
+--kontroll
+EXEC RoomTypeLisamine 'duplex', 2;
+--CTRL + S
+--git add .
+--git commit -a -m "lõi protseduuri RoomTypeLisamine"
+--git push
