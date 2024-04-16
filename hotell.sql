@@ -118,7 +118,7 @@ begin
 end; 
 EXEC AddGuest 'Alice', 'Johnson', '2022-09-28';
 
-create procedure AddReservation -- see funktsioon on ette nähtud broneeringu lisamiseks
+create procedure AddReservation -- see funktsioon on ette nähtud broneeringu lisamiseks 
 @date_in date,
 @date_out date,
 @made_by varchar(20),
@@ -137,3 +137,23 @@ begin
     delete from guest where id = @guest_id;
 end;
 EXEC DeleteGuest @guest_id = 3;
+
+create procedure UpdateGuest -- värskendab külaliste andmeid uutega
+    @guest_id int,
+    @first_name varchar(80),
+    @last_name varchar(80),
+    @member_since date
+as
+begin
+    update Guest
+    set first_name = @first_name,
+        last_name = @last_name,
+        member_since = @member_since
+    where id = @guest_id;
+end;
+
+EXEC UpdateGuest
+    @guest_id = 3,
+    @first_name = 'NewFirstName',
+    @last_name = 'NewLastName',
+    @member_since = '2023-01-01';
