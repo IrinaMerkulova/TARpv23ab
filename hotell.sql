@@ -166,8 +166,8 @@ CREATE PROCEDURE reservationOtsimine
 @taht char(1)
 AS
 BEGIN
-SELECT guest_id,made_by
-FROM reservation
+SELECT first_name,made_by
+FROM guest,reservation
 WHERE made_by like concat(@taht, '%')
 END;
 
