@@ -32,10 +32,15 @@ foreign key(room_type_id) references room_type(id));
 SELECT * FROM room;
 SELECT * FROM room_type;
 INSERT INTO room(number, name, status, smoke, room_type_id)
-VALUES ('E10', 'sv', 'open', 1, 1);
+VALUES ('E10', 'sv', 'open', 1, 1),
+('A15', 'rb', 'close', 1, 2),
+('B5', 'vb', 'open', 0, 3),
+('C20', 'tc', 'close', 1, 4),
+('F25', 'kf', 'open', 0, 5);
 --CTRL + S
 --git add .
 --git commit -a -m "tabel room on lisatud"
+--git commit -a -m "täidetud tabel room"
 --git push
 --3. guest
 CREATE TABLE guest(
