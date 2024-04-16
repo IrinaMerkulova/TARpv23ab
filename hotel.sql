@@ -51,3 +51,20 @@ SELECT * FROM reservation;
 SELECT * FROM guest;
 INSERT INTO reservation(date_in, date_out, made_by, guest_id) 
 Values ('2024-10-11', '2025-10-12', 'Eleon', 1);
+
+--reserved_room
+CREATE TABLE reserved_room(
+id int Primary key identity (1,1),
+number_of_rooms int,
+room_type_id int,
+reservation_id int,
+status varchar(20),
+FOREIGN KEY (room_type_id) REFERENCES room_type(id),
+FOREIGN KEY (reservation_id) REFERENCES reservation(id));
+SELECT * FROM reserved_room;
+SELECT * FROM room_type;
+SELECT * FROM reservation;
+INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id, status)
+VALUES ('101', 1, 1, 'puhastamine');
+
+
