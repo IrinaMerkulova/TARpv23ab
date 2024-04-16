@@ -81,3 +81,17 @@ select * from reservation
 select * from room
 insert into occupled_room(check_in, check_out, room_id, reservation_id)
 values('2024-04-01 08:30', '2024-04-10 20:45', '1','1')
+
+
+--tabel hosted_at
+create table hosted_at(
+id int primary key identity (1,1),
+guest_id int,
+foreign key(guest_id) references guest(id),
+occupled_room_id int,
+foreign key(occupled_room_id) references occupled_room(id));
+select * from hosted_at
+select * from occupled_room
+select * from guest
+insert into hosted_at(guest_id, occupled_room_id)
+values('1', '4');
