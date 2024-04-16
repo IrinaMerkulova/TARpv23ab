@@ -58,4 +58,18 @@ select * from reservation
 INSERT INTO reservation(date_in,date_out,made_by,guest_id)
 VALUES('2020-05-24','2023-07-19','Lev Jegorov',1)
 
-create table reser
+create table reservation_room(
+id int primary key identity(1,1),
+number_of_rooms int,
+room_type_id int,
+reservation_id int,
+status varchar(20),
+foreign key (room_type_id) references room_type(id),
+foreign key (reservation_id) references reservation(id));
+
+select * from reservation_room
+
+INSERT INTO reservation_room (number_of_rooms,room_type_id,status)
+VALUES ('10','1','open');
+
+
