@@ -116,6 +116,7 @@ begin
     insert into guest (first_name, last_name, member_since)
     values(@first_name, @last_name, @member_since);
 end; 
+EXEC AddGuest 'Alice', 'Johnson', '2022-09-28';
 
 create procedure AddReservation -- see funktsioon on ette nähtud broneeringu lisamiseks
 @date_in date,
@@ -127,6 +128,7 @@ begin
 	insert into reservation (date_in, date_out, made_by, guest_id)
 	values(@date_in, @date_out, @made_by, @guest_id)
 end;
+EXEC AddReservation '2023-05-16', '2023-05-18', 'Alex', 1
 
 create procedure DeleteGuest --funktsioon külalise eemaldamiseks
     @guest_id int
@@ -134,3 +136,4 @@ as
 begin
     delete from guest where id = @guest_id;
 end;
+EXEC DeleteGuest @guest_id = 3;
