@@ -9,7 +9,8 @@ description varchar(80),
 max_capacity int);
 SELECT * FROM room_type;
 INSERT INTO room_type(description, max_capacity)
-values ('Super lux','premium','Suprerior','suite','duplex',1,2,3,4,5);
+values ('Studio',4);
+delete from room_type where id = 3;
 
 --git add .
 --git commit -a -m ""
