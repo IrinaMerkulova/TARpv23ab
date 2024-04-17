@@ -76,3 +76,10 @@ enne kirjutatakse @ -
 @date_out date,
 @made_by varchar(20),
 @guest_id int 
+--------
+9.
+select  from reserved_room 
+
+Incorrect syntax near the keyword 'from'.
+on vaja kirjutada * enne from - select  * from reserved_room 
+-------S
