@@ -129,25 +129,16 @@ Incorrect syntax near the keyword 'table'.
 et kustutada tabel tuleb kirjutada DROP:
 drop table room
 
-10. CREATE PROCEDURE RoomTypeKustutamine
-@KustutaID int
-AS
-BEGIN
+10. insert into guest(id,first_name,last_name,member_since)
+values (2 ,'Kolja','Veelo','2023.06.18');
 
-SELECT * FROM room_type;
-DROP FROM room_type
-WHERE id=@KustutaID
-SELECT * FROM room_type;
 
-END;
-
-EXEC RoomTypeKustutamine 6
-
-Incorrect syntax near the keyword 'FROM'.
+Cannot insert explicit value for identity column in table 'guest' when IDENTITY_INSERT is set to OFF.
 --------------------
 
-et kustutada kirje tabelist tuleb kirjutada DELETE:
-DELETE FROM room_type
+Tabelis on ID-veerg primaarvõtmega ja me ei pese seda, vaid täidame selle ise:
+insert into guest(first_name,last_name,member_since)
+values ('Kolja','Veelo','2023.06.18');
 
 --------------------
 
