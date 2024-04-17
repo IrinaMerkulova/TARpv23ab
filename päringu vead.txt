@@ -1,0 +1,167 @@
+SQL Serveris tekkivad vead
+
+1.
+
+CREATE TABLE errorTable(
+ID int PRIMARY KEY identity(1,1),
+sona,
+number float)
+
+Msg 173, Level 15, State 1, Line 3
+The definition for column 'sona' must include a data type.
+
+Жалуется на отстуствие типа данных sona,
+решается добавлением типа данных.
+
+CREATE TABLE errorTable(
+ID int PRIMARY KEY identity(1,1),
+sona varchar(50),
+number float)
+
+2.
+
+CREATE TABLE secondaryTable(
+ID int PRIMARY KEY identity(1,1),
+kusimus text)
+
+CREATE TABLE primaryTable(
+ID int PRIMARY KEY identity(1,1),
+sona varchar(50),
+secondaryID int,
+foreign key secondaryTable(ID) references (secondaryID))
+
+Msg 102, Level 15, State 1, Line 9
+Incorrect syntax near 'secondaryTable'.
+
+Жалуется на неправильный синтакс в строчке с foreign key.
+Решается, тем что надо поменять (secondaryID) и secondaryTable(ID) местами.
+
+CREATE TABLE primaryTable(
+ID int PRIMARY KEY identity(1,1),
+sona varchar(50),
+secondaryID int,
+foreign key (secondaryID) references secondaryTable(ID))
+
+3.
+
+CREATE TABLE secondaryTable(
+ID int PRIMARY KEY identity(1,1),
+kusimus text)
+
+CREATE TABLE primaryTable(
+ID int PRIMARY KEY identity(1,1),
+sona varchar(50),
+secondaryID float,
+foreign key (secondaryID) references secondaryTable(ID))
+
+Msg 1778, Level 16, State 0, Line 1
+Column 'secondaryTable.ID' is not the same data type as referencing column 'primaryTable.secondaryID' in foreign key 'FK__primaryTa__secon__1BE81D6E'.
+Msg 1750, Level 16, State 1, Line 1
+Could not create constraint or index. See previous errors.
+
+Не может сделать связь между значениями разного типа данных.
+Решается заменой float primaryTable(ID) на int.
+
+CREATE TABLE primaryTable(
+ID int PRIMARY KEY identity(1,1),
+sona varchar(50),
+secondaryID int,
+foreign key (secondaryID) references secondaryTable(ID))
+
+3.
+
+INSERT INTO secondaryTable
+VALUES ("Some important text idk.")
+
+Msg 207, Level 16, State 1, Line 12
+Invalid column name 'Some important text idk.'.
+
+Жалуется на двойные кавычки,
+решается заменой двойных кавычек на одинарные.
+
+INSERT INTO secondaryTable()
+VALUES ('Some important text idk.')
+
+4.
+
+select secondaryTable from *
+
+Msg 102, Level 15, State 1, Line 14
+Incorrect syntax near '*'.
+
+Ошибка в том что он хочет прочитать столбец secondaryTable из, не может он из * прочитать вообщем.
+Надо поменять * и secondaryTable местами, чтобы он пытался прочитать все столбцы из secondaryTable.
+
+select * from secondaryTable
+
+5.
+
+CREATE PROCEDURE
+ID int
+BEGIN
+select ID from primaryTable
+END
+
+Msg 102, Level 15, State 1, Procedure ID, Line 2 [Batch Start Line 13]
+Incorrect syntax near 'int'.
+
+Нету названия процедуры.
+
+	6.
+
+CREATE procedure testProcedure
+ID int
+BEGIN
+select ID from primaryTable
+END
+
+Msg 102, Level 15, State 1, Procedure testProcedure, Line 2 [Batch Start Line 13]
+Incorrect syntax near 'ID'.
+
+Нету @ перед ID.
+
+	7.
+
+CREATE procedure testProcedure
+@ID int
+BEGIN
+select ID from primaryTable
+END
+
+Msg 156, Level 15, State 1, Procedure testProcedure, Line 3 [Batch Start Line 13]
+Incorrect syntax near the keyword 'BEGIN'.
+
+Не хватает AS.
+
+CREATE procedure testProcedure
+@ID int
+AS
+BEGIN
+select ID from primaryTable
+END
+
+9.
+
+DELETE TABLE secondaryTable
+
+Msg 156, Level 15, State 1, Line 15
+Incorrect syntax near the keyword 'TABLE'.
+
+DELETE не используется для удаления таблиц,
+надо заменить DELETE на DROP.
+
+DROP TABLE secondaryTable
+
+10.
+
+INSERT INTO secondaryTable(ID)
+VALUES ('Some important text idk.')
+
+Msg 544, Level 16, State 1, Line 11
+Cannot insert explicit value for identity column in table 'secondaryTable' when IDENTITY_INSERT is set to OFF.
+
+Пытается вставить текст в int,
+надо заменить ID на kusimus.
+
+INSERT INTO secondaryTable(kusimus)
+VALUES ('Some important text idk.')
