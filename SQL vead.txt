@@ -36,3 +36,15 @@ check_in date,
 
 Incorrect syntax near 'pramiry'.
 pramiry key - primary key
+6.
+create procedure AddGuest -- see funktsioon on külalise lisamiseks
+    @first_name varchar(80),
+    @last_name varchar(80),
+    @member_since date
+begin
+    insert into guest (first_name, last_name, member_since)
+    values(@first_name, @last_name, @member_since);
+end; 
+
+Incorrect syntax near the keyword 'begin'.
+enne 'begin' kirjutatakse 'as'
