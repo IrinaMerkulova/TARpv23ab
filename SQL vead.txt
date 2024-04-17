@@ -39,9 +39,15 @@ room_type_id int,
 foreign key (room_type_id) references room_type(id));
 
 Viga: 
-võtmeväli room_type_id on loodud välise võtmega room_type(id), kuid room_type tabelit pole veel loodud.
-Parandus: 
-loo esmalt room_type tabel ja seejärel room.
+Foreign key 'FK__room__room_typ__398D8EEE' references invalid table 'room_type'.
+Msg 1750, Level 16, State 1, Line 40
+Could not create constraint or index. See previous errors.
+Parandus:
+create table room_type(
+id int Primary key identity (1,1),
+description varchar(80),
+max_capacity int);
+
 
 4.
 create table guest(
