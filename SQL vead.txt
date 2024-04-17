@@ -1,6 +1,7 @@
 SQL Serveris tekkivad vead
 
-1. create room_ype(
+1. 
+create room_ype(
 id int primary key identity(1,1),
 description varchar(80),
 max_capacity int)
@@ -18,3 +19,13 @@ select * from room_type;
 The definition for column 'description' must include a data type.
 on vaja kirjutada -  description varchar(80),
 ---------
+3. 
+insert into room_type(description, max_capacity)
+values('Super Luxury Suite', 2),
+
+Incorrect syntax near ','.
+kõppus kirjutatakse ; - values('Super Luxury Suite', 2);
+4.
+foreign key (room_id) room(id);
+on vaja kirjutada references -  foreign key (room_id) references room(id)
+-------
