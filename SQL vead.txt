@@ -48,3 +48,9 @@ end;
 
 Incorrect syntax near the keyword 'begin'.
 enne 'begin' kirjutatakse 'as'
+7.
+AddGuest 'Alice', 'Johnson', '2022-09-28';
+
+Could not find stored procedure 'AddGuest'.
+
+on vaja kirjutada nii - EXEC AddGuest 'Alice', 'Johnson', '2022-09-28';
