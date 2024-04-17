@@ -1,0 +1,14 @@
+SQL Serveris tekkivad vead
+
+1.
+create table room_type(
+id int Primary key identity (1,1),
+description varchar(80),
+max_capacity int);
+
+Unknown object type 'room_type' used in CREATE, DROP or ALTER
+--
+
+kuidas lahendada seda probleemi?
+
+2.
