@@ -118,7 +118,33 @@ SELECT * FROM hosted_at;
 INSERT INTO hosted_at(guest_id, ocupied_room_id)
 VALUES (1, 1)
 
+--Viga nr4: --
+-- See protseduur on tehtud selleks et lisada uue reservatsiooni (üksikasjalikumalt kirjeldatud gitkommentis) --
+--CREATE PROCEDURE Create_Reservation
+-- Kirjutame andmeid mis me lisame hiljem: --
+    --@date_in date,
+    --@date_out date,
+    --@made_by varchar(20),
+    --@guest_id int,
+    --@room_type_id int,
+    --@number_of_rooms int;
+--AS
+--BEGIN
+    --DECLARE @reservation_id int;
+    
+    -- Siin me lisame andmeid tabelile (reservation) --
+    --INSERT INTO reservation (date_in, date_out, made_by, guest_id)
+    --VALUES (@date_in, @date_out, @made_by, @guest_id);
+    
+    --SET @reservation_id = SCOPE_IDENTITY();
+    
+    -- Siin me lisame andmeid tabelile (reserved_room) --
+    --INSERT INTO reserved_room (number_of_rooms, room_type_id, reservation_id, status)
+    --VALUES (@number_of_rooms, @room_type_id, @reservation_id, 'booked');
+--END;
+--GO
 
+--Lahendus veale nr4--
 -- See protseduur on tehtud selleks et lisada uue reservatsiooni (üksikasjalikumalt kirjeldatud gitkommentis) --
 CREATE PROCEDURE Create_Reservation
 -- Kirjutame andmeid mis me lisame hiljem: --
@@ -143,7 +169,6 @@ BEGIN
     VALUES (@number_of_rooms, @room_type_id, @reservation_id, 'booked');
 END;
 GO
-
 -- See protseduur lisab uued (reservatsioon_id, room_id, check_in)
 CREATE PROCEDURE CheckInGuest
     @reservation_id int,
