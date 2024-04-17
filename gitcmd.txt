@@ -8,4 +8,4 @@ git branch DariaHalchenko
 git status
 git add .
 git commit -a -m "..."
-git push
+git pushgit commit 
