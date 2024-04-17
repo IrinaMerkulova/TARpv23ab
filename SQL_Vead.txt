@@ -144,3 +144,31 @@ lahendus:
 Kustuta kirjed, mille tingimus ei ole kunagi täidetud.
 Viga: ei ole kasutajaid, kelle vanus on alla 20 aasta.
 
+11.
+
+create procedure tabeli_kustuta
+	@Martin_Sild varchar(50)
+	AS
+	BEGIN 
+	DROP TABLE @MartinSild
+	END;
+	EXEC tabeli_kustuta 'Unustatud_tabel'
+
+Incorrect syntax near '@Martin_Sild'.
+Protseduur tabeli_kustuta
+Vale süntaks '@Martin_Sild' juures.
+Viga ütleb, et programm ootab, et me kirjutaksime tabeli nime objektina,
+kuid ta saab tabeli nime stringina ja programm ei saa sellest aru.
+lahendus
+
+		create procedure tabeli_kustuta
+		@Martin_Sild varchar(50)
+		AS
+		BEGIN 
+		DECLARE @STMT AS VARCHAR(MAX);
+		SET @STMT = CONCAT('DROP TABLE ', @Martin_Sild);
+		END;
+		BEGIN;
+		EXEC (@STMT);
+		END;
+		EXEC tabeli_kustuta 'Unustatud_tabel'
