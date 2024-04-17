@@ -129,3 +129,17 @@ date_out date);
 CREATE TABLE permission denied in database 'master'.
 
 sulle vaja töödata oma databaasil 
+14.
+create table occupied_room(
+id int primary key identity(1,1),
+check_in date,
+check_in date,
+room_id int);
+
+Column names in each table must be unique. Column name 'check_in' in table 'occupied_room' is specified more than once.
+sul on juba 'check_in date' - 
+create table occupied_room(
+id int primary key identity(1,1),
+check_in date,
+check_out date,
+room_id int);
