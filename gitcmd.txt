@@ -1,0 +1,11 @@
+cd Desktop
+git clone https://github.com/IrinaMerkulova/TARpv23ab.git
+git config --global user.name "Daria Halchenko"
+git config --global user.email "daragalcenko3@gmail.com"
+git config --global --list
+git checkout DariaHalchenko
+git branch DariaHalchenko
+git status
+git add .
+git commit -a -m "..."
+git push
