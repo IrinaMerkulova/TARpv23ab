@@ -1,0 +1,219 @@
+SQL Serveris tekkivad vead
+
+1. 
+CREATE room_type(
+id int Primary key identity (1,1),
+description varchar (80),
+max_capacity int);
+SELECT * FROM room_type;
+INSERT INTO room_type(description, max_capacity)
+VALUES ('super lux', 1);
+
+Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement.
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+Probleemi lahendamiseks tuleb lisada TABLE tabeli loomiseks.
+
+CREATE TABLE room_type 
+
+CREATE TABLE room_type(
+id int Primary key identity (1,1),
+description varchar (80),
+max_capacity int);
+SELECT * FROM room_type;
+INSERT INTO room_type(description, max_capacity)
+VALUES ('super lux', 1);
+
+-------------------------------------
+
+2.
+CREATE TABLE room_type(
+id int Primary key identity (1,1),
+description varchar (80),
+max_capacity int);
+
+There is already an object named 'room_type' in the database.
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+Kui sama tabel oli juba varem loodud, aga lisati uued andmed ja sama tabel loodi 
+aga uute andmetega, siis tekib viga, siis tuleb vana tabel kustutada.
+
+DROP TABLE room_type;
+
+-------------------------------------
+
+3.
+CREATE TABLE room_type(
+id int Primary key idenity (1,1),
+description varchar (80),
+max_capacity int);
+
+Incorrect syntax near 'idenity'.
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+Peame idenity identity'ks muutma.
+
+CREATE TABLE room_type(
+id int Primary key identity (1,1),
+description varchar (80),
+max_capacity int);
+
+-------------------------------------
+
+4.
+CREATE TABLE room(
+id int Primary key identity (1,1),
+number varchar (10),
+name varchar (40),
+status varchar (10),
+smoke bit,
+room_type_id int,
+foreign key (room_type_id) references room_type(id);
+SELECT * FROM room;
+
+Incorrect syntax near ';'.
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+Tuleb lisada ')' pärast 'references room_type(id)'
+
+CREATE TABLE room(
+id int Primary key identity (1,1),
+number varchar (10),
+name varchar (40),
+status varchar (10),
+smoke bit,
+room_type_id int,
+foreign key (room_type_id) references room_type(id));
+SELECT * FROM room;
+
+-------------------------------------
+
+5.
+ADD INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E10', 'sv', 'open', 1, 1);
+
+Incorrect syntax near the keyword 'INTO'.
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+Peame ADD INTO muuta INSERT INTO.
+
+INSERT INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E10', 'sv', 'open', 1, 1);
+
+-------------------------------------
+
+6.
+DELETE TABLE room_type;
+
+Incorrect syntax near the keyword 'TABLE'.
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+Tabeli kustutamiseks tuleb kirjutada :
+
+DROP TABLE room_type;
+
+-------------------------------------
+
+7.
+CREATE TABLE guest(
+id int Primary key identity (1,1),
+first_name varchat (80),
+last_name varchat (80),
+member_since date);
+
+Column, parameter, or variable #2: Cannot find data type varchat.
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+Peame varchat muuta varchar.
+
+CREATE TABLE guest(
+id int Primary key identity (1,1),
+first_name varchar (80),
+last_name varchar (80),
+member_since date);
+
+-------------------------------------
+
+8.
+CREATE TABLE occupied_room(
+id int Primary key identity (1,1),
+check_in timestamp,
+check_out timestamp,
+room_id int,
+reservation_id int,
+foreign key (room_id) references room(id),
+foreign key (reservation_id) references reservation(id));
+SELECT * FROM occupied_room;
+
+INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id)
+VALUES ('2024-04-23', '2024-05-01', 1, 1);
+
+A table can only have one timestamp column. 
+Because table 'occupied_room' already has one, the column 'check_out' cannot be added.
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+Peame timestamp muuta date
+
+CREATE TABLE occupied_room(
+id int Primary key identity (1,1),
+check_in date,
+check_out date,
+room_id int,
+reservation_id int,
+foreign key (room_id) references room(id),
+foreign key (reservation_id) references reservation(id));
+SELECT * FROM occupied_room;
+
+INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id)
+VALUES ('2024-04-23', '2024-05-01', 1, 1);
+
+-------------------------------------
+
+9.
+drop table guest; (tabelisse reservation)
+
+Could not drop object 'guest' because it is referenced by a FOREIGN KEY constraint.
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+eemaldada FOREIGN KEY või lisada guest asemel muu FOREIGN KEY
+
+-------------------------------------
+
+10.
+INSERT INTO room_type(description, max_capacity)
+VALUES ('super lux', 1),('super lux', 1);
+
+Andmed korduvad, erineva id all !
+
+-------------------------------------
+
+VEA LAHENDAMINE !
+
+DELETE FROM room_type where id=2;
