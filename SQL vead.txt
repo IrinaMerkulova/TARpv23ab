@@ -119,4 +119,13 @@ smoke bool;
 Incorrect syntax near 'bool'.
 
 SQL kirjutatakse nii - smoke bit
- 
+------
+13 
+create table reservation(
+id int primary key identity(1,1),
+date_in date,
+date_out date);
+
+CREATE TABLE permission denied in database 'master'.
+
+sulle vaja töödata oma databaasil 
