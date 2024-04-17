@@ -1,0 +1,151 @@
+SQL Serveris tekkivad vead
+
+1.	SELECT * FROM
+
+	Msg 156, Level 15, State 1, Line 1
+	Incorrect syntax near the keyword 'FROM'.
+ 		- Kuidas lähendada seda probleemi?
+		- Ошибка говорит о том, что неверен синтаксис так как мы не указали от какой таблицы мы берем данные.
+
+2.	create table(
+	id int primary key
+	);
+
+	Msg 102, Level 15, State 1, Line 1
+	Incorrect syntax near '('.
+		- Kuidas lähendada seda probleemi?
+		- Ошибка говорит о том, что неверен синтаксис с символом открывающей круглой скобкой, тоесть мы что то не дописали, в нашем случае
+		не было дописано названия таблицы при создании.
+
+3.	create table default_table(
+	id primary key
+	);
+
+	Msg 173, Level 15, State 13, Line 2
+	The definition for column 'id' must include a data type.
+		-- Kuidas lähendada seda probleemi?
+		- Ошибка говорит о том, что мы никак не указали какой тип данных у нашего (id) , чтобы исправить ошибку стоить добавить после объявления "id" 
+		тип данных "int".
+
+4.	create table default_table(
+	id int;
+	);
+
+	Msg 102, Level 15, State 1, Line 2
+	Incorrect syntax near ';'.
+		- Kuidas lähendada seda probleemi?
+		- Ошибка говорит о том, что мы указали не тот символ при перечисливании, 
+		нам нужно было использовать "," вместо ";".
+
+5.	create table default_table(
+	id int,
+	);
+
+	SELECT makaroni FROM default_table
+
+	Msg 207, Level 16, State 1, Line 5
+	Invalid column name 'makaroni'.
+		- Ошибка говорит нам о том, что не сущевствует ряда с именем "makaroni". Мы можем выводить и работать только с теми полями, которые мы объявили,
+		в нашем случае, сущевствует только "id".
+
+6.	create table default_table(
+	id int primary key,
+	something varchar(255),
+	another_something varchar(255)
+	);
+
+	INSERT INTO default_table VALUES(1),(2);
+
+	Msg 213, Level 16, State 1, Line 7
+	Column name or number of supplied values does not match table definition.
+		- Ошибка говорит о том, что мы пытаемся задать данные полям которые мы не указали, и программа не понимает к чему записывать "1" и "2".
+		Чтобы исправить, стоит сделать запрос на добавления данных в таблицу таким образом
+			8.	INSERT INTO default_table(something, another_something) VALUES('1','2'),('3','4');
+				
+				Msg 515, Level 16, State 2, Line 6
+				Cannot insert the value NULL into column 'id', table '123.dbo.default_table'; column does not allow nulls. INSERT fails.
+				- Но тут появляется еще одна ошибка
+				- Она уже говорит о том, что мы не можем НЕ добавлять данные в поле id, чтобы исправить нужно написать таким образом -
+					INSERT INTO default_table(id, something, another_something) VALUES(1, '1','2'),(2, '3','4');
+
+9. 	create table default_table(
+	id int primary key,
+	something varchar(255),
+	another_something varchar(255)
+	);
+	INSERT INTO default_table(id, something, another_something) VALUES(1, '1','2'),(2, '3','4');
+
+	SELECT * FROM default_table where id like 2 and 5
+
+	Msg 4145, Level 15, State 1, Line 8
+	An expression of non-boolean type specified in a context where a condition is expected, near '5'.
+		- Ошибка говорит о том, что мы не правильно написали условия после оператора "and". Нам нужно продолжить условие таким
+		образом.
+		SELECT * FROM default_table where id like 2 and id like 5
+
+10.	create table like(
+	...
+	)
+
+
+	
+	Msg 156, Level 15, State 1, Line 7
+	Incorrect syntax near the keyword 'like'.
+		- Программа ждет , что мы напишем название таблицы, но мы написали зарезервированное имя которое программа воспринимает как
+		оператор сравнивания, иза этого оно не понимает чего мы хотим, чтобы исправить можно написать вот так
+	
+		create table _like(
+		...
+		)
+	
+11. 	create something wrong()
+	
+	Unknown object type 'something' used in a CREATE, DROP, or ALTER statement.
+		- Ошибка говорит о том, что программа не понимает что мы хотим создать ( в нашем случае ) , ведь объекта с именем "something" не сущевствует.
+		Программа ожидала объекты по типу "TABLE", "COLUMN"
+	
+12. 	if @id like 2
+
+	Msg 137, Level 15, State 2, Line 8
+	Must declare the scalar variable "@id".
+		- Ошибка говорит о том, что мы должны объявить переменную "id" с помощью оператора "DECLARE" и "SET"
+		Исправленный запрос :
+		declare @id as VARCHAR(MAX)
+		set @id = 2
+		if @id LIKE 2 
+		select * from default_table;
+
+13.	create procedure tabeli_kustuta
+	@tabeli_nimi varchar(50)
+	AS
+	BEGIN 
+	DROP TABLE @tabeli_nimi
+	END;
+	EXEC tabeli_kustuta 'default_table'
+
+	Msg 102, Level 15, State 1, Procedure tabeli_kustuta, Line 5 [Batch Start Line 20]
+	Incorrect syntax near '@tabeli_nimi'.
+		- Ошибка говорит о том , что программа ждет от нас того, чтобы мы написали название таблицы ввиде объекта,
+		но получает название таблицы ввиде строчки, и программа не понимает.
+		- Правильное решение такое :
+
+		create procedure tabeli_kustuta
+		@tabeli_nimi varchar(50)
+		AS
+		BEGIN 
+		DECLARE @STMT AS VARCHAR(MAX);
+		SET @STMT = CONCAT('DROP TABLE ', @tabeli_nimi);
+		END;
+		BEGIN;
+		EXEC (@STMT);
+		END;
+		EXEC tabeli_kustuta 'default_table'
+
+14.	drop table default_table
+	
+	Msg 3701, Level 11, State 5, Line 8
+	Cannot drop the table 'default_table', because it does not exist or you do not have permission.
+		- Ошибка говорит в нашем случае, что не сущевствует таблицы, для решения проблемы нужно ее просто создать
+
+15.	
+	
