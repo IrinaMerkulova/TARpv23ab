@@ -1,0 +1,224 @@
+---------------- SQL Serveris tekkivad vead ----------------
+
+1.
+
+create table ostjad( 
+id int primary key auto_increment,
+name varchar(20),
+last_name varchar(40),
+age int
+);
+
+
+Msg 102, Level 15, State 1, Line 2
+Incorrect syntax near 'auto_increment'.
+
+id int primary key auto_increment, -- Auto_increment - auto_incrementi saab kasutada ainult xampp-is 
+ja SQL-serveris peate ID automaatseks täitmiseks kasutama ID-d (1,1).
+
+õige vorm:
+create table ostjad( 
+id int primary key identity(1,1),
+name varchar(20),
+last_name varchar(40),
+age int
+);
+
+2. 
+
+create table toolised(
+id int primary key identity(1,1),
+first_name varchar(20),
+last_name varchar(40),
+telefon varchar(12),
+pokupatel int,
+foreign key pokupatel references ostjad(id)
+);
+
+Msg 102, Level 15, State 1, Line 15
+Incorrect syntax near 'pokupatel'.
+
+viga on selles, et pokupatel tuleks kirjutada sulgudesse (pokupatel)
+
+õige vorm:
+foreign key (pokupatel) references ostjad(id)
+
+3. 	
+
+create procedure ostjad_lisamine
+@name varchar(20),
+@last_name varchar(40),
+@age int
+
+insert into ostjad(name, last_name, age)
+values (@name, @last_name, @age)
+select * from ostjad;
+
+
+Msg 156, Level 15, State 1, Procedure ostjad_lisamine, Line 6 [Batch Start Line 17]
+Incorrect syntax near the keyword 'insert'.
+Msg 137, Level 15, State 2, Procedure ostjad_lisamine, Line 7 [Batch Start Line 17]
+Must declare the scalar variable "@age".
+
+viga on selles, et pead kirjutama
+--
+@name varchar(20),
+@last_name varchar(40),
+@age int
+as
+begin
+insert into ostjad(name, last_name, age)
+values (@name, @last_name, @age)
+select * from ostjad;
+end;
+--
+
+õige vorm:
+
+create procedure ostjad_lisamine
+@name varchar(20),
+@last_name varchar(40),
+@age int
+as
+begin
+insert into ostjad(name, last_name, age)
+values (@name, @last_name, @age)
+select * from ostjad;
+end;
+
+
+4.
+
+insert ostjad(name, last_name, age)
+values('Bogdan', 'Sergachev', 16),
+values('Gleb', 'Sõtsjov', 16);
+
+
+Msg 156, Level 15, State 1, Line 32
+Incorrect syntax near the keyword 'values'.
+
+
+Viga seisneb selles, et peate ühe korra kirjutama "VALUES".
+
+õige vorm:
+
+insert ostjad(name, last_name, age)
+values('Bogdan', 'Sergachev', 16),
+('Gleb', 'Sõtsjov', 16);
+
+
+5.
+
+
+delete from id 
+where ostjad = 3;
+
+Msg 208, Level 16, State 1, Line 35
+Invalid object name 'id'.
+
+viga on selles, et funktsioon on valesti üles ehitatud
+
+õige vorm:
+
+delete from ostjad 
+where id = 3;
+
+6.
+
+
+select ostjad;
+
+viga on selles, et ta ei saa andmebaasi "ostjad" konsooli väljastada, kuna "* from" puudub
+
+õige vorm:
+
+select * from ostjad;
+
+7.
+
+delete table ostjad;
+
+Kui soovite tabeli ise kustutada, peate kirjutama mitte "kustuta", vaid "drop"
+
+õige vorm:
+
+drop table ostjad;
+
+8. 
+
+insert ostjad(name, last_name, age)
+values(bogdan, sergachev, '123');
+
+Kui muutujal "name" on varchar(20) väärtus, siis loetakse seda tekstiks! 
+See tähendab, et tekst tuleb kirjutada jutumärkides ' '! 
+Ja numbrid on vastupidised ilma
+
+õige vorm:
+
+insert ostjad(name, last_name, age)
+values('Bogdan', 'Sergachev', 123);
+
+9. 
+
+create osta(
+id int
+);
+
+
+Msg 343, Level 15, State 1, Line 36
+Unknown object type 'osta' used in a CREATE, DROP, or ALTER statement.
+
+viga on selles, et "loo osta" ei sisalda "table", "procedure" ja ta ei saa aru, mida luua
+
+õige vorm:
+
+create table osta(
+id int
+);
+
+10.
+
+create procedure toolised_lisamine
+
+@first_name varchar(80),
+@last_name varchar(80),
+@age int
+as
+begin
+
+values (@first_name, @last_name, @age)
+select * from toolised;
+
+
+end;
+
+puudu "Insert into" enne "values"
+
+õige vorm:
+
+create procedure toolised_lisamine
+
+@first_name varchar(80),
+@last_name varchar(80),
+@age int
+as
+begin
+insert into(name, last_name, age)
+values (@first_name, @last_name, @age)
+select * from toolised;
+
+
+end;
+
+
+
+
+
+
+
+
+
+
+
+
+
