@@ -150,3 +150,21 @@ et kustutada kirje tabelist tuleb kirjutada DELETE:
 DELETE FROM room_type
 
 --------------------
+
+11.create table room(
+id int PRIMARY KEY identity(1,1),
+number varchar(10),
+name varchar(40),
+status varchar(10),
+smoke bool,
+room_type_id int,
+);
+
+Column, parameter, or variable #5: Cannot find data type bool.
+---------------------
+
+Andmeliigi mitteõigustatud nimetus
+In sql see nimi on bit:
+smoke bit,
+
+-------------------
