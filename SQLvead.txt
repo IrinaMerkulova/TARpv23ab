@@ -1,0 +1,116 @@
+SQL Serveris tekkivad vead
+
+1.
+create room_type(
+id int primary key identity (1,1),
+description varchar(80),
+max_capacity int);
+--
+Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement.
+
+
+2.
+create table room_type(
+id int primary key identity (1,1),
+description varchar(80),
+max_capacity int);
+--
+There is already an object named 'room_type' in the database.
+--
+selline tabel juba olemas
+
+3.
+create table room_type(
+id int primary key identity (1,1),
+description varchar(80),
+max_capacity int
+--
+Incorrect syntax near 'int'.
+--
+on vaja lisada ')' pärast 'int'
+
+4.
+insert into room_type(description, max_capacity)
+values (Super lux, 1);
+--
+Incorrect syntax near 'lux'.
+--
+on vaja võtta "Super lux" jutumärkidesse
+
+5.
+CREATE PROCEDURE add_roomtype(
+@new_description varchar(80),
+@new_max_capacity int)
+BEGIN
+    INSERT INTO room_type(description, max_capacity)
+    VALUES (@new_description, @new_max_capacity)
+END
+exec add_roomtype 'ultra mega lux', 5
+select * from room_type
+--
+Incorrect syntax near the keyword 'BEGIN'.
+--
+on vaja lisada "as" pärast "@new_max_capacity int)"
+
+6.
+CREATE PROCEDURE add_roomtype1(
+new_description varchar(80),
+new_max_capacity int)
+as
+BEGIN
+    INSERT INTO room_type(description, max_capacity)
+    VALUES (new_description, new_max_capacity)
+END
+exec add_roomtype 'ultra mega lux', 5
+select * from room_type
+--
+Incorrect syntax near 'new_description'.
+--
+on vaja lisada "@" enne new_description ja new_max_capacity 
+
+7.
+CREATE PROCEDURE add_roomtype1(
+@new_description varchar(80),
+@new_max_capacity int)
+as
+BEGIN
+    INSERT INTO room_type(description, max_capacity)
+    VALUES (@new_description1, @new_max_capacity1)
+END
+exec add_roomtype 'ultra mega lux', 5
+select * from room_type
+--
+Must declare the scalar variable "@new_description1".
+--
+on vaja "@new_description1" ja "@new_max_capacity1" asemel kirjutada "@new_description" ja "@new_max_capacity"
+
+8.
+
+select * from hosted_at
+--
+Invalid object name 'hosted_at'.
+--
+ei ole loodut objekt hosted_at
+
+9.
+insert into room(number, name, status, smoke, room_type_id)
+('E10', 'sv', 'open', 1, 1)
+--
+Incorrect syntax near 'E10'.
+--
+on vaja lisada "values" enne "('E10',"
+
+10.
+create table room(
+id int primary key identity (1,1),
+number varchar(10),
+name varchar(40),
+status varchar(10),
+smoke bit,
+room_type_id int,
+foreign key (room_type_id) references room_type2(id));
+--
+There is already an object named 'room' in the database.
+--
+on vaja "room_type2" asemel kirjutada "room_type"
+ 
