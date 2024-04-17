@@ -1,0 +1,151 @@
+--SQL Serveris tekkivad vead
+
+1.
+
+CREATE TABLE Employees (
+    ID INT PRIMARY KEY,
+    Name int, --koht varchar(50) kirjalik int
+    Age INT,
+    Department VARCHAR(50)
+----------------------------------------------
+õige kood
+
+CREATE TABLE Employees (
+    ID INT PRIMARY KEY,
+    Name varchar(50),
+    Age INT,
+    Department VARCHAR(50)
+2.
+
+INSERT INTO Employees (ID, Name, Age, Department) 
+VALUES (1, 'John', 30, 'HR')
+VALUES (2, 'Alice', 25, 'Marketing')-- Vigane süntaks mitme väärtuse sisestamisel. Kasutage märksõna "VALUES" ainult üks kord.
+
+
+tekitatud viga(Incorrect syntax near the keyword 'VALUES'.)
+-----------------------------------------------
+õige kood
+
+INSERT INTO Employees (ID, Name, Age, Department) 
+VALUES 
+    (1, 'John', 30, 'HR'),
+    (2, 'Alice', 25, 'Marketing');
+3.
+
+
+SELECT * FROM Employees
+WHERE Salary > 50000 -- Veergu "Salary" tabelis ei ole. Päringu SELECT süntaksis on viga.
+
+tekitatud viga(Invalid column name 'Salary'.)
+---------------------------------------------------------
+õige kood
+
+peate sisestama olemasoleva veeru
+
+4.
+
+UPDATE Employees
+SET Salary = 60000
+WHERE ID = 1; -- Viga UPDATE süntaksis. Peate täpsustama veeru, mida värskendatakse.
+
+tekitatud viga(Invalid column name 'Salary'.)
+----------------------------------------------------------
+õige kood
+
+UPDATE Employees
+SET Age = 35
+WHERE ID = 1;
+
+5.
+
+DELETE FROM Employees
+WHERE Department = 'Marketing'
+WHERE Age < 30; -- WHERE-klausli süntaks on vale. Tehtemärki JA või VÕI kasutades tuleb kombineerida mitu tingimust.
+
+tekitatud viga(Incorrect syntax near the keyword 'WHERE'.)
+----------------------------------------------------------------
+õige kood
+
+DELETE FROM Employees
+WHERE Department = 'Marketing'
+AND Age < 30;
+
+6.
+
+CREATE TABLE Employees(
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50)
+    LastName VARCHAR(50),
+    Department VARCHAR(50)
+);
+--Eesnimi veeru deklaratsiooni järel puudub koma.
+Veeru Perekonnanimi deklaratsiooni järel puudub koma.
+Lause CREATE TABLE lõpus on puudu semikoolon.
+
+tekitatud viga(Incorrect syntax near 'LastName'.)
+-------------------------------------------------------------
+õige kood
+
+CREATE TABLE Employees(
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Department VARCHAR(50)
+);
+
+7.
+
+SELECT FirstName, LastName
+FROM Employees
+WHERE Department = 'Sales'
+AND Age > 30
+ORDER BY LastName DESC;
+
+--Tabelit "Töötajad" ei määratud SELECT päringus.
+Tingimus "Vanus > 30" kasutab veergu "Vanus", mida ei valitud SELECT-lauses ega loodud tabelis "Töötajad".
+See eeldab, et "vanus" on veerg, kuigi see ei pruugi olla tabelis "Töötajad".
+Päringu lõpus on puudu semikoolon.
+
+tekitatud viga(Invalid column name 'FirstName'.),(Invalid column name 'LastName'.)
+-----------------------------------------------------
+õige kood
+
+SELECT FirstName, LastName, Age
+FROM Employees
+WHERE Department = 'Sales'
+AND Age > 30
+ORDER BY LastName DESC;
+
+8.
+
+SELECT * FROM girls INNER JOIN boys
+ON FavoriteDiscipline;
+
+--Puuduv liitumise tingimus: JOIN-lauses puudub tingimus, mis nõuab tabelite "tüdrukud" ja "poisid" ühendamist, mis põhjustab ebakindlust.
+
+Vale veerukasutus ON: veerus "FavoriteDiscipline" pole määratud, milline tabel, nii et SQL ei saa aru, kuidas tabelite vahel ridu linkida.
+
+* * kasutamine valikus SELECT: * kasutamine valib mõlemast tabelist kõik veerud, mis võivad olla üleliigsed ja raskendada tulemuste sõelumist.
+
+
+tekitatud viga(An expression of non-boolean type specified in a context where a condition is expected, near ';'.)
+-----------------------------------------------------------------
+õige kood
+
+SELECT * FROM girls 
+INNER JOIN boys ON girls.FavoriteDiscipline = boys.FavoriteDiscipline;
+
+9.
+
+SELECT Name, Surname FROM boys ORDER BY Surname WHERE Name = 'Vanya' ;
+
+--WHERE kasutatakse pärast ORDER BY, mis põhjustab süntaksivea.
+
+tekitatud viga(Incorrect syntax near the keyword 'WHERE'.)
+---------------------------------------------------------------
+õige kood
+
+SELECT Name, Surname
+FROM boys
+WHERE Name = 'Vanya'
+ORDER BY Surname;
