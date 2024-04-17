@@ -29,3 +29,10 @@ kõppus kirjutatakse ; - values('Super Luxury Suite', 2);
 foreign key (room_id) room(id);
 on vaja kirjutada references -  foreign key (room_id) references room(id)
 -------
+5.
+create table occupied_room(
+id int pramiry key identity(1,1),
+check_in date,
+
+Incorrect syntax near 'pramiry'.
+pramiry key - primary key
