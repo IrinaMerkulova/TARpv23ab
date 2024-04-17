@@ -6,9 +6,137 @@ id int Primary key identity (1,1),
 description varchar(80),
 max_capacity int);
 
-Unknown object type 'room_type' used in CREATE, DROP or ALTER
+Viga: Unknown object type 'room_type' used in CREATE, DROP or ALTER
 --
 
-kuidas lahendada seda probleemi?
+Parandus:
+
+create database hotel
+use hotel;
 
 2.
+insert into room_type(description, max_capacity)
+values ('lux');
+
+Viga: There are more columns in the INSERT statement than values specified in the VALUES clause. 
+The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+--
+tabel aktsepteerib 2 parameetrit, mitte 1
+
+Parandus:
+--lisa teine paraameter
+insert into room_type(description, max_capacity)
+values ('lux','1');
+
+3.
+create table room(
+id int Primary key identity (1,1),
+number varchar(40),
+name varchar(40),
+status varchar(40),
+smoke bit,
+room_type_id int,
+foreign key (room_type_id) references room_type(id));
+
+Viga: 
+võtmeväli room_type_id on loodud välise võtmega room_type(id), kuid room_type tabelit pole veel loodud.
+Parandus: 
+loo esmalt room_type tabel ja seejärel room.
+
+4.
+create table guest(
+id int Primary key AUTO_INCREMENT,
+first_name varchar(80),
+last_name varchar(80),
+member_since time);
+
+Viga: 
+Incorrect syntax near 'AUTO_INCREMENT'.
+
+Parandus:
+id int Primary key identity (1,1),
+
+5.
+select from guest;
+
+Viga:
+Incorrect syntax near the keyword 'from'.
+
+Parandus:
+select * from guest;
+
+6.
+delete TABLE guest;
+
+Viga:
+Incorrect syntax near the keyword 'table'.
+
+Parandus:
+drop table guest;
+
+7.
+insert room_type()
+values ('lux',1);
+
+Viga:
+Parameters supplied for object 'room_type' which is not a function. If the parameters are intended as a table hint, a WITH keyword is required.
+
+Parandus:
+insert room_type(description, max_capacity)
+values ('lux',1);
+
+8.
+create table room_type(
+id int Primary key identity (1,1)
+description varchar(80)
+max_capacity int);
+
+Viga:
+Incorrect syntax near 'check_in'.
+
+Parandus:
+lisa ,
+
+create table room_type(
+id int Primary key identity (1,1),
+description varchar(80),
+max_capacity int);
+
+9.
+Insert into roo(number,name,status,smoke,room_type_id)
+values ('E10', 'sv', 'open', 1, 1);
+
+Viga:
+Invalid object name 'roo'.
+
+Parandus:
+Insert into room(number,name,status,smoke,room_type_id)
+values ('E10', 'sv', 'open', 1, 1);
+
+10.
+create table room(
+id int Primary key identity (1,1),
+number varchar(40),
+name varchar(40),
+status varchar(40),
+smoke bit,
+room_type_id int,
+foreign key (room_type_id) references room_dd(id));
+
+Viga:
+Foreign key 'FK__room__room_type___300424B4' references invalid table 'room_dd'.
+Msg 1750, Level 16, State 1, Line 31
+Could not create constraint or index. See previous errors.
+
+Parandus:
+create table room(
+id int Primary key identity (1,1),
+number varchar(40),
+name varchar(40),
+status varchar(40),
+smoke bit,
+room_type_id int,
+foreign key (room_type_id) references room(id));
+
+Viga:
+
