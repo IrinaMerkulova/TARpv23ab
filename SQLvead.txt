@@ -1,0 +1,92 @@
+SQL Serveris tekkivad vead
+
+1.
+SELECT * FROM room_type;
+Invalid object name 'room_type'.
+-------------------
+kuidas lahendada seda prooblemi?
+нужно создать перед этим таблицу room_type
+
+2.
+CREATE room_type(
+id int Primary key identity(1,1),
+description varchar(80),
+max_capacity int);
+Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement.
+-------------------
+Отсутствует тип обьекта для создания нужно после CREATE добавить TABLE
+
+3.
+INSERT INTO room_type(description, max_capacity)
+VALUES(1, 'super lux');
+Conversion failed when converting the varchar value 'super lux' to data type int.
+-------------------
+Данные записанны не в правильном порядке как в INSERT нужно в VALUES поменять местами
+
+4.
+delete table room_type;
+Incorrect syntax near the keyword 'table'.
+------------------
+Чтобы удалить таблицу надо написать не delete а drop
+
+5.
+CREATE TABLE room_type(id int Primary key identity(1,1),
+description varchar80,max_capacity int) ;
+Column, parameter, or variable #2: Cannot find data type varchar80.
+-------------------------------------
+Недопустимый параметр, поскольку «varchar» не содержит круглых скобок. «varchar» не может быть без круглых скобок
+6.
+CREATE TABLE room_type(
+id int Primary key identity(1,1),description varchar(80),
+max_capacity int) ;SELECT  FROM room_type;
+INSERT INTO room_type(description, max_capacity)VALUES ('super lux', 1),
+ ('deluxe', 2),('super deluxe', 3),
+('vip', 4), ('comfort', 5);
+Incorrect syntax near the keyword 'FROM'.
+----------------------------------------------
+Неправильный синтаксис, так как после «Выбрать» и перед «FROM» должен быть знак «*», иначе он не будет работать.
+
+7.
+CREATE TABLE room_type(id int Primary key identity(1,1),
+description varchar(80),max_capacity int) ;
+SELECT * FROM room_type;INTO INSERT  room_type(description, max_capacity)
+VALUES ('super lux', 1), ('deluxe', 2),
+('super deluxe', 3),('vip', 4),
+ ('comfort', 5);
+Incorrect syntax near the keyword 'INTO'.
+---------------------------------
+Синтаксис неверен, поскольку необходимая последовательность — «INSERT INTO».
+
+8.
+CREATE TABLE reserved_room(
+id int Primary key identity(1,1),
+number_of_rooms int,
+room_type_id int,
+foreign key(room_type_id) references room_type(id),
+reservation_id int,
+foreign key(reservation_id) references reservation(dera),
+status varchar(20));
+Foreign key 'FK__reserved___reser__618671AF' references invalid column 'dera' in referenced table 'reservation'.
+---------------
+Сылочный столбец не верный
+9.
+CREATE TABLE guest(
+id int Primary key identity(1,1),
+first_name varchar(256),
+last_name nvarchar(80),
+member_since date);
+SELECT * FROM guest;
+INSERT INTO guest(id, first_name, last_name, member_since)
+VALUES(2 ,'Kirill', 'Sats', '2024-03-12');
+Cannot insert explicit value for identity column in table 'guest' when IDENTITY_INSERT is set to OFF.
+-------------------
+В поле с автоматическим вводам данных пытаться вводить свои значения
+
+10.
+select from room
+Incorrect syntax near the keyword 'from'.
+---------------------
+неверный синтаксис, после select и перед from должна быть звездочка (*)
+
+
+
