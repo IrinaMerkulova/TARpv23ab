@@ -1,0 +1,149 @@
+SQL serverid tekkivad vead 
+
+1. 
+CREATE TABLE room(
+id int Primary key identity(1,1),
+number varchar(10),
+name varchar(40),
+status varchar(10SQL serverid tekkivad vead 
+
+1. 
+CREATE TABLE room(
+id int Primary key identity(1,1),
+number varchar(10),
+name varchar(40),
+status varchar(10),
+smoke bit,
+room_type_id int,
+foreign key (room_type_id) references room_type(id));
+
+Msg 1767, Level 16, State 0, Line 2
+Foreign key 'FK__room__room_type___24927208' references invalid table 'room_type'.
+Msg 1750, Level 16, State 1, Line 2
+Could not create constraint or index. See previous errors.
+
+Kuidas lahendada seda problemi?
+Peate looma room_type tabeli.
+
+2.
+CREATE TABLE room_type(
+id int Primary key identity(1,1),
+description varchar(80),
+max_capacity int;
+
+Msg 102, Level 15, State 1, Line 14
+Incorrect syntax near ';'.
+
+Kuidas lahendada seda problemi?
+Käsu lõpuleviimiseks peate lõppu lisama sulgemissulgu.")"
+
+3.
+CREATE TABLE room_type(
+id int Primary key identity(1,1),
+description varchar(80),
+max_capacity int;
+
+Msg 102, Level 15, State 1, Line 17
+Incorrect syntax near '1'.
+
+Kuidas lahendada seda problemi?
+Vaja lisada "identity" -> "Primary key identity(1,1)".
+
+4. 
+create table reservation(
+id int PRIMARY KEY identity(1,1),
+date_in date,
+date_out date,
+made_by varchar(20),
+guest_id ,
+FOREIGN KEY (guest_id) REFERENCES guest(id));
+
+Msg 173, Level 15, State 13, Line 28
+The definition for column 'guest_id' must include a data type.
+
+Kuidas lahendada seda problemi?
+"guest_id" tuleb lisada andmetüüp. guest_id -> guest_id int 
+
+5.
+create table reservation(
+id int PRIMARY KEY identity(1,1),
+date_in date,
+date_out date,
+made_by varchar(20),
+guest_id int:
+FOREIGN KEY (guest_id) REFERENCES guest(id));
+
+Msg 173, Level 15, State 13, Line 28
+The definition for column 'guest_id' must include a data type.
+
+Kuidas lahendada seda problemi?
+Pärast guest_id peate lisama ",", mitte ":"
+
+6.
+insert into guest(first_name,last_name)
+values ('Illya','Heino','2007.07.03');
+
+There are fewer columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+
+Kuidas lahendada seda problemi?
+Peate lisama veerus Insert andmed Member_since. Sest andmeid peaks olema 4, aga neid on 3.
+
+7.
+CREATE TABLE room_type(
+id int Primary key identity(1,1),
+description varchar(80),
+max_capacity int);
+
+There is already an object named 'room_type' in the database.
+
+
+Kuidas lahendada seda problemi?
+See tabel on juba olemas, seega peate looma uue.
+
+8.
+id int PRIMARY KEY identity(1,1),
+check_in time,
+check_out time,
+room_id int,
+reservation_id int,
+FOREIGN KEY (room_id) REFERENCES room(id),
+FOREIGN KEY (reservation_id) REFERENCES reservation(id));
+
+Incorrect syntax near the keyword 'PRIMARY'.
+
+Kuidas lahendada seda problemi?
+Käsu algusesse tuleb lisada tabeli loomine CREATE TABLE."create table occupied_room("
+
+9. 
+create table occupied_room(
+id int PRIMARY KEY identity(1,1),
+check_in time,
+check_out time,
+room_id int,
+reservation_id int,
+FOREIN KEY (room_id) REFERENCES room(id),
+FOREIGN KEY (reservation_id) REFERENCES reservation(id));
+
+Incorrect syntax near the keyword 'KEY'.
+
+Kuidas lahendada seda problemi?
+Valesti kirjutatud sõna FOREIN KEY-> FOREIGN KEY
+
+10.
+create table occupied_room(
+id int PRIMARY KEY identity(1,1),
+check_in time,
+check_out time,
+room_id int,
+reservation_id int,
+FOREIGN KEY (room_id) REFERENCES room(id),
+FOREIGN KEY (reservation_id) REFERENCES reservation);
+
+
+Foreign key 'FK__occupied___room___2F10007B' references invalid table 'room'.
+Could not create constraint or index. See previous errors.
+
+Kuidas lahendada seda problemi?
+Peate lisama andmetüübi "reservation". REFERENCES reservation); -> REFERENCES reservation(id));
+
+11.
