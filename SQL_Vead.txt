@@ -1,0 +1,146 @@
+SQl Serveris tekkivad vead
+
+1.
+
+Create room_type(
+id int primary key identity(1,1),
+description varchar(80),
+max_capacity int);
+
+Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement
+
+lahendus:
+
+peab lisame table pärast create
+
+õige kood:
+
+Create table room_type(
+id int primary key identity(1,1),
+description varchar(80),
+max_capacity int);
+
+2. 
+
+Create table room_type(
+id int primary key identity(1,1)
+description varchar(80),
+max_capacity int);
+
+Incorrect syntax near 'description'.
+
+lahendus:
+
+vale süntaks, peab lisama koma pärast identity(1,1)
+
+õige kood:
+Create table room_type(
+id int primary key identity(1,1),
+description varchar(80),
+max_capacity int);
+
+3.
+
+select from room
+
+Incorrect syntax near the keyword 'from'.
+
+lahendus:
+
+vale süntaks, pärast select ja enne from peab olema tärn(*) 
+
+õige kood:
+
+select * from room
+
+
+4.
+
+delete table room
+
+Incorrect syntax near the keyword 'table'.
+
+lahendus:
+
+vale süntaks, ei tohi kustutada table peab tegema drop table
+
+õige kood:
+
+drop table room
+
+5.
+
+delete room
+where = 1
+
+Incorrect syntax near '='.
+
+lahendus:
+
+vale süntaks, peab pärast where lisama id 
+
+õige kood:
+
+delete room
+where id = 1
+
+6.
+
+insert into room_type(description,max_capacity)
+values(1,'Martin');
+
+Conversion failed when converting the varchar value 'Martin' to data type int.
+
+lahendus:
+
+Viga ilmneb, kui üritad lisada stringi 'Martin' arvulisse veergu. 
+Lahenduseks kasuta stringi ümbritsetud ülakomadega ('Martin').
+
+õige kood:
+
+insert into room_type(description,max_capacity)
+values('Martin',1);
+
+7.
+FOREIGN KEY (room_type_id) references room_type(id));
+
+Incorrect syntax near the keyword 'FOREIGN'.
+
+lahendus:
+
+vale süntaks, selline foreign key juba olemas
+
+
+8.
+
+drop table room_type
+
+Could not drop object 'room_type' because it is referenced by a FOREIGN KEY constraint.
+
+lahendus:
+
+Objekti 'room_type' ei saanud eemaldada, sest sellele viitab FOREIGN KEY piirang.
+ei saa emaldada, sest room_type'ile on kinnitatud foreign key
+
+9.
+
+UPDATE Users
+SET LastName = 'Doe'
+WHERE ID = 1; 
+
+Invalid column name 'LastName'.
+
+lahendus:
+Püütakse uuendada veergu, mida ei ole olemas.
+Viga: veerg 'LastName' ei eksisteeri
+
+10.
+
+SELECT * FROM People;
+
+Query OK, 0 rows affected
+
+lahendus:
+Kustuta kirjed, mille tingimus ei ole kunagi täidetud.
+Viga: ei ole kasutajaid, kelle vanus on alla 20 aasta.
+
