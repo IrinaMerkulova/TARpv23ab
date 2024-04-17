@@ -1,0 +1,12 @@
+cd desktop     #go to dekstop
+git clone https://github.com/IrinaMerkulova/TARpv23ab.git     #clone to repository
+cd TARpv23ab     #go to folder
+git status    #check status
+git config --global user.name "..."   # add user
+git config --global user.email "..."   # add email
+git config --global --list   #check if you add username and email you add
+git branch ...   # crete branch
+git checkout   #go to your branch
+git add . 
+git committ -a -m "..."
+git push
