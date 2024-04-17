@@ -1,0 +1,150 @@
+SQL Serversis tekkivad vead
+
+1.
+kod:
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY,
+    UserName VARCHAR(50),
+    UserEmail VARCHAR(100)
+);
+
+INSERT INTO Users (UserID, UserName, UserEmail) VALUES (1, 'Gleb', 'gleb@gmail.com');
+INSERT INTO Users (UserID, UserName, UserEmail) VALUES (2, 'Bogdan', 'bogdan@gmailcom');
+INSERT INTO Users (UserID, UserName, UserEmail) VALUES (3, 'Kirill', 'kirill@gmail.com');
+
+SELECT * FROM Users WHERE UserName = 'Gleb' AND UserAge = 30;
+viga:
+
+Invalid column name 'UserAge'.
+
+
+kuidas lahendada seda probleemi?:
+Если столбец "UserAge" не существует, замените его на существующий или создайте его.
+
+------------------
+2.
+kod:
+CREATE TABLE Employees (
+    EmpID INT PRIMARY KEY,
+    EmpName VARCHAR(50),
+    EmpSalary DECIMAL(10, 2),
+    DeptID INT FOREIGN KEY REFERENCES Departments(DeptID)
+);
+
+viga:
+
+Msg 1767, Level 16, State 0, Line 6
+Foreign key 'FK__Employees__DeptI__2B2A60FE' references invalid table 'Departments'.
+Msg 1750, Level 16, State 1, Line 6
+Could not create constraint or index. See previous errors.
+
+kuidas lahendada seda probleemi?:
+
+Ошибка возникает из-за размещения FOREIGN KEY после определения столбца DeptID.
+
+-------------------
+3.
+kod:
+DROP Orders;
+
+viga:
+Unknown object type 'Orders' used in a CREATE, DROP, or ALTER statement.
+
+kuidas lahendada seda probleemi?: 
+drop table orders
+------------------
+4.
+kod:
+CREATE TABLE Employees (
+    EmpID INT PRIMARY KEY,
+    EmpName VARCHAR(50),
+    EmpSalary DECIMAL(10, 2),
+    DeptID INT FOREIGN KEY REFERENCES Departments(DeptID)
+
+viga:
+Incorrect syntax near ')'.
+
+kuidas lahendada seda probleemi?:
+не добавили скобку
+------------------
+5.
+kod:
+ALTER TABLE Products CONSTRAINT fk_CategoryID FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID);
+
+
+viga:
+Incorrect syntax near the keyword 'CONSTRAINT'.
+
+
+kuidas lahendada seda probleemi?:
+
+Ошибка возникает из-за неправильного использования ключевого слова 'CONSTRAINT'.
+------------------
+6.
+kod:
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE
+);
+
+INSERT INTO Orders (OrderID, CustomerID, OrderDate) VALUES (1, 101, '2024-04-17');
+INSERT INTO Orders (OrderID, CustomerID, OrderDate) VALUES (2, 102, '2024-04-18');
+INSERT INTO Orders (OrderID, CustomerID, OrderDate) VALUES (3, 103, '2024-04-19');
+
+SELECT MAX(OrderDate), OrderID FROM Orders;
+
+
+viga:
+Column 'Orders.OrderID' is invalid in the select 
+list because it is not contained in either an aggregate function or the GROUP BY clause.
+
+kuidas lahendada seda probleemi?:
+Добавьте столбец в оператор GROUP BY или используйте агрегатную функцию.
+------------------
+7.
+kod:
+CREATE INDEX idx_ProductName ON NonExistentTable(ProductName);
+
+
+viga:
+Cannot find the object "NonExistentTable" because it does not exist or you do not have permissions.
+
+kuidas lahendada seda probleemi?:
+нужно проверить существует ли эта таблица
+
+------------------
+8.
+kod:
+DROP TABLE netytakoitablitsi;
+
+viga:
+Cannot drop the table 'netytakoitablitsi', because it does not exist or you do not have permission
+
+kuidas lahendada seda probleemi?: 
+нужно создать таблицу, перед тем как дропать
+
+------------------
+9.
+kod:
+ALTER TABLE abobik ADD COLUMN Column1 INT;
+
+viga:
+Incorrect syntax near the keyword 'COLUMN'.
+
+kuidas lahendada seda probleemi?:
+ALTER TABLE TableName ADD NewColumn INT;
+------------------
+10.
+kod:
+
+create table drakon(
+id int primary key auto_increment
+);
+
+viga:
+
+Incorrect syntax near 'auto_increment'.
+
+kuidas lahendada seda probleemi?: auto_increment use XAMPP
+------------------
