@@ -100,4 +100,53 @@ values(12,1,1,'occupied');
 
 ---------------
 
-8.
+8.CREATE PROCEDURE RoomTypeLisamine
+@description varchar(80),
+@max_capacity int
+AS
+BEGIN
+
+INSERT INTO room_type(type, max_capacity)
+VALUES (@description,@max_capacity);
+SELECT * FROM room_type;
+
+END;
+
+Invalid column name 'type'.
+------------
+
+mitteõigustatud veeru nimi
+Sisesta veeru õige nimi:
+INSERT INTO room_type(description, max_capacity)
+
+-----------
+
+9.delete table room;
+
+Incorrect syntax near the keyword 'table'.
+--------------
+
+et kustutada tabel tuleb kirjutada DROP:
+drop table room
+
+10. CREATE PROCEDURE RoomTypeKustutamine
+@KustutaID int
+AS
+BEGIN
+
+SELECT * FROM room_type;
+DROP FROM room_type
+WHERE id=@KustutaID
+SELECT * FROM room_type;
+
+END;
+
+EXEC RoomTypeKustutamine 6
+
+Incorrect syntax near the keyword 'FROM'.
+--------------------
+
+et kustutada kirje tabelist tuleb kirjutada DELETE:
+DELETE FROM room_type
+
+--------------------
