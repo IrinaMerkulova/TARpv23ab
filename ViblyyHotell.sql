@@ -57,6 +57,17 @@ SELECT * FROM guest;
 INSERT INTO guest(first_name, last_name, member_since)
 VALUES ('Tyler', 'Durden', '1999-10-15');
 
+--Viga nr3--
+--CREATE TABLE reservation(
+--id int Primary key identity(1,1),
+--date_in date,
+--date_out date,
+--made_by varchar(20),
+--guest_id int,
+--foreign key (guest) references guest(id));
+
+
+-- Lahendus veale nr3: --
 CREATE TABLE reservation(
 id int Primary key identity(1,1),
 date_in date,
