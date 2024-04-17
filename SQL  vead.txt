@@ -1,0 +1,150 @@
+SQL Serveris tekkivad vead
+1. 
+Create room_type(
+id int primary key identitu(1,1),
+description varchar (80),
+max_capacity int);
+
+-----
+Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement.
+
+Чтобы решить проблему, нужно добавить Table для создания таблицы.
+CREATE TABLE room_type
+
+-----
+Incorrect syntax near 'identitu'.
+Нужно исправить синтаксис. Вместо identitu, должно быть identity
+
+-----
+There is already an object named 'room_type' in the database.
+Это означает, что уже создалась (есть) такая таблица
+
+
+Create table  room_type(
+id int primary key identity(1,1),
+description varchar (80),
+max_capacity int);
+
+2.
+INSERT INTO room_type (description , max_capacity) 
+VALUES ('standard'), 
+( 'luksus'), 
+('presidendi sviit'), 
+( 'tavaline'); 
+
+-----
+There are more columns in the INSERT statement than values specified in the VALUES clause. The number of values in the VALUES clause must match the number of columns specified in the INSERT statement.
+Это ошибка говорит о том,  что в твоем операторе INSERT указано больше столбцов, чем значений в блоке VALUES. Количество значений в блоке VALUES должно соответствовать количеству столбцов, указанных в операторе INSERT.
+
+INSERT INTO room_type (description , max_capacity) 
+VALUES ('standard', 14), 
+( 'luksus', 15), 
+('presidendi sviit', 11), 
+( 'tavaline', 19); 
+
+3.
+SELECT  FROM room_type;
+
+-----
+Incorrect syntax near the keyword 'FROM'.
+Чтобы исправить ошибку нужно перед FROM добавить *
+
+SELECT * FROM room_type;
+
+4.
+CREATE TABLE room(
+id int Primary key identity (1,1),
+number varchar (10),
+name varchar (40),
+status varchar (10),
+smoke bit,
+room_type_id int,
+foreign key (room_type_id) references room_type(id);
+SELECT * FROM room;
+
+-----
+Incorrect syntax near ';'.
+Перед ; нужно добавить скобку
+
+foreign key (room_type_id) references room_type(id));
+
+5.
+
+SELECT * FROM guest;
+
+-----
+Invalid object name 'guest'
+
+Ошибка связана с отсутствием таблицы. Нужно убедиться, что таблица «guest” существует и правильно указано ее имя
+
+6.
+SELECT * FORM room;
+
+-----
+Incorrect syntax near 'FORM'.
+Неправильный синтаксис в слове “FORM”. Нужно исправить “FORM” на «FROM”
+
+
+SELECT * FROM room;
+
+7.
+ADD INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E10', 'sv', 'open', 1, 1);
+
+-----
+Incorrect syntax near the keyword 'INTO'.
+Нужно ADD изменить на INSERT
+
+INSERT INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E10', 'sv', 'open', 1, 1);
+
+8.
+DELETE TABLE room;
+
+-----
+Incorrect syntax near the keyword 'TABLE'.
+
+Нужно DELETE изменить на DROP
+
+DROP TABLE room;
+
+9.
+CREATE TABLE guest(
+id int Primary key identity (1,1),
+first_name varchat (80),
+last_name varchat (80),
+member_since date);
+
+-----
+Column, parameter, or variable #2: Cannot find data type varchat.
+
+Нужно изменить «varchat» на «varchar»
+
+CREATE TABLE guest(
+id int Primary key identity (1,1),
+first_name varchar (80),
+last_name varchar (80),
+member_since date);
+
+10.
+CREATE TABLE primaryTable(
+ID int PRIMARY KEY identity(1,1),
+sona varchar(50),
+secondaryID int,
+foreign key (ID) references hotell(hotel))
+
+-----
+Msg 1770, Level 16, State 0, Line 39
+Foreign key 'FK__primaryTable__ID__10766AC2' references invalid column 'hotel' in referenced table 'hotell'.
+Msg 1750, Level 16, State 1, Line 39
+Could not create constraint or index. See previous errors.
+
+Ошибка указывает на недопустимый столбец 'hotel' в таблице 'hotell', 
+на который ссылаются. Нужно проверить правильность написания столбца и его 
+существование в таблице 'hotell'.
+
+CREATE TABLE primaryTable(
+ID int PRIMARY KEY identity(1,1),
+sona varchar(50),
+secondaryID int,
+foreign key (ID) references hotell(ID))
