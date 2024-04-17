@@ -93,5 +93,19 @@ on vaja kirjutada nii - INSERT INTO reserved_room (number_of_room, status)
 VALUES 
 (101, 'Booked');
 -------
+11.
+create table room_type(
+id int primary key identity(1,1),
+description varchar(80),
+max_capacity int)
+select * from room_type;
 
+There is already an object named 'room_type' in the database.
+kirjutage teine nimetus -  
+create table roomid(
+id int primary key identity(1,1),
+description varchar(80),
+max_capacity int)
+select * from room_type;
+------
   
