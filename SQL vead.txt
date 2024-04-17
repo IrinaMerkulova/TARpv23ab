@@ -36,6 +36,7 @@ check_in date,
 
 Incorrect syntax near 'pramiry'.
 pramiry key - primary key
+------
 6.
 create procedure AddGuest -- see funktsioon on külalise lisamiseks
     @first_name varchar(80),
@@ -48,9 +49,30 @@ end;
 
 Incorrect syntax near the keyword 'begin'.
 enne 'begin' kirjutatakse 'as'
+------
 7.
 AddGuest 'Alice', 'Johnson', '2022-09-28';
 
 Could not find stored procedure 'AddGuest'.
 
 on vaja kirjutada nii - EXEC AddGuest 'Alice', 'Johnson', '2022-09-28';
+-------
+8.
+create procedure AddReservation -- see funktsioon on ette nähtud broneeringu lisamiseks 
+date_in date,
+date_out date,
+made_by varchar(20),
+guest_id int
+as
+begin
+	insert into reservation (date_in, date_out, made_by, guest_id)
+	values(@date_in, @date_out, @made_by, @guest_id)
+end;
+
+Incorrect syntax near 'date_in'
+
+enne kirjutatakse @ -
+@date_in date,
+@date_out date,
+@made_by varchar(20),
+@guest_id int 
