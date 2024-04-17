@@ -1,0 +1,20 @@
+SQL Servis tekkivad vead 
+1.
+CREATE room_type(
+id int Primary key identity(1,1),
+description varchar(80),
+max_capacity int );
+
+Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement.
+
+Seal ei ole objekti mida peab luua
+
+2.
+CREATE TABLE room_type(
+id int Primary key (1,1),
+description varchar(80),
+max_capacity int );
+
+
+Incorrect syntax near '1'.
+ Нужно добавить "identity" чтобы команда сработала.
