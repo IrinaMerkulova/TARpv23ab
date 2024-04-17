@@ -7,3 +7,8 @@ git config --global user.email "nadvornyjaleksandr74@gmail.com"   # add email
 git config --global --list   #check that you add
 git branch NadvornõiA   # crete branch
 git checkout   #go to you new branch
+git add .
+git commit -a -m "git käsud on kirjas"
+git push
+cd TARpv23ab
+git pull
