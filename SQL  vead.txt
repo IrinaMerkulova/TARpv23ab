@@ -148,3 +148,58 @@ ID int PRIMARY KEY identity(1,1),
 sona varchar(50),
 secondaryID int,
 foreign key (ID) references hotell(ID))
+
+11.
+INSERT INTO room(number, name, status, smoke, room_type_id)
+VALUES ("E10", "sv", "open", 1, 1);
+
+-----
+Msg 207, Level 16, State 1, Line 24
+Invalid column name 'E10'.
+Msg 207, Level 16, State 1, Line 24
+Invalid column name 'sv'.
+Msg 207, Level 16, State 1, Line 24
+Invalid column name 'open'.
+
+Ошибка в двойных кавычек. Нужно изменить двойные кавычки на одинарные
+
+INSERT INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E10', 'sv', 'open', 1, 1);
+
+12.
+INSERT INTO room(number, name, status, smoke, room_type_id)
+VALUES ('E10', 'sv', 'open', 1, 1);
+
+-----
+Invalid object name 'room'.
+
+Ошибка говорит о том, что таблица «room» не существует
+
+13.
+
+CREATE PROCEDURE guestLisamine 
+first_name varchar (80),
+last_name varchar (80),
+member_since date
+AS
+Begin 
+INSERT INTO guest(first_name, last_name, member_since) 
+Values (first_name, last_name, member_since);
+SELECT * FROM guest;
+END;
+
+-----
+Incorrect syntax near 'first_name'.
+
+Нужно перед first_name, last_name и member_since добавить @
+
+CREATE PROCEDURE guestLisamine 
+@first_name varchar (80),
+@last_name varchar (80),
+@member_since date
+AS
+Begin 
+INSERT INTO guest(first_name, last_name, member_since) 
+Values (@first_name, @last_name, @member_since);
+SELECT * FROM guest;
+END;
