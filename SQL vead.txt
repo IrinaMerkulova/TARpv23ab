@@ -108,4 +108,15 @@ description varchar(80),
 max_capacity int)
 select * from room_type;
 ------
-  
+12
+create table room(
+id int primary key identity(1,1),
+number varchar(10),
+name varchar(40),
+status varchar(10),
+smoke bool;
+
+Incorrect syntax near 'bool'.
+
+SQL kirjutatakse nii - smoke bit
+ 
