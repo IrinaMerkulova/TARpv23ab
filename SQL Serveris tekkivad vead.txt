@@ -1,0 +1,94 @@
+SQL Serveris tekkivad vead
+
+1.
+CREATE room_type(
+id int PRIMARY KEY identity(1,1),
+description varchar(80),
+max_capacity int);
+
+Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement.
+--
+lisada sõna table
+
+2.
+CREATE table room_type(
+id int PRIMARY KEY identity(1,1),
+description varchar(80),
+max_capacity int);
+
+There is already an object named 'room_type' in the database.
+--
+selle tabelis juba olemas
+
+3.
+Create table occupied_room(
+id int primary key identity(1,1),
+check_in date
+check_out date
+room_id int,
+foreign key(room_id) references room(id),
+reservation_id int,
+foreign key(reservation_id) references reservation(id));
+
+Incorrect syntax near 'check_out'.
+--
+pole vaja ühtegi "," 3-4 rida
+
+4.
+Create table reserved _room(
+id int primary key identity(1,1),
+number_of_room int,
+room_type_id 
+foreign key(room_type_id) references room_type(id),
+reservation_id int,
+foreign key(reservation_id) references reservation(id),
+status varchar(20));
+select * from reserved_room
+
+Incorrect syntax near '_room'.
+--
+pole vaja "int" 4 rida
+
+5.
+Create table reserved _room(
+number_of_room int,
+room_type_id int
+foreign key(room_type_id) references room_type(id),
+reservation_id int,
+foreign key(reservation_id) references reservation(id),
+status varchar(20));
+select * from reserved_room
+
+Incorrect syntax near '_room'.
+--
+tuleb lisada
+id int primary key identity(1,1),
+
+6.
+Create table reservation(
+id int primary key identity(1,1),
+dte_in date,
+date_out int
+made_by varchar(20),
+guest_id int,
+foreign key(guest_id) references guest(id));
+select * from reservation
+
+Incorrect syntax near 'made_by'.
+--
+peate muutma "int" "date,"
+
+7.
+Create table reservation(
+id int primary key identity(1,1),
+dte_in date,
+date_out date,
+made_by varchar(20),
+guest_id int,
+foreign key (guest_id) references guest(id));
+select * from reservation
+
+There is already an object named 'reservation' in the database.
+--
+peate tabeli muutma
+
