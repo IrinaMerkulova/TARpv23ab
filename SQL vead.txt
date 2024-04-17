@@ -6,6 +6,15 @@ description varchar(80),
 max_capacity int)
 
 Unknown object type 'room_ype' used in a CREATE, DROP, or ALTER statement.
-on vaja kirjutada create TABLE room_ype( 
-
+on vaja kirjutada  - create TABLE room_ype( 
+-------
 2.
+create table room_type(
+id int primary key identity(1,1),
+description (80),
+max_capacity int)
+select * from room_type;
+
+The definition for column 'description' must include a data type.
+on vaja kirjutada -  description varchar(80),
+---------
