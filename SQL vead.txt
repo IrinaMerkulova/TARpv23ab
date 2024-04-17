@@ -82,4 +82,16 @@ select  from reserved_room
 
 Incorrect syntax near the keyword 'from'.
 on vaja kirjutada * enne from - select  * from reserved_room 
--------S
+-------
+10.
+INSERT INTO reserved_room (number_of_room, status)
+(101, 'Booked');
+
+Incorrect syntax near '101'
+
+on vaja kirjutada nii - INSERT INTO reserved_room (number_of_room, status)
+VALUES 
+(101, 'Booked');
+-------
+
+  
