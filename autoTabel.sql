@@ -33,6 +33,10 @@ Select regNr, mark, aasta, regPiirkond
 from autod
 Order by aasta Desc;
 
+--Väljasta kõik erinevad margid
+SELECT DISTINCT(mark) 
+FROM autod;
+
 --Väljasta enne 1993. aastat toodetud autode registrinumbrid
 Select regNr, aasta
 from autod
@@ -47,3 +51,8 @@ order by mark ASC;
 --Väljasta autode kõige varasem väljalaskeaasta (MIN)
 select MIN(aasta) as minAasta
 From autod;
+
+--Lisa uus masin nimekirja. Vaata tabeli sisu.
+SELECT * FROM autod;
+insert into autod (regNr, mark, aasta, regPiirkond) values ('228 JTI', 'Chrysler', 1992, 2);
+
