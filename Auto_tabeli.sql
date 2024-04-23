@@ -41,3 +41,6 @@ CREATE table atod(
 
 --  Järjesta autod tootmisaasta järgi kahanevasse järjekorda
 SELECT * FROM autod ORDER BY aasta DESC;
+
+--Väljasta kõik erinevad margid
+SELECT DISTINCT mark FROM autod;
