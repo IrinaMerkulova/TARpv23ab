@@ -38,5 +38,7 @@ insert into autod (mark, regNr, aasta, regPiirkond) values ('Subaru', '636VUG', 
 insert into autod (mark, regNr, aasta, regPiirkond) values ('Scion', '803JHZ', 2012, 2);
 
 -- Järjesta autod tootmisaasta järgi kahanevasse järjekorda
-
 SELECT * FROM autod ORDER BY aasta DESC;
+
+--Väljasta kõik erinevad margid
+SELECT DISTINCT mark FROM autod;
