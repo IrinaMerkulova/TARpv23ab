@@ -37,3 +37,5 @@ VALUES ('123 ABC', 'Audi', '2000', 1),
 
 Select * from autod
 order by aasta DESC;
+
+SELECT DISTINCT mark FROM autod;
