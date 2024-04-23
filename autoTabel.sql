@@ -61,3 +61,7 @@ select MIN(Aasta) AS minAasta from auto;
 UPDATE auto
 SET RegNr = '333 KKK'
 WHERE RegNr = 'FIN 772';
+
+--·         Kustuta auto id-ga 4
+DELETE FROM auto
+WHERE RegNr = '123 ABC';
