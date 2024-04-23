@@ -39,5 +39,9 @@ insert into auto (RegNr, Mark, Aasta, RegPiirk) values ('838 KLC', 'Chevrolet', 
 insert into auto (RegNr, Mark, Aasta, RegPiirk) values ('639 MSC', 'Jeep', 2003, 1);
 insert into auto (RegNr, Mark, Aasta, RegPiirk) values ('172 HSY', 'GMC', 1996, 2);
 
+--·         Järjesta autod tootmisaasta järgi kahanevasse järjekorda
 select * from auto
 order by aasta DESC;
+
+--·         Väljasta kõik erinevad margid
+select distinct RegNr,Mark from auto
