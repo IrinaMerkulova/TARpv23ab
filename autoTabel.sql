@@ -47,4 +47,9 @@ select distinct RegNr,Mark from auto;
 
 --·         Väljasta enne 1993. aastat toodetud autode registrinumbrid
 select RegNr,Mark,Aasta from auto
-where aasta<1993;
+where Aasta<1993;
+
+--·         Väljasta enne 1993. aastat toodetud autode registrinumbrid tähestiku järjekorras
+select RegNr,Mark,Aasta from auto
+where Aasta<1993
+order by Mark;
