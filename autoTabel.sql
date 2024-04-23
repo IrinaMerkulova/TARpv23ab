@@ -36,3 +36,7 @@ insert into autod (mark, regNr, aasta, regPiirkond) values ('Land Rover', '852VJ
 insert into autod (mark, regNr, aasta, regPiirkond) values ('Suzuki', '584BPF', 2003, 1);
 insert into autod (mark, regNr, aasta, regPiirkond) values ('Subaru', '636VUG', 2008, 1);
 insert into autod (mark, regNr, aasta, regPiirkond) values ('Scion', '803JHZ', 2012, 2);
+
+-- Järjesta autod tootmisaasta järgi kahanevasse järjekorda
+
+SELECT * FROM autod ORDER BY aasta DESC;
