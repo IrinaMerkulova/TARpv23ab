@@ -53,4 +53,5 @@ SELECT regNr, mark, aasta from autod
 where aasta<1993
 order by mark;
 
-
+--5. Väljasta autode kõige varasem väljalaskeaasta (MIN)
+SELECT MIN(aasta) AS min_aasta from autod;
