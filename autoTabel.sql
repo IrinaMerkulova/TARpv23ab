@@ -60,3 +60,8 @@ WHERE id = 3;
 -- Kustuta auto id-ga 4
 DELETE FROM autod
 WHERE regNr = '4';
+
+--Lisa uus masin nimekirja. Vaata tabeli sisu.
+INSERT INTO autod (mark, regNr, aasta, regPiirkond)
+VALUES ('Nissan', '555 NNN', 2007, 2);
+SELECT * FROM autod;
