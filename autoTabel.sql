@@ -56,3 +56,8 @@ order by Mark;
 
 --·         Väljasta autode kõige varasem väljalaskeaasta (MIN)
 select MIN(Aasta) AS minAasta from auto;
+
+--·         Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK)
+UPDATE auto
+SET RegNr = '333 KKK'
+WHERE RegNr = 'FIN 772';
