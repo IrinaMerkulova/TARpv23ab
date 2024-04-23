@@ -31,3 +31,13 @@ VALUES
 ('HIJ 654', 'Volkswagen', 2017, 4);
 
 SELECT * FROM autod
+---1 ülesanne
+SELECT * FROM autod ORDER BY aasta DESC
+---2 ülesanne
+SELECT DISTINCT mark FROM autod;
+---3 ülesanne
+SELECT regNr FROM autod WHERE aasta < 1993;
+---4 ülesanne
+SELECT regNr FROM autod WHERE aasta < 1993 ORDER BY regNr ASC;
+---5 ülesanne
+SELECT MIN(aasta) AS earliest_year FROM autod;
