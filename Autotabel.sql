@@ -41,5 +41,10 @@ insert into autod (regNr, mark, aasta, regPiirkond) values ('570 ZVD', 'Mercedes
 Select * from autod
 order by aasta DESC;
 
---2. Väljasta kõik erinevad margid
+--- 2. Väljasta kõik erinevad margid
 SELECT DISTINCT mark FROM autod;
+
+--- 3. Väljasta enne 1993. aastat toodetud autode registrinumbrid
+SELECT aasta from autod
+where aasta<1993
+order by regNr;
