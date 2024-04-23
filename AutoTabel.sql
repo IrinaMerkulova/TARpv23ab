@@ -56,6 +56,9 @@ SELECT MIN(aasta) AS varem_aasta FROM Autod;
 Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK):
 UPDATE Autod SET regNr = '333 KKK' WHERE id = 3;
 
+Kustuta auto id-ga 4:
+DELETE FROM Autod WHERE id = 4;
+
 
 
 
