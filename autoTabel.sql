@@ -28,10 +28,15 @@ VALUES
   ('616 CDE', 'Tesla', 2020, 1),
   ('717 FGH', 'Porsche', 2008, 2);
 select * from autod
-  -- 1 select
+  -- 2 select
 SELECT * FROM autod
 ORDER BY aasta DESC;
--- 2 select
+-- 3 select
 SELECT regNr
 FROM autod
 WHERE aasta < 1993;
+-- 4 select
+SELECT regNr
+FROM autod
+WHERE aasta < 1993
+ORDER BY regNr ASC;
