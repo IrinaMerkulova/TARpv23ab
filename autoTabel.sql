@@ -6,8 +6,7 @@ create Table auto(
 RegNr char(7) Primary Key,
 Mark varchar(20),
 Aasta int,
-RegPiirk int
-)
+RegPiirk int);
 
 insert into auto(Mark, RegNr, Aasta, RegPiirk)
 values
@@ -44,4 +43,8 @@ select * from auto
 order by aasta DESC;
 
 --·         Väljasta kõik erinevad margid
-select distinct RegNr,Mark from auto
+select distinct RegNr,Mark from auto;
+
+--·         Väljasta enne 1993. aastat toodetud autode registrinumbrid
+select RegNr,Mark,Aasta from auto
+where aasta<1993;
