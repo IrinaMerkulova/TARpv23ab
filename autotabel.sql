@@ -31,3 +31,5 @@ insert into  autod (regNr, mark, aasta, regPiirk) values ('658 ESA', 'Volkswagen
 insert into  autod (regNr, mark, aasta, regPiirk) values ('885 CEL', 'Porsche', 2011, 1);
 
 
+
+SELECT * FROM autod ORDER BY aasta DESC;
