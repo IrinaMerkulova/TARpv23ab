@@ -48,3 +48,5 @@ select regNr,mark,aasta
 from autod
 where aasta<1993
 order by mark;
+
+SELECT min(aasta) AS minAasta FROM autod;
