@@ -1,4 +1,4 @@
---Xammp
+--sql
 create database autoGorbunova;
 use autoGorbunova;
 create table autod(
@@ -28,9 +28,10 @@ VALUES
   ('616 CDE', 'Tesla', 2020, 1),
   ('717 FGH', 'Porsche', 2008, 2);
 select * from autod
-  -- 2 select
+  -- 1 select
 SELECT * FROM autod
 ORDER BY aasta DESC;
+--2 ei ole
 -- 3 select
 SELECT regNr
 FROM autod
@@ -40,3 +41,6 @@ SELECT regNr
 FROM autod
 WHERE aasta < 1993
 ORDER BY regNr ASC;
+--5 select
+SELECT min(aasta) as koigevaiksem 
+FROM autod;
