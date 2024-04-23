@@ -48,6 +48,10 @@ SELECT DISTINCT mark FROM autod;
 select regNr,aasta from autod
 where aasta<1993
 
+select regNr,aasta from autod
+where aasta<1993
+order by regNr
+
 
 
 
