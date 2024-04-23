@@ -26,13 +26,13 @@ Values ('298 EQQ', 'BMW', 2000, 1);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
 Values ('208 ETK', 'BMW', 2000, 1);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
-Values ('200 ETK', 'BMW', 1994, 1);
+Values ('200 ETK', 'BMW', 1990, 1);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
-Values ('200 ETU', 'BMW', 1994, 2);
+Values ('200 ETU', 'BMW', 1993, 2);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
 Values ('244 PÜC', 'BMW', 1999, 2);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
-Values ('244 PIC', 'Audi', 1999, 2);
+Values ('244 PIC', 'Audi', 1993, 2);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
 Values ('591 PIC', 'Audi', 2003, 2);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
@@ -58,7 +58,7 @@ Values ('284 EIC', 'Toyota', 2024, 2);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
 Values ('224 EIC', 'Toyota', 2004, 2);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
-Values ('224 EEC', 'Toyota', 2004, 2);
+Values ('224 EEC', 'Toyota', 1990, 2);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
 Values ('220 EEC', 'Toyota', 2004, 3);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
@@ -72,3 +72,5 @@ Values ('130 ABC', 'Audi', 2014, 1);
 --Järjesta autod tootmisaasta järgi kahanevasse järjekorda
 SELECT * FROM autod ORDER BY aasta DESC;
 
+--Väljasta kõik erinevad margid
+SELECT DISTINCT mark FROM autod;
