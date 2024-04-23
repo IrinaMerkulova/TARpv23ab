@@ -40,3 +40,5 @@ SELECT * FROM autod ORDER BY Aasta DESC;
 SELECT DISTINCT Mark FROM autod;
 --Enne 1993. aastat toodetud autode registrinumbrid:
 SELECT RegNr FROM autod WHERE Aasta < 1993;
+--Enne 1993. aastat toodetud autode registrinumbrid tähestiku järjekorras:
+SELECT RegNr FROM autod WHERE Aasta < 1993 ORDER BY RegNr;
