@@ -39,3 +39,10 @@ insert into autod (regNr, mark, aasta, regPiirkond) values ('053 DXJ', 'Ford', 1
 insert into autod (regNr, mark, aasta, regPiirkond) values ('824 LVQ', 'Audi', 2005, 1);
 insert into autod (regNr, mark, aasta, regPiirkond) values ('234 MYM', 'Bentley', 2012, 1);
 insert into autod (regNr, mark, aasta, regPiirkond) values ('050 MVH', 'Chevrolet', 1996, 2);
+
+
+-- Järjesta autod tootmisaasta järgi kahanevasse järjekorda
+
+select * from autod order by aasta;
+
+
