@@ -54,3 +54,5 @@ SELECT min(aasta) AS minAasta FROM autod;
 UPDATE autod
 SET regNr = '333 KKK'
 WHERE regNr = 'FIN 772';
+
+DELETE FROM autod WHERE regNr='123 ABC';
