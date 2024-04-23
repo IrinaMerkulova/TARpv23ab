@@ -65,3 +65,8 @@ WHERE RegNr = 'FIN 772';
 --·         Kustuta auto id-ga 4
 DELETE FROM auto
 WHERE RegNr = '123 ABC';
+
+--·         Lisa uus masin nimekirja. Vaata tabeli sisu.
+insert into auto(Mark, RegNr, Aasta, RegPiirk)
+values
+('Nissan','555 NNN',2007,2);
