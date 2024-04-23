@@ -50,3 +50,7 @@ SELECT * FROM autod;
 --Kustuta auto id-ga 4:
 DELETE FROM autod WHERE RegNr = '777 AAA';
 SELECT * FROM autod;
+--Lisa uus masin nimekirja ja vaata tabeli sisu:
+INSERT INTO autod (Mark, RegNr, Aasta, RegPiirkond) 
+VALUES ('Nissan', '555 NNN', 2007, 2);
+SELECT * FROM autod;
