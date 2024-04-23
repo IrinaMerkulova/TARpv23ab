@@ -43,3 +43,6 @@ delete from autod where regNr = '111 KOL';
 
 --- Järjesta autod tootmisaasta järgi kahanevasse järjekorda
 select * from autod order by aasta
+
+---Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK)
+update autod set regNr ='333 KKK' where regNr = '333 FAQ'
