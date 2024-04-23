@@ -61,6 +61,8 @@ WHERE regNr = '065BYL';
 delete from autod 
 where regNr='117YNP'
 
+insert into autod (mark, regNr, aasta, regPiirkond) values ('Nissan', '555 NNN', 2007, 2);
+
 
 
 
