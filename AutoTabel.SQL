@@ -56,3 +56,6 @@ SET regNr = '333 KKK'
 WHERE regNr = 'FIN 772';
 
 DELETE FROM autod WHERE regNr='123 ABC';
+
+INSERT INTO autod(regNr, mark, aasta, regPiirkond)
+VALUES ('555 NNN', 'Nissan', '2007', 2);
