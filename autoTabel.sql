@@ -39,3 +39,6 @@ insert into autod (mark, regNr, aasta, regPiirkond) values ('Suzuki', '634ZPO', 
 insert into autod (mark, regNr, aasta, regPiirkond) values ('GMC', '117YZH', 1992, 1);
 insert into autod (mark, regNr, aasta, regPiirkond) values ('Toyota', '997GIH', 1993, 1);
 insert into autod (mark, regNr, aasta, regPiirkond) values ('Audi', '036HWK', 1999, 2);
+
+select mark,aasta from autod
+order by aasta desc
