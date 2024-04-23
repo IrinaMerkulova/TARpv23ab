@@ -37,5 +37,5 @@ SELECT * FROM autod WHERE aasta < 1993;
 SELECT min(aasta) as 'aasta'  FROM autod;
 UPDATE autod SET mark = '333 KKK' WHERE regNr like 'FIN 772';
 DELETE FROM autod WHERE regNr like '111 CCC';
-
+INSERT INTO autod(regNr, mark, aasta, regPiirk) VALUES ('555 NNN', 'Nissan', 2007, 2);
 
