@@ -38,3 +38,6 @@ CREATE table atod(
   Values('012 DIN', 'Mazda', 2000, 2);
   INSERT INTO autod(regNr, mark, aasta, regPiirkond)
   Values('748 DES', 'JEEP', 2020, 1);
+
+--  Järjesta autod tootmisaasta järgi kahanevasse järjekorda
+SELECT * FROM autod ORDER BY aasta DESC;
