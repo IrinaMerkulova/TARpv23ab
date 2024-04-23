@@ -68,3 +68,8 @@ update autod set regNr = '333 KKK' where regNr = '111 CCC';
 -- Kustuta auto id-ga 4
 
 delete from autod where regNr = '123 ABC';
+
+-- Lisa uus masin nimekirja. Vaata tabeli sisu.
+
+INSERT autod(regNr, mark, aasta, regPiirkond)
+values('555 NNN', 'Nissan', 2007, 2);
