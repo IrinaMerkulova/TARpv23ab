@@ -34,3 +34,14 @@ VALUES('123 ABC', 'Audi', 2000, 1),
 ('433XXH', 'Chevrolet', 1997, 2),
 ('697AQI', 'Cadillac', 2011, 2),
 ('232NBT', 'Dodge', 1994, 1);
+
+DELETE FROM autod;
+
+SELECT * from autod
+order by aasta DESC;
+
+SELECT DISTINCT mark FROM autod;
+
+SELECT aasta
+from autod
+WHERE aasta <=1993;
