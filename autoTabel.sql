@@ -48,3 +48,7 @@ select * from autod order by aasta;
 -- Väljasta kõik erinevad margid
 
 SELECT * FROM autod WHERE mark='Ford'
+
+-- Väljasta enne 1993. aastat toodetud autode registrinumbrid
+
+select * from autod where aasta <= 1993;
