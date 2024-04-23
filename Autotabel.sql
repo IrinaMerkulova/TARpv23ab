@@ -64,3 +64,8 @@ WHERE regNr = '067 SJI';
 --- 7.  Kustuta auto id-ga 4
 DELETE FROM autod 
 WHERE regNr='123 ABC';
+
+--- 8.  Lisa uus masin nimekirja. Vaata tabeli sisu.
+INSERT INTO autod(regNr, mark, aasta, regPiirkond) 
+VALUES ('BMW M5', '666 MAX', 1988, 2);
+Select * from autod;
