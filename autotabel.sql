@@ -48,3 +48,6 @@ WHERE aasta < 1993;
 SELECT regNr FROM autod
 WHERE aasta < 1993
 ORDER BY regNr;
+
+--äljasta autode kõige varasem väljalaskeaasta (MIN)
+SELECT MIN(aasta) FROM autod;
