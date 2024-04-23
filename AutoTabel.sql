@@ -1,3 +1,4 @@
+
 --sql server
 CREATE DATABASE AutoJegorov;
 USE AutoJegorov;
@@ -36,3 +37,8 @@ VALUES
 ('717 AUS', 'Lexus', 1995, 4),
 ('842 UXH', 'Maserati', 2011, 9),
 ('218 NCY', 'Lincoln', 2009, 1);
+
+--Järjesta autod tootmisaasta järgi kahanevasse järjekorda:
+SELECT * FROM Autod ORDER BY aasta DESC;
+
+
