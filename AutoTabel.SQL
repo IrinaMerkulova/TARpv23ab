@@ -50,3 +50,7 @@ where aasta<1993
 order by mark;
 
 SELECT min(aasta) AS minAasta FROM autod;
+
+UPDATE autod
+SET regNr = '333 KKK'
+WHERE regNr = 'FIN 772';
