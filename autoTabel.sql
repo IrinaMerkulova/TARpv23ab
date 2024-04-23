@@ -52,6 +52,8 @@ select regNr,aasta from autod
 where aasta<1993
 order by regNr
 
+select min(aasta) from autod
+
 
 
 
