@@ -47,7 +47,7 @@ select * from autod order by aasta;
 
 -- Väljasta kõik erinevad margid
 
-SELECT * FROM autod WHERE mark='Ford'
+select DIstinct mark from autod;
 
 -- Väljasta enne 1993. aastat toodetud autode registrinumbrid
 
@@ -57,6 +57,14 @@ select * from autod where aasta <= 1993;
 
 select regNr, aasta from autod where aasta <= 1993 order by regNr;
 
--- Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK)
+-- Väljasta autode kõige varasem väljalaskeaasta (MIN)
 
 select MIN(aasta) from autod 
+
+-- Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK)
+
+update autod set regNr = '333 KKK' where regNr = '111 CCC'; 
+
+-- Kustuta auto id-ga 4
+
+delete from autod where regNr = '123 ABC';
