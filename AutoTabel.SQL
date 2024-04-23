@@ -34,3 +34,6 @@ VALUES ('123 ABC', 'Audi', '2000', 1),
 ('623 RYV', 'Volvo', 2011, 2),
 ('234 BZS', 'Audi', 1994, 1),
 ('123 GTP', 'Mazda', 1992, 2);
+
+Select * from autod
+order by aasta DESC;
