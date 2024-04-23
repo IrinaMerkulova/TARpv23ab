@@ -8,10 +8,10 @@ aasta int,
 regPiirk int
 );
 
-INSERT INTO autod(regNr, mark, aasta, regPiirk) VALUES ('123 ABC', 'Audi', 2000, 1 ), ('777 AAA', 'Ford', 1988, 2), ('FIN 772', 'Ford', 2002, 1), ('111 CCC', 'Nissan', 2006, 1), ('128 HGF', 'Toyota', 2003, 1), ('544 CCH','VAZ',1960,2);
-insert into  autod (regNr, mark, aasta, regPiirk) values ('422 YPJ', 'Volvo', 2006, 2);
-insert into  autod (regNr, mark, aasta, regPiirk) values ('724 QIQ', 'Chevrolet', 2012, 2);
-insert into  autod (regNr, mark, aasta, regPiirk) values ('257 JZA', 'Volvo', 2000, 2);
+INSERT INTO autod(regNr, mark, aasta, regPiirk) VALUES ('123 ABC', 'Audi', 2000, 1 ), ('777 AAA', 'Ford', 1988, 2), ( 'FIN 772', 'Ford', 2002, 1), ('111 CCC', 'Nissan', 2006, 1), ( '128 HGF', 'Toyota', 2003, 1), ('544 CCH','VAZ',1960,2);
+insert into  autod (regNr, mark, aasta, regPiirk) values ( '422 YPJ', 'Volvo', 2006, 2);
+insert into  autod (regNr, mark, aasta, regPiirk) values ( '724 QIQ', 'Chevrolet', 2012, 2);
+insert into  autod (regNr, mark, aasta, regPiirk) values ( '257 JZA', 'Volvo', 2000, 2);
 insert into  autod (regNr, mark, aasta, regPiirk) values ('600 GRS', 'Volkswagen', 1987, 2);
 insert into  autod (regNr, mark, aasta, regPiirk) values ('028 RJV', 'Chrysler', 1993, 1);
 insert into  autod (regNr, mark, aasta, regPiirk) values ('517 KOK', 'Oldsmobile', 1996, 2);
@@ -35,4 +35,5 @@ insert into  autod (regNr, mark, aasta, regPiirk) values ('885 CEL', 'Porsche', 
 SELECT * FROM autod ORDER BY aasta DESC;
 SELECT * FROM autod WHERE aasta < 1993;
 SELECT min(aasta) as 'aasta'  FROM autod;
+UPDATE autod SET mark = '333 KKK' WHERE regNr like 'FIN 772'
 
