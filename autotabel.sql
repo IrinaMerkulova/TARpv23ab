@@ -35,5 +35,7 @@ insert into  autod (regNr, mark, aasta, regPiirk) values ('885 CEL', 'Porsche', 
 SELECT * FROM autod ORDER BY aasta DESC;
 SELECT * FROM autod WHERE aasta < 1993;
 SELECT min(aasta) as 'aasta'  FROM autod;
-UPDATE autod SET mark = '333 KKK' WHERE regNr like 'FIN 772'
+UPDATE autod SET mark = '333 KKK' WHERE regNr like 'FIN 772';
+DELETE FROM autod WHERE regNr like '111 CCC';
+
 
