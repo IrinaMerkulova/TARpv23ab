@@ -47,3 +47,6 @@ SELECT MIN(Aasta) AS Varasem_Aasta FROM autod;
 --Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK):
 UPDATE autod SET RegNr = '333 KKK' WHERE RegNr = '111 CCC';
 SELECT * FROM autod;
+--Kustuta auto id-ga 4:
+DELETE FROM autod WHERE RegNr = '777 AAA';
+SELECT * FROM autod;
