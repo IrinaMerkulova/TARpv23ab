@@ -48,3 +48,9 @@ FROM autod;
 UPDATE autod
 SET regNr = '333 KKK'
 WHERE regNr = '101 JKL'
+-- 7 select delete
+DELETE FROM autod
+WHERE regNr = '202 MNO'
+-- 8 selet lisamine 
+INSERT INTO autod (regNr, mark, aasta, regPiirkond)
+VALUES('555 NNN', 'Nissan', 2007, 2);
