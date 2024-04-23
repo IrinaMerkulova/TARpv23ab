@@ -54,3 +54,6 @@ Select regNr from autod Where Aasta < 1993 Order by regNr;
 
 ---Väljasta autode kõige varasem väljalaskeaasta (MIN)
 Select MIN(Aasta) as Min from autod;
+
+--- Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK)
+Update autod SET regNr='333 KKK' Where regNr='FIN 772'
