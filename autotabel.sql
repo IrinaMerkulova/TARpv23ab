@@ -36,6 +36,11 @@ insert into autod (mark, regNr, aasta, regPiirkond) values ('Mitsubishi', '320 C
 -- Järjesta autod tootmisaasta järgi kahanevasse järjekorda--
 SELECT * FROM autod
 ORDER BY aasta DESC;
+
 --Väljasta kõik erinevad margid--
 SELECT DISTINCT mark FROM autod;
+
+-- Väljasta enne 1993. aastat toodetud autode registrinumbrid tähestiku järjekorras
+SELECT regNr FROM autod
+WHERE aasta < 1993;
 
