@@ -36,3 +36,5 @@ insert into autod (regNr, mark, aasta, regPiirkond) values ('333 DDD', 'Mazda', 
 insert into autod (regNr, mark, aasta, regPiirkond) values ('122 POL', 'Jaguar', 2007, 79);
 insert into autod (regNr, mark, aasta, regPiirkond) values('111 PFF', 'Chevrolet', 1996, 46);
 
+
+delete from autod where regNr = '111 KOL';
