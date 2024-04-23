@@ -45,4 +45,6 @@ insert into autod (regNr, mark, aasta, regPiirkond) values ('050 MVH', 'Chevrole
 
 select * from autod order by aasta;
 
+-- Väljasta kõik erinevad margid
 
+SELECT * FROM autod WHERE mark='Ford'
