@@ -34,3 +34,5 @@ VALUES ('Audi','123 ABC',2000,1),
 ('Opel','523 TOP',2007,1),
 ('Daihatsu','612 CAB',2006,2),
 ('Lexus','522 POP',2008,1);
+--Autod järjestatuna tootmisaasta järgi kahanevasse järjekorda:
+SELECT * FROM autod ORDER BY Aasta DESC;
