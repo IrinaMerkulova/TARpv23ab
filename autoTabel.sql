@@ -67,3 +67,8 @@ INSERT INTO autod(regNr, mark, aasta, regPiirkond)
 Values ('130 ACC', 'Toyota', 2014, 1);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
 Values ('130 ABC', 'Audi', 2014, 1);  
+
+
+--Järjesta autod tootmisaasta järgi kahanevasse järjekorda
+SELECT * FROM autod ORDER BY aasta DESC;
+
