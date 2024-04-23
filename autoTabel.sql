@@ -53,3 +53,6 @@ where Aasta<1993;
 select RegNr,Mark,Aasta from auto
 where Aasta<1993
 order by Mark;
+
+--·         Väljasta autode kõige varasem väljalaskeaasta (MIN)
+select MIN(Aasta) AS minAasta from auto;
