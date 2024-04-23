@@ -38,3 +38,5 @@ VALUES ('Audi','123 ABC',2000,1),
 SELECT * FROM autod ORDER BY Aasta DESC;
 --Kõikide erinevate autode margid:
 SELECT DISTINCT Mark FROM autod;
+--Enne 1993. aastat toodetud autode registrinumbrid:
+SELECT RegNr FROM autod WHERE Aasta < 1993;
