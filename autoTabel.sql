@@ -57,3 +57,8 @@ UPDATE autod
 SET regNr = '333 KKK'
 WHERE id = 3;
 
+-- Kustuta auto id-ga 4
+DELETE FROM autod
+WHERE regNr = '4';
+
+
