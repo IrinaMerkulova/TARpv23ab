@@ -56,3 +56,6 @@ SELECT MIN(aasta) AS Earliest_Year FROM autod;
 
 --Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK)
 UPDATE autod SET regNr = '333 KKK' WHERE regNr = '102 MFG';
+
+--Kustuta auto id-ga 4
+DELETE FROM autod WHERE regNr = '123 ABC';
