@@ -36,3 +36,5 @@ VALUES ('Audi','123 ABC',2000,1),
 ('Lexus','522 POP',2008,1);
 --Autod järjestatuna tootmisaasta järgi kahanevasse järjekorda:
 SELECT * FROM autod ORDER BY Aasta DESC;
+--Kõikide erinevate autode margid:
+SELECT DISTINCT Mark FROM autod;
