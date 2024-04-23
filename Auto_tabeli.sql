@@ -50,3 +50,6 @@ SELECT regNr FROM autod WHERE aasta < 1993;
 
 --Väljasta enne 1993. aastat toodetud autode registrinumbrid tähestiku järjekorras
 SELECT regNr FROM autod WHERE aasta < 1993 ORDER BY regNr ASC;
+
+--Väljasta autode kõige varasem väljalaskeaasta (MIN)
+SELECT MIN(aasta) AS Earliest_Year FROM autod;
