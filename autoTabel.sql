@@ -55,3 +55,6 @@ select * from autod where aasta <=1993
 
 ---sorteeritud väljalaskekuupäeva
 select * from autod order by aasta
+
+---LISAMINE UUE AUTO
+insert into autod (regNr, mark, aasta, regPiirkond) values ('099 NEO', 'BMW',  2022, 99);
