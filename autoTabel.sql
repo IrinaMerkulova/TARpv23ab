@@ -50,3 +50,8 @@ update autod set regNr ='333 KKK' where regNr = '333 FAQ'
 
   --- Väljasta enne 1993. aastat toodetud autode registrinumbrid
 select * from autod where aasta <=1993
+
+
+
+---sorteeritud väljalaskekuupäeva
+select * from autod order by aasta
