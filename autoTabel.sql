@@ -42,3 +42,11 @@ insert into autod (mark, regNr, aasta, regPiirkond) values ('Audi', '036HWK', 19
 
 select mark,aasta from autod
 order by aasta desc
+
+SELECT DISTINCT mark FROM autod;
+
+
+
+
+
+
