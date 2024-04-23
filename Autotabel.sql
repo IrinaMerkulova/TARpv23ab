@@ -36,3 +36,7 @@ insert into autod (regNr, mark, aasta, regPiirkond) values ('019 HYV', 'Maserati
 insert into autod (regNr, mark, aasta, regPiirkond) values ('853 OFN', 'Mercury', 1992, 2);
 insert into autod (regNr, mark, aasta, regPiirkond) values ('435 OCL', 'Buick', 2001, 1);
 insert into autod (regNr, mark, aasta, regPiirkond) values ('570 ZVD', 'Mercedes-Benz', 1998, 2);
+--- Tee järgmised SELECT laused: 
+--- 1. Järjesta autod tootmisaasta järgi kahanevasse järjekorda
+Select * from autod
+order by aasta DESC;
