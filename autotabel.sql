@@ -6,3 +6,6 @@ CREATE TABLE autod(
   mark varchar(20),
   aasta int,
   regPiirkond int)
+
+INSERT autod VALUES ('Audi', '123 ABC', 2000, 1)
+INSERT autod VALUES ('Ford', '777 AAA', 1988, 2)
