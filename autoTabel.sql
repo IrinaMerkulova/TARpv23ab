@@ -21,6 +21,8 @@ Values ('128 HGF', 'Toyota', 2003, 1);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
 Values ('544 CCH', 'VAZ', 1960, 2);
 
+---Sisestatud on järgmised 20 autot
+
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
 Values ('298 EQQ', 'BMW', 2000, 1);
 INSERT INTO autod(regNr, mark, aasta, regPiirkond)
@@ -77,3 +79,6 @@ SELECT DISTINCT mark FROM autod;
 
 -- Väljasta enne 1993. aastat toodetud autode registrinumbrid
 SELECT regNr FROM autod WHERE aasta < 1993;
+
+--Väljasta enne 1993. aastat toodetud autode registrinumbrid tähestiku järjekorras
+SELECT regNr FROM autod WHERE aasta < 1993 ORDER BY regNr ASC;
