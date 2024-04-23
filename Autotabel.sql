@@ -40,3 +40,6 @@ insert into autod (regNr, mark, aasta, regPiirkond) values ('570 ZVD', 'Mercedes
 --- 1. Järjesta autod tootmisaasta järgi kahanevasse järjekorda
 Select * from autod
 order by aasta DESC;
+
+--2. Väljasta kõik erinevad margid
+SELECT DISTINCT mark FROM autod;
