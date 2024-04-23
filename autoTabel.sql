@@ -36,4 +36,4 @@ insert into autod (mark, regNr, aasta, Regpiirkond) values ('GMC', '341 CBB', 19
 insert into autod (mark, regNr, aasta, Regpiirkond) values ('Bentley', '134 EIC', 2010, 1);
 insert into autod (mark, regNr, aasta, Regpiirkond) values ('Toyota', '333 OLB', 2011, 2);
 
-
+SELECT * FROM Autod ORDER BY aasta DESC;
