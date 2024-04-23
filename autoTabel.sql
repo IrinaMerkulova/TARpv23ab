@@ -41,6 +41,10 @@ VALUES ('546 CZP', 'Chevrolet', 2009, 1),
 ('954 DSV', 'Suzuki', 2009, 1);
 
 ---Järjesta autod tootmisaasta järgi kahanevasse järjekorda
-Select * from autod Order by Aasta DESC
+Select * from autod Order by Aasta DESC;
 
+---Väljasta kõik erinevad margid
+Select DISTINCT Mark from autod;
 
+---Väljasta enne 1993. aastat toodetud autode registrinumbrid
+Select regNr from autod Where Aasta < 1993;
