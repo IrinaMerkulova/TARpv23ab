@@ -39,3 +39,7 @@ Select * from autod
 order by aasta DESC;
 
 SELECT DISTINCT mark FROM autod;
+
+select aasta
+from autod
+WHERE aasta <=1993;
