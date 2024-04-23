@@ -33,4 +33,7 @@ insert into autod (mark, regNr, aasta, regPiirkond) values ('Audi', '153 MAB', 1
 insert into autod (mark, regNr, aasta, regPiirkond) values ('GMC', '352 MDV', 1992, 1);
 insert into autod (mark, regNr, aasta, regPiirkond) values ('GMC', '597 EGS', 2006, 1);
 insert into autod (mark, regNr, aasta, regPiirkond) values ('Mitsubishi', '320 CBR', 2007, 2);
+-- Järjesta autod tootmisaasta järgi kahanevasse järjekorda--
+SELECT * FROM autod
+ORDER BY aasta DESC;
 
