@@ -1,4 +1,4 @@
----sql Server
+--sql Server
 CREATE DATABASE autoJegorov;
 USE autoJegorov;
 CREATE table autod(
@@ -6,7 +6,7 @@ CREATE table autod(
 mark varchar(20),
 aasta int,
 regPiirkond int)
----tabeli täitmine
+--tabeli täitmine
 INSERT INTO autod (regNr, mark, aasta, regPiirkond)
 VALUES
 ('ABC 123', 'Toyota', 2016, 3),
@@ -31,13 +31,24 @@ VALUES
 ('HIJ 654', 'Volkswagen', 2017, 4);
 
 SELECT * FROM autod
----1 ülesanne
+--Järjesta autod tootmisaasta järgi kahanevasse järjekorda
 SELECT * FROM autod ORDER BY aasta DESC
----2 ülesanne
+--Väljasta kõik erinevad margid
 SELECT DISTINCT mark FROM autod;
----3 ülesanne
+--Väljasta enne 1993. aastat toodetud autode registrinumbrid
 SELECT regNr FROM autod WHERE aasta < 1993;
----4 ülesanne
+--Väljasta enne 1993. aastat toodetud autode registrinumbrid tähestiku järjekorras
 SELECT regNr FROM autod WHERE aasta < 1993 ORDER BY regNr ASC;
----5 ülesanne
-SELECT MIN(aasta) AS earliest_year FROM autod;
+--Väljasta autode kõige varasem väljalaskeaasta (MIN)
+SELECT MIN(aasta) AS vaiksem FROM autod;
+--Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK)
+UPDATE autod
+SET regNr = '333 KKK'
+WHERE regNr = 'PQR 654';
+-- Kustuta auto id-ga 4
+DELETE FROM autod 
+WHERE regNr = 'MNO 321';
+-- Lisa uus masin nimekirja. Vaata tabeli sisu.
+INSERT INTO autod (regNr, mark, aasta, regPiirkond)
+VALUES
+('555 NNN', 'Nissan', 2007, 2);
