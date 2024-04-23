@@ -6,7 +6,7 @@ CREATE table autod(
   mark varchar(20),
   aasta int,
   regPiirkond int)
-
+---teeme tabel
 INSERT INTO autod (regNr, mark, aasta, regPiirkond)
 VALUES ('123 ABC', 'Audi', 2000, 1) 
 VALUES ('777 AAA', 'Ford', 1998, 2) 
@@ -15,6 +15,7 @@ VALUES ('111 CCC', 'Nissan', 2006, 1)
 VALUES ('128 HGF', 'Toyota', 2003, 1) 
 VALUES ('544 CCH', 'VAZ', 1960, 2) 
 SELECT * FROM autod
+---lisa uus 20 autod
 insert into autod (regNr, mark, aasta, regPiirkond) values ('007 KIR', 'BMW',  1997, 4);
 insert into autod (regNr, mark, aasta, regPiirkond) values ('111 KOL', 'Mazda', 2005, 2);
 insert into autod (regNr, mark, aasta, regPiirkond) values ('222 TAK', 'Lexus', 1997, 71);
@@ -36,5 +37,9 @@ insert into autod (regNr, mark, aasta, regPiirkond) values ('333 DDD', 'Mazda', 
 insert into autod (regNr, mark, aasta, regPiirkond) values ('122 POL', 'Jaguar', 2007, 79);
 insert into autod (regNr, mark, aasta, regPiirkond) values('111 PFF', 'Chevrolet', 1996, 46);
 
-
+---kustutamine auto 4 id'ga
 delete from autod where regNr = '111 KOL';
+
+
+--- Järjesta autod tootmisaasta järgi kahanevasse järjekorda
+select * from autod order by aasta
