@@ -54,6 +54,10 @@ order by regNr
 
 select min(aasta) from autod
 
+UPDATE autod
+SET regNr = '333 kkk'
+WHERE regNr = '065BYL';
+
 
 
 
