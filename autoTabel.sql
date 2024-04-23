@@ -39,3 +39,8 @@ VALUES ('546 CZP', 'Chevrolet', 2009, 1),
 ('047 BHD', 'Chevrolet', 2000, 1),
 ('662 EID', 'Chevrolet', 1997, 2),
 ('954 DSV', 'Suzuki', 2009, 1);
+
+---Järjesta autod tootmisaasta järgi kahanevasse järjekorda
+Select * from autod Order by Aasta DESC
+
+
