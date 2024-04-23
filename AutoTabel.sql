@@ -41,4 +41,7 @@ VALUES
 --Järjesta autod tootmisaasta järgi kahanevasse järjekorda:
 SELECT * FROM Autod ORDER BY aasta DESC;
 
+Väljasta kõik erinevad margid:
+SELECT DISTINCT mark FROM Autod;
+
 
