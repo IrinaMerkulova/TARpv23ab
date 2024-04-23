@@ -60,3 +60,6 @@ WHERE regNr = 'FIN 772'
 --Kustuta auto id-ga 4
 DELETE FROM autod
 WHERE regNr = '111 CCC'
+
+--Lisa uus masin nimekirja. Vaata tabeli sisu.
+INSERT INTO autod VALUES ('Nissan', '555 NNN', 2007, 2)
