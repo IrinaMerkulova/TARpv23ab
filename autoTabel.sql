@@ -44,3 +44,7 @@ ORDER BY regNr ASC;
 --5 select
 SELECT min(aasta) as koigevaiksem 
 FROM autod;
+-- 6 select update
+UPDATE autod
+SET regNr = '333 KKK'
+WHERE regNr = '101 JKL'
