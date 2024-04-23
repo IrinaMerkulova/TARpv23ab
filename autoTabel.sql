@@ -46,3 +46,7 @@ select * from autod order by aasta
 
 ---Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK)
 update autod set regNr ='333 KKK' where regNr = '333 FAQ'
+
+
+  --- Väljasta enne 1993. aastat toodetud autode registrinumbrid
+select * from autod where aasta <=1993
