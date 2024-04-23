@@ -31,3 +31,7 @@ select * from autod
   -- 1 select
 SELECT * FROM autod
 ORDER BY aasta DESC;
+-- 2 select
+SELECT regNr
+FROM autod
+WHERE aasta < 1993;
