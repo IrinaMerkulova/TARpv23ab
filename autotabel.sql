@@ -33,3 +33,5 @@ insert into  autod (regNr, mark, aasta, regPiirk) values ('885 CEL', 'Porsche', 
 
 
 SELECT * FROM autod ORDER BY aasta DESC;
+SELECT * FROM autod WHERE aasta < 1993;
+
