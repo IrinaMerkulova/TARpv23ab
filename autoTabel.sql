@@ -58,6 +58,9 @@ UPDATE autod
 SET regNr = '333 kkk'
 WHERE regNr = '065BYL';
 
+delete from autod 
+where regNr='117YNP'
+
 
 
 
