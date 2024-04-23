@@ -60,3 +60,7 @@ SELECT MIN(aasta) AS min_aasta from autod;
 UPDATE autod 
 SET regNr ='333 KKK'
 WHERE regNr = '067 SJI';
+
+--- 7.  Kustuta auto id-ga 4
+DELETE FROM autod 
+WHERE regNr='123 ABC';
