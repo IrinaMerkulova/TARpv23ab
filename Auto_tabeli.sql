@@ -59,3 +59,7 @@ UPDATE autod SET regNr = '333 KKK' WHERE regNr = '102 MFG';
 
 --Kustuta auto id-ga 4
 DELETE FROM autod WHERE regNr = '123 ABC';
+
+--Lisa uus masin nimekirja. Vaata tabeli sisu.
+INSERT INTO autod(mark, regNr, aasta, regPiirkond) VALUES ('Nissan', '555 NNN', 2007, 2);
+SELECT * FROM autod;
