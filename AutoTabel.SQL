@@ -35,19 +35,29 @@ VALUES('123 ABC', 'Audi', 2000, 1),
 ('697AQI', 'Cadillac', 2011, 2),
 ('232NBT', 'Dodge', 1994, 1);
 
+
 DELETE FROM autod;
+
 
 SELECT * from autod
 order by aasta DESC;
 
+
 SELECT DISTINCT mark FROM autod;
 
-SELECT aasta
+
+SELECT aasta, regNr
 from autod
 WHERE aasta <=1993;
+
 
 SELECT regNr
 from autod
 WHERE aasta <=1993
 ORDER By regNr DESC;
 
+
+SELECT regNr, mark, aasta
+from autod
+where aasta<1993
+Order by mark;
