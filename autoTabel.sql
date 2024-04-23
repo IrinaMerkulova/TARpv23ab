@@ -56,3 +56,7 @@ select * from autod where aasta <= 1993;
 -- Väljasta enne 1993. aastat toodetud autode registrinumbrid tähestiku järjekorras
 
 select regNr, aasta from autod where aasta <= 1993 order by regNr;
+
+-- Muuda registrinumbrit autol, mille id on 3 (uus number 333 KKK)
+
+select MIN(aasta) from autod 
