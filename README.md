@@ -1,3 +1,12 @@
+# tehtud tööd - Erialane inglise keel
+1.sõnavara - inglisesql.txt
+2.valed vastused - w3quizz.txt
+3.sql suntaks - sql.sql
+
+
+
+
+
 # Ülesanded
 
 1. Kasuta GIT CMD ja klooni antud repositoorium enda arvutile
