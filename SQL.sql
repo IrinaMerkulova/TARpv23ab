@@ -31,17 +31,17 @@ WHERE condition
 -----------------
 UPDATE - обновить/перезаписать
 table_name - название таблицы
-SET - выбор столбцы
+SET - назначить
 column_name1=column_value1 - список столбцов и их новые значения
 WHERE - где
 condition - условия
 
 ALTER TABLE table_name ADD column_name datatype
 -----------------
-ALTER TABLE - 
-table_name - 
-ADD - 
-column_name2 datatype - 
+ALTER TABLE - изменить таблицу
+table_name - название таблицы
+ADD - добавить 
+column_name2 datatype - название таблицы, тип данных
 
 -------------------------------
 
