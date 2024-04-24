@@ -1,0 +1,9 @@
+Question 18:
+
+How can you change "Hansen" into "Nilsen" in the "LastName" column in the Persons table?
+UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'    Correct answer 
+
+Question 21:
+
+What are the supported types of joins in MySQL?
+INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN  Correct answer 
