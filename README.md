@@ -1,6 +1,6 @@
 # tehtud tööd inglise keel
-1.Andmebaaside sõnavara - 
-2.sql serveris tekkivead - 
+1.Andmebaaside sõnavara - ingliseSQL.txt
+2.sql serveris tekkivead - SQLvead.txt
 3. valed vastused sql testis - w3quizz.txt
 4.sql süntaks - sql.sql
 
