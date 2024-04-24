@@ -1,0 +1,11 @@
+1. With MySQL, how do you select all the records from a table named "Persons" where the value of the column "FirstName" is "Peter"?
+	- SELECT * FROM Persons WHERE FirstName='Peter'  
+
+2. With MySQL, how do you select all the records from a table named "Persons" where the "LastName" is alphabetically between (and including) "Hansen" and "Pettersen"?
+	- SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'  
+
+3. What are the supported types of joins in MySQL?
+	- INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN  
+
+4. Which operator is used to search for a specified pattern in a column?
+	- GET  
