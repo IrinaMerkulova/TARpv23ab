@@ -1,0 +1,33 @@
+--MySQL Quiz
+
+
+
+Question 9:
+
+With MySQL, how do you select all the records from a table named "Persons" where the value of the column "FirstName" starts with an "a"?
+Minu(vale) vastus : SELECT * FROM Persons WHERE FirstName LIKE '%a'  
+Õige vastus : SELECT * FROM Persons WHERE FirstName LIKE 'a%'  
+
+
+
+Question 13:
+
+Which MySQL statement is used to return only different values?
+Minu(vale) vastus : SELECT UNIQUE   
+Õige vastus : SELECT DISTINCT  
+
+
+
+Question 18:
+
+How can you change "Hansen" into "Nilsen" in the "LastName" column in the Persons table?
+Minu(vale) vastus : UPDATE Persons SET LastName='Hansen' INTO LastName='Nilsen'  
+Õige vastus : UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'  
+
+
+
+Question 22:
+
+Which operator is used to select values within a given range?
+Minu(vale) vastus : RANGE    
+Õige vastus : BETWEEN  
