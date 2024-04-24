@@ -5,7 +5,7 @@
 3. Valed vastused SQL testis - lisa+valesti vastatud.txt
 4. SQL süntaks - SQL.sql
 
-   #Andmebaasid
+#Andmebaasid
    1. hotell.sql - andmebaasi hotellireserveerimine loomine - tegemata
 
 
