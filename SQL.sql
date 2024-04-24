@@ -14,15 +14,15 @@ table_name - Название таблицы
 INSERT INTO table_name(column_name1, ...)
 VALUES (column_value1, ...)
 -----------------
-INSERT INTO - 
-table_name - 
-(column_name1 datatype, ...) -  
-VALUES (column_value1, ...) - 
+INSERT INTO - добавления новых строк
+table_name - Название таблицы
+(column_name1 datatype, ...) -  column_name1 - название столбца datatype - тип данных
+VALUES (column_value1, ...) - список значений
 
 DROP TABLE table_name
 -----------------
-DROP TABLE - 
-table_name - 
+DROP TABLE - удалить таблицу
+table_name - Название таблицы
 
 ------------------------------------
 
