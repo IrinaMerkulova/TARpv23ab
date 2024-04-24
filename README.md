@@ -1,3 +1,10 @@
+#tehtud tööd - Erialane inglise keel
+
+1. andmebaaside sõnavara -Absynavara.txt
+2. SQL Servis tekkivad vead -SQL vead.txt
+3. Valed vastused SQL testis -W3quizz.txt
+4. SQL süntaks - SQL.sql
+
 # Ülesanded
 
 1. Kasuta GIT CMD ja klooni antud repositoorium enda arvutile
