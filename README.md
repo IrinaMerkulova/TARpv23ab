@@ -6,8 +6,8 @@
 
 
 # Andmebassit
-1. SQL.sql
-
+1. hotell.sql
+2. 
 
 
 
