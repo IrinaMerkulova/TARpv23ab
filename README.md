@@ -1,3 +1,16 @@
+# Tehtud tööd - Erialane Inglise keel
+
+1.Andmebaasi sõnavara - ingliseSQL
+2. SQL Serveris tekkivad vead - SQL Serveris tekkivad vead
+3.Vale vastused SQL testis - W3 quizz.txt
+4.SQL süntaks - SQL.sql
+
+  #Andmebaasid
+
+  1.hotell.sql - Andmebaasi hotellireserverimine loomine
+
+
+
 # Ülesanded
 
 1. Kasuta GIT CMD ja klooni antud repositoorium enda arvutile
