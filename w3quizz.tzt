@@ -1,1 +1,11 @@
+With SQL, how do you select all the records from a table named "Persons" where the value of the column "FirstName" starts with an "a"?
+SELECT * FROM Persons WHERE FirstName LIKE 'a%'  
 
+With SQL, how do you select all the records from a table named "Persons" where the "FirstName" is "Peter" and the "LastName" is "Jackson"?
+SELECT * FROM Persons WHERE FirstName='Peter' AND LastName='Jackson'  
+
+Which SQL keyword is used to sort the result-set?
+ORDER BY  
+
+Which SQL statement is used to create a database table called 'Customers'?
+CREATE TABLE Customers  
