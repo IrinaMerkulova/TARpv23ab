@@ -1,11 +1,8 @@
 # Tehtud tööd - Erialane Inglise keel
 
 1.Andmebaasi sõnavara - ingliseSQL
-
 2. SQL Serveris tekkivad vead - SQL Serveris tekkivad vead
-   
 3.Vale vastused SQL testis - W3 quizz.txt
-
 4.SQL süntaks - SQL.sql
 
   #Andmebaasid
