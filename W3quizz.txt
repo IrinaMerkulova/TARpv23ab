@@ -1,0 +1,14 @@
+1.What is MySQL?
+answer:All the options are correct  
+12.With MySQL, how do you select all the records from a table named "Persons" where the "LastName" is alphabetically between (and including) "Hansen" and "Pettersen"?
+answer:SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'  
+13.Which MySQL statement is used to return only different values?
+answer:SELECT DISTINCT  
+18.How can you change "Hansen" into "Nilsen" in the "LastName" column in the Persons table?
+answer:UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'  
+20.With MySQL, how can you return the number of records in the "Persons" table?
+answer:SELECT COUNT(*) FROM Persons  
+22.Which operator is used to select values within a given range?
+answer:BETWEEN  
+24.Which operator is used to search for a specified pattern in a column?
+answer:LIKE 
