@@ -1,3 +1,16 @@
+# Tehtud tööd - Erialane ingise keel
+1.Vigade parandamine - KirillSats
+2. Valad vastused SQL testis - w3quizz.txt
+3. SQL süntaks - SQL.sql
+4. AB sõnavara - tegemata
+
+
+  #Andmebaasid 
+  1. hotell.sql - andmebaasi hotellireserveerimine loomine
+
+
+
+
 # Ülesanded
 
 1. Kasuta GIT CMD ja klooni antud repositoorium enda arvutile
