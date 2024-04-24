@@ -5,3 +5,5 @@
 3. Kirjuta antud failides vene keelne tõlge ja/või vajalikud selgitused
 4. Õpi Pähe kõik sõnad, lühendid ja laused
 5. git push
+
+   Test w3schools tulemusega lisa pildina github projekti oma branch'is
