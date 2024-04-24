@@ -29,12 +29,12 @@ table_name - название таблицы
 UPDATE table_name SET column_name1=column_value1
 WHERE condition
 -----------------
-UPDATE - 
-table_name - 
-SET - 
-column_name1=column_value1 - 
-WHERE - 
-condition - 
+UPDATE - обновить/перезаписать
+table_name - название таблицы
+SET - выбор столбцы
+column_name1=column_value1 - список столбцов и их новые значения
+WHERE - где
+condition - условия
 
 ALTER TABLE table_name ADD column_name datatype
 -----------------
