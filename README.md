@@ -5,7 +5,7 @@
 3. Valet vastused SQL testis - w3Quizz.txt
 4. SQL süntaks - SQL.sql
 
-    #Andmebaasid
+    #A ndmebaasid
 
      1.  hotell.sql - andmebaasi hotellireserveerimise loomine
 
