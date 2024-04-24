@@ -1,0 +1,34 @@
+1.what is my sql?
+A relational database management system    Your answer  vale
+Developed, distributed, and supported by Oracle Corporation
+All the options are correct    Correct answer  
+Cross-platform, open-source and free
+
+8.With MySQL, how do you select all the records from a table named "Persons" where the value of the column "FirstName" is "Peter"?
+
+SELECT [all] FROM Persons WHERE FirstName LIKE 'Peter'    Your answer  
+SELECT * FROM Persons WHERE FirstName<>'Peter'
+SELECT * FROM Persons WHERE FirstName='Peter'    Correct answer  
+SELECT [all] FROM Persons WHERE FirstName='Peter'
+
+20.
+With MySQL, how can you return the number of records in the "Persons" table?
+
+SELECT LEN(*) FROM Persons    Your answer  
+SELECT NO(*) FROM Persons
+SELECT COLUMNS(*) FROM Persons
+SELECT COUNT(*) FROM Persons    Correct answer
+
+21.
+What are the supported types of joins in MySQL?
+
+INNER JOIN, OUTER JOIN, LEFT JOIN, RIGHT JOIN    Your answer  
+INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN    Correct answer  
+
+
+12.
+With MySQL, how do you select all the records from a table named "Persons" where the "LastName" is alphabetically between (and including) "Hansen" and "Pettersen"?
+
+SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'    Correct answer  
+SELECT * FROM Persons WHERE LastName>'Hansen' AND LastName<'Pettersen'
+SELECT LastName>'Hansen' AND LastName<'Pettersen' FROM Persons
