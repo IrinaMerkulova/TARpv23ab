@@ -2,9 +2,9 @@
 
     1. Andmebaaside sõnavara - ingliseSQL.txt
 
-    2. SQL serveris tekkivad vead - SQL_Vead.txt
+    2. SQL serveris tekkivad vead - SQL ebakorrektsed laused.txt
 
-    3. Valet vastused SQL testis - w3Quizz.txt
+    3. Valet vastused SQL testis - W3Schools MySQL Test.txt
 
     4. SQL süntaks - SQL.sql
 
