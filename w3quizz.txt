@@ -1,0 +1,5 @@
+-- Vigade loend
+
+What is MySQL?
+
+All the options are correct  
