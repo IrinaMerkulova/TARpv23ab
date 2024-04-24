@@ -1,1 +1,27 @@
+1. What is MySQL?
 
+Developed, distributed, and supported by Oracle Corporation   ❌
+A relational database management system
+All the options are correct   ✔️ 
+Cross-platform, open-source and free
+-----------------------------------------------------------
+2. With MySQL, how can you return all the records from a table named "Persons" sorted descending by "FirstName"?
+
+SELECT * FROM Persons SORT BY 'FirstName' DESC  ❌ 
+SELECT * FROM Persons ORDER BY FirstName DESC   ✔️   
+SELECT * FROM Persons ORDER FirstName DESC
+SELECT * FROM Persons SORT 'FirstName' DESC
+-----------------------------------------------------------
+3. With MySQL, how can you return the number of records in the "Persons" table?
+
+SELECT LEN(*) FROM Persons   ❌
+SELECT COUNT(*) FROM Persons    ✔️ 
+SELECT NO(*) FROM Persons
+SELECT COLUMNS(*) FROM Persons
+-----------------------------------------------------------
+4. Which MySQL statement is used to create a database table called 'Customers'?
+
+CREATE DATABASE TABLE Customers   ❌   
+CREATE DATABASE TAB Customers
+CREATE TABLE Customers    ✔️ 
+CREATE DB Customers
