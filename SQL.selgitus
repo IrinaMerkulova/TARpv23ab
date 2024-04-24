@@ -1,0 +1,58 @@
+SELECT * FROM table_name
+----------------
+SELECT - Выбрать
+* - Всё
+FROM - Из
+table_name - Название таблицы
+
+CREATE TABLE (column_name1 datatype, ...)
+-----------------
+CREATE TABLE - создать таблицу
+table_name - Название таблицы
+(column_name1 datatype, ...) - "column_name1" имя столбца, а "datatype" определяет тип данных
+
+INSERT INTO table_name(column_name1, ...)
+VALUES (column_value1, ...)
+-----------------
+INSERT INTO - запрос, который используется для добавления новых данных в таблицу
+table_name - Название таблицы
+(column_name1 datatype, ...) - "column_name1" имя столбца, а "datatype" определяет тип данных
+VALUES (column_value1, ...) - для указания значений, которые нужно вставить в столбцы таблицы
+
+DROP TABLE table_name
+-----------------
+DROP TABLE - для удаления существующей таблицы из базы данных
+table_name - Название таблицы
+
+------------------------------------
+
+UPDATE table_name SET column_name1=column_value1
+WHERE condition
+-----------------
+UPDATE - изменения существующих записей в таблице
+table_name - Название таблицы
+SET - для указания столбцов которые нужно обновить
+column_name1=column_value1 - 
+WHERE - для указания строк, которые будут обновлены
+condition - 
+
+ALTER TABLE table_name ADD column_name datatype
+-----------------
+ALTER TABLE -  для изменения структуры существующей таблицы
+table_name -Название таблицы 
+ADD - для добавления нового столбца
+column_name2 datatype -  столбец с именем column_name2 и определением его типа данных datatype
+
+-------------------------------
+
+ALTER TABLE table_name 
+ADD FOREIGN KEY (column_name) References table_name2(column_name2)
+-----------------
+ALTER TABLE -для изменения структуры существующей таблицы
+table_name - Название таблицы
+ADD - для добавления нового столбца
+FOREIGN KEY - вторичный ключ
+(column_name) - столбец с именем column_name
+References - для определения связи между внешним ключом и первичным ключом в другой таблице
+table_name2 - Название второй таблицы
+(column_name2) - столбец с именем column_name2
