@@ -1,1 +1,24 @@
+Question 1:
+What is MySQL?
+My answear: Cross-platform, open-source and free
+True answear: All the options are correct
 
+Question 6:
+With MySQL, how do you select a column named "FirstName" from a table named "Persons"?
+My answear: SELECT Persons.FirstName  
+True answear: SELECT FirstName FROM Persons
+
+Question 10:
+The OR operator displays a record if ANY conditions listed are true. The AND operator displays a record if ALL of the conditions listed are true
+My answear: False   
+True answear: True
+
+Question 12:
+With MySQL, how do you select all the records from a table named "Persons" where the "LastName" is alphabetically between (and including) "Hansen" and "Pettersen"?
+My answear: SELECT * FROM Persons WHERE LastName>'Hansen' AND LastName<'Pettersen'  
+True answear: SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen' 
+
+Question 21:
+What are the supported types of joins in MySQL?
+My answear: INNER JOIN, OUTER JOIN, LEFT JOIN, RIGHT JOIN  
+True answear: INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN  
