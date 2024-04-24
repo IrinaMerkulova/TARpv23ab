@@ -21,7 +21,7 @@ VALUES (column_value1, ...) - список значений
 
 DROP TABLE table_name
 -----------------
-DROP TABLE - удалить таблицу
+DROP TABLE - сбросить таблицу
 table_name - Название таблицы
 
 ------------------------------------
@@ -32,27 +32,27 @@ WHERE condition
 UPDATE - изменения или обновления данных
 table_name - Название таблицы
 SET - обновить
-column_name1=column_value1 - 
+column_name1=column_value1 - column_name1 - название столбца/определяет столбец и новое значение
 WHERE - где/какие строки
 condition - критерии/ условие
 
 ALTER TABLE table_name ADD column_name datatype
 -----------------
-ALTER TABLE - 
-table_name - 
-ADD - 
-column_name2 datatype - 
+ALTER TABLE - изменения структуры существующей таблицы
+table_name - Название таблицы
+ADD - указывает, что вы хотите добавить новый столбец
+column_name2 datatype - тип данных для нового столбца
 
 -------------------------------
 
 ALTER TABLE table_name 
 ADD FOREIGN KEY (column_name) References table_name2(column_name2)
 -----------------
-ALTER TABLE -
-table_name - 
-ADD - 
-FOREIGN KEY - 
-(column_name) - 
-References - 
-table_name2 - 
-(column_name2) - 
+ALTER TABLE - изменения структуры существующей таблицы
+table_name -  имя таблицы
+ADD - указывает, что вы добавляете новый столбец
+FOREIGN KEY - устанавливает отношения между таблицами
+(column_name) - имя столбца, который будет внешним ключом
+References - указывает на таблицу и столбец, на который будет ссылаться внешний ключ.
+table_name2 - мя таблицы, на которую будет ссылается внешний ключ.
+(column_name2) - имя столбца в целевой таблице, на который будет ссылается внешний ключ.
