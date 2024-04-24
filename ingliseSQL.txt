@@ -1,28 +1,38 @@
-
-SQL - 
-DDL -ccc
-DML - 
-Database - 
-Database management system - 
-Related table - 
-Relational database - 
-Relationship - 
-Record - 
-Primary Key - 
-Foreign Key - 
-One-to-many relationship - 
-One-to-one relationship - 
-Query - 
-Report - 
-Form - 
-Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
+SQL - Structured query language - Язык структурированных запросов
+DDL - Data definition language - Язык определения данных 
+DML -  Data Manipulation Language - Язык манипулирования данными
+Database - База данных
+Database management system - Система управления базой данных 
+Related table - Соответствующая таблица
+Relational database - База данных о взаимоотношениях 
+Relationship - Отношения 
+Record - Запись 
+Primary Key - Первичный ключ
+Foreign Key - Вторичный ключ
+One-to-many relationship - Отношения между многими
+One-to-one relationship - Отношения одного к одному
+Query - Вопрос
+Report - Доклад
+Form - Форма
+Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set 
+varchar - это строковый тип данных
+Data type - Тип данных
+char - буква 
+int - Целое (тип данных). Служит для представления целых чисел.
+decimal - Тип Decimal данных предоставляет наибольшее количество значимых цифр для числа.
+binary - двоичный код исчисления
+varbinary - Тип данных varbinary(max) позволяет записать в одну ячейку таблицы БД содержимое файла в двоичном виде объемом до 2 ГБ.
+text - Текст
+blob - массив двоичных данных
+enum - тип-перечисление
+set - ряд (набор чего-либо)
 --------------------------
-Constraints - 
+Constraints - В общем случае ограничения (Constraints) это наборы правил применяемые к данным до момента их помещения в таблицу SQL. 
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+NOT NULL - Ограничение NOT NULL позволяет определить, что значение в столбце не может быть NULL. Это означает, что при добавлении записи в таблицу обязательно должно быть заполнено значение для данного столбца
+UNIQUE - Значение уникальный, единственный в своём роде, исключительный 
+PRIMARY KEY -  в реляционной модели данных один из потенциальных ключей отношения, выбранный в качестве основного ключа
+FOREIGN KEY -  Внешние ключи позволяют установить связи между таблицами.
+CHECK - проверка
+DEFAULT - Руководство по эффективному использованию ограничений по умолчанию.
+CREATE INDEX - Команда для создания индекса, ускоряющего поиск значений в столбцах для оптимизации производительности запросов.
