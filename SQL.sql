@@ -9,15 +9,15 @@ CREATE TABLE (column_name1 datatype, ...)
 -----------------
 CREATE TABLE - создать таблицу
 table_name - название таблицы
-(column_name1 datatype, ...) - 
+(column_name1 datatype, ...) - поля таблицы
 
 INSERT INTO table_name(column_name1, ...)
 VALUES (column_value1, ...)
 -----------------
 INSERT INTO - вставка новых запесей
 table_name - название таблицы
-(column_name1 datatype, ...) - 
-VALUES (column_value1, ...) - 
+(column_name1 datatype, ...) - поля для заполнениия
+VALUES (column_value1, ...) - записи
 
 DROP TABLE table_name
 -----------------
@@ -31,8 +31,8 @@ WHERE condition
 -----------------
 UPDATE - обновить
 table_name - название таблицы
-SET - какие имменно
-column_name1=column_value1 - 
+SET - сделать
+column_name1=column_value1 - название поля запеись
 WHERE - фильтрации строк данных на основе заданных условий
 condition - логическое вырожение
 
