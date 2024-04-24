@@ -1,0 +1,19 @@
+1. What is MySQL?
+All the options are correct    Correct answer 
+
+9.With MySQL, how do you select all the records from a table named "Persons" where the value of the column "FirstName" starts with an "a"?
+
+SELECT * FROM Persons WHERE FirstName LIKE 'a%'    Correct answer
+
+13. Which MySQL statement is used to return only different values?
+
+SELECT DISTINCT    Correct answer  
+
+22. Which operator is used to select values within a given range?
+
+BETWEEN    Correct answer
+
+23 The NOT NULL constraint enforces a column to not accept NULL values.
+
+True    Correct answer 
+
