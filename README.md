@@ -1,3 +1,8 @@
+# Tehtud tööd - 
+
+
+
+
 # Ülesanded
 
 1. Kasuta GIT CMD ja klooni antud repositoorium enda arvutile
