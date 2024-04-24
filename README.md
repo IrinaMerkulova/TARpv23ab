@@ -1,3 +1,17 @@
+# Tehtud tööd - Erialane inglise keel 
+
+1. Andmebaasile sõnavara - failinimi "ingliseSQL.txt"
+2. SQL Serveris takkivad veed - ?
+3. Valed vaastused SQL testis - "w3quizz.txt"
+4. SQL süntaks - SQL.sql
+     # Andmebaasid
+
+     1. hotell.sql - anmdebaasil lisamine
+
+
+
+
+
 # Ülesanded
 
 1. Kasuta GIT CMD ja klooni antud repositoorium enda arvutile
