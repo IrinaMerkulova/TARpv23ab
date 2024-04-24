@@ -1,0 +1,17 @@
+Which MySQL statement is used to return only different values?
+Wrong answer:
+SELECT UNIQUE 
+Correct answer:
+SELECT DISTINCT
+
+Which MySQL keyword is used to sort the result-set?
+Wrong answer:
+SORT BY
+Correct answer:
+ORDER BY
+
+What are the supported types of joins in MySQL?
+Wrong answer:
+INNER JOIN, OUTER JOIN, LEFT JOIN, RIGHT JOIN
+Correct answer:
+INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN  
