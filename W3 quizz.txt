@@ -1,0 +1,23 @@
+With MySQL, how do you select all the records from a table named "Persons" where the value of the column "FirstName" starts with an "a"?
+SELECT * FROM Persons WHERE FirstName LIKE 'a%'  
+
+Which MySQL statement is used to return only different values?
+SELECT DISTINCT  
+
+With MySQL, how can you insert a new record into the "Persons" table?
+INSERT INTO Persons VALUES ('Jimmy', 'Jackson')  
+
+How can you change "Hansen" into "Nilsen" in the "LastName" column in the Persons table?
+UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'  
+
+What are the supported types of joins in MySQL?
+INNER JOIN, LEFT JOIN, RIGHT JOIN, CROSS JOIN  
+
+Which operator is used to select values within a given range?
+BETWEEN  
+
+With MySQL, how can you insert "Olsen" as the "LastName" in the "Persons" table?
+INSERT INTO Persons (LastName) VALUES ('Olsen')  
+
+How can you change "Hansen" into "Nilsen" in the "LastName" column in the Persons table?
+UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'  
