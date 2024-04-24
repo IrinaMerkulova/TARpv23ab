@@ -1,0 +1,4 @@
+﻿Question 22:
+Which operator is used to select values within a given range?
+❌RANGE
+✔️BETWEEN
