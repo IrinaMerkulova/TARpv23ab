@@ -1,4 +1,4 @@
-#tehtud tööd - Erialane inglise keel
+# tehtud tööd - Erialane inglise keel
 
 1. andmebaaside sõnavara -Absynavara.txt
 2. SQL Servis tekkivad vead -SQL vead.txt
