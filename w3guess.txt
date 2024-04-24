@@ -1,0 +1,33 @@
+What is MySQL?
+
+A relational database management system    Your answer  
+Cross-platform, open-source and free
+All the options are correct    Correct answer  
+Developed, distributed, and supported by Oracle Corporation
+-----------------------------------------------------------------------------------------------------------
+With MySQL, how can you return all the records from a table named "Persons" sorted descending by "FirstName"?
+
+SELECT * FROM Persons SORT 'FirstName' DESC    Your answer  
+SELECT * FROM Persons ORDER FirstName DESC
+SELECT * FROM Persons SORT BY 'FirstName' DESC
+SELECT * FROM Persons ORDER BY FirstName DESC    Correct answer 
+-----------------------------------------------------------------------------------------------------------
+With MySQL, how can you insert "Olsen" as the "LastName" in the "Persons" table?
+
+INSERT INTO Persons ('Olsen') INTO LastName    Your answer  
+INSERT ('Olsen') INTO Persons (LastName)
+INSERT INTO Persons (LastName) VALUES ('Olsen')    Correct answer 
+-----------------------------------------------------------------------------------------------------------
+How can you change "Hansen" into "Nilsen" in the "LastName" column in the Persons table?
+
+UPDATE Persons SET LastName='Hansen' INTO LastName='Nilsen'    Your answer  
+MODIFY Persons SET LastName='Nilsen' WHERE LastName='Hansen'
+MODIFY Persons SET LastName='Hansen' INTO LastName='Nilsen
+UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'    Correct answer 
+-----------------------------------------------------------------------------------------------------------
+With MySQL, how can you return the number of records in the "Persons" table?
+
+SELECT LEN(*) FROM Persons    Your answer  
+SELECT COLUMNS(*) FROM Persons
+SELECT COUNT(*) FROM Persons    Correct answer  
+SELECT NO(*) FROM Persons
