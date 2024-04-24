@@ -1,3 +1,17 @@
+# Tehtud tööd - Erialne inglise keel
+
+1. Valed vastused SQL testis - w3quizz.txt
+2. SQL süntax - SQL.sql
+
+# Andmebassid
+
+1.hotell.sql - andmebassi hotelireserveerimine
+  
+
+
+
+
+
 # Ülesanded
 
 1. Kasuta GIT CMD ja klooni antud repositoorium enda arvutile
