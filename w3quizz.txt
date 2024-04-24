@@ -1,0 +1,8 @@
+valesti vastatud küsimused ja vastused
+
+1.Which MySQL statement is used to return only different values?
+vastus:SELECT UNIQUE 
+2.How can you change "Hansen" into "Nilsen" in the "LastName" column in the Persons table?
+vastus:UPDATE Persons SET LastName='Hansen' INTO LastName='Nilsen'
+3.What are the supported types of joins in MySQL?
+vastus: INNER JOIN, OUTER JOIN, LEFT JOIN, RIGHT JOIN  
