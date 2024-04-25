@@ -18,3 +18,13 @@ max_capacity int );
 
 Incorrect syntax near '1'.
  Нужно добавить "identity" чтобы команда сработала.
+
+
+3
+delete table ostjad;
+
+Kui soovite tabeli ise kustutada, peate kirjutama mitte "kustuta", vaid "drop"
+
+
+нужно написать drop table ostjad;
+
