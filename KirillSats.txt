@@ -26,5 +26,15 @@ delete table ostjad;
 Kui soovite tabeli ise kustutada, peate kirjutama mitte "kustuta", vaid "drop"
 
 
+4.
+select ostjad;
+
+vigade süntaks
+
+между 'select'  'from' нужно поставить *
+
+
+
+
 нужно написать drop table ostjad;
 
