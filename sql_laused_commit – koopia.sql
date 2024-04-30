@@ -223,7 +223,7 @@ select distinct Name, DepartmentId from Employees
 
 select sum(cast(Salary as int)) from Employees
 
----?
+--- возвращает наименьшее значение зарплаты (в целочисленном виде) среди всех записей в таблице Employees
 select min(cast(Salary as int)) from Employees
 
 
