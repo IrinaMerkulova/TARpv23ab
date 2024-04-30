@@ -128,6 +128,8 @@ add City nvarchar(25)
 	
 -- tahame tead kõiki, kes elavad Gothami linnas 
 select * from Person where City = 'Gotham'
+-- Valib kõik isikud, kes elavad linnas Gotham.
+	
 -- kõik, kes ei ela Gothamis
 select * from Person where City <> 'Gotham'
 select * from Person where City != 'Gotham'
