@@ -85,12 +85,12 @@ where Id = 8
 	insert into Person (Id, Name, Email, GenderId, Age)
 	values (9, 'Test', 'Test', 2, 160)
 
---?
+--Kõigi kirjete valimine Personi tabelist
 select * from Person
 go
-delete from Person where Id = 8
+delete from Person where Id = 8 --Personi tabeli kirje kustutamine Id-ga võrdub 8:
 go
-select * from Person
+select * from Person --Kõigi kirjete valimine Personi tabelist
 
 --- lisame veeru juurde
 alter table Person
