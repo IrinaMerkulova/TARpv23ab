@@ -241,7 +241,7 @@ add DepartmentId
 int null
 
 
---?
+--Uute veergude lisamine MiddleName ja LastName lauale Employees
 alter table Employees
 add MiddleName nvarchar(30)
 
