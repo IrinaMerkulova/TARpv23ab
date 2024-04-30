@@ -346,7 +346,7 @@ as begin
 	return (select FirstName from Employees where Id = @Id)
 end
 
--- ?
+-- loob tüüpmuutuja "EmployeeName" ja kasutab spGetNameById2 protseduuri, edastades sinna argumendi "1".
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
 print 'Name of the employee = ' + @EmployeeName
