@@ -279,7 +279,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- 
+---See protseduur tagastab teatud soost ja osakonna töötajate nimekirja.
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
