@@ -212,7 +212,7 @@ select distinct Name, DepartmentId from Employees
 
 --- arvutab töötajate palga summa, eeldusel, et palk on salvestatud tervarvulistena.
 select sum(cast(Salary as int)) from Employees
----?
+--- valib väikseima palga, eeldusel, et palk on salvestatud tervarvulistena.
 select min(cast(Salary as int)) from Employees
 
 
