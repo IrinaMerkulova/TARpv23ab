@@ -256,7 +256,8 @@ insert into Employees (Id, Name, Gender, Salary, DepartmentId)
 values (9, 'James', 'Male', 6500, NULL)
 insert into Employees (Id, Name, Gender, Salary, DepartmentId)
 values (10, 'Russell', 'Male', 8800, NULL)
-
+-- päringud insert into Employees lisavad uusi kirjeid tabelisse "Employees" teabega töötajate kohta, sealhulgas nende identifikaatori, nime, soo, palga ja osakonna identifikaatori.
+	
 select * from Employees
 
 ---?
