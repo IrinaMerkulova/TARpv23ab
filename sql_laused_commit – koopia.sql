@@ -337,7 +337,7 @@ declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
---- ?
+---  процедура принимает параметр @Id и возвращает значение FirstName из таблицы employees, для строки, в которой Id равен этому входному параметру
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
