@@ -367,6 +367,7 @@ if(@TotalCount = 0)
 else
 	print '@TotalCount is not null'
 print @TotalCount
+-- Saada naiste arv ja kuvada vastav teade sõltuvalt tulemusest
 
 -- annab teada, palju on meessoost isikuid
 declare @TotalCount int
