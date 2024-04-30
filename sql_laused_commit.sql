@@ -11,7 +11,9 @@ create table Gender
 Id int NOT NULL primary key,
 Gender nvarchar(10) not null
 )
-
+-- Tabeli "Gender" loomine, teine rida tähendab, et väärtus ei tohi olla null ja see on põhi võti.
+-- "varchar" maksimaalne pikkus (10 tähemärki).
+	
 create table Person
 (
 Id int not null primary key,
