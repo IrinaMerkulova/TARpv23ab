@@ -200,6 +200,9 @@ select max(cast(Age as int)) from Person
 select City, sum(cast(Age as int)) as TotalAge from Person group by City
 -- See päring arvutab kõigi tabelis "Person" iga linna inimeste kogu vanuse.
 
+
+
+	
 --- tund 3
 
 --- loome uued tabelid
@@ -264,6 +267,8 @@ select distinct Name, DepartmentId from Employees
 	
 ---?
 select sum(cast(Salary as int)) from Employees
+-- päring arvutab kõikide töötajate palkade summa tabelis "Employees".
+
 ---?
 select min(cast(Salary as int)) from Employees
 
