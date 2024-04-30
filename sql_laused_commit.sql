@@ -340,6 +340,7 @@ as begin
 	select FirstName, Gender, DepartmentId from Employees where Gender = @Gender
 	and DepartmentId = @DepartmentId
 end
+-- Protseduur töötajate saamiseks soo ja osakonna järgi
 
 --- kõik esimeses osakonnas meessoost töötavad isikud
 spGetEmployeesByGenderAndDepartment 'Male', 1
