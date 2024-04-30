@@ -20,6 +20,7 @@
 4. Õpi Pähe kõik sõnad, lühendid ja laused
 5. git push
 
+# SQL LAUSED COMMITS
 
 1. esimene - db kustutamine
 2. teine - tabeli loomine
