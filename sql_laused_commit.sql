@@ -210,7 +210,7 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
----?
+--- valib tabelist Töötajad veergude Name ja DepartmentId väärtuste unikaalsed kombinatsioonid.
 select distinct Name, DepartmentId from Employees
 
 ---?
