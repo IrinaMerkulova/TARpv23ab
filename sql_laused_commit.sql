@@ -140,7 +140,7 @@ select top 50 percent * from Person
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
---?
+--SQL päring arvutab See päring arvutab Personi tabeli Age veeru vanuse, teisendades need eelnevalt täisarvudeks.
 select sum(cast(Age as int)) from Person
 
 --- kuvab kõige nooremat isikut
