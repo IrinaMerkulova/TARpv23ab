@@ -278,7 +278,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- 
+--- loob protseduur, kus on võimalik leida töötajaid nende soo ja ameti järgi
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
