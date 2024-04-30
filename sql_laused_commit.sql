@@ -176,7 +176,7 @@ Salary nvarchar(50),
 DepartmentId int
 )
 
---?
+-- andmete sisestamine tabelisse
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (1, 'IT', 'London', 'Rick')
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
@@ -211,7 +211,7 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
----?
+--- 
 select distinct Name, DepartmentId from Employees
 
 ---?
