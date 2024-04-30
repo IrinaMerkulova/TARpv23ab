@@ -271,7 +271,7 @@ select sum(cast(Salary as int)) from Employees
 
 ---?
 select min(cast(Salary as int)) from Employees
-
+-- päring leiab väikseima palga kõikide töötajate seas tabelis "Employees".
 
 alter table Employees
 add City nvarchar(25)
