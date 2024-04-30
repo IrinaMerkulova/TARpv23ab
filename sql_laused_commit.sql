@@ -347,7 +347,7 @@ as begin
 	return (select Name from Employees where Id = @Id)
 end
 
--- ?
+-- sisestab "EmployeeName" muutuja, mis sisaldab hiljem "spGetNameById2" andmeid ja prindib töötaja nime
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
 print 'Name of the employee = ' + @EmployeeName
