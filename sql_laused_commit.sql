@@ -3,7 +3,6 @@ create database Tarpv23
 
 -- kustutab TARpv23 andmebaasi
 DRop DataBASE Tarpv23
-
 -- loob tabeli Gender
 create table Gender
 (
