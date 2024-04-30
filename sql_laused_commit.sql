@@ -48,7 +48,7 @@ values (7, 'Spiderman', 'spider@spiderman.com', 2)
 -- vaatame tabeli andmeid 
 select * from Person
 
---- võõrvõtme piirangu maha võtmine
+--- võõrvõtme piirangu maha võtmine 
 alter table Person
 drop constraint tblPerson_GenderId_FK
 
