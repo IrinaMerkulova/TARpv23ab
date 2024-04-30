@@ -66,7 +66,8 @@ select * from Person
 --- võõrvõtme piirangu maha võtmine
 alter table Person
 drop constraint tblPerson_GenderId_FK
-
+-- Päring võõrvõtme eemaldamiseks tabelist "Person" koos nimega "tblPerson_GenderId_FK".
+	
 -- sisestame väärtuse tabelisse
 insert into Gender (Id, Gender)
 values (3, 'Unknown')
