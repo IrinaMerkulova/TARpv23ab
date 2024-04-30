@@ -212,7 +212,7 @@ select * from Employees
 --- valib kirjed väljaga Name ja DepertmendId tingimusel, et Name ei tohi korduda
 select distinct Name, DepartmentId from Employees
 
----?
+--- valib välja Salary kirjete summa
 select sum(cast(Salary as int)) from Employees
 ---?
 select min(cast(Salary as int)) from Employees
