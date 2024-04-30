@@ -214,7 +214,7 @@ select distinct Name, DepartmentId from Employees
 
 ---päring arvutab kõigi töötajate töötasude summa, konverteerides need eelnevalt terviklikuks andmetüübiks.
 select sum(cast(Salary as int)) from Employees
----?
+--- päring valib miinimumpalga kõigi töötajate seas, konverteerides need eelnevalt terviklikuks andmetüübiks.
 select min(cast(Salary as int)) from Employees
 
 
