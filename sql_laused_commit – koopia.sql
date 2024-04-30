@@ -4,7 +4,7 @@ create database Tarpv23
 -- Удаляет базу данных "Tarpv23"
 DRop DataBASE Tarpv23
 
--- 
+-- Tabeli lisamine nimega Gender ja Person	
 create table Gender
 (
 Id int NOT NULL primary key,
