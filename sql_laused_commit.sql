@@ -328,7 +328,8 @@ declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
---- ?
+
+--See päring loob spGetNameById1 protseduuri, mis saab @Id töötaja ID ja tagastab tema nime muutujasse @FirstName.
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
@@ -336,7 +337,7 @@ as begin
 	select @FirstName = FirstName from employees where Id = @Id
 end
 
---?
+--See päring kuulutab muutuja @FirstName tüüpi nvarchar (50), kutsub esile spGetNameById1 protseduuri töötaja ID- ga 6, salvestab selle nime muutujasse @FirstName ja trükib seejärel sõnumi 'Name of the employee = ' koos töötaja nimega.
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
