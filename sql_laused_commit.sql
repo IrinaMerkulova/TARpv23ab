@@ -56,7 +56,9 @@ insert into Person (Id, Name, Email, GenderId)
 values (6, 'Antman', 'ant"ant.com', 2)
 insert into Person (Id, Name, Email, GenderId)
 values (7, 'Spiderman', 'spider@spiderman.com', 2)
-
+-- Tabelis "Person", mis sisaldab infot iga isiku kohta,
+-- sealhulgas nimi, e-posti aadress ja soo identifikaator.
+	
 -- vaatame tabeli andmeid
 select * from Person
 
