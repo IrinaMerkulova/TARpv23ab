@@ -289,13 +289,13 @@ as begin
 end
 
 --- kõik esimeses osakonnas meessoost töötavad isikud
-spGetEmployeesByGenderAndDepartment 'Male', 1
+exec spGetEmployeesByGenderAndDepartment 'Male', 1
 
-spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
+exec spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
---?
+-- loome stored procedure, Hankige töötajate arv soo järgi
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
