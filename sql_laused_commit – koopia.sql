@@ -345,7 +345,7 @@ as begin
 	select @FirstName = FirstName from employees where Id = @Id
 end
 
---?
+--Команда вызывает хранимую процедуру, которая находит имя сотрудника по идентификатору Id, сохраняет его в переменной, и затем выводит результат с помощью команды PRINT
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
