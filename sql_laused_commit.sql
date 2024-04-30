@@ -123,7 +123,7 @@ select * from Person where Email like '_@_.com'
 
 -- näitab, kelle on nimis ees WAS märke polnud
 select * from Person where Name like '[^WAS]%'
--- näitab person, kes elab Gothamis või New Yorkis, ja on vanem kui 41
+-- näitab inimest, kes elab Gothamis või New Yorkis, ja on vanem kui 41
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
@@ -140,7 +140,7 @@ select top 50 percent * from Person
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
---?
+-- näitab inmesi summarne vanus
 select sum(cast(Age as int)) from Person
 
 --- kuvab kõige nooremat isikut
