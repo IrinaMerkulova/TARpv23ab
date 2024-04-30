@@ -354,10 +354,11 @@ print 'Name of the employee = ' + @FirstName
 create proc spGetNameById2
 @Id int
 as begin
-	return (select FirstName from Employees where Id = @Id)
+	return (select Name from Employees where Id = @Id)
 end
 
--- ?
+-- Если процедура возвращает строковое значение, использование EXEC @Variable = ProcedureName Parameter вызовет ошибку, поскольку RETURN предназначен для возврата числовых кодов, а не строк
+
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
 print 'Name of the employee = ' + @EmployeeName
