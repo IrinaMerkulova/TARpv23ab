@@ -1,7 +1,6 @@
 -- db loomine
 create database Tarpv23
-
---?
+-- tabel on loodud
 Drop DataBASE Tarpv23
 
 -- kustutame andmebaasi
@@ -10,7 +9,6 @@ create table Gender
 Id int NOT NULL primary key,
 Gender nvarchar(10) not null
 )
-
 create table Person
 (
 Id int not null primary key,
@@ -24,8 +22,8 @@ insert into Gender (Id, Gender)
 values (1, 'Female')
 insert into Gender (Id, Gender)
 values (2, 'Male')
-
---- ?
+select * from Gender
+--- tabel Gender on loodud 
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
 
