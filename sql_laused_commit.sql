@@ -223,7 +223,7 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
----?
+---Näitab töötajate ja Id osakonna nimesid tabelist Employees 
 select distinct Name, DepartmentId from Employees
 
 ---?
