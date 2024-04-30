@@ -219,8 +219,10 @@ select * from Employees
 -- Этот запрос возвращает все уникальные комбинации значений в столбцах Name и DepartmentId из таблицы Employees
 select distinct Name, DepartmentId from Employees
 
----?
+---Этот запрос возвращает сумму всех значений из столбца Salary в таблице Employees после их преобразования в целые числа.	 
+
 select sum(cast(Salary as int)) from Employees
+
 ---?
 select min(cast(Salary as int)) from Employees
 
