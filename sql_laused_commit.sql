@@ -85,7 +85,8 @@ update Person
 set Age = 149
 where Id = 8
 
---?
+--See päring lisab piirangu (check constraint) tabeli "Person" veergu "Age".
+--väärtused veerus "Age" peavad olema suuremad kui 0 ja väiksemad kui 150. 
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
 
