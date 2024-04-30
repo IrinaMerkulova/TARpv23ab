@@ -302,7 +302,7 @@ spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
---?
+-- Эта хранимая процедура принимает входной параметр @Gender и определяет количество сотрудников в таблице Employees, у которых пол соответствует этому параметру. Результат сохраняется в выходном параметре @EmployeeCount, который можно использовать для получения результата после выполнения процедуры.
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
