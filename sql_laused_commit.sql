@@ -330,6 +330,7 @@ end
 spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
+-- protseduur tagastab töötajate eesnimed ja sugu tabelist "Employees". 
 
 --- 
 create proc spGetEmployeesByGenderAndDepartment
