@@ -2,9 +2,9 @@
 create database Tarpv23
 
 --?
-DRop DataBASE Tarpv23
+Drop DataBASE Tarpv23
 
---?
+-- kustutame andmebaasi
 create table Gender
 (
 Id int NOT NULL primary key,
