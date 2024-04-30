@@ -339,11 +339,11 @@ declare @Name nvarchar(50)
 execute spGetNameById1 6, @Name output
 print 'Name of the employee = ' + @Name
 
---?
+--Protseduur võimaldab saada etteantud identifikaatori järgi töötaja nime ja tagastada selle helistamiskoodi või keskkonda.
 create proc spGetNameById2
 @Id int
 as begin
-	return (select FirstName from Employees where Id = @Id)
+	return (select Name from Employees where Id = @Id)
 end
 
 -- ?
