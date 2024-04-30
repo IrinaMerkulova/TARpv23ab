@@ -227,7 +227,7 @@ add DepartmentId
 int null
 
 
---?
+--lisab VARCHAR-tüüpi uue veeru "MiddleName", mille maksimaalne pikkus on 30 tähemärki 
 alter table Employees
 add MiddleName nvarchar(30)
 
