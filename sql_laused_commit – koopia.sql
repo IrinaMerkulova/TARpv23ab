@@ -78,7 +78,7 @@ update Person
 set Age = 149
 where Id = 8
 
--- 
+-- добавляет в таблицу "Person" ограничение "CHECK", которое проверяет, чтобы значение в столбце Age было больше 0 и меньше 150.
 
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
