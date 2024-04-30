@@ -15,3 +15,9 @@
 3. Kirjuta antud failides vene keelne tõlge ja/või vajalikud selgitused
 4. Õpi Pähe kõik sõnad, lühendid ja laused
 5. git push
+
+
+
+
+ # sql_laused_commit.sql
+![image](https://github.com/IrinaMerkulova/TARpv23ab/assets/153904776/32e3a954-44b9-4f9e-8682-6e55addd8b55)
