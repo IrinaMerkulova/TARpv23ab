@@ -350,7 +350,8 @@ as begin
 	return (select FirstName from Employees where Id = @Id)
 end
 
--- ?
+
+--See päring loob funktsiooni fnGetNameById2, mis võtab vastu töötaja ID ja tagastab tema nime tabelist Employees. Seejärel kutsutakse see ID 1 jaoks ja tulemus väljutatakse.
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
 print 'Name of the employee = ' + @EmployeeName
