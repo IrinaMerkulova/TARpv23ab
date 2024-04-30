@@ -294,7 +294,7 @@ spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
---?
+-- tagastab määratud sooga töötajate arvu EmployeeCount'i kaudu.
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
