@@ -373,13 +373,16 @@ print @TotalCount
 declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
-
+-- Saada meeste arv ja kuvada see
+	
 ---?
 create proc spTotalCount2
 @TotalCount int output
 as begin
 	select @TotalCount = count(Id) from Employees
 end
+-- Protseduur kõigi töötajate arvu saamiseks
+	
 --- käivitame sp
 declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
