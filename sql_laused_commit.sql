@@ -277,7 +277,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- 
+--- loob protseduuri, kus Gender, DepertamentId, ja näitab kirjeid tabelist employees tingimusel, kui DepartamendId on võrdne sellega, mida me edastasime 
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
