@@ -117,7 +117,9 @@ go
 delete from Person where Id = 8
 go
 select * from Person
-
+-- Valib kõik kirjed tabelist "Person".
+-- Kustutab kirje tabelist "Person", mille Id on 8.
+	
 --- lisame veeru juurde
 alter table Person
 add City nvarchar(25)
