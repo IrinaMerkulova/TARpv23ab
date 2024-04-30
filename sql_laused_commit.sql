@@ -223,7 +223,8 @@ Gender nvarchar(10),
 Salary nvarchar(50),
 DepartmentId int
 )
-
+-- loob uue tabeli nimega "Employees" viie veeruga: "Id", "Name", "Gender", "Salary" ja "DepartmentId".
+	
 --?
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (1, 'IT', 'London', 'Rick')
