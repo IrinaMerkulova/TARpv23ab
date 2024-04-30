@@ -135,7 +135,9 @@ select * from Person where Email like '_@_.com'
 --kus veeru "Name" väärtus ei alga tähtedega "W", "A" või "S". 
 --Näitab ridu, kus nimed ei alga nende tähtedega.
 select * from Person where Name like '[^WAS]%'
---- ?
+--- teostab andmete filtreerimise "Person" tabelist ja valib kõik read, kus veeru 
+--"City" väärtus on võrdne "Gotham" või "New York" 
+--ja veeru "Age" väärtus on suurem või võrdne 40-ga. 
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
