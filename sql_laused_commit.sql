@@ -101,6 +101,7 @@ add Age nvarchar(10)
 update Person
 set Age = 149
 where Id = 8
+-- Värskendatakse veeru "Age" väärtus kirjega, mille Id on 8.
 
 --?
 alter table Person
