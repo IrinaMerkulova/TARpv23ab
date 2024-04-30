@@ -123,7 +123,7 @@ select * from Person where Email like '_@_.com'
 
 --?
 select * from Person where Name like '[^WAS]%'
---- ?
+--- näidata kõiki kirjeid, kus on märgitud linn "Gotham" või "New York" ja vanus on kõrgem või võrdne 40
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
