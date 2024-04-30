@@ -340,7 +340,7 @@ declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
---- ?
+--- Protseduuri loomine Id-i töötajate nime saamiseks
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
