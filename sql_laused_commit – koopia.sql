@@ -324,12 +324,14 @@ declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
----?
+---Хранимая процедура spTotalCount2 вычисляет общее количество строк в таблице Employees и возвращает этот результат через выходной параметр @TotalCount
+
 create proc spTotalCount2
 @TotalCount int output
 as begin
 	select @TotalCount = count(Id) from Employees
 end
+
 --- käivitame sp
 declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
