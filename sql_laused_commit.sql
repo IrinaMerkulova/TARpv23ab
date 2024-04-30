@@ -4,7 +4,7 @@ create database Tarpv23
 -- kustutab andmebaasi
 DRop DataBASE Tarpv23
 
---?
+--loodab tabelit Gender
 create table Gender
 (
 Id int NOT NULL primary key,
