@@ -227,7 +227,7 @@ add DepartmentId
 int null
 
 
---?
+--tabeli muudatused
 alter table Employees
 add MiddleName nvarchar(30)
 
