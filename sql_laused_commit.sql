@@ -227,13 +227,15 @@ add DepartmentId
 int null
 
 
---?
+--Employees tabelile veergude MiddleName ja LastName lisamine
 alter table Employees
 add MiddleName nvarchar(30)
 
 alter table Employees
 add LastName nvarchar(30)
 
+
+--Andmete värskendamine Employees'i tabelis
 update Employees set FirstName = 'Tom', MiddleName = 'Nick', LastName = 'Jones'
 where Id = 1
 update Employees set FirstName = 'Pam', MiddleName = NULL, LastName = 'Anderson'
