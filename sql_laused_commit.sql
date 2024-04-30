@@ -123,7 +123,7 @@ select * from Person where Email like '_@_.com'
 
 --tagastab kõik tabeli Isik kirjed, kus veeru Nimi väärtus ei alga tähtedega "W", "A" või "S".
 select * from Person where Name like '[^WAS]%'
---- ?
+--kõigi kirjete toomine tabelist Isik, kus Linn on Gotham või New York ja vanus on 40 või suurem.
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
