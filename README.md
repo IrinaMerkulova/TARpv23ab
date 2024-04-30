@@ -18,3 +18,6 @@
 3. Kirjuta antud failides vene keelne tõlge ja/või vajalikud selgitused
 4. Õpi Pähe kõik sõnad, lühendid ja laused
 5. git push
+
+![pilt](https://github.com/IrinaMerkulova/TARpv23ab/assets/154507539/9b5346ee-5e1e-4669-9ea5-0a78c848dd00)
+
