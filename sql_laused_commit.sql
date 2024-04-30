@@ -50,14 +50,14 @@ values (7, 'Spiderman', 'spider@spiderman.com', 2)
 -- vaatame tabeli andmeid
 select * from Person
 
---- vıırvıtme piirangu maha vıtmine
+--- v√µ√µrv√µtme piirangu maha v√µtmine
 alter table Person
 drop constraint tblPerson_GenderId_FK
 
--- sisestame v‰‰rtuse tabelisse
+-- sisestame v√§√§rtuse tabelisse
 insert into Gender (Id, Gender)
 values (3, 'Unknown')
--- lisame vıırvıtme uuesti
+-- lisame v√µ√µrv√µtme uuesti
 alter table Person
 add constraint DF_Person_GenderId
 default 3 for GenderId
@@ -87,7 +87,7 @@ add constraint CK_Person_Age check (Age > 0 and Age < 150)
 insert into Person (Id, Name, Email, GenderId, Age)
 values (9, 'Test', 'Test', 2, 160)
 
--- vaatame tabeli Person kustutame kellel on id 8 ja vaatame j‰lle
+-- vaatame tabeli Person kustutame kellel on id 8 ja vaatame j√§lle
 select * from Person
 go
 delete from Person where Id = 8
@@ -98,56 +98,56 @@ select * from Person
 alter table Person
 add City nvarchar(25)
 
--- tahame tead kıiki, kes elavad Gothami linnas 
+-- tahame tead k√µiki, kes elavad Gothami linnas 
 select * from Person where City = 'Gotham'
--- kıik, kes ei ela Gothamis
+-- k√µik, kes ei ela Gothamis
 select * from Person where City <> 'Gotham'
 select * from Person where City != 'Gotham'
 
--- n‰itab teatud vanusega inimesi
+-- n√§itab teatud vanusega inimesi
 select *from Person where Age = 100 or 
 Age = 50 or Age = 20
 select * from Person where Age in (100, 50, 20)
 
---- n‰itab teatud vanusevahemikus olevaid inimesi
+--- n√§itab teatud vanusevahemikus olevaid inimesi
 select * from Person where Age between 30 and 50
 
---- wildcard e n‰itab kıik g-t‰hega linnad
+--- wildcard e n√§itab k√µik g-t√§hega linnad
 select * from Person where City like 'n%'
 select * from Person where Email like '%@%'
 
--- n'itab kıiki, kellel ei ole @-m‰rki emailis
+-- n'itab k√µiki, kellel ei ole @-m√§rki emailis
 select * from Person where Email not like '%@%'
 
---- n‰itab, kelle on emailis ees ja peale @-m‰rki
--- ainult ¸ks t‰ht
+--- n√§itab, kelle on emailis ees ja peale @-m√§rki
+-- ainult √ºks t√§ht
 select * from Person where Email like '_@_.com'
 
--- Vali kıik v‰ljad isikute tabelist, kus nimi ei alga t‰htedega "W", "A" vıi "S"
+-- Vali k√µik v√§ljad isikute tabelist, kus nimi ei alga t√§htedega "W", "A" v√µi "S"
 select * from Person where Name like '[^WAS]%'
---- n‰itab linna Gotham vıi New York kellel on vanus suurem 40 vıi sama 
+--- n√§itab linna Gotham v√µi New York kellel on vanus suurem 40 v√µi sama 
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
----vıtab kolm esimest rida
+---v√µtab kolm esimest rida
 select top 3 * from Person
 
---- kolm esimest, aga tabeli j‰rjestus on Age ja siis Name
+--- kolm esimest, aga tabeli j√§rjestus on Age ja siis Name
 select * from Person
 select top 3 Age, Name from Person
 
---- n‰itab esimesed 50% tabelis
+--- n√§itab esimesed 50% tabelis
 select top 50 percent * from Person
--- n‰itab ja j‰rjestab vanuse j‰rgi, kuid teisendab vanus esmalt t‰isarvuks ja teine n‰itab vanust
+-- n√§itab ja j√§rjestab vanuse j√§rgi, kuid teisendab vanus esmalt t√§isarvuks ja teine n√§itab vanust
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
--- n‰itab summa esmalt vanuse t‰isarvuks Person tableis	
+-- n√§itab summa esmalt vanuse t√§isarvuks Person tableis	
 select sum(cast(Age as int)) from Person
 
---- kuvab kıige nooremat isikut
+--- kuvab k√µige nooremat isikut
 select min(cast(Age as int)) from Person
---- kıige vanem isik
+--- k√µige vanem isik
 select max(cast(Age as int)) from Person
 
 select City, sum(cast(Age as int)) as TotalAge from Person group by City
@@ -211,12 +211,12 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
---- n‰itab unikaalsed nimed ja osakondade id
+--- n√§itab unikaalsed nimed ja osakondade id
 select distinct Name, DepartmentId from Employees
 
---- n‰itab summarset tˆˆtajate palk
+--- n√§itab summarset t√∂√∂tajate palk
 select sum(cast(Salary as int)) from Employees
---- n‰itab minimaalsed tˆˆtajate palka
+--- n√§itab minimaalsed t√∂√∂tajate palka
 select min(cast(Salary as int)) from Employees
 
 
@@ -258,7 +258,7 @@ update Employees set FirstName = NULL, MiddleName = NULL, LastName = 'Crowe'
 where Id = 10
 
 
---- igast reast vıtab esimeses veerus t‰idetud lahtri ja kuvab ainult seda
+--- igast reast v√µtab esimeses veerus t√§idetud lahtri ja kuvab ainult seda
 select Id, coalesce(FirstName, MiddleName, LastName) as Name
 from Employees
 
@@ -279,7 +279,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- loome stored procedure, hankige tˆˆtajaid soo ja osakonna j‰rgi
+--- loome stored procedure, hankige t√∂√∂tajaid soo ja osakonna j√§rgi
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
@@ -288,14 +288,14 @@ as begin
 	and DepartmentId = @DepartmentId
 end
 
---- kıik esimeses osakonnas meessoost tˆˆtavad isikud
+--- k√µik esimeses osakonnas meessoost t√∂√∂tavad isikud
 spGetEmployeesByGenderAndDepartment 'Male', 1
 
 spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
--- luua salvestatud protseduur, saada tˆˆtajate arv soo j‰rgi
+-- luua salvestatud protseduur, saada t√∂√∂tajate arv soo j√§rgi
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
@@ -317,18 +317,18 @@ declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
---- luua salvestatud protseduur, saada tˆˆtajate arv
+--- luua salvestatud protseduur, saada t√∂√∂tajate arv
 create proc spTotalCount2
 @TotalCount int output
 as begin
 	select @TotalCount = count(Id) from Employees
 end
---- k‰ivitame sp
+--- k√§ivitame sp
 declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
---- luua salvestatud protseduur, saab nimetada id j‰rgi
+--- luua salvestatud protseduur, saab nimetada id j√§rgi
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
@@ -336,19 +336,19 @@ as begin
 	select @FirstName = FirstName from employees where Id = @Id
 end
 
--- teostab protseduuri, saab nime id j‰rgi
+-- teostab protseduuri, saab nime id j√§rgi
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
 
--- luua salvestatud protseduur, saab nimetada id 2 j‰rgi
+-- luua salvestatud protseduur, saab nimetada id 2 j√§rgi
 create proc spGetNameById2
 @Id int
 as begin
 	return (select FirstName from Employees where Id = @Id)
 end
 
--- ?
+-- teostab protseduuri, saab nime ID j√§rgi 2
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
 print 'Name of the employee = ' + @EmployeeName
