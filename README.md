@@ -5,6 +5,7 @@
 3. Valed Vastused SQL testis - w3quizz.txt
 4. SQL süntaks - SQL.sql
 
+
   # Andmebaasid
   1. Hotell.sql - andmebaasi hotellireserveerimine loomine
 
@@ -16,3 +17,4 @@
 3. Kirjuta antud failides vene keelne tõlge ja/või vajalikud selgitused
 4. Õpi Pähe kõik sõnad, lühendid ja laused
 5. git push
+  ![image](https://github.com/IrinaMerkulova/TARpv23ab/assets/153904907/c14bd33d-10de-4248-afb0-20691bc9db0d)
