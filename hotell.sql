@@ -23,22 +23,31 @@ delete from room_type where id = 10;
 
 
 --tabel room
-Create table room(
-id int primary key identity (1,1),
+CREATE TABLE room(
+id int primary key identity(1,1),
 number varchar(10),
-name varchar (40),
+name varchar(40),
 status varchar(10),
 smoke bit,
-room_type_id int,
-foreign key (room_type_id) references room_type(id));
-SELECT * FROM room;
-SELECT * FROM room_type;
+room_type_id int
+foreign key references room_type(id));
+insert into room(number, name, status, smoke,room_type_id)
+VALUES ('10','sv','open',0,1),
+('E11', 'sv', 'open', 0, 2),
+('E12', 'sv', 'open', 0, 3),
+('E13', 'sv', 'open', 0, 4),
+('E14', 'sv', 'open', 0, 5);
+SELECT * FROM room
 
-INSERT INTO room(number,name,status,smoke,room_type_id)
-VALUES ('E10','sv','open',1,1);
+DROP TABLE room
 --git push
 --git add .
 --git commit -a -m ""
+('E11', 'sv', 'open', 0, 2),
+('E12', 'sv', 'open', 0, 3),
+('E13', 'sv', 'open', 0, 4),
+('E14', 'sv', 'open', 0, 5);
+
 --git push
 
 --tabel guest
