@@ -210,7 +210,7 @@ select * from Employees
 --- valib ainulaadsed nimed ja osakonna ID-d töötajate tabelist.
 select distinct Name, DepartmentId from Employees
 
----?
+--- arvutab töötajate palga summa, eeldusel, et palk on salvestatud tervarvulistena.
 select sum(cast(Salary as int)) from Employees
 ---?
 select min(cast(Salary as int)) from Employees
