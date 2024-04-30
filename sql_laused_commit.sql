@@ -122,7 +122,7 @@ select * from Person where Email not like '%@%'
 -- ainult üks täht
 select * from Person where Email like '_@_.com'
 
---?
+-- valib kõik kirjed tabelist Person, mille väärtus veerus Name ei alga tähega "W", "A" või "S".
 select * from Person where Name like '[^WAS]%'
 --- ?
 select * from Person where (City = 'Gotham' or City = 'New York')
