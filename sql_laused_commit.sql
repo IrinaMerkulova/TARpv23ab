@@ -198,7 +198,7 @@ select max(cast(Age as int)) from Person
 -- See päring valib tabelist "Person" kõige vanema inimese vanuse.
 	
 select City, sum(cast(Age as int)) as TotalAge from Person group by City
-
+-- See päring arvutab kõigi tabelis "Person" iga linna inimeste kogu vanuse.
 
 
 
