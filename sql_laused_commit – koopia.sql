@@ -181,7 +181,7 @@ Salary nvarchar(50),
 DepartmentId int
 )
 
---?
+-- Эта команда вставляет новую строку в таблицу Department с указанными значениями для каждого столбца.
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (1, 'IT', 'London', 'Rick')
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
