@@ -227,12 +227,14 @@ add DepartmentId
 int null
 
 
---?
+--veerge loomine
 alter table Employees
 add MiddleName nvarchar(30)
-
 alter table Employees
 add LastName nvarchar(30)
+--puuduva veeru lisamine
+alter table Employees
+add FirstName nvarchar(30)
 
 update Employees set FirstName = 'Tom', MiddleName = 'Nick', LastName = 'Jones'
 where Id = 1
@@ -277,7 +279,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- 
+--- loome stored procedure, Hankige töötajaid soo ja osakonna järgi
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
