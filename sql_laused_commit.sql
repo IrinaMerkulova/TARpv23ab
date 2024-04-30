@@ -212,7 +212,7 @@ select * from Employees
 --- näitab ainult üks kord nime, kui see kordub
 select distinct Name, DepartmentId from Employees
 
----?
+--- kõigi palkade summa
 select sum(cast(Salary as int)) from Employees
 ---?
 select min(cast(Salary as int)) from Employees
