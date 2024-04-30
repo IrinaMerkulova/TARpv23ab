@@ -214,7 +214,7 @@ select distinct Name, DepartmentId from Employees
 
 --- valib välja Salary kirjete summa
 select sum(cast(Salary as int)) from Employees
----?
+--- valib Salary väljal kõige minimaalsema väärtusega kirje
 select min(cast(Salary as int)) from Employees
 
 
