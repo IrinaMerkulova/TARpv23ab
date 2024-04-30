@@ -234,6 +234,7 @@ insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (3, 'HR', 'New York', 'Christie')
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (4, 'Other Deparment', 'Sydney', 'Cindrella')
+-- lisab kirjed tabelisse "Department". Iga kirje esindab teavet konkreetse osakonna kohta.
 
 select * from Department
 
