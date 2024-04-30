@@ -226,11 +226,11 @@ select sum(cast(Salary as int)) from Employees
 --- возвращает наименьшее значение зарплаты (в целочисленном виде) среди всех записей в таблице Employees
 select min(cast(Salary as int)) from Employees
 
-
+-- Эта команда добавляет новый столбец City к существующей таблице Employees, которое будет иметь дополнительное поле City, которое содержать строковое значение длиной до 25 символов.
 alter table Employees
 add City nvarchar(25)
 
-
+-- 
 alter table Employees
 add DepartmentId
 int null
