@@ -4,7 +4,7 @@ create database Tarpv23
 -- Andmebaasi kustutamine
 DRop DataBASE Tarpv23
 
---?
+-- Loo tabel sugu koos omadustega
 create table Gender
 (
 Id int NOT NULL primary key,
