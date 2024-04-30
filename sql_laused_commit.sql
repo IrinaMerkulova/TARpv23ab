@@ -6,14 +6,18 @@ DRop DataBASE Tarpv23
 
 --See päring loob tabeli nimega "Gender" ja kahe veeruga: "Id" ja "Gender". 
 --Veerg "Id" primary key.   
---Veerg "Gender" on andmetüüp "nvarchar (10). 
+--Veerg "Gender" on andmetüüp nvarchar (10). 
 --Ei saa sisaldada tühiväärtusi (NOT NULL).
 create table Gender
 (
 Id int NOT NULL primary key,
 Gender nvarchar(10) not null
 )
-
+--See päring loob tabeli nimega "Person" ja kahe veeruga: "Id" ja "Name", "Email", "GenderId". 
+--Veerg "Id" primary key. Ei saa sisaldada tühiväärtusi (NOT NULL)
+--Veerg "Name" on andmetüüp nvarchar (25). 
+--Veerg "Email" on andmetüüp nvarchar (30).
+--Veerg "GenderId" on andmetüüp int (30).
 create table Person
 (
 Id int not null primary key,
