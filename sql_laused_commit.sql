@@ -142,6 +142,7 @@ select * from Person where Age in (100, 50, 20)
 	
 --- näitab teatud vanusevahemikus olevaid inimesi
 select * from Person where Age between 30 and 50
+-- Valib kõik isikud vanuses 30 kuni 50 aastat.
 
 --- wildcard e näitab kõik g-tähega linnad
 select * from Person where City like 'n%'
