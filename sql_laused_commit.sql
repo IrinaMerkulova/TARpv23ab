@@ -141,7 +141,7 @@ select top 50 percent * from Person
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
---?
+-- võtab kokku tabeli Person veeru Age väärtuse pärast nende teisendamist täisarvuliseks andmetüübiks.
 select sum(cast(Age as int)) from Person
 
 --- kuvab kõige nooremat isikut
