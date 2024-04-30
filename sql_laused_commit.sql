@@ -78,7 +78,7 @@ update Person
 set Age = 149
 where Id = 8
 
---?
+--lisamine piirang kontroll aasta >0 ja <150
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
 
