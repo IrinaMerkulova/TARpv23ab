@@ -123,7 +123,7 @@ select * from Person where Email not like '%@%'
 -- ainult üks täht
 select * from Person where Email like '_@_.com'
 
---
+-- возвращать все строки из таблицы Person, где значение в столбце Name начинается с любого символа, кроме W, A, или S
 
 select * from Person where Name like '[^WAS]%'
 
