@@ -127,7 +127,7 @@ select * from Person where Email like '_@_.com'
 
 select * from Person where Name like '[^WAS]%'
 
---- 
+--- Запрос возвращает все строки, где город (City) равен либо 'Gotham', либо 'New York', и возраст (Age) больше или равен 40
 
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
@@ -141,7 +141,8 @@ select top 3 Age, Name from Person
 
 --- näitab esimesed 50% tabelis
 select top 50 percent * from Person
---?
+-- CAST(Age AS INT): Этот оператор преобразует значение в столбце Age в целое число перед сортировкой.
+-- ORDER BY Age: Сортировка осуществляется по значению в столбце Age
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
