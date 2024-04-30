@@ -209,7 +209,7 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
----?
+---valib unikaalsed tähekombinatsioonid
 select distinct Name, DepartmentId from Employees
 
 ---?
