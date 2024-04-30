@@ -154,7 +154,7 @@ select top 50 percent * from Person
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
--- näitab inmesi summarne vanus 
+-- Näitab inmesi summarne vanus 
 select sum(cast(Age as int)) from Person
 
 --- kuvab kõige nooremat isikut
@@ -188,7 +188,7 @@ Salary nvarchar(50),
 DepartmentId int
 )
 
---?
+--sisestame andmed tabelisse "Department"
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (1, 'IT', 'London', 'Rick')
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
