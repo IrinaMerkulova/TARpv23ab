@@ -32,7 +32,9 @@ insert into Gender (Id, Gender)
 values (1, 'Female')
 insert into Gender (Id, Gender)
 values (2, 'Male')
-
+-- Naissugu sisestamine id-ga 1
+-- Meessugu sisestamine id-ga 2
+	
 --- ?
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
