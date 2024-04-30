@@ -328,7 +328,7 @@ declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
---- ?
+--- luua salvestatud protseduur, saab nimetada id järgi
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
