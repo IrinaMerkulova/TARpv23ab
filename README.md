@@ -1,4 +1,4 @@
-![pilt](https://github.com/IrinaMerkulova/TARpv23ab/assets/82279357/71fdafd1-2444-4355-a9d1-86e741a12fd2)# Tehtud tööd - Erialane inglise keel 
+# Tehtud tööd - Erialane inglise keel 
 
 1. Andmebaasile sõnavara - failinimi "ingliseSQL.txt"
 2. SQL Serveris takkivad veed - ?
