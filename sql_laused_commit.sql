@@ -11,6 +11,7 @@ Id int NOT NULL primary key,
 Gender nvarchar(10) not null
 )
 
+--Loo tabel koos omadustega
 create table Person
 (
 Id int not null primary key,
