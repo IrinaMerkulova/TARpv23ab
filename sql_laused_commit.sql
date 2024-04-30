@@ -123,7 +123,8 @@ select * from Person
 --- lisame veeru juurde
 alter table Person
 add City nvarchar(25)
-
+-- Lisab uue veeru "City" tabelisse "Person".
+	
 -- tahame tead kõiki, kes elavad Gothami linnas 
 select * from Person where City = 'Gotham'
 -- kõik, kes ei ela Gothamis
