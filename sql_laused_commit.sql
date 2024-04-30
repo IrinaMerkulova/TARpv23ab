@@ -212,7 +212,7 @@ select * from Employees
 ---valib unikaalsed tähekombinatsioonid
 select distinct Name, DepartmentId from Employees
 
----?
+---arvutame Salary veeru väärtuste summa
 select sum(cast(Salary as int)) from Employees
 ---?
 select min(cast(Salary as int)) from Employees
