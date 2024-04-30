@@ -50,14 +50,14 @@ values (7, 'Spiderman', 'spider@spiderman.com', 2)
 -- vaatame tabeli andmeid
 select * from Person
 
---- v√µ√µrv√µtme piirangu maha v√µtmine
+--- vıırvıtme piirangu maha vıtmine
 alter table Person
 drop constraint tblPerson_GenderId_FK
 
--- sisestame v√§√§rtuse tabelisse
+-- sisestame v‰‰rtuse tabelisse
 insert into Gender (Id, Gender)
 values (3, 'Unknown')
--- lisame v√µ√µrv√µtme uuesti
+-- lisame vıırvıtme uuesti
 alter table Person
 add constraint DF_Person_GenderId
 default 3 for GenderId
@@ -80,14 +80,14 @@ update Person
 set Age = 149
 where Id = 8
 
--- lisamine constrain kontroll aasta >0 ja <150
+-- lisamine piirangu kontroll aasta >0 ja <150
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
 
 insert into Person (Id, Name, Email, GenderId, Age)
 values (9, 'Test', 'Test', 2, 160)
 
--- vaatame tabeli Person kustutame kellel on id 8 ja vaatame j√§lle
+-- vaatame tabeli Person kustutame kellel on id 8 ja vaatame j‰lle
 select * from Person
 go
 delete from Person where Id = 8
@@ -98,29 +98,29 @@ select * from Person
 alter table Person
 add City nvarchar(25)
 
--- tahame tead k√µiki, kes elavad Gothami linnas 
+-- tahame tead kıiki, kes elavad Gothami linnas 
 select * from Person where City = 'Gotham'
--- k√µik, kes ei ela Gothamis
+-- kıik, kes ei ela Gothamis
 select * from Person where City <> 'Gotham'
 select * from Person where City != 'Gotham'
 
--- n√§itab teatud vanusega inimesi
+-- n‰itab teatud vanusega inimesi
 select *from Person where Age = 100 or 
 Age = 50 or Age = 20
 select * from Person where Age in (100, 50, 20)
 
---- n√§itab teatud vanusevahemikus olevaid inimesi
+--- n‰itab teatud vanusevahemikus olevaid inimesi
 select * from Person where Age between 30 and 50
 
---- wildcard e n√§itab k√µik g-t√§hega linnad
+--- wildcard e n‰itab kıik g-t‰hega linnad
 select * from Person where City like 'n%'
 select * from Person where Email like '%@%'
 
--- n'itab k√µiki, kellel ei ole @-m√§rki emailis
+-- n'itab kıiki, kellel ei ole @-m‰rki emailis
 select * from Person where Email not like '%@%'
 
---- n√§itab, kelle on emailis ees ja peale @-m√§rki
--- ainult √ºks t√§ht
+--- n‰itab, kelle on emailis ees ja peale @-m‰rki
+-- ainult ¸ks t‰ht
 select * from Person where Email like '_@_.com'
 
 --?
@@ -129,14 +129,14 @@ select * from Person where Name like '[^WAS]%'
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
----v√µtab kolm esimest rida
+---vıtab kolm esimest rida
 select top 3 * from Person
 
---- kolm esimest, aga tabeli j√§rjestus on Age ja siis Name
+--- kolm esimest, aga tabeli j‰rjestus on Age ja siis Name
 select * from Person
 select top 3 Age, Name from Person
 
---- n√§itab esimesed 50% tabelis
+--- n‰itab esimesed 50% tabelis
 select top 50 percent * from Person
 --?
 select * from Person order by cast(Age as int)
@@ -145,9 +145,9 @@ select * from Person order by Age
 --?
 select sum(cast(Age as int)) from Person
 
---- kuvab k√µige nooremat isikut
+--- kuvab kıige nooremat isikut
 select min(cast(Age as int)) from Person
---- k√µige vanem isik
+--- kıige vanem isik
 select max(cast(Age as int)) from Person
 
 select City, sum(cast(Age as int)) as TotalAge from Person group by City
@@ -258,7 +258,7 @@ update Employees set FirstName = NULL, MiddleName = NULL, LastName = 'Crowe'
 where Id = 10
 
 
---- igast reast v√µtab esimeses veerus t√§idetud lahtri ja kuvab ainult seda
+--- igast reast vıtab esimeses veerus t‰idetud lahtri ja kuvab ainult seda
 select Id, coalesce(FirstName, MiddleName, LastName) as Name
 from Employees
 
@@ -288,7 +288,7 @@ as begin
 	and DepartmentId = @DepartmentId
 end
 
---- k√µik esimeses osakonnas meessoost t√∂√∂tavad isikud
+--- kıik esimeses osakonnas meessoost tˆˆtavad isikud
 spGetEmployeesByGenderAndDepartment 'Male', 1
 
 spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
@@ -323,7 +323,7 @@ create proc spTotalCount2
 as begin
 	select @TotalCount = count(Id) from Employees
 end
---- k√§ivitame sp
+--- k‰ivitame sp
 declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
