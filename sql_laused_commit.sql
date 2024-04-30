@@ -208,9 +208,9 @@ select * from Employees
 --- näitab nimed ja osakonna id 
 select distinct Name, DepartmentId from Employees
 
---- väiksem palk 
+--- palga summeerimine
 select sum(cast(Salary as int)) from Employees
----?
+--- väiksem palk 
 select min(cast(Salary as int)) from Employees
 
 
