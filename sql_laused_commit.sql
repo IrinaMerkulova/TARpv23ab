@@ -295,7 +295,7 @@ spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
---?
+--See päring loob protseduuri, mis loeb teatud soost töötajate arvu (@Gender) Employees tabelis. Tulemus asetatakse muutujasse @EmployeeCount, mis kuulutatakse väljundparameetriks.
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
