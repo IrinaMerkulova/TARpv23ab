@@ -209,7 +209,7 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
----?
+--- valib kirjed väljaga Name ja DepertmendId tingimusel, et Name ei tohi korduda
 select distinct Name, DepartmentId from Employees
 
 ---?
