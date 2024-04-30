@@ -1,15 +1,17 @@
 -- db loomine
 create database Tarpv23
 
--- db kustutamine
+-- db kustutamine 
 DRop DataBASE Tarpv23
 
---?
+--Tabeli Gender loomine
 create table Gender
 (
 Id int NOT NULL primary key,
 Gender nvarchar(10) not null
 )
+
+select * from Gender
 
 create table Person
 (
