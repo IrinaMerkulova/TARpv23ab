@@ -65,7 +65,7 @@ select * from Gender
 insert into Person (Id, Name, Email)
 values (8, 'Test', 'Test')
 
----lisame uue veeru tabelisse
+--- lisame uue veeru tabelisse
 alter table Person
 add Age nvarchar(10)
 
@@ -74,7 +74,7 @@ update Person
 set Age = 149
 where Id = 8
 
---?
+--constraint loomine
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
 
