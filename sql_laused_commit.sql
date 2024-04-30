@@ -200,9 +200,6 @@ select max(cast(Age as int)) from Person
 select City, sum(cast(Age as int)) as TotalAge from Person group by City
 -- See päring arvutab kõigi tabelis "Person" iga linna inimeste kogu vanuse.
 
-
-
-
 --- tund 3
 
 --- loome uued tabelid
@@ -237,7 +234,8 @@ values (4, 'Other Deparment', 'Sydney', 'Cindrella')
 -- lisab kirjed tabelisse "Department". Iga kirje esindab teavet konkreetse osakonna kohta.
 
 select * from Department
-
+-- päring select * from Department toob kõik andmed tabelist "Department", kuvades teavet iga osakonna kohta.
+	
 insert into Employees (Id, Name, Gender, Salary, DepartmentId)
 values (1, 'Tom', 'Male', 4000, 1)
 insert into Employees (Id, Name, Gender, Salary, DepartmentId)
