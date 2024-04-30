@@ -146,7 +146,8 @@ select top 50 percent * from Person
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
---?
+-- суммирует все значения столбца Age после их преобразования в целые числа
+
 select sum(cast(Age as int)) from Person
 
 --- kuvab kõige nooremat isikut
