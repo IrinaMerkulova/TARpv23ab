@@ -19,7 +19,7 @@ Email nvarchar(30),
 GenderId int
 )
 
---- andmete sisestamine tabelisse
+--- andmete Person ja Gender  sisestamine tabelisse 
 insert into Gender (Id, Gender)
 values (1, 'Female')
 insert into Gender (Id, Gender)
