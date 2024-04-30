@@ -327,7 +327,7 @@ declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
---- ?
+--- tagastab töötaja nime antud identifikaatori (@Id) järgi. 
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
