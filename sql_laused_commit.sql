@@ -280,7 +280,7 @@ add City nvarchar(25)
 alter table Employees
 add DepartmentId
 int null
-
+-- päring lisab uue veeru "DepartmentId" tabelisse "Employees" tüübiga int ja lubab väärtuse NULL.
 
 --?
 alter table Employees
