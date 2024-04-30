@@ -78,7 +78,8 @@ values (3, 'Unknown')
 alter table Person
 add constraint DF_Person_GenderId
 default 3 for GenderId
-
+-- Tabelisse "Person" ei sisestata väärtust veerule "GenderId",
+-- sellele veerule määratakse automaatselt vaikimisi väärtus 3.
 
 ---- 2 tund
 
