@@ -213,7 +213,7 @@ select * from Employees
 --- valib tabelist Töötajad veergude Name ja DepartmentId väärtuste unikaalsed kombinatsioonid.
 select distinct Name, DepartmentId from Employees
 
----?
+---  võtab kokku tabeli Employees veeru Salary väärtuse pärast nende teisendamist täisarvuliseks andmetüübiks.
 select sum(cast(Salary as int)) from Employees
 ---?
 select min(cast(Salary as int)) from Employees
