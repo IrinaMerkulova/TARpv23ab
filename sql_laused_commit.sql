@@ -4,7 +4,10 @@ create database Tarpv23
 -- db kustutab 
 DRop DataBASE Tarpv23
 
---?
+--See päring loob tabeli nimega "Gender" ja kahe veeruga: "Id" ja "Gender". 
+--Veerg "Id" primary key.   
+--Veerg "Gender" on andmetüüp "nvarchar (10). 
+--Ei saa sisaldada tühiväärtusi (NOT NULL).
 create table Gender
 (
 Id int NOT NULL primary key,
