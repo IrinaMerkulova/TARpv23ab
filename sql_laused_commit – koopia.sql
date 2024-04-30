@@ -236,7 +236,7 @@ add DepartmentId
 int null
 
 
---?
+-- 
 alter table Employees
 add MiddleName nvarchar(30)
 
@@ -286,7 +286,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- 
+--- Запрос обновляет значения столбцов FirstName, MiddleName, и LastName в таблице Employees для строки, где Id равно номеру
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
