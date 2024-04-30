@@ -214,7 +214,7 @@ select distinct Name, DepartmentId from Employees
 
 -- Näitab summarne töötajate palk
 select sum(cast(Salary as int)) from Employees
----?
+-- Näitab minimaalne töötajate palk
 select min(cast(Salary as int)) from Employees
 
 
