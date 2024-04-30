@@ -342,7 +342,8 @@ declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
 
---?
+
+--See päring loob spGetNameById2 protseduuri, mis tagastab Employees'i tabelist määratud @Id identifikaatoriga töötaja nime.
 create proc spGetNameById2
 @Id int
 as begin
