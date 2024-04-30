@@ -8,7 +8,8 @@
     # Andmebaasid
 
      1.  hotell.sql - andmebaasi hotellireserveerimise loomine
-  ![image](https://github.com/IrinaMerkulova/TARpv23ab/assets/161806791/ed8229f2-9e35-4159-8bb0-af7fb2857335)
+  ![image](https://github.com/IrinaMerkulova/TARpv23ab/assets/161806791/0f9f3e7f-58dd-4324-abe6-54570f4fb34c)
+
 
 
   
