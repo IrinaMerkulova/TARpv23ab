@@ -334,12 +334,12 @@ as begin
 	select @FirstName = FirstName from employees where Id = @Id
 end
 
---?
+-- loob tüübi "vahelduv" nimega FirstName ja teeb spGetNameById1 protseduuri, kus edastab 6 ja FirstName
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
 
---?
+-- loob protseduuri, mis näitab kirjet tabelist employees, kus id on võrdne edastatava id-ga
 create proc spGetNameById2
 @Id int
 as begin
