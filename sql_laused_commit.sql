@@ -215,7 +215,7 @@ select distinct Name, DepartmentId from Employees
 
 ---  võtab kokku tabeli Employees veeru Salary väärtuse pärast nende teisendamist täisarvuliseks andmetüübiks.
 select sum(cast(Salary as int)) from Employees
----?
+--- valib tabeli Employees tabeli veeru Salary väikseima väärtuse pärast selle teisendamist täisarvu andmetüübiks.
 select min(cast(Salary as int)) from Employees
 
 
