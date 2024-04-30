@@ -241,12 +241,15 @@ add DepartmentId
 int null
 
 
---Uute veergude lisamine MiddleName ja LastName lauale Employees
+--Uute veergude lisamine MiddleName ja LastName lauale Employees (FirstName) 
 alter table Employees
 add MiddleName nvarchar(30)
 
 alter table Employees
-add LastName nvarchar(30)
+add LastName nvarchar(30) 
+
+alter table Employees
+add FirstName nvarchar(30)
 
 update Employees set FirstName = 'Tom', MiddleName = 'Nick', LastName = 'Jones'
 where Id = 1
