@@ -123,7 +123,7 @@ select * from Person where Email like '_@_.com'
 
 --otsib nime, kus ei ole tähti (WAS).
 select * from Person where Name like '[^WAS]%'
---- ?
+--- Näitab kõiki inimesi, kes elavad Gothamis või New Yorgis ja on 40 või vanemad
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
