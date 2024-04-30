@@ -257,12 +257,11 @@ values (9, 'James', 'Male', 6500, NULL)
 insert into Employees (Id, Name, Gender, Salary, DepartmentId)
 values (10, 'Russell', 'Male', 8800, NULL)
 -- päringud insert into Employees lisavad uusi kirjeid tabelisse "Employees" teabega töötajate kohta, sealhulgas nende identifikaatori, nime, soo, palga ja osakonna identifikaatori.
-	
-select * from Employees
 
 ---?
 select distinct Name, DepartmentId from Employees
-
+-- valib ainulaadsed töötajate nimed ja nende vastavad osakonna identifikaatorid tabelist "Employees".
+	
 ---?
 select sum(cast(Salary as int)) from Employees
 ---?
