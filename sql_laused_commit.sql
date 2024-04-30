@@ -4,7 +4,7 @@ create database Tarpv23
 --db kustutamine
 DRop DataBASE Tarpv23
 
---?
+--tabeli gender ja person loomine 
 create table Gender
 (
 Id int NOT NULL primary key,
