@@ -341,7 +341,7 @@ declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
 
---?
+-- create stored procedure, saab nime ID järgi 2
 create proc spGetNameById2
 @Id int
 as begin
