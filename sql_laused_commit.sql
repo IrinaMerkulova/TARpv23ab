@@ -88,7 +88,9 @@ select * from Gender
 
 insert into Person (Id, Name, Email)
 values (8, 'Test', 'Test')
-
+-- Uus kirje sisaldab infot isiku nime "Test" ja e-posti aadressi "Test" kohta ning sellel on GenderId väärtus 3,
+-- kuna selle veeru jaoks on vaikimisi määratud väärtus 3.
+	
 ---lisame uue veeru tabelisse
 alter table Person
 add Age nvarchar(10)
