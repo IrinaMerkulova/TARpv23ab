@@ -324,7 +324,7 @@ declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
----?
+--- arvutab kirjete koguarvu tabelis Employees
 create proc spTotalCount2
 @TotalCount int output
 as begin
