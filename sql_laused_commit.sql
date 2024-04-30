@@ -212,7 +212,7 @@ select * from Employees
 ---- näitab töötajate nimi ja osakonna "Id"
 select distinct Name, DepartmentId from Employees
 
----?
+----- näitab summarne töötajate palk
 select sum(cast(Salary as int)) from Employees
 ---?
 select min(cast(Salary as int)) from Employees
