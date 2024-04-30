@@ -273,7 +273,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- 
+--- luua salvestatud protseduur, hankida töötajaid soo ja osakonna järgi
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
