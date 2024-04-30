@@ -213,7 +213,8 @@ DepartmentName nvarchar(50),
 Location nvarchar(50),
 DepartmentHead nvarchar(50)
 )
-
+-- loob uue tabeli nimega "Department" nelja veeruga: "Id", "DepartmentName", "Location" ja "DepartmentHead".
+	
 create table Employees
 (
 Id int primary key,
