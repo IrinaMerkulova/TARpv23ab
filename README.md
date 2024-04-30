@@ -25,3 +25,5 @@ Andmebaasi hotellireserveerimine loomine - hotell.sql
 3. Kirjuta antud failides vene keelne tõlge ja/või vajalikud selgitused
 4. Õpi Pähe kõik sõnad, lühendid ja laused
 5. git push
+
+![pilt](https://github.com/IrinaMerkulova/TARpv23ab/assets/154507353/01cafa4f-5136-4e2f-9484-e3ecb2f3b3f6)
