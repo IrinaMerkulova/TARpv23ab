@@ -228,7 +228,7 @@ select distinct Name, DepartmentId from Employees
 
 ---Näitab summaarset palka
 select sum(cast(Salary as int)) from Employees
----?
+---kuvab väikseimat palka
 select min(cast(Salary as int)) from Employees
 
 
