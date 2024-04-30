@@ -136,7 +136,7 @@ select top 3 Age, Name from Person
 
 --- näitab esimesed 50% tabelis
 select top 50 percent * from Person
---?
+--näitab ja järjestab vanuse järgi, kuid teisendab vanus esmalt täisarvuks ja teine näitab vanust
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
