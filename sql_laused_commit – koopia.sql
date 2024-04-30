@@ -216,7 +216,7 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
----?
+-- Этот запрос возвращает все уникальные комбинации значений в столбцах Name и DepartmentId из таблицы Employees
 select distinct Name, DepartmentId from Employees
 
 ---?
