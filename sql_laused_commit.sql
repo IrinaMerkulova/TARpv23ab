@@ -94,6 +94,7 @@ values (8, 'Test', 'Test')
 ---lisame uue veeru tabelisse
 alter table Person
 add Age nvarchar(10)
+-- Lisa uus veerg nimega "Age" tabelisse "Person", mis salvestab vanuse nvarchar-vormingus.
 
 --uuendame andmeid
 update Person
