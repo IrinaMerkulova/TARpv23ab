@@ -317,7 +317,7 @@ declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
----?
+---See päring loob spTotalCount2 protseduuri, mis arvutab Employees'i tabelis töötajate koguarvu. Tulemus asetatakse muutujasse @TotalCount, mis kuulutatakse väljundparameetriks.
 create proc spTotalCount2
 @TotalCount int output
 as begin
