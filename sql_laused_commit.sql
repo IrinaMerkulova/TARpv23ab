@@ -410,7 +410,8 @@ create proc spGetNameById2
 as begin
 	return (select FirstName from Employees where Id = @Id)
 end
-
+-- Protseduur töötaja nime saamiseks tema ID järgi
+	
 -- ?
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
