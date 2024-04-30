@@ -191,6 +191,8 @@ select sum(cast(Age as int)) from Person
 
 --- kuvab kõige nooremat isikut
 select min(cast(Age as int)) from Person
+-- See päring valib tabelist "Person" kõige noorema inimese vanuse.
+
 --- kõige vanem isik
 select max(cast(Age as int)) from Person
 
