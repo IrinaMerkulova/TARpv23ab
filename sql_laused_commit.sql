@@ -225,7 +225,7 @@ add DepartmentId
 int null
 
 
---?
+-- lisab tabelile Employees uue veeru nimega MiddleName, mis on tüübiga nvarchar(30).
 alter table Employees
 add MiddleName nvarchar(30)
 
