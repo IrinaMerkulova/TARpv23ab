@@ -316,7 +316,7 @@ declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
----?
+--- protseduur tagastab @total count kaudu töötajate tabelis olevate kirjete koguarvu.
 create proc spTotalCount2
 @TotalCount int output
 as begin
