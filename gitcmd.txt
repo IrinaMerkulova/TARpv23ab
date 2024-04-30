@@ -7,3 +7,6 @@ C:\Users\opilane\Desktop\TARpv23ab>git config --global user.email "atimur.basiro
 C:\Users\opilane\Desktop\TARpv23ab>git config --global --list - вывод данных о конфиге 
 C:\Users\opilane\Desktop\TARpv23ab>git branch TimurB - создаем ветку
 C:\Users\opilane\Desktop\TARpv23ab>git checkout TimurB - переходим в ветку "TimurB"
+cd TARpv23
+git checkout
+sql_laused_commit.sql
