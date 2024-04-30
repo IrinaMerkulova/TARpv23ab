@@ -81,9 +81,9 @@ where Id = 8
 --constraint loomine
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
-
+--parandas taotluse
 insert into Person (Id, Name, Email, GenderId, Age)
-values (9, 'Test', 'Test', 2, 160)
+values (9, 'Test', 'Test', 2, 149)
 
 --?
 select * from Person
