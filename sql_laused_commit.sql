@@ -4,7 +4,7 @@ create database Tarpv23
 -- andmebaasi  loomine
 DRop DataBASE Tarpv23
 
--- andmebaasi kustutamine
+-- kustutamine andmebaasi 
 create table Gender
 (
 Id int NOT NULL primary key,
