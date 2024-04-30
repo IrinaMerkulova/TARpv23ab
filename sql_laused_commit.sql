@@ -334,7 +334,7 @@ as begin
 	select @FirstName = Name from employees where Id = @Id
 end
 
---?
+--tagastab töötaja nime tema identifikaatori järgi ja kuvab seejärel selle nime konsoolis.
 declare @Name nvarchar(50)
 execute spGetNameById1 6, @Name output
 print 'Name of the employee = ' + @Name
