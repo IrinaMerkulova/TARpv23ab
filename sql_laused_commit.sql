@@ -132,6 +132,7 @@ select * from Person where City = 'Gotham'
 -- kõik, kes ei ela Gothamis
 select * from Person where City <> 'Gotham'
 select * from Person where City != 'Gotham'
+-- Valib kõik isikud, kes ei ela linnas Gotham.
 
 -- näitab teatud vanusega inimesi
 select *from Person where Age = 100 or 
