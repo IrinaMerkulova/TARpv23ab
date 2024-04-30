@@ -270,7 +270,6 @@ create procedure spGetEmployees
 as begin
 	select FirstName, Gender from Employees
 end
-
 spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
@@ -337,7 +336,7 @@ declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
 
---?
+-- loob protseduuri, mis kuvab töötajate tabelist kirje, kus id on võrdne edastatud id
 create proc spGetNameById2
 @Id int
 as begin
