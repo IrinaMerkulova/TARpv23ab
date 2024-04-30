@@ -317,7 +317,7 @@ declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
----?
+--- create stored procedure, Hankige töötajate arv
 create proc spTotalCount2
 @TotalCount int output
 as begin
