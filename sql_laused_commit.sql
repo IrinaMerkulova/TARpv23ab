@@ -212,7 +212,7 @@ select * from Employees
 ---näitab kordumatud andmet tabelis
 select distinct Name, DepartmentId from Employees
 
----?
+---näitab kõigi palkade summa
 select sum(cast(Salary as int)) from Employees
 ---?
 select min(cast(Salary as int)) from Employees
