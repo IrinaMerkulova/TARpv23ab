@@ -32,6 +32,13 @@ Test MySQL
 
 <img width="595" alt="MySQL" src="https://github.com/IrinaMerkulova/TARpv23ab/assets/154507353/031e5f17-d01f-4050-b902-fdab6f8979ea">
 
+
+
 Test MySQL Quiz
 
 <img width="853" alt="Снимок экрана 2024-05-06 в 23 57 26" src="https://github.com/IrinaMerkulova/TARpv23ab/assets/154507353/44c68e4e-c200-4df2-a966-d7f6d49ff2a2">
+
+
+
+SQL Quiz
+<img width="898" alt="Снимок экрана 2024-05-07 в 00 19 17" src="https://github.com/IrinaMerkulova/TARpv23ab/assets/154507353/4a40d656-3c8a-49ff-973f-c300a7183d7f">
