@@ -21,3 +21,4 @@
 
 ![pilt](https://github.com/IrinaMerkulova/TARpv23ab/assets/154507539/9b5346ee-5e1e-4669-9ea5-0a78c848dd00)
 
+![Снимок экрана 2024-05-06 194532](https://github.com/IrinaMerkulova/TARpv23ab/assets/154507539/85edf42a-6449-4d89-b923-4d350164bc71)
