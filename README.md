@@ -6,6 +6,7 @@
 4. SQL süntaks - SQL.sql
 5. kuidas GIT CMD-s sisse logida või filiaali luua - Git CMD.txt
 6. sõnade tõlkimine vene ja inglise keelde - ABsynavara.txt
+7. töö GIT CMD-ga - sql_laused_commit.sql
 
 # Andmebaasid
 
