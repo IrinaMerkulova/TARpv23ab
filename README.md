@@ -3,6 +3,7 @@
 1. sõnavara - inglisesql.txt
 2. valed vastused - w3quizz.txt
 3. sql suntaks - sql.sql
+4. ABsynavara - ABsynavara.txt
 
 
 
