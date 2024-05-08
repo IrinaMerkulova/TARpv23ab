@@ -4,7 +4,7 @@
 2. SQL Serveris tekkivad vead - vigade kallal töötama
 3. Valed Vastused SQL testis - w3quizz.txt
 4. SQL süntaks - SQL.sql
-
+5. Sõnavara - ABsynavara.txt (inglise ja eesti keeles)
 
   # Andmebaasid
   1. Hotell.sql - andmebaasi hotellireserveerimine loomine
