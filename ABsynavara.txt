@@ -19,28 +19,28 @@ Andmete õigsus - Корректность данных - Data correctness
 Sisestusvorm - Форма заявки - Application form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Законодательство
-Paigaldus - Установка
-Hooldus - Обслуживание
-Lisamine - Добавление
-Kustutamine - Удаление
-Uuendamine - Обновление
-Sorteerimine - Сортировка
-Pärimine - Наследование
-Kasutaja - Пользователь
-Kasutajate õigused - Права пользователя
-Haldamine - Управление
-Pästik - Тригер
-Käivita - Запустить
-Salvesta - Сохранять
-Sisesta - Входить
-Moodusta - Образовывать
-laadi alla/laadi üles - Загрузка выгрузка
-Kävitatud päring - Запущенный запрос
-Salvestatud protseduur - Хранимая процедура
-Muutused - Изменения
-Tõrketeade - Сообщение об ошибке
-Värskendus - Обновление
+Näide - Пример - Example
+Näidis - Образец - Sample
+Sõltuvus - Зависимость - Dependency
+Seadustus - Законодательство - Legislation
+Paigaldus - Установка - Installation
+Hooldus - Обслуживание - Service
+Lisamine - Добавление - Addition
+Kustutamine - Удаление - Removal
+Uuendamine - Обновление - Обновление
+Sorteerimine - Сортировка - Sorting
+Pärimine - Наследование - Inheritance
+Kasutaja - Пользователь - User
+Kasutajate õigused - Права пользователя - User rights
+Haldamine - Управление - Control
+Pästik - Тригер - Trigger
+Käivita - Запустить - Start
+Salvesta - Сохранять - Save
+Sisesta - Входить - Enter
+Moodusta - Изменять - Change
+laadi alla/laadi üles - Загрузка выгрузка - Loading unloading
+Kävitatud päring - Запущенный запрос - Running request
+Salvestatud protseduur - Хранимая процедура - Stored procedure
+Muutused - Изменения - Changes
+Tõrketeade - Сообщение об ошибке - error message
+Värskendus - Обновление - Обновление
