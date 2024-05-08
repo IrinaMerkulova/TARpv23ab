@@ -20,3 +20,12 @@
 4. Õpi Pähe kõik sõnad, lühendid ja laused
 5. git push
 ![image](https://github.com/IrinaMerkulova/TARpv23ab/assets/153904999/dbe037ff-e36f-49e3-b122-963437820881)
+
+# MySQL Quiz
+![pilt](https://github.com/IrinaMerkulova/TARpv23ab/assets/153904999/30a3f8d5-c229-42e4-82f4-ff147212e748)
+
+# SQL Quiz
+![pilt](https://github.com/IrinaMerkulova/TARpv23ab/assets/153904999/4c313759-1594-4bb7-85c4-759cca5d8d1d)
+
+# MySQL TEST
+![pilt](https://github.com/IrinaMerkulova/TARpv23ab/assets/153904999/414e8f00-7163-4000-969e-3f8155e0ea83)
