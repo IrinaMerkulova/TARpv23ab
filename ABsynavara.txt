@@ -1,22 +1,22 @@
-Andmebaas - 
-Andmebaasihaldur - 
-Andmebaasi haldamise tarkvara - 
-Kirje - 
-Väli - 
-Tabel - 
-Päring - 
-Veerg - 
-Rida - 
-Seosed - 
-Piirangud -
-Primaarvõti -
-Andmemudel - 
-Varukoopia - 
-Kasutusjuhend - 
-Turvalisus - 
-Kättesaadavus - 
-Andmete õigusus - 
-Sisestusvorm - 
+Andmebaas - База данных
+Andmebaasihaldur - администратор базы данных
+Andmebaasi haldamise tarkvara - Программное обеспечение для управления базой данных
+Kirje - Запись
+Väli - Поле
+Tabel - Таблица
+Päring - Запрос
+Veerg - Графа
+Rida - Строка
+Seosed - Связи
+Piirangud - Ограничения
+Primaarvõti - Первичный ключ
+Andmemudel - Модель данных
+Varukoopia - Резервная копия
+Kasutusjuhend - Инструкция по применению
+Turvalisus - Безопасность
+Kättesaadavus - Доступность
+Andmete õigusus - Правосудие данных
+Sisestusvorm - Форма ввода
 
 --------------------------------------------
 Näide - 
