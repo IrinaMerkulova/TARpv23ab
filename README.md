@@ -2,7 +2,8 @@
 1. Vigade parandamine - KirillSats
 2. Valad vastused SQL testis - w3quizz.txt
 3. SQL süntaks - SQL.sql
-4. AB sõnavara - tegemata
+4. AB sõnavara - tehtud
+5. IngliseSQL - tehtud
 
 
 # Andmebaasid 
