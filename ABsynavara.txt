@@ -1,46 +1,46 @@
-Andmebaas - Database
-Andmebaasihaldur - Database Manager
-Andmebaasi haldamise tarkvara - Database management soaftware
-Kirje - Record
-Väli - Column
-Tabel - Table
-Päring - Request
-Veerg - Column
-Rida - Row
-Seosed - Linked
-Piirangud - Constraints
-Primaarvõti - Primary key
-Andmemudel - Data model
-Varukoopia - Backup
-Kasutusjuhend - user manual
-Turvalisus - Security
-Kättesaadavus - Available at
-Andmete õigusus - Data justice 
-Sisestusvorm - Input form
+Andmebaas - Database - База данных
+Andmebaasihaldur - Database Manager - Управление базой данных
+Andmebaasi haldamise tarkvara - Database management soaftware - Программа управления базой данных
+Kirje - Record - Запись
+Väli - Column - Поле
+Tabel - Table - Таблица
+Päring - Query - Запрос
+Veerg - Column - Поле
+Rida - Row - Ряд
+Seosed - Linked - Связанные
+Piirangud - Constraints - Законы
+Primaarvõti - Primary key - Первичны ключ
+Andmemudel - Data model - Модель данных
+Varukoopia - Backup - Резервная копия
+Kasutusjuhend - user manual - Инструкция по использованию
+Turvalisus - Security - Безопасность
+Kättesaadavus - Available at - Доступность
+Andmete õigusus - Data justice - Разрешение данных
+Sisestusvorm - Input form - Форма для ввода
 
 --------------------------------------------
-Näide - Example
-Näidis - Sample
-Sõltuvus - Addiction
-Seadustus - Law
-Paigaldus - Inserting
-Hooldus - Maintenance
-Lisamine - Adding
-Kustutamine - Deleting
-Uuendamine - Updating
-Sorteerimine - Sorting
-Pärimine - Perpetuation
-Kasutaja - User
-Kasutajate õigused - User permissions
-Haldamine - Management
-Pästik - Trigger
-Käivita - Executing
-Salvesta - Saving
-Sisesta - Typing
-Moodusa - Form
-laadi alla/laadi üles -  Download / Upload
-Kävitatud päring - Execute
-Salvestatud protseduur - Saved procedure
-Muutused - Changes
-Tõrketeade - Error message
-Värskendus - Update
+Näide - Example - Пример
+Näidis - Sample - Образец
+Sõltuvus - Addiction - Связанность
+Seadustus - Law - Закон
+Paigaldus - Inserting - Вставление
+Hooldus - Maintenance - Обслуживание
+Lisamine - Adding - Добавление
+Kustutamine - Deleting - Удаление
+Uuendamine - Updating - Обновление
+Sorteerimine - Sorting - Сортирывание
+Pärimine - Perpetuation - Наследование 
+Kasutaja - User - Пользователь
+Kasutajate õigused - User permissions - Права пользователя
+Haldamine - Management - Управление
+Pästik - Trigger - 
+Käivita - Executing - Запустить
+Salvesta - Saving - Сохранить
+Sisesta - Typing - Введение
+Moodusa - Form - Форма
+laadi alla/laadi üles -  Download / Upload - Скачать / Загрузить
+Kävitatud päring - Execute - Выполнить
+Salvestatud protseduur - Saved procedure - Сохраненная процедура
+Muutused - Changes - Изменения
+Tõrketeade - Error message - Сообщение об ошибке
+Värskendus - Update - Обновление
