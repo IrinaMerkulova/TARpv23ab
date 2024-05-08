@@ -7,7 +7,8 @@
 
 # Andmebaasid
 1. hotelAntonIvanov.sql - andmebaasi hotellireserveerimine loomine (hotel_aivanov_xampp.sql - XAMPP db)
-2. 
+2. ABsynavara.txt - sõnavara
+3. sql_laused_commit.sql - Praktiline töö (3. - 5. Tund) / SQL lausete käivitamine SQL Serveris, kommenteerimine ja GIT CMD abil commitimine.
 
 # Ülesanded
 
