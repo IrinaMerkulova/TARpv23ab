@@ -3,6 +3,7 @@
 2. SQL Serveris tekkivad vead - SQLvead
 3. Valed vastused SQL testis - W3quizz.txt
 4. SQL süntaks - SQL.sql
+5. SQL tabel - AutoTabel.SQL 
 
 
 # Andmebassit
