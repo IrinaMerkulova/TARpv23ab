@@ -35,8 +35,8 @@ values (2, 'Male')
 --- ?
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
--- Võõrvõtme lisamine veerule "GenderId" tabelis "Person", mis viitab veerule "Id" tabelis "Gender".
--- Selle käsu täitmisel luuakse andmete terviklikkuse piirang.
+-- Esimene rida on võõrvõtme lisamine tabeli „Person” veergu „GenderId” ja tabeli „Sugu” veergu „Id”.
+-- Loob andmete terviklikkuse piirangu.
 	
 -- sisestame andmed
 insert into Person (Id, Name, Email, GenderId)
