@@ -1,4 +1,4 @@
-Andmebaas - База данных
+Andmebaas - База данных -
 Andmebaasihaldur - Администратор базы данных
 Andmebaasi haldamise tarkvara - Программное обеспечение для управления базой данных
 Kirje - Запись 
