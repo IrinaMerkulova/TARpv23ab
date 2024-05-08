@@ -2,6 +2,7 @@
 
 1. Valed vastused SQL testis - w3quizz.txt
 2. SQL süntax - SQL.sql
+3. Tõlge - ABsynavara.txt
 
 # Andmebassid
 
