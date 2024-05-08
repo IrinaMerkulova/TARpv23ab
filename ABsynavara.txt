@@ -1,46 +1,46 @@
-Andmebaas - 
-Andmebaasihaldur - 
-Andmebaasi haldamise tarkvara - 
-Kirje - 
-Väli - 
-Tabel - 
-Päring - 
-Veerg - 
-Rida - 
-Seosed - 
-Piirangud -
-Primaarvõti -
-Andmemudel - 
-Varukoopia - 
-Kasutusjuhend - 
-Turvalisus - 
-Kättesaadavus - 
-Andmete õigusus - 
-Sisestusvorm - 
+Andmebaas - база данных
+Andmebaasihaldur - администратор базы данных
+Andmebaasi haldamise tarkvara - программное обеспечение для управления базами данных
+Kirje - запись
+Väli - поле
+Tabel - таблица
+Päring - запрос
+Veerg - столбец
+Rida - ряд
+Seosed - соединения
+Piirangud - ограничения
+Primaarvõti - основной/внешний ключ
+Andmemudel - модель данных
+Varukoopia - резервное копирование
+Kasutusjuhend - руководство
+Turvalisus - безлпасность
+Kättesaadavus - доступность 
+Andmete õigusus - права данных
+Sisestusvorm - форма заявки
 
 --------------------------------------------
-Näide - 
-Näidis - 
-Sõltuvus - 
-Seadustus - 
-Paigaldus -
-Hooldus - 
-Lisamine - 
-Kustutamine - 
-Uuendamine - 
-Sorteerimine - 
-Pärimine - 
-Kasutaja - 
-Kasutajate õigused - 
-Haldamine - 
-Pästik - 
-Käivita - 
-Salvesta - 
-Sisesta - 
-Moodusa - 
-laadi alla/laadi üles - 
-Kävitatud päring - 
-Salvestatud protseduur - 
-Muutused 
-Tõrketeade - 
-Värskendus - 
+Näide - пример
+Näidis - образец
+Sõltuvus - зависимость
+Seadustus - запрос
+Paigaldus - установка
+Hooldus - обслуживание
+Lisamine - добавление
+Kustutamine - удаление
+Uuendamine - обновление
+Sorteerimine - сортировка
+Pärimine - наследование
+Kasutaja - пользователь
+Kasutajate õigused - права пользователя
+Haldamine - управление
+Pästik - триггер
+Käivita - запустить
+Salvesta - сохранить
+Sisesta - войти
+Moodusta - образует 
+laadi alla/laadi üles - скачать/загрузить
+Kävitatud päring - запущенный запрос
+Salvestatud protseduur - сохраненные процедуры
+Muutused - изменения
+Tõrketeade - сообщение об ошибке
+Värskendus - обновление
