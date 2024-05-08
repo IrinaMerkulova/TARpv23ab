@@ -8,10 +8,12 @@
 
 4.SQL süntaks - SQL.sql
 
+5.ABsynavara.txt
+
   #Andmebaasid
 
   1.hotell.sql - Andmebaasi hotellireserverimine loomine
-  5.ABsynavara.txt
+ 
 
 
 
