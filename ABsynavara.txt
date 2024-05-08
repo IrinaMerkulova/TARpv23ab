@@ -1,46 +1,46 @@
-Andmebaas - 
-Andmebaasihaldur - 
-Andmebaasi haldamise tarkvara - 
-Kirje - 
-Väli - 
-Tabel - 
-Päring - 
-Veerg - 
-Rida - 
-Seosed - 
-Piirangud -
-Primaarvõti -
-Andmemudel - 
-Varukoopia - 
-Kasutusjuhend - 
-Turvalisus - 
-Kättesaadavus - 
-Andmete õigusus - 
-Sisestusvorm - 
+Andmebaas - Database
+Andmebaasihaldur - Database Manager
+Andmebaasi haldamise tarkvara - Database management soaftware
+Kirje - Record
+Väli - Column
+Tabel - Table
+Päring - Request
+Veerg - Column
+Rida - Row
+Seosed - Linked
+Piirangud - Constraints
+Primaarvõti - Primary key
+Andmemudel - Data model
+Varukoopia - Backup
+Kasutusjuhend - user manual
+Turvalisus - Security
+Kättesaadavus - Available at
+Andmete õigusus - Data justice 
+Sisestusvorm - Input form
 
 --------------------------------------------
-Näide - 
-Näidis - 
-Sõltuvus - 
-Seadustus - 
-Paigaldus -
-Hooldus - 
-Lisamine - 
-Kustutamine - 
-Uuendamine - 
-Sorteerimine - 
-Pärimine - 
-Kasutaja - 
-Kasutajate õigused - 
-Haldamine - 
-Pästik - 
-Käivita - 
-Salvesta - 
-Sisesta - 
-Moodusa - 
-laadi alla/laadi üles - 
-Kävitatud päring - 
-Salvestatud protseduur - 
-Muutused 
-Tõrketeade - 
-Värskendus - 
+Näide - Example
+Näidis - Sample
+Sõltuvus - Addiction
+Seadustus - Law
+Paigaldus - Inserting
+Hooldus - Maintenance
+Lisamine - Adding
+Kustutamine - Deleting
+Uuendamine - Updating
+Sorteerimine - Sorting
+Pärimine - Perpetuation
+Kasutaja - User
+Kasutajate õigused - User permissions
+Haldamine - Management
+Pästik - Trigger
+Käivita - Executing
+Salvesta - Saving
+Sisesta - Typing
+Moodusa - Form
+laadi alla/laadi üles -  Download / Upload
+Kävitatud päring - Execute
+Salvestatud protseduur - Saved procedure
+Muutused - Changes
+Tõrketeade - Error message
+Värskendus - Update
