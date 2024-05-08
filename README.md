@@ -2,7 +2,7 @@
 1. Vigade parandamine - KirillSats
 2. Valad vastused SQL testis - w3quizz.txt
 3. SQL süntaks - SQL.sql
-4. AB sõnavara - tehtud, tõlgisin
+4. AB sõnavara - tehtud, tõlgisin eesti ja inglise keeles
 5. IngliseSQL - tehtud, kirjutasin mida tähendab funktsioonid
 
 
