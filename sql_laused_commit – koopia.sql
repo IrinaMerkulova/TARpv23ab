@@ -1,7 +1,7 @@
 -- db loomine
 create database Tarpv23
 
--- Удаляет базу данных "Tarpv23"
+-- Kustutab andmebaasi "Tarpv23"
 DRop DataBASE Tarpv23
 
 -- Tabeli lisamine nimega Gender ja Person	
@@ -25,7 +25,7 @@ values (1, 'Female')
 insert into Gender (Id, Gender)
 values (2, 'Male')
 
---- добавляет ограничение внешнего ключа, чтобы обеспечить целостность данных между двумя таблицами: Person и Gender.
+--- lisab võõrvõtme piirangu, et tagada andmete terviklikkus kahe tabeli vahel: Isik ja Sugu.
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
 
@@ -78,7 +78,7 @@ update Person
 set Age = 149
 where Id = 8
 
--- добавляет в таблицу "Person" ограничение "CHECK", которое проверяет, чтобы значение в столбце Age было больше 0 и меньше 150.
+-- lisab tabelisse "Isik" piirangu "CHECK", mis kontrollib, et väärtus veerus Vanus oleks suurem kui 0 ja väiksem kui 150.
 
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
@@ -86,7 +86,7 @@ add constraint CK_Person_Age check (Age > 0 and Age < 150)
 insert into Person (Id, Name, Email, GenderId, Age)
 values (9, 'Test', 'Test', 2, 160)
 
--- Удаляет пользователя в таблице Person под айди 8
+-- Kustutab kasutaja ID 8 all olevas tabelis Isik
 
 select * from Person
 go
@@ -123,11 +123,11 @@ select * from Person where Email not like '%@%'
 -- ainult üks täht
 select * from Person where Email like '_@_.com'
 
--- возвращать все строки из таблицы Person, где значение в столбце Name начинается с любого символа, кроме W, A, или S
+-- tagastab tabelist Isik kõik read, kus väärtus veerus Nimi algab mis tahes muu märgiga peale W, A või S
 
 select * from Person where Name like '[^WAS]%'
 
---- Запрос возвращает все строки, где город (City) равен либо 'Gotham', либо 'New York', и возраст (Age) больше или равен 40
+--- Päring tagastab kõik read, kus linn on kas "Gotham" või "New York" ja vanus on suurem või võrdne 40
 
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
@@ -146,7 +146,7 @@ select top 50 percent * from Person
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
--- суммирует все значения столбца Age после их преобразования в целые числа
+-- summeerib kõik veeru Vanuse väärtused pärast nende teisendamist täisarvudeks
 
 select sum(cast(Age as int)) from Person
 
@@ -181,7 +181,7 @@ Salary nvarchar(50),
 DepartmentId int
 )
 
--- Эта команда вставляет новую строку в таблицу Department с указанными значениями для каждого столбца.
+-- See käsk lisab osakonna tabelisse uue rea iga veeru määratud väärtustega.
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (1, 'IT', 'London', 'Rick')
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
@@ -216,21 +216,20 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
--- Этот запрос возвращает все уникальные комбинации значений в столбцах Name и DepartmentId из таблицы Employees
+-- See päring tagastab kõik unikaalsed väärtuste kombinatsioonid tabeli Töötajad veergudes Name ja DepartmentId
 select distinct Name, DepartmentId from Employees
 
----Этот запрос возвращает сумму всех значений из столбца Salary в таблице Employees после их преобразования в целые числа.	 
+---See päring tagastab kõigi väärtuste summa tabeli Töötajad veerust Palk pärast seda, kui need on täisarvudeks teisendatud.	 
 
 select sum(cast(Salary as int)) from Employees
 
---- возвращает наименьшее значение зарплаты (в целочисленном виде) среди всех записей в таблице Employees
+--- tagastab väikseima palga väärtuse (täisarvu kujul)
 select min(cast(Salary as int)) from Employees
 
--- Эта команда добавляет новый столбец City к существующей таблице Employees, которое будет иметь дополнительное поле City, которое содержать строковое значение длиной до 25 символов.
-alter table Employees
+-- See käsk lisab olemasolevasse tabelisse Töötajad uue veeru Linna
 add City nvarchar(25)
 
--- добавляет новый столбец DepartmentId к существующей таблице Employees. Тип данных этого столбца — целое число, и он может содержать значения NULL. 
+-- lisab olemasolevasse tabelisse Töötajad uue veeru Osakonna ID. Selle veeru andmetüüp on NULL
 alter table Employees
 add DepartmentId
 int null
@@ -286,7 +285,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- Запрос обновляет значения столбцов FirstName, MiddleName, и LastName в таблице Employees для строки, где Id равно номеру
+--- Päring värskendab tabeli Töötajad veergude Firstname, MiddleName ja Perekonnanimi väärtusi rea jaoks, kus Id on võrdne numbriga
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
@@ -302,7 +301,7 @@ spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
--- Эта хранимая процедура принимает входной параметр @Gender и определяет количество сотрудников в таблице Employees, у которых пол соответствует этому параметру. Результат сохраняется в выходном параметре @EmployeeCount, который можно использовать для получения результата после выполнения процедуры.
+-- See salvestatud protseduur võtab sisendparameetri @Gender ja määrab töötajate arvu tabelis Töötajad, kelle sugu vastab sellele parameetrile.
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
@@ -324,7 +323,7 @@ declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
----Хранимая процедура spTotalCount2 вычисляет общее количество строк в таблице Employees и возвращает этот результат через выходной параметр @TotalCount
+--spTotalCount2 arvutab ridade koguarvu tabelis Töötajad ja tagastab selle tulemuse @TotalCount väljundparameetri kaudu
 
 create proc spTotalCount2
 @TotalCount int output
@@ -337,7 +336,7 @@ declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
----  процедура принимает параметр @Id и возвращает значение FirstName из таблицы employees, для строки, в которой Id равен этому входному параметру
+---  protseduur võtab parameetri @Id ja tagastab töötajate tabelist väärtuse FirstName rea kohta, kus Id on võrdne selle sisendparameetriga
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
@@ -345,19 +344,19 @@ as begin
 	select @FirstName = FirstName from employees where Id = @Id
 end
 
---Команда вызывает хранимую процедуру, которая находит имя сотрудника по идентификатору Id, сохраняет его в переменной, и затем выводит результат с помощью команды PRINT
+--Käsk kutsub välja salvestatud protseduuri, mis leiab töötaja nime ID järgi, salvestab selle muutujasse ja prindib tulemuse käsu PRINT abil
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
 
--- возвращает значение FirstName из строки таблицы Employees, где Id равен переданному параметру. 
+-- tagastab Eesnimi väärtuse tabeli Töötajad realt, kus Id on võrdne edastatud parameetriga.
 create proc spGetNameById2
 @Id int
 as begin
 	return (select Name from Employees where Id = @Id)
 end
 
--- Если процедура возвращает строковое значение, использование EXEC @Variable = ProcedureName Parameter вызовет ошибку, поскольку RETURN предназначен для возврата числовых кодов, а не строк
+-- Kui protseduur tagastab stringi väärtuse, annab parameeter EXEC @Variable = ProcedureName tõrketeate, kuna RETURN on mõeldud numbriliste koodide, mitte stringide tagastamiseks
 
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
