@@ -210,7 +210,7 @@ select * from Employees
 --- vali ainulaadsed nimed ja osakonna Id töötajate hulgast
 select distinct Name, DepartmentId from Employees
 
----?
+--- Vali summa(kasti palk tervikarvuks) kõigist töötajatest.
 select sum(cast(Salary as int)) from Employees
 ---?
 select min(cast(Salary as int)) from Employees
