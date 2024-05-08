@@ -43,4 +43,4 @@ Kävitatud päring - Запущенный запрос - Running request
 Salvestatud protseduur - Хранимая процедура - Stored procedure
 Muutused - Изменения - Changes
 Tõrketeade - Сообщение об ошибке - error message
-Värskendus - Обновление - Обновление
+Värskendus - Обновление - renovation
