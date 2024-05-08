@@ -1,0 +1,26 @@
+cd зайти в папку
+cd .. выйти из папки
+
+-------------------------------
+
+cd desktop
+
+--------------------------------
+
+cd TARpv23ab
+git config --global user.name "David Lennuk"
+git config --global user.email "david.nikolajev07@gmail.com"
+git config --global --list
+
+git status
+
+--------------------------------
+
+git branch DavidL
+git checkout DavidL
+
+
+--------------------------------
+git add . 
+git commit -a -m "Põhi ab on lisatud"
+git push
