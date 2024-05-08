@@ -21,12 +21,6 @@ Email nvarchar(30),
 GenderId int
 )
 
---- andmete sisestamine tabelisse
-insert into Gender (Id, Gender)
-values (1, 'Female')
-insert into Gender (Id, Gender)
-values (2, 'Male')
-
 --- foreign key loomine
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
@@ -41,7 +35,9 @@ DepartmentName nvarchar(50),
 Location nvarchar(50),
 DepartmentHead nvarchar(50)
 )
-
+-----------------------------------------------------------
+	               neljas tabel
+-----------------------------------------------------------	
 create table Employees
 (
 Id int primary key,
