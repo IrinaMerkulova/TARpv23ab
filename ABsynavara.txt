@@ -1,13 +1,13 @@
-Andmebaas - 
-Andmebaasihaldur - 
+Andmebaas - База данных
+Andmebaasihaldur -управление базой данных.
 Andmebaasi haldamise tarkvara - 
 Kirje - 
 Väli - 
 Tabel - 
 Päring - 
 Veerg - 
-Rida - 
-Seosed - 
+Rida - База данных
+Seosed - Связи
 Piirangud -
 Primaarvõti -
 Andmemudel - 
