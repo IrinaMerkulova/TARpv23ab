@@ -4,7 +4,8 @@ create database Tarpv23
 
 --?
 DRop DataBASE Tarpv23
--- Kasutatakse andmebaasi "Tarpv23" kustutamiseks.
+-- See käsk kustutab "Tarpv23" andmebaasi.
+
 --?
 create table Gender
 (
