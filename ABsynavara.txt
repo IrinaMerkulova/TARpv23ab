@@ -19,28 +19,28 @@ Andmete õigus - Правильность данных
 Sisestusvorm - Форма ввода
 
 --------------------------------------------
-Näide - 
-Näidis - 
-Sõltuvus - 
-Seadustus - 
-Paigaldus -
-Hooldus - 
-Lisamine - 
-Kustutamine - 
-Uuendamine - 
-Sorteerimine - 
-Pärimine - 
-Kasutaja - 
-Kasutajate õigused - 
-Haldamine - 
-Pästik - 
-Käivita - 
-Salvesta - 
-Sisesta - 
-Moodusta - 
-laadi alla/laadi üles - 
-Kävitatud päring - 
-Salvestatud protseduur - 
-Muutused 
-Tõrketeade - 
-Värskendus - 
+Näide - Пример
+Näidis - Образец
+Sõltuvus - Зависимость
+Seadustus - Законодательство (Seadus - Закон)
+Paigaldus - Установка
+Hooldus - Обслуживание
+Lisamine - Добавление
+Kustutamine - Удаление
+Uuendamine - Обновление
+Sorteerimine - Сортировка
+Pärimine - Наследование
+Kasutaja - Пользователь
+Kasutajate õigused - Права пользователей
+Haldamine - Управление
+Pästik - Триггер
+Käivita - Запустить
+Salvesta - Сохранить
+Sisesta - Введи
+Moodusta - Сформируй
+laadi alla/laadi üles - скачать/загрузить
+Kävitatud päring - Выполненный запрос
+Salvestatud protseduur - сохраненная процедура
+Muutused - Изменения
+Tõrketeade - Сообщение об ошибке
+Värskendus - Обновление
