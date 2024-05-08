@@ -19,28 +19,28 @@ Andmete õigusus - Легитимность данных
 Sisestusvorm - Форма ввода
 
 --------------------------------------------
-Näide - 
-Näidis - 
-Sõltuvus - 
-Seadustus - 
-Paigaldus -
-Hooldus - 
-Lisamine - 
-Kustutamine - 
-Uuendamine - 
-Sorteerimine - 
-Pärimine - 
-Kasutaja - 
-Kasutajate õigused - 
-Haldamine - 
-Pästik - 
-Käivita - 
-Salvesta - 
-Sisesta - 
-Moodusa - 
-laadi alla/laadi üles - 
-Kävitatud päring - 
-Salvestatud protseduur - 
-Muutused 
-Tõrketeade - 
-Värskendus - 
+Näide - Пример
+Näidis - Образец
+Sõltuvus - Зависимость
+Seadustus - Регулирование
+Paigaldus - Установка
+Hooldus - Обслуживание
+Lisamine - Добавление
+Kustutamine - Удаление
+Uuendamine - Обновление
+Sorteerimine - Сортировка
+Pärimine - Наследование
+Kasutaja - Пользователь
+Kasutajate õigused - Права пользователя
+Haldamine - Администрирование
+Pästik - Триггер
+Käivita - Начать
+Salvesta - Сохранить 
+Sisesta - Ввод
+Moodusa - Редактировать
+laadi alla/laadi üles - Скачать/выгрузить
+Kävitatud päring - Искомый запрос
+Salvestatud protseduur - Сохраненная процедура
+Muutused - Изменения
+Tõrketeade - Сообщение об ошибке
+Värskendus - Актуализация
