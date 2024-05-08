@@ -1,46 +1,46 @@
 Andmebaas - База данных
-Andmebaasihaldur -управление базой данных.
-Andmebaasi haldamise tarkvara - 
-Kirje - 
-Väli - 
-Tabel - 
-Päring - 
-Veerg - 
-Rida - База данных
+Andmebaasihaldur - Администратор базой данных.
+Andmebaasi haldamise tarkvara - Программное обеспечение для управления базой данных 
+Kirje - Запись
+Väli - Поле
+Tabel - Таблица
+Päring - Запрос
+Veerg - столбец 
+Rida - Строка/Ряд
 Seosed - Связи
-Piirangud -
-Primaarvõti -
-Andmemudel - 
-Varukoopia - 
-Kasutusjuhend - 
-Turvalisus - 
-Kättesaadavus - 
-Andmete õigusus - 
-Sisestusvorm - 
+Piirangud - Ограничения
+Primaarvõti - Первичный ключ
+Andmemudel - Модель данных
+Varukoopia - Резервная копия
+Kasutusjuhend - Руководство 
+Turvalisus - Безопасность
+Kättesaadavus - Доступность
+Andmete õigusus - Права данных
+Sisestusvorm - Форма ввода
 
 --------------------------------------------
-Näide - 
-Näidis - 
-Sõltuvus - 
-Seadustus - 
-Paigaldus -
-Hooldus - 
-Lisamine - 
-Kustutamine - 
-Uuendamine - 
-Sorteerimine - 
-Pärimine - 
-Kasutaja - 
-Kasutajate õigused - 
-Haldamine - 
-Pästik - 
-Käivita - 
-Salvesta - 
-Sisesta - 
-Moodusa - 
-laadi alla/laadi üles - 
-Kävitatud päring - 
-Salvestatud protseduur - 
-Muutused 
-Tõrketeade - 
-Värskendus - 
+Näide - Пример
+Näidis - Образец
+Sõltuvus - Зависимость
+Seadustus - Законость
+Paigaldus - Установка
+Hooldus - Обслуживание
+Lisamine - Добавление
+Kustutamine - Удаление
+Uuendamine - Обновление
+Sorteerimine - Сортировка
+Pärimine - Наследование
+Kasutaja - Пользователь
+Kasutajate õigused - Права пользователей
+Haldamine - Управление
+Pästik - Триггер
+Käivita - Запустить
+Salvesta - Сохранить
+Sisesta - Введите
+Moodusta - Формировать
+laadi alla/laadi üles - скачать/выгрузить
+Kävitatud päring - Запущеный запрос
+Salvestatud protseduur - Сохранённая процеруда
+Muutused - Изменения
+Tõrketeade - Сообщение об ошибке
+Värskendus - Обновление
