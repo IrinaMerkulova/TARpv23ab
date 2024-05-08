@@ -19,28 +19,28 @@ Andmete õigusus - Легитимность данных - Data legitimacy
 Sisestusvorm - Форма заявки - Application form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Примеры
-Sõltuvus - Зависимость
-Seadustus - Положение
-Paigaldus - Установка
-Hooldus - Обслуживание
-Lisamine - Добавление
-Kustutamine - Удаление/Отчисщение 
-Uuendamine - Обновление
-Sorteerimine - Сортировка
-Pärimine - Наследование
-Kasutaja - Пользователь
+Näide - Пример - example
+Näidis - Образец - sample
+Sõltuvus - Зависимость - dependency
+Seadustus - Закон - Law / rule set
+Paigaldus - Установка - downloading
+Hooldus - Обслуживание - Service
+Lisamine - Добавление - Add
+Kustutamine - Удаление - Removal
+Uuendamine - Обновление - update
+Sorteerimine - Сортировка - Sorting
+Pärimine - Наследование - Inheritance
+Kasutaja - Пользователь - user rights
 Kasutajate õigused - Права пользователя
-Haldamine - Управление
-Pästik - Руководство
-Käivita - Запустить
-Salvesta - Сохранить
-Sisesta - Ввести
-Moodusta - Образовать
-laadi alla/laadi üles - Скачать/Загрузить
-Kävitatud päring - Запрос запущен
-Salvestatud protseduur - Сохраненная процедура
-Muutused - Изменения
-Tõrketeade - Сообщение об ошибке
-Värskendus - Обновлять
+Haldamine - Управление - Control
+Pästik - триггер - trigger 
+Käivita - Запустить - Run
+Salvesta - Сохранить - save
+Sisesta - Ввести - Enter
+Moodusta - Образовать - Educate
+laadi alla/laadi üles - Скачать/Загрузить - download/upload
+Kävitatud päring - Запрос запущен - query started
+Salvestatud protseduur - Сохраненная процедура - Stored proceedure 
+Muutused - Изменения - Changes
+Tõrketeade - Сообщение об ошибке - Error message
+Värskendus - Обновлять - update
