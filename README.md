@@ -5,7 +5,7 @@
 3. Valed vastused SQL testis -W3quizz.txt
 4. SQL süntaks - SQL.sql
 ![pilt](https://github.com/IrinaMerkulova/TARpv23ab/assets/153904965/a47b9dc4-a884-4e57-b0ef-95ea2e903bc1)
-
+5. Absynavara
 # Ülesanded
 
 1. Kasuta GIT CMD ja klooni antud repositoorium enda arvutile
