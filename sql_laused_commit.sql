@@ -114,14 +114,14 @@ select * from Person where Age between 30 and 50
 select * from Person where City like 'n%'
 select * from Person where Email like '%@%'
 
--- n'itab kõiki, kellel ei ole @-märki emailis
+-- näitab kõiki, kellel ei ole @-märki emailis
 select * from Person where Email not like '%@%'
 
 --- näitab, kelle on emailis ees ja peale @-märki
 -- ainult üks täht
 select * from Person where Email like '_@_.com'
 
---?
+-- kuvab ainult andmed, kus linn on Gotham või New York ja kus vanuseväli on suurem või võrdne 40
 select * from Person where Name like '[^WAS]%'
 --- ?
 select * from Person where (City = 'Gotham' or City = 'New York')
