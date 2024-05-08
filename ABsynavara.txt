@@ -19,28 +19,28 @@ Andmete õigusus - Легитимность данных - Data legitimacy
 Sisestusvorm - Форма ввода - Input form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Регулирование
-Paigaldus - Установка
-Hooldus - Обслуживание
-Lisamine - Добавление
-Kustutamine - Удаление
-Uuendamine - Обновление
-Sorteerimine - Сортировка
-Pärimine - Наследование
-Kasutaja - Пользователь
-Kasutajate õigused - Права пользователя
-Haldamine - Администрирование
-Pästik - Триггер
-Käivita - Начать
-Salvesta - Сохранить 
-Sisesta - Ввод
-Moodusa - Редактировать
-laadi alla/laadi üles - Скачать/выгрузить
-Kävitatud päring - Искомый запрос
-Salvestatud protseduur - Сохраненная процедура
-Muutused - Изменения
-Tõrketeade - Сообщение об ошибке
-Värskendus - Актуализация
+Näide - Пример - Sample
+Näidis - Образец - Example
+Sõltuvus - Зависимость - Dependency
+Seadustus - Регулирование - Regulation
+Paigaldus - Установка - Installation
+Hooldus - Обслуживание - Maintenance
+Lisamine - Добавление - Adding
+Kustutamine - Удаление - Deleting
+Uuendamine - Обновление - Updating
+Sorteerimine - Сортировка - Sorting
+Pärimine - Наследование - Inheritance
+Kasutaja - Пользователь - User
+Kasutajate õigused - Права пользователя - User rights
+Haldamine - Администрирование - Administration
+Pästik - Триггер - Nesting
+Käivita - Начать - Start
+Salvesta - Сохранить - Save
+Sisesta - Ввод - Enter
+Moodusa - Редактировать - Edit
+laadi alla/laadi üles - Скачать/выгрузить - download/upload
+Kävitatud päring - Искомый запрос - Boiled query
+Salvestatud protseduur - Сохраненная процедура - Saved procedure
+Muutused - Изменения - Changes 
+Tõrketeade - Сообщение об ошибке - Error message
+Värskendus - Актуализация - Actualisation
