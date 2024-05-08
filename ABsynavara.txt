@@ -1,46 +1,46 @@
-Andmebaas - база данных
-Andmebaasihaldur - админестратор базы данных
-Andmebaasi haldamise tarkvara - программное обеспичение для управление базы данных
-Kirje - запись
-Väli - поле
-Tabel - таблица
-Päring - запрос
-Veerg - столбец
-Rida - ряд
-Seosed - связи
-Piirangud - ограничение
-Primaarvõti - первичный ключ
-Andmemudel - модель данных
-Varukoopia - запосная копия
-Kasutusjuhend - инструкция по применению
-Turvalisus - защита
-Kättesaadavus - доступность
-Andmete õigusus - правильность данных
-Sisestusvorm - форма ввода
+Andmebaas - база данных - database
+Andmebaasihaldur - админестратор базы данных - database manager
+Andmebaasi haldamise tarkvara - программное обеспичение для управление базы данных - database managment software
+Kirje - запись - record
+Väli - поле - field
+Tabel - таблица - table
+Päring - запрос - query
+Veerg - столбец - column
+Rida - ряд - row
+Seosed - связи - connections
+Piirangud - ограничение - constraints
+Primaarvõti - первичный ключ - primary key
+Andmemudel - модель данных - data modul
+Varukoopia - запосная копия - backup copy
+Kasutusjuhend - инструкция по применению - instruction for use
+Turvalisus - защита - security
+Kättesaadavus - доступность - availability
+Andmete õigusus - правильность данных - data correctness
+Sisestusvorm - форма ввода - input form
 
 --------------------------------------------
-Näide - пример
-Näidis - примеры
-Sõltuvus - зависимость
-Seadustus - законы
-Paigaldus - установка
-Hooldus - уход
-Lisamine - добавление
-Kustutamine - удаление
-Uuendamine - обновление
-Sorteerimine - сортировка
-Pärimine - наследование
-Kasutaja - пользователь
-Kasutajate õigused - права пользователя
-Haldamine - управление
-Pästik - триггер
-Käivita - запуск
-Salvesta - сохранить
-Sisesta - вводить
-Moodusta - образовать
-laadi alla/laadi üles - скачать/загрузить
-Kävitatud päring - запущенный запрос
-Salvestatud protseduur - сохраненная процедура
-Muutused - изменения
-Tõrketeade - сообщение об ошибки
-Värskendus - обновление
+Näide - пример - example
+Näidis - примеры - examples
+Sõltuvus - зависимость - dependency
+Seadustus - законы - laws
+Paigaldus - установка - installation
+Hooldus - уход - maintenance
+Lisamine - добавление - addition
+Kustutamine - удаление - delition
+Uuendamine - обновление - updating
+Sorteerimine - сортировка - sorting
+Pärimine - наследование - inheritance
+Kasutaja - пользователь - user
+Kasutajate õigused - права пользователя - user rights
+Haldamine - управление - managment
+Pästik - триггер - trigger
+Käivita - запуск - run
+Salvesta - сохранить - save
+Sisesta - вводить - enter
+Moodusta - образовать - form
+laadi alla/laadi üles - скачать/загрузить - download/upload
+Kävitatud päring - запущенный запрос - running query
+Salvestatud protseduur - сохраненная процедура - saved procedure
+Muutused - изменения - changes
+Tõrketeade - сообщение об ошибки - error message
+Värskendus - обновление - update
