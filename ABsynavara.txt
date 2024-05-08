@@ -19,28 +19,28 @@ Andmete õigusus - правельность данных - data validity
 Sisestusvorm - Форма ввода -  Input form
 
 --------------------------------------------
-Näide - Пример -
-Näidis - Образец -
-Sõltuvus - Зависимость -
-Seadustus - Положение -
-Paigaldus - Установка -
-Hooldus - обслуживание -
-Lisamine - Добавить -
-Kustutamine - Удаление -
-Uuendamine - Обновление -
-Sorteerimine - Сортировать -
-Pärimine - Наследование - 
-Kasutaja - Профиль -
-Kasutajate õigused - Права пользователя -
-Haldamine - Управление -
-Pästik - тригер -
-Käivita - Перейти -
-Salvesta - Сохранить - 
-Sisesta - Войти -
-Moodusta - образовывать -
-laadi alla/laadi üles - загрузка/выгрузка -
-Kävitatud päring - Запрос запущен -
-Salvestatud protseduur - Сохраненная процедура -
-Muutused - Изменения -
-Tõrketeade - Предупреждение о ошибке -
-Värskendus - Обновление -
+Näide - Пример - Example
+Näidis - Образец - Sample
+Sõltuvus - Зависимость - Dependence
+Seadustus - Положение - Provision
+Paigaldus - Установка - Installation
+Hooldus - обслуживание - maintenance
+Lisamine - Добавить - Add.
+Kustutamine - Удаление - Deletion
+Uuendamine - Обновление - Update
+Sorteerimine - Сортировать - Sort
+Pärimine - Наследование - Inheritance
+Kasutaja - Профиль - Profile 
+Kasutajate õigused - Права пользователя - User rights
+Haldamine - Управление - Management
+Pästik - тригер - trieger
+Käivita - Перейти - start
+Salvesta - Сохранить - Save
+Sisesta - Войти - Sign in
+Moodusta - образовывать - form
+laadi alla/laadi üles - загрузка/выгрузка - loading/unloading
+Kävitatud päring - Запрос запущен - Request launched
+Salvestatud protseduur - Сохраненная процедура - Saved procedure
+Muutused - Изменения -  Alterations
+Tõrketeade - Предупреждение о ошибке - Error warning
+Värskendus - Обновление - Update
