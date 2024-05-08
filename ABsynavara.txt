@@ -19,28 +19,28 @@ Andmete õigusus - Правосудие данных - Data Justice
 Sisestusvorm - Форма ввода - Input form
 
 --------------------------------------------
-Näide - Пример -
-Näidis - Оброзец -
-Sõltuvus - Зависимость -
-Seadustus - Законность -
-Paigaldus - Установка -
-Hooldus - Обслуживание -
-Lisamine - Добовление -
-Kustutamine - Удаление -
-Uuendamine - Обновление -
-Sorteerimine - Сортировка -
-Pärimine - Наследование -
-Kasutaja - Пользователь -
-Kasutajate õigused - Права пользователя -
-Haldamine - Руководство -
-Pästik - Тригер -
-Käivita - Запуск -
-Salvesta - сохранить -
-Sisesta - вводить -
-Moodusta - Оброзовавать -
-laadi alla/laadi üles - загрузка/выгрузка -
-Kävitatud päring - Запушениый запрос -
-Salvestatud protseduur - Сохраненная процедура -
-Muutused - Изменения -
-Tõrketeade - Предупреждение о нарушении -
-Värskendus - Обновление -
+Näide - Пример - Example
+Näidis - Оброзец - Sample 
+Sõltuvus - Зависимость - Dependence
+Seadustus - Законность - legislation
+Paigaldus - Установка - Installation
+Hooldus - Обслуживание - Maintenance
+Lisamine - Добовление - Add
+Kustutamine - Удаление - Delete
+Uuendamine - Обновление - Update
+Sorteerimine - Сортировка - Sort
+Pärimine - Наследование - Succession
+Kasutaja - Пользователь - User
+Kasutajate õigused - Права пользователя - User permissions
+Haldamine - Руководство - Manual
+Pästik - Тригер - Trigger
+Käivita - Запуск - Launch
+Salvesta - сохранить - Save
+Sisesta - вводить - input
+Moodusta - Оброзовавать - form
+laadi alla/laadi üles - загрузка/выгрузка - loading/unloading
+Kävitatud päring - Запушениый запрос - Running enquiry
+Salvestatud protseduur - Сохраненная процедура - Saved procedure
+Muutused - Изменения - Changes
+Tõrketeade - Предупреждение о нарушении - Infringement warning
+Värskendus - Обновление - Update
