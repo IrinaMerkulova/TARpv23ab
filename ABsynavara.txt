@@ -1,46 +1,46 @@
-Andmebaas - База данных
-Andmebaasihaldur - Администратор базы данных
-Andmebaasi haldamise tarkvara - Программное обеспечение управления базой данных
-Kirje - Запись
-Väli - Поле
-Tabel - Таблица
-Päring - Запрос
-Veerg - Колонка
-Rida - Строка
-Seosed - Отношения
-Piirangud - Ограничения
-Primaarvõti - Первичный ключ
-Andmemudel - Модель данных
-Varukoopia - Резервная копия
-Kasutusjuhend - Руководство пользователя
-Turvalisus - Безопасность
-Kättesaadavus - Доступность
-Andmete õigusus - Целостность данных
-Sisestusvorm - Форма ввода
+Andmebaas - База данных - database
+Andmebaasihaldur - Администратор базы данных - database administrator
+Andmebaasi haldamise tarkvara - Программное обеспечение управления базой данных - Database management software
+Kirje - Запись - record
+Väli - Поле - field
+Tabel - Таблица - table
+Päring - Запрос - query
+Veerg - Колонка - column 
+Rida - Строка - line
+Seosed - Отношения - releationships
+Piirangud - Ограничения - limitations
+Primaarvõti - Первичный ключ - foreign key
+Andmemudel - Модель данных - data model
+Varukoopia - Резервная копия - reserve copy
+Kasutusjuhend - Руководство пользователя - user manual
+Turvalisus - Безопасность - security
+Kättesaadavus - Доступность - availability
+Andmete õigusus - Целостность данных - data integrity 
+Sisestusvorm - Форма ввода - entry form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Регулирование
-Paigaldus - Установка
-Hooldus - Обслуживание
-Lisamine - Добавление
-Kustutamine - Удаление
-Uuendamine - Обновление
-Sorteerimine - Сортировка
-Pärimine - Выборка
-Kasutaja - Пользователь
-Kasutajate õigused - Права пользователя
-Haldamine - Управление
-Pästik - Триггер
-Käivita - Запустить
-Salvesta - Сохранить
-Sisesta - Ввести
-Moodusa - Режим
-laadi alla/laadi üles - Загрузить/Выгрузить
-Kävitatud päring - Выполненный запрос
-Salvestatud protseduur - Сохранённая процедура
-Muutused - Изменения
-Tõrketeade - Сообщение об ошибке
-Värskendus - Обновление
+Näide - Пример - example
+Näidis - Образец - sample
+Sõltuvus - Зависимость - dependency
+Seadustus - Регулирование - regulation
+Paigaldus - Установка - install
+Hooldus - Обслуживание - maintenance
+Lisamine - Добавление - adding
+Kustutamine - Удаление - deleting
+Uuendamine - Обновление - updating
+Sorteerimine - Сортировка - sorting
+Pärimine - Выборка - select
+Kasutaja - Пользователь - user
+Kasutajate õigused - Права пользователя - user rights
+Haldamine - Управление - control
+Pästik - Триггер - trigger
+Käivita - Запустить - execute
+Salvesta - Сохранить - save 
+Sisesta - Ввести - entry
+Moodusa - Режим - mode
+laadi alla/laadi üles - Загрузить/Выгрузить - download/upload
+Kävitatud päring - Выполненный запрос - execute query
+Salvestatud protseduur - Сохранённая процедура - saved procedure
+Muutused - Изменения - changes
+Tõrketeade - Сообщение об ошибке - error message
+Värskendus - Обновление - update
