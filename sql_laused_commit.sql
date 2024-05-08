@@ -58,7 +58,7 @@ values (7, 'Spiderman', 'spider@spiderman.com', 2)
 	
 -- vaatame tabeli andmeid
 select * from Person
--- Päring kõigi andmete valimiseks tabelist "Person".
+-- See päring ei vali tabelist Isik kõiki andmeid.
 
 --- võõrvõtme piirangu maha võtmine
 alter table Person
