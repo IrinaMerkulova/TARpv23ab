@@ -19,28 +19,28 @@ Andmete õigusus - права данных-Law of data
 Sisestusvorm - Форма ввода -Input form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Законость
-Paigaldus -Установка
-Hooldus - Обслуживание
-Lisamine - Добавление
-Kustutamine - Удаление
-Uuendamine -Обновление 
-Sorteerimine - Сортировка
-Pärimine - Наследование
-Kasutaja - Пользователь
-Kasutajate õigused - Права пользователей 
-Haldamine - Управление
-Pästik - Триге
-Käivita - Запустить
-Salvesta - Сохранить
-Sisesta - Введите
-Moodusta - Образовать
-laadi alla/laadi üles - скачать/закачать
-Kävitatud päring - Запущеный запрос
-Salvestatud protseduur - сохранёная процедура
-Muutused-Изменения
-Tõrketeade - Сообщение об ошибке
-Värskendus - Обновление
+Näide - Пример-Example
+Näidis - Образец-Sample
+Sõltuvus - Зависимость-Addiction
+Seadustus - Законость-Legislation
+Paigaldus -Установка-Installation
+Hooldus - Обслуживание-Maintenance
+Lisamine - Добавление-Addition
+Kustutamine - Удаление-Deletion
+Uuendamine -Обновление -Updating
+Sorteerimine - Сортировка-Sorting
+Pärimine - Наследование-Inheritance
+Kasutaja - Пользователь-User
+Kasutajate õigused - Права пользователей -Rights of users
+Haldamine - Управление-Andmenistration
+Pästik - Триге-Trigger
+Käivita - Запустить-Run
+Salvesta - Сохранить-Save
+Sisesta - Введите-Enter 
+Moodusta - Образовать-Form 
+laadi alla/laadi üles - скачать/закачать-Download/ Upload
+Kävitatud päring - Запущеный запрос-Requested Query
+Salvestatud protseduur - сохранёная процедура-Recorded procedure
+Muutused-Изменения-Changes
+Tõrketeade - Сообщение об ошибке-Error message
+Värskendus - Обновление-Update 
