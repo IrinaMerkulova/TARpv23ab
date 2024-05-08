@@ -121,9 +121,9 @@ select * from Person where Email not like '%@%'
 -- ainult üks täht
 select * from Person where Email like '_@_.com'
 
--- kuvab ainult andmed, kus linn on Gotham või New York ja kus vanuseväli on suurem või võrdne 40
+-- vali * kõikidest isikutest, kelle nimi ei alga tähega W, A või S
 select * from Person where Name like '[^WAS]%'
---- ?
+--- kuvab andmed, kus linn on Gotham või New York ja vanuseväli on suurem kui 40
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
