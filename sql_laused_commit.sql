@@ -68,8 +68,8 @@ drop constraint tblPerson_GenderId_FK
 -- sisestame väärtuse tabelisse
 insert into Gender (Id, Gender)
 values (3, 'Unknown')
--- Päring lisas edukalt uue kirje tabelisse "Gender".
--- Nüüd on olemas täiendav kirje, mis esindab väärtust "Unknown" tabelis "Gender".
+-- See päring lisas edukalt uue kirje soo tabelisse.
+-- Tabelis "Sugu" on nüüd täiendav kirje "Teadmata".
 
 -- lisame võõrvõtme uuesti
 alter table Person
