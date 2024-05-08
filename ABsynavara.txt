@@ -15,7 +15,7 @@ Varukoopia - Резервная копия
 Kasutusjuhend - Руководство пользователя
 Turvalisus - Безопасность
 Kättesaadavus - Доступность
-Andmete õigusus - Правильность данных
+Andmete õigus - Правильность данных
 Sisestusvorm - Форма ввода
 
 --------------------------------------------
