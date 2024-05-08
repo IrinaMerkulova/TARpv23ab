@@ -262,9 +262,6 @@ select * from Employees
 select * from Department
 
 
-
-
-
 --- loome stored procedure, mis kuvab vaate
 create procedure spGetEmployees
 as begin
@@ -291,7 +288,7 @@ spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
---?
+-- salvestatud protseduur võtab kaks parameetrit Gender määrab soo ja EmployeeCount on väljundparameeter, mille abil tagastatakse selle soo töötajate arv
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
