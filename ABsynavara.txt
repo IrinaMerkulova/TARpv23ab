@@ -1,22 +1,22 @@
-Andmebaas - База данных
-Andmebaasihaldur - Менеджер базы данных
-Andmebaasi haldamise tarkvara - Программа управления базами данных
-Kirje - Письмо к
-Väli - Поле
-Tabel - Таблица
-Päring - Запрос от
-Veerg - Колонка
-Rida - линия
-Seosed - Подключен
-Piirangud - Ограничения 
-Primaarvõti - Первичная ссылка
-Andmemudel - Модель данных
-Varukoopia - Резервная копия
-Kasutusjuhend - Руководство пользователя
-Turvalisus - Безопасность
-Kättesaadavus - Доступно на сайте
-Andmete õigusus - правосудие данных
-Sisestusvorm - Форма ввода
+Andmebaas - База данных - Database
+Andmebaasihaldur - Менеджер базы данных - Database Manager 
+Andmebaasi haldamise tarkvara - Программа управления базами данных - Database management software
+Kirje - Письмо - Letter
+Väli - Поле - Field 
+Tabel - Таблица - Table
+Päring - Запрос - Query
+Veerg - Колонка - Column 
+Rida - линия - line 
+Seosed - Подключен - Connected
+Piirangud - Ограничения - Limitations
+Primaarvõti - Первичная ссылка - Primary link
+Andmemudel - Модель данных - Data model 
+Varukoopia - Резервная копия - Backup 
+Kasutusjuhend - Руководство пользователя -User manual 
+Turvalisus - Безопасность - Security 
+Kättesaadavus - Доступно на сайте - Available
+Andmete õigusus - правосудие данных -Data justice
+Sisestusvorm - Форма ввода -Input form
 
 --------------------------------------------
 Näide - Пример
