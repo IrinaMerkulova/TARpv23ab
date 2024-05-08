@@ -19,28 +19,28 @@ Andmete õigusus - легитимность данных
 Sisestusvorm - форма заявки
 
 --------------------------------------------
-Näide - 
-Näidis - 
-Sõltuvus - 
-Seadustus - 
-Paigaldus -
-Hooldus - 
-Lisamine - 
-Kustutamine - 
-Uuendamine - 
-Sorteerimine - 
-Pärimine - 
-Kasutaja - 
-Kasutajate õigused - 
-Haldamine - 
-Pästik - 
-Käivita - 
-Salvesta - 
-Sisesta - 
-Moodusa - 
-laadi alla/laadi üles - 
-Kävitatud päring - 
-Salvestatud protseduur - 
-Muutused 
-Tõrketeade - 
-Värskendus - 
+Näide - пример 
+Näidis - образец
+Sõltuvus - зависимость 
+Seadustus - закономерность
+Paigaldus - установка
+Hooldus - обслуживание
+Lisamine - добавление
+Kustutamine - удаление
+Uuendamine - обновление
+Sorteerimine - сортировка
+Pärimine - наследование
+Kasutaja - пользователь
+Kasutajate õigused - права пользователя
+Haldamine - администрирование 
+Pästik - ящик
+Käivita - начать / запустить
+Salvesta - сохранить
+Sisesta - ввод/добавить
+Moodusa - составить
+laadi alla/laadi üles - загрузить/выгрузить 
+Kävitatud päring - запущенный запрос
+Salvestatud protseduur - сохраненная процедура
+Muutused - изменения 
+Tõrketeade - сообщение об ошибке
+Värskendus - обновление
