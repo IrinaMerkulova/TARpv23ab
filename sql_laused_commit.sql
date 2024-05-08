@@ -210,9 +210,9 @@ select * from Employees
 --- vali ainulaadsed nimed ja osakonna Id töötajate hulgast
 select distinct Name, DepartmentId from Employees
 
---- Vali summa kasti palk tervikarvuks kõigist töötajatest.
+--- vali summa kasti palk tervikarvuks kõigist töötajatest.
 select sum(cast(Salary as int)) from Employees
---- Vali minimaalne(kasti palk tervikarvuks) kõigist töötajatest
+--- vali minimaalne(kasti palk tervikarvuks) kõigist töötajatest
 select min(cast(Salary as int)) from Employees
 
 
@@ -225,7 +225,7 @@ add DepartmentId
 int null
 
 
---?
+-- muutab tabel employees, lisab veerg middlename
 alter table Employees
 add MiddleName nvarchar(30)
 
