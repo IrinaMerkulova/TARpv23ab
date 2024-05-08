@@ -1,46 +1,46 @@
-Andmebaas - База данных
-Andmebaasihaldur - Управление базами данных
-Andmebaasi haldamise tarkvara - Программное обеспечение для управления базами данных
-Kirje - Вход
-Väli - Поле
-Tabel - Таблица
-Päring - Запрос
-Veerg - Колонка
-Rida - ряд
-Seosed - Подключено
-Piirangud - Ограничения
-Primaarvõti - Первичная ссылка
-Andmemudel - Модель данных
-Varukoopia - Резервное копирование
-Kasutusjuhend - Руководство пользователя
-Turvalisus - Безопасность
-Kättesaadavus - Доступно по адресу
-Andmete õigusus - правельность данных
-Sisestusvorm - Форма ввода
+Andmebaas - База данных - Database
+Andmebaasihaldur - Управление базами данных - Database Manager
+Andmebaasi haldamise tarkvara - Программное обеспечение для управления базами данных - Database management software
+Kirje - Вход - Letter to
+Väli - Поле - Field
+Tabel - Таблица - Table
+Päring - Запрос - Request from
+Veerg - Колонка - Column
+Rida - ряд - row
+Seosed - Подключено - Connected
+Piirangud - Ограничения - Limitations
+Primaarvõti - Первичная ссылка - Primary reference
+Andmemudel - Модель данных - Data model
+Varukoopia - Резервное копирование - Backup
+Kasutusjuhend - Руководство пользователя - User's Manual
+Turvalisus - Безопасность - Safety
+Kättesaadavus - Доступно по адресу - Available at
+Andmete õigusus - правельность данных - data validity
+Sisestusvorm - Форма ввода -  Input form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Положение
-Paigaldus - Установка
-Hooldus - обслуживание
-Lisamine - Добавить
-Kustutamine - Удаление
-Uuendamine - Обновление
-Sorteerimine - Сортировать
-Pärimine - Наследование
-Kasutaja - Профиль
-Kasutajate õigused - Права пользователя
-Haldamine - Управление
-Pästik - тригер
-Käivita - Перейти
-Salvesta - Сохранить
-Sisesta - Войти
-Moodusta - образовывать
-laadi alla/laadi üles - загрузка/выгрузка
-Kävitatud päring - Запрос запущен
-Salvestatud protseduur - Сохраненная процедура
-Muutused - Изменения
-Tõrketeade - Предупреждение о ошибке
-Värskendus - Обновление
+Näide - Пример -
+Näidis - Образец -
+Sõltuvus - Зависимость -
+Seadustus - Положение -
+Paigaldus - Установка -
+Hooldus - обслуживание -
+Lisamine - Добавить -
+Kustutamine - Удаление -
+Uuendamine - Обновление -
+Sorteerimine - Сортировать -
+Pärimine - Наследование - 
+Kasutaja - Профиль -
+Kasutajate õigused - Права пользователя -
+Haldamine - Управление -
+Pästik - тригер -
+Käivita - Перейти -
+Salvesta - Сохранить - 
+Sisesta - Войти -
+Moodusta - образовывать -
+laadi alla/laadi üles - загрузка/выгрузка -
+Kävitatud päring - Запрос запущен -
+Salvestatud protseduur - Сохраненная процедура -
+Muutused - Изменения -
+Tõrketeade - Предупреждение о ошибке -
+Värskendus - Обновление -
