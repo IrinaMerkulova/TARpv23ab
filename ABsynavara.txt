@@ -1,22 +1,22 @@
-Andmebaas - 
-Andmebaasihaldur - 
-Andmebaasi haldamise tarkvara - 
-Kirje - 
-Väli - 
-Tabel - 
-Päring - 
-Veerg - 
-Rida - 
-Seosed - 
-Piirangud -
-Primaarvõti -
-Andmemudel - 
-Varukoopia - 
-Kasutusjuhend - 
-Turvalisus - 
-Kättesaadavus - 
-Andmete õigusus - 
-Sisestusvorm - 
+Andmebaas - База данных
+Andmebaasihaldur - Менеджер базы данных
+Andmebaasi haldamise tarkvara - Программа управления базами данных
+Kirje - Письмо к
+Väli - Поле
+Tabel - Таблица
+Päring - Запрос от
+Veerg - Колонка
+Rida - линия
+Seosed - Подключен
+Piirangud - Ограничения 
+Primaarvõti - Первичная ссылка
+Andmemudel - Модель данных
+Varukoopia - Резервная копия
+Kasutusjuhend - Руководство пользователя
+Turvalisus - Безопасность
+Kättesaadavus - Доступно на сайте
+Andmete õigusus - правосудие данных
+Sisestusvorm - Форма ввода
 
 --------------------------------------------
 Näide - 
