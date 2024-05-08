@@ -4,6 +4,8 @@
 2. SQL Serveris tekkivad vead - VigadeOtsing.txt
 3. Valed vastused SQL testis - w3quizz.txt
 4. SQL süntax - SQL.sql
+5. Andmebaaside sõnavara v2 - ABSynavara.txt
+6. terminali käsked - gitcmd.txt
 
 # Andmebaasid
 1. Hotel.sql - andmebaasi hotellireserverimine loomine
