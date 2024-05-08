@@ -19,28 +19,28 @@ Andmete õigusus - правосудие данных -Data justice
 Sisestusvorm - Форма ввода -Input form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Закон
-Paigaldus -Установка
-Hooldus - Обслуживание
-Lisamine - Добавить в 
-Kustutamine - Удаление 
-Uuendamine - Обновление
-Sorteerimine - Сортировать по 
-Pärimine - Вечность
-Kasutaja - Профиль
-Kasutajate õigused - Права пользователя
-Haldamine - Управление
-Pästik - Триггер
-Käivita - Перейти к 
-Salvesta - Сохранить в
-Sisesta - Войти 
-Moodusta - образовывать
-laadi alla/laadi üles - скачивать/загружать
-Kävitatud päring - Запрос запущен
-Salvestatud protseduur - Сохраненная процедура 
-Muutused - Изменения 
-Tõrketeade - Предупреждение о нарушении
-Värskendus - Обновление 
+Näide - Пример - Example
+Näidis - Образец - Sample 
+Sõltuvus - Зависимость - Dependence
+Seadustus - Закон - Regulation
+Paigaldus - Установка - Installation 
+Hooldus - Обслуживание - Service
+Lisamine - Добавить - Add
+Kustutamine - Удаление - Deletion
+Uuendamine - Обновление - Updating
+Sorteerimine - Сортировать - Sort
+Pärimine - Вечность - Perpetuation 
+Kasutaja - Профиль - Founded
+Kasutajate õigused - Права пользователя -  User rights 
+Haldamine - Управление - Governance 
+Pästik - Триггер - Trigger
+Käivita - Перейти - Visit
+Salvesta - Сохранить - Save
+Sisesta - Войти - Enter 
+Moodusta - образовывать - Form
+laadi alla/laadi üles - скачивать/загружать - download/upload 
+Kävitatud päring - Запрос запущен -  Boiled query
+Salvestatud protseduur - Сохраненная процедура - Saved procedure
+Muutused - Изменения - Changes 
+Tõrketeade - Предупреждение о нарушении - Breach alert
+Värskendus - Обновление - Update 
