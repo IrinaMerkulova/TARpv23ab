@@ -77,6 +77,8 @@ default 3 for GenderId
 -- Tabelis „Person” ei sisestata väärtust veergu „GenderId”,
 -- see seatakse automaatselt vaikeväärtuseks 3.
 
+
+	
 ---- 2 tund
 
 select * from Person
@@ -84,8 +86,8 @@ select * from Gender
 
 insert into Person (Id, Name, Email)
 values (8, 'Test', 'Test')
--- Uus kirje sisaldab infot isiku nime "Test" ja e-posti aadressi "Test" kohta ning sellel on GenderId väärtus 3,
--- kuna selle veeru jaoks on vaikimisi määratud väärtus 3.
+-- Uus kirje sisaldab teavet isiku nime "Test" ja meiliaadressi "Test" kohta ning selle väärtus on GenderId.
+-- selle veeru vaikeväärtus on 3.
 	
 ---lisame uue veeru tabelisse
 alter table Person
