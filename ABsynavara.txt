@@ -1,46 +1,46 @@
-Andmebaas - 
-Andmebaasihaldur - 
-Andmebaasi haldamise tarkvara - 
-Kirje - 
-Väli - 
-Tabel - 
-Päring - 
-Veerg - 
-Rida - 
-Seosed - 
-Piirangud -
-Primaarvõti -
-Andmemudel - 
-Varukoopia - 
-Kasutusjuhend - 
-Turvalisus - 
-Kättesaadavus - 
-Andmete õigusus - 
-Sisestusvorm - 
+Andmebaas - База данных
+Andmebaasihaldur - Управление базами данных
+Andmebaasi haldamise tarkvara - Программное обеспечение для управления базами данных
+Kirje - Вход
+Väli - Поле
+Tabel - Таблица
+Päring - Запрос
+Veerg - Колонка
+Rida - ряд
+Seosed - Подключено
+Piirangud - Ограничения
+Primaarvõti - Первичная ссылка
+Andmemudel - Модель данных
+Varukoopia - Резервное копирование
+Kasutusjuhend - Руководство пользователя
+Turvalisus - Безопасность
+Kättesaadavus - Доступно по адресу
+Andmete õigusus - правельность данных
+Sisestusvorm - Форма ввода
 
 --------------------------------------------
-Näide - 
-Näidis - 
-Sõltuvus - 
-Seadustus - 
-Paigaldus -
-Hooldus - 
-Lisamine - 
-Kustutamine - 
-Uuendamine - 
-Sorteerimine - 
-Pärimine - 
-Kasutaja - 
-Kasutajate õigused - 
-Haldamine - 
-Pästik - 
-Käivita - 
-Salvesta - 
-Sisesta - 
-Moodusa - 
-laadi alla/laadi üles - 
-Kävitatud päring - 
-Salvestatud protseduur - 
-Muutused 
-Tõrketeade - 
-Värskendus - 
+Näide - Пример
+Näidis - Образец
+Sõltuvus - Зависимость
+Seadustus - Положение
+Paigaldus - Установка
+Hooldus - обслуживание
+Lisamine - Добавить
+Kustutamine - Удаление
+Uuendamine - Обновление
+Sorteerimine - Сортировать
+Pärimine - Наследование
+Kasutaja - Профиль
+Kasutajate õigused - Права пользователя
+Haldamine - Управление
+Pästik - тригер
+Käivita - Перейти
+Salvesta - Сохранить
+Sisesta - Войти
+Moodusta - образовывать
+laadi alla/laadi üles - загрузка/выгрузка
+Kävitatud päring - Запрос запущен
+Salvestatud protseduur - Сохраненная процедура
+Muutused - Изменения
+Tõrketeade - Предупреждение о ошибке
+Värskendus - Обновление
