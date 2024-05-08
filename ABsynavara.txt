@@ -1,22 +1,22 @@
-Andmebaas - База данных
-Andmebaasihaldur - Администратор базы данных
-Andmebaasi haldamise tarkvara - Программное обеспечение для управления базами данных
-Kirje - Запись
-Väli - Поле
-Tabel - Таблица
-Päring - Запрос
-Veerg - Столбец/Колонка
-Rida - Ряд
-Seosed - Подключение
-Piirangud - Ограничения
-Primaarvõti - Первичная ссылка
-Andmemudel - Модель данных
-Varukoopia - Резервное копирование
-Kasutusjuhend - Руководство пользователя
-Turvalisus - Безопасность
-Kättesaadavus - Доступность
-Andmete õigusus - Права данных
-Sisestusvorm - Форма ввода
+Andmebaas - База данных - Database
+Andmebaasihaldur - Администратор базы данных - Database administrator
+Andmebaasi haldamise tarkvara - Программное обеспечение для управления базами данных - Database administration software
+Kirje - Запись - Letter to
+Väli - Поле - Field
+Tabel - Таблица - Tabel
+Päring - Запрос - Query
+Veerg - Столбец/Колонка - Column
+Rida - Ряд - Row
+Seosed - Подключение - Links
+Piirangud - Ограничения - Constraints
+Primaarvõti - Первичная ключ - Primary key
+Andmemudel - Модель данных - Data model
+Varukoopia - Резервное копирование - Backup
+Kasutusjuhend - Руководство пользователя - Manual
+Turvalisus - Безопасность - Security
+Kättesaadavus - Доступность - Availability
+Andmete õigusus - Права данных - Data law
+Sisestusvorm - Форма ввода - Input form
 
 --------------------------------------------
 Näide - Пример
