@@ -1,46 +1,46 @@
-Andmebaas - База данных -
-Andmebaasihaldur - Администратор базы данных
-Andmebaasi haldamise tarkvara - Программное обеспечение для управления базой данных
-Kirje - Запись 
-Väli - Поле 
-Tabel - Таблица 
-Päring - Запрос 
-Veerg - Колонка 
-Rida - Строка 
-Seosed - Связи 
-Piirangud - Ограничения 
-Primaarvõti -Первичный ключ
-Andmemudel - Модель данных
-Varukoopia - Резервная копия
-Kasutusjuhend - Инструкция/Руководство
-Turvalisus - Безопасность 
-Kättesaadavus - Доступность 
-Andmete õigusus - Правильность данных
-Sisestusvorm - Форма ввода
+Andmebaas - База данных - Database
+Andmebaasihaldur - Администратор базы данных - Database Administrator
+Andmebaasi haldamise tarkvara - Программное обеспечение для управления базой данных - Software for database management
+Kirje - Запись - Record
+Väli - Поле - Field
+Tabel - Таблица - Tabel
+Päring - Запрос - Query
+Veerg - Колонка - Column
+Rida - Строка - Row
+Seosed - Связи - Conection
+Piirangud - Ограничения - Restrictions
+Primaarvõti -Первичный ключ - Primary Key
+Andmemudel - Модель данных - Data model
+Varukoopia - Резервная копия - Backup copy
+Kasutusjuhend - Инструкция/Руководство - Instructions 
+Turvalisus - Безопасность - Security
+Kättesaadavus - Доступность - Availability
+Andmete õigusus - Правильность данных - Data accuracy/Law of data
+Sisestusvorm - Форма ввода - Input form
 
 --------------------------------------------
-Näide - Пример 
-Näidis - Образец 
-Sõltuvus - Зависимость 
-Seadustus - Настройка 
-Paigaldus - Установка 
-Hooldus - Обслуживание 
-Lisamine - Добавление 
-Kustutamine - Удаление 
-Uuendamine - Обновление 
-Sorteerimine - Сортировка 
-Pärimine - Запрос 
-Kasutaja - Пользователь 
-Kasutajate õigused - Права пользователя
-Haldamine - Управление 
-Pästik - Триггер 
-Käivita - Запустить
-Salvesta - Сохранить 
-Sisesta - Ввод
-Moodusta - Образовывать
-laadi alla/laadi üles - Загрузить
-Kävitatud päring - Отобранный запрос
-Salvestatud protseduur - Сохраненные процедуры
-Muutused - Изменения 
-Tõrketeade - Сообщение об ошибке
-Värskendus - Обновление 
+Näide - Пример - Example
+Näidis - Образец - Sample
+Sõltuvus - Зависимость - Dependency 
+Seadustus - Настройка - Legislation/Settings
+Paigaldus - Установка - Installation
+Hooldus - Обслуживание - Maintenance/Service
+Lisamine - Добавление - Addition
+Kustutamine - Удаление - Deletion
+Uuendamine - Обновление - Updating
+Sorteerimine - Сортировка - Sorting
+Pärimine - Запрос - Succession
+Kasutaja - Пользователь - User
+Kasutajate õigused - Права пользователя - User rights
+Haldamine - Управление - Management
+Pästik - Триггер - Trigger
+Käivita - Запустить - Launch/Start
+Salvesta - Сохранить - Save
+Sisesta - Ввод - Enter
+Moodusta - Образовывать - Form
+laadi alla/laadi üles - Загрузить - Download
+Kävitatud päring - Запущенный запрос - Running request
+Salvestatud protseduur - Сохраненные процедуры - Stored Procedures
+Muutused - Изменения - Changes
+Tõrketeade - Сообщение об ошибке - Error message
+Värskendus - Обновление - Update
