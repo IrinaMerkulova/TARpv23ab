@@ -4,6 +4,7 @@
 2. SQL Serveris takkivad veed - ?
 3. Valed vaastused SQL testis - "w3quizz.txt"
 4. SQL süntaks - SQL.sql
+5. Tõlgima sõnad - ABBsynavara.txt
      # Andmebaasid
 
      1. hotell.sql - anmdebaasil lisamine
