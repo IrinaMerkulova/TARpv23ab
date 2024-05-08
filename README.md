@@ -4,6 +4,7 @@
 2. SQL Serveris tekkivad vead - hotel.sql
 3. Valed vastsed SQL testis - w3quizz.txt
 4. SQL süntaks - SQL.sql
+5. ABsynavara tõlge - ABsynavara.txt
 
 ## Andmebaasid
 
