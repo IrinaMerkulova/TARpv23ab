@@ -11,6 +11,7 @@
   #Andmebaasid
 
   1.hotell.sql - Andmebaasi hotellireserverimine loomine
+  5.ABsynavara.txt
 
 
 
