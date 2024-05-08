@@ -122,7 +122,7 @@ select * from Person
 alter table Person
 add City nvarchar(25)
 -- Lisab uue veeru "City" tabelisse "Person".
-	
+..............	
 -- tahame tead kõiki, kes elavad Gothami linnas 
 select * from Person where City = 'Gotham'
 -- Valib kõik isikud, kes elavad linnas Gotham.
