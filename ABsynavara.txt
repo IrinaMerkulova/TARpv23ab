@@ -1,46 +1,46 @@
-Andmebaas - База данных
-Andmebaasihaldur - Администратор базы данных
-Andmebaasi haldamise tarkvara - Программное обеспечение для управления базами данных
-Kirje - Писмо
-Väli - Поле
-Tabel - Таблица 
-Päring - Запрос
-Veerg - Столбец
-Rida - ряд
-Seosed - Связь
-Piirangud - Ограничения
-Primaarvõti - Первичный ключ
-Andmemudel - Модель данных
-Varukoopia - Резервная копия
-Kasutusjuhend - Инструкция по эксплуатации
-Turvalisus - Безопасность
-Kättesaadavus - Доступно
-Andmete õigusus - Правосудие данных
-Sisestusvorm - Форма ввода
+Andmebaas - База данных - Database
+Andmebaasihaldur - Администратор базы данных - Database administrator
+Andmebaasi haldamise tarkvara - Программное обеспечение для управления базами данных - Database management software
+Kirje - Писмо - Letter
+Väli - Поле - Field
+Tabel - Таблица - Table
+Päring - Запрос - Enquiry
+Veerg - Столбец - column
+Rida - ряд - Role
+Seosed - Связь - Liaison
+Piirangud - Ограничения - Restrictions
+Primaarvõti - Первичный ключ - Primary key
+Andmemudel - Модель данных - Data model
+Varukoopia - Резервная копия - Backup copy
+Kasutusjuhend - Инструкция по эксплуатации - User manual
+Turvalisus - Безопасность - Security
+Kättesaadavus - Доступно - Available
+Andmete õigusus - Правосудие данных - Data Justice
+Sisestusvorm - Форма ввода - Input form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Оброзец
-Sõltuvus - Зависимость
-Seadustus - Законность
-Paigaldus - Установка
-Hooldus - Обслуживание
-Lisamine - Добовление
-Kustutamine - Удаление
-Uuendamine - Обновление
-Sorteerimine - Сортировка
-Pärimine - Наследование
-Kasutaja - Пользователь
-Kasutajate õigused - Права пользователя
-Haldamine - Руководство
-Pästik - Тригер
-Käivita - Запуск
-Salvesta - сохранить
-Sisesta - вводить
-Moodusta - Оброзовавать
-laadi alla/laadi üles - загрузка/выгрузка
-Kävitatud päring - Запушениый запрос
-Salvestatud protseduur - Сохраненная процедура
-Muutused - Изменения
-Tõrketeade - Предупреждение о нарушении
-Värskendus - Обновление
+Näide - Пример -
+Näidis - Оброзец -
+Sõltuvus - Зависимость -
+Seadustus - Законность -
+Paigaldus - Установка -
+Hooldus - Обслуживание -
+Lisamine - Добовление -
+Kustutamine - Удаление -
+Uuendamine - Обновление -
+Sorteerimine - Сортировка -
+Pärimine - Наследование -
+Kasutaja - Пользователь -
+Kasutajate õigused - Права пользователя -
+Haldamine - Руководство -
+Pästik - Тригер -
+Käivita - Запуск -
+Salvesta - сохранить -
+Sisesta - вводить -
+Moodusta - Оброзовавать -
+laadi alla/laadi üles - загрузка/выгрузка -
+Kävitatud päring - Запушениый запрос -
+Salvestatud protseduur - Сохраненная процедура -
+Muutused - Изменения -
+Tõrketeade - Предупреждение о нарушении -
+Värskendus - Обновление -
