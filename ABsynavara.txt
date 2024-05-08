@@ -1,46 +1,46 @@
-Andmebaas - База данных
-Andmebaasihaldur - Администратор базы данных
-Andmebaasi haldamise tarkvara - Программное обеспечение управления базой данных
-Kirje - Запись
-Väli - Поле
-Tabel - Таблица
-Päring - Запрос
-Veerg - Столбец
-Rida - Строка
-Seosed - Связи
-Piirangud - Ограничения
-Primaarvõti - Первичный ключ
-Andmemudel - Модель данных
-Varukoopia - Резервная копия
-Kasutusjuhend - Руководство пользователя
-Turvalisus - Безопасность
-Kättesaadavus - Доступность
-Andmete õigusus - Правильность данных
-Sisestusvorm - Форма ввода
+Andmebaas - База данных - Database
+Andmebaasihaldur - Администратор базы данных - Database administrator
+Andmebaasi haldamise tarkvara - Программное обеспечение управления базой данных - Database management software
+Kirje - Запись - Record
+Väli - Поле - Field
+Tabel - Таблица - Table
+Päring - Запрос - Query
+Veerg - Столбец - Column
+Rida - Строка - Row
+Seosed - Связи - Relationships
+Piirangud - Ограничения - Constraints
+Primaarvõti - Первичный ключ - Primary key 
+Andmemudel - Модель данных - Data model
+Varukoopia - Резервная копия - Backup
+Kasutusjuhend - Руководство пользователя - User manual
+Turvalisus - Безопасность - Security
+Kättesaadavus - Доступность - Availability
+Andmete õigusus - Правильность данных - Data accuracy
+Sisestusvorm - Форма ввода - Input form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Легализация
-Paigaldus - Установка
-Hooldus - Обслуживание
-Lisamine - Добавление
-Kustutamine - Удаление
-Uuendamine - Обновление
-Sorteerimine - Сортировка
-Pärimine - Запрос
-Kasutaja - Пользователь
-Kasutajate õigused - Права пользователей
-Haldamine - Управление
-Pästik - Триггер
-Käivita - Запустить
-Salvesta - Сохранить
-Sisesta - Вставить
-Moodusa - Режим
-laadi alla/laadi üles - Загрузить
-Käivitatud päring - Запущенный запрос
-Salvestatud protseduur - Сохранить процедуру
-Muutused - Изменения
-Tõrketeade - Сообщение об ошибке
-Värskendus - Обновление
+Näide - Пример - Näide - Пример - 
+Näidis - Образец - Sample
+Sõltuvus - Зависимость - Dependency
+Seadustus - Легализация - Legalization  
+Paigaldus - Установка - Installation
+Hooldus - Обслуживание - Maintenance
+Lisamine - Добавление - Addition
+Kustutamine - Удаление - Deletion
+Uuendamine - Обновление - Update
+Sorteerimine - Сортировка - Sorting
+Pärimine - Запрос - Query
+Kasutaja - Пользователь - User
+Kasutajate õigused - Права пользователей - User rights
+Haldamine - Управление - Management
+Pästik - Триггер - Trigger
+Käivita - Запустить - Execute
+Salvesta - Сохранить - Save
+Sisesta - Вставить - Insert
+Moodusa - Режим - Mode
+laadi alla/laadi üles - Загрузить - Download/Upload
+Käivitatud päring - Запущенный запрос - Executed query
+Salvestatud protseduur - Сохранить процедуру - Saved procedure 
+Muutused - Изменения - Changes
+Tõrketeade - Сообщение об ошибке - Error message
+Värskendus - Обновление - Refresh
