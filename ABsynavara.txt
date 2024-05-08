@@ -19,3 +19,28 @@ Andmete õigusus - Легитимность данных
 Sisestusvorm - Форма заявки
 
 --------------------------------------------
+Näide - Пример
+Näidis - Примеры
+Sõltuvus - Зависимость
+Seadustus - Положение
+Paigaldus - Установка
+Hooldus - Обслуживание
+Lisamine - Добавление
+Kustutamine - Удаление/Отчисщение 
+Uuendamine - Обновление
+Sorteerimine - Сортировка
+Pärimine - Наследование
+Kasutaja - Пользователь
+Kasutajate õigused - Права пользователя
+Haldamine - Управление
+Pästik - Руководство
+Käivita - Запустить
+Salvesta - Сохранить
+Sisesta - Ввести
+Moodusta - Образовать
+laadi alla/laadi üles - Скачать/Загрузить
+Kävitatud päring - Запрос запущен
+Salvestatud protseduur - Сохраненная процедура
+Muutused - Изменения
+Tõrketeade - Сообщение об ошибке
+Värskendus - Обновлять
