@@ -148,7 +148,7 @@ select min(cast(Age as int)) from Person
 --- kõige vanem isik
 select max(cast(Age as int)) from Person
 
---- vali linn, summa(kasti vanus tervikarvuks) kui KoguVanus inimese rühmitades linnade järgi.
+--- vali linn, summa(kasti vanus tervikarvuks) kui KoguVanus inimese rühmitades linnade järgi
 select City, sum(cast(Age as int)) as TotalAge from Person group by City
 
 
@@ -172,7 +172,7 @@ Salary nvarchar(50),
 DepartmentId int
 )
 
---?
+-- Lisa osakond (Id, OsakonnaNimi, Asukoht, OsakonnaJuht)
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (1, 'IT', 'London', 'Rick')
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
