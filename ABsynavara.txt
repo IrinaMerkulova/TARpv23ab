@@ -19,28 +19,28 @@ Andmete õigus - Правильность данных - Data Accuracy
 Sisestusvorm - Форма ввода - Input Form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Законодательство (Seadus - Закон)
-Paigaldus - Установка
-Hooldus - Обслуживание
-Lisamine - Добавление
-Kustutamine - Удаление
-Uuendamine - Обновление
-Sorteerimine - Сортировка
-Pärimine - Наследование
-Kasutaja - Пользователь
-Kasutajate õigused - Права пользователей
-Haldamine - Управление
-Pästik - Триггер
-Käivita - Запустить
-Salvesta - Сохранить
-Sisesta - Введи
-Moodusta - Сформируй
-laadi alla/laadi üles - скачать/загрузить
-Kävitatud päring - Выполненный запрос
-Salvestatud protseduur - сохраненная процедура
-Muutused - Изменения
-Tõrketeade - Сообщение об ошибке
-Värskendus - Обновление
+Näide - Пример - Example
+Näidis - Образец - Sample
+Sõltuvus - Зависимость - Dependency
+Seadustus - Законодательство - Set of rulles/laws (Seadus - Закон -Law/Rull)
+Paigaldus - Установка - Installation
+Hooldus - Обслуживание - Maintenance
+Lisamine - Добавление - Addition
+Kustutamine - Удаление - Deletion
+Uuendamine - Обновление - Update
+Sorteerimine - Сортировка - Sorting
+Pärimine - Наследование - Inheritance
+Kasutaja - Пользователь - User
+Kasutajate õigused - Права пользователей - User Rights
+Haldamine - Управление - Management
+Pästik - Триггер - Trigger
+Käivita - Запустить - Launch
+Salvesta - Сохранить - Save
+Sisesta - Введи - Enter
+Moodusta - Сформируй - Create
+laadi alla/laadi üles - скачать/загрузить - download/upload
+Kävitatud päring - Выполненный запрос - Executed Query
+Salvestatud protseduur - сохраненная процедура - Saved Procedure
+Muutused - Изменения - Changes
+Tõrketeade - Сообщение об ошибке - Error Message
+Värskendus - Обновление - Refresh/Update
