@@ -1,9 +1,9 @@
-Andmebaas - 
-Andmebaasihaldur - 
-Andmebaasi haldamise tarkvara - 
-Kirje - 
-Väli - 
-Tabel - 
+Andmebaas - База данных
+Andmebaasihaldur - Менеджер базы данных
+Andmebaasi haldamise tarkvara - Программное обеспечение для управления базами данных
+Kirje - Вход
+Väli - Поле
+Tabel - Стол
 Päring - 
 Veerg - 
 Rida - 
