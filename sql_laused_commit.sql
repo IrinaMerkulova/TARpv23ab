@@ -21,11 +21,8 @@ Name nvarchar(25),
 Email nvarchar(30),
 GenderId int
 )
--- Tabeli "Person" loomine,
--- Teine rida tähendab, et väärtus ei tohi olla null ja see on põhi võti.
--- Kolmas rida loob unikaalse 25 tähemärgise nime identifikaatori.
--- Neljas rida loob unikaalse 30 tähemärgise e-posti identifikaatori.
--- Viies rida isiku soo identifikaator.
+-- Esimene rida loob tabeli "Isik". Teine rida muudab selle nii, et väärtus ei saa olla null. 
+--Kolmas rida loob nime ID. Neljas rida loob kordumatu meili ID. Viies rida on isiku sootunnus.
 	
 --- andmete sisestamine tabelisse
 insert into Gender (Id, Gender)
