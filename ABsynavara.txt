@@ -19,28 +19,28 @@ Andmete õigusus - Правосудие данных
 Sisestusvorm - Форма ввода
 
 --------------------------------------------
-Näide - 
-Näidis - 
-Sõltuvus - 
-Seadustus - 
-Paigaldus -
-Hooldus - 
-Lisamine - 
-Kustutamine - 
-Uuendamine - 
-Sorteerimine - 
-Pärimine - 
-Kasutaja - 
-Kasutajate õigused - 
-Haldamine - 
-Pästik - 
-Käivita - 
-Salvesta - 
-Sisesta - 
-Moodusa - 
-laadi alla/laadi üles - 
-Kävitatud päring - 
-Salvestatud protseduur - 
-Muutused 
-Tõrketeade - 
-Värskendus - 
+Näide - Пример
+Näidis - Оброзец
+Sõltuvus - Зависимость
+Seadustus - Законность
+Paigaldus - Установка
+Hooldus - Обслуживание
+Lisamine - Добовление
+Kustutamine - Удаление
+Uuendamine - Обновление
+Sorteerimine - Сортировка
+Pärimine - Наследование
+Kasutaja - Пользователь
+Kasutajate õigused - Права пользователя
+Haldamine - Руководство
+Pästik - Тригер
+Käivita - Запуск
+Salvesta - сохранить
+Sisesta - вводить
+Moodusta - Оброзовавать
+laadi alla/laadi üles - загрузка/выгрузка
+Kävitatud päring - Запушениый запрос
+Salvestatud protseduur - Сохраненная процедура
+Muutused - Изменения
+Tõrketeade - Предупреждение о нарушении
+Värskendus - Обновление
