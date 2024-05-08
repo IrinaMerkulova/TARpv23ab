@@ -14,8 +14,7 @@ Gender nvarchar(10) not null
 )
 -- Esimene rida loob tabeli Sugu. Teine rida tagab, et väärtus ei pea olema null. Varchar maksimaalne pikkus 10 tähemärki.
 	
-create table Person
-(
+create table Person(
 Id int not null primary key,
 Name nvarchar(25),
 Email nvarchar(30),
@@ -75,8 +74,8 @@ values (3, 'Unknown')
 alter table Person
 add constraint DF_Person_GenderId
 default 3 for GenderId
--- Tabelisse "Person" ei sisestata väärtust veerule "GenderId",
--- sellele veerule määratakse automaatselt vaikimisi väärtus 3.
+-- Tabelis „Person” ei sisestata väärtust veergu „GenderId”,
+-- see seatakse automaatselt vaikeväärtuseks 3.
 
 ---- 2 tund
 
