@@ -1,64 +1,55 @@
 
-SQL - Structured query language (SQL) is a programming language for storing and processing information in a relational database. 
-Язык структурированных запросов (SQL) — это язык программирования для хранения и обработки информации в реляционной базе данных.
+SQL - Язык структурированных запросов (SQL) — это язык программирования для хранения и обработки информации в базе данных.
 
-DDL - Data Definition Language (DDL) (Data Description Language) is a family of computer languages ​​used in computer programs to describe the structure of databases.
-Язык определения данных (DDL) (язык описания данных) — это семейство компьютерных языков, используемое в компьютерных программах для описания структуры баз данных.
+DDL - Язык определения данных (DDL) (язык описания данных) — это семейство компьютерных языков, используемое в компьютерных программах для описания структуры баз данных.
 
-DML - Data Manipulation Language (DML) is a family of computer languages ​​used by computer programs or database users to retrieve, insert, delete, or change data in databases.
-Data Manipulation Language (DML) (язык управления (манипулирования) данными) — это семейство компьютерных языков, используемых в компьютерных программах или пользователями баз данных для получения, вставки, удаления или изменения данных в базах данных. 
+DML - Data Manipulation Language (DML) (язык управления (манипулирования) данными) — это семейство  языков, пользователями баз данных для получения, вставки, удаления или изменения данных в базах данных. 
 
-Database - an organized collection of structured information, or data, typically stored electronically in a computer system.
-организованный набор структурированной информации или данных, обычно хранящихся в электронном виде в компьютерной системе.
+Database - организованный набор структурированной информации или данных, обычно хранящихся в электронном виде в компьютерной системе.
 
-Database management system - software to store, manage, retrieve, and manipulate data effectively.
-программное обеспечение для эффективного хранения, управления, извлечения и манипулирования данными.
+Database management system - программное обеспечение для эффективного хранения, управления, извлечения и манипулирования данными.
 
-Related table - is a table function, and returns a table of values that contains all of the rows on the many-side that are related to the current row on the one-side.
-это табличная функция, которая возвращает таблицу значений, содержащую все строки на многосторонней стороне, которые связаны с текущей строкой на одной стороне.
+Related table - это табличная функция, которая возвращает таблицу значений
 
-Relational database -  a type of database that organizes data into rows and columns, which collectively form a table where the data points are related to each other. 
-тип базы данных, в которой данные организованы в строки и столбцы, которые вместе образуют таблицу, в которой точки данных связаны друг с другом.
+Relational database -  тип базы данных, в которой данные организованы в строки и столбцы, которые вместе образуют таблицу, в которой точки данных связаны друг с другом.
 
-Relationship -  the established associations between two or more tables. 
-установленные ассоциации между двумя или более таблицами.
+Relationship -  установленные ассоциации между двумя или более таблицами.
 
-Record - A record type is a composite data type that consists of one or more identifiers and their corresponding data types.
-Тип записи — это составной тип данных, состоящий из одного или нескольких идентификаторов и соответствующих им типов данных.
+Record - Тип записи — это составной тип данных, состоящий из одного или нескольких идентификаторов и соответствующих им типов данных.
 
-Primary Key - 
+Primary Key - столбец в таблице реляционной базы данных, уникальный для каждой записи
 
 
-Foreign Key - 
+Foreign Key - связать данные одной таблицы с данными другой таблицы.
 
 
-One-to-many relationship - 
+One-to-many relationship - одна запись в таблице может быть связана с одной или несколькими записями в другой таблице.
 
 
-One-to-one relationship - 
+One-to-one relationship - связь между информацией в двух таблицах, где каждая запись в каждой таблице появляется только один раз
 
 
-Query - 
+Query - Запрос
 
 
-Report - 
+Report - Отчеты анализируют данные и предназначены для расчета и представления данных в более формальной форме.
 
 
-Form - 
+Form - Форма
 
 
-Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set
+Data type / varchar, char, int, decimal, binary, varbinary, text, blob, enum, set - Типы данных в sql
 
 
 --------------------------
-Constraints - 
+Constraints - Ограничения
 
 
 
-NOT NULL - 
-UNIQUE - 
-PRIMARY KEY - 
-FOREIGN KEY - 
-CHECK - 
-DEFAULT - 
-CREATE INDEX - 
+NOT NULL - Ограничение NOT NULL используется для того, чтобы гарантировать, что данному столбцу таблицы никогда не будет присвоено нулевое значение.
+UNIQUE - правило, согласно которому значения ключа действительны только в том случае, если они уникальны
+PRIMARY KEY - столбец в таблице реляционной базы данных, уникальный для каждой записи
+FOREIGN KEY - связать данные одной таблицы с данными другой таблицы.
+CHECK - используется для обеспечения достоверности данных в базе данных и обеспечения целостности данных
+DEFAULT - используется для установки значения по умолчанию для столбца
+CREATE INDEX - INDEX используется для очень быстрого создания и извлечения данных из базы данных. 
