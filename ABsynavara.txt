@@ -1,22 +1,22 @@
-Andmebaas - база данных
-Andmebaasihaldur - администратор базы данных
-Andmebaasi haldamise tarkvara - программное обеспечение для управления базами данных
-Kirje - запись
-Väli - поле
-Tabel - таблица
-Päring - запрос
-Veerg - столбец
-Rida - ряд
-Seosed - соединения
-Piirangud - ограничения
-Primaarvõti - основной/внешний ключ
-Andmemudel - модель данных
-Varukoopia - резервное копирование
-Kasutusjuhend - руководство
-Turvalisus - безлпасность
-Kättesaadavus - доступность 
-Andmete õigusus - права данных
-Sisestusvorm - форма заявки
+Andmebaas - база данных - database 
+Andmebaasihaldur - администратор базы данных - database administrator
+Andmebaasi haldamise tarkvara - программное обеспечение для управления базами данных - database management software
+Kirje - запись - recording
+Väli - поле - field
+Tabel - таблица - table
+Päring - запрос - query
+Veerg - столбец - column
+Rida - ряд - row
+Seosed - соединения - connections
+Piirangud - ограничения - restrictions
+Primaarvõti - основной/внешний ключ - primary key
+Andmemudel - модель данных - data model
+Varukoopia - резервное копирование - backup
+Kasutusjuhend - руководство - management
+Turvalisus - безoпасность - safety
+Kättesaadavus - доступность  - availability
+Andmete õigusus - права данных - data rights
+Sisestusvorm - форма заявки - Application form
 
 --------------------------------------------
 Näide - пример
@@ -43,4 +43,4 @@ Kävitatud päring - запущенный запрос
 Salvestatud protseduur - сохраненные процедуры
 Muutused - изменения
 Tõrketeade - сообщение об ошибке
-Värskendus - обновление
+Värskendus - обновление - 
