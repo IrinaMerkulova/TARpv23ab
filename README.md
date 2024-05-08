@@ -4,6 +4,7 @@
 2. SQL serveris tekkivad vead - SQL_Vead.txt
 3. Valet vastused SQL testis - w3Quizz.txt
 4. SQL süntaks - SQL.sql
+5. Lausete tõlkimine - ABsynavara.txt
 
     # Andmebaasid
 
