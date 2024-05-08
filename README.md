@@ -3,6 +3,7 @@
 1. Andmebaaside sõnavara - IngliseSQL.txt
 2. Valed vastused SQL testis - W3quizz
 3. SQL süntaks - SQL.sql
+4. Ab Sõnavara - ABsynavara.txt
 
 
 # Ülesanded
