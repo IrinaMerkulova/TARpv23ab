@@ -25,7 +25,7 @@ values (1, 'Female')
 insert into Gender (Id, Gender)
 values (2, 'Male')
 
---- ?
+--- lisavõtme lisamine
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
 
@@ -73,12 +73,12 @@ values (8, 'Test', 'Test')
 alter table Person
 add Age nvarchar(10)
 
---uuendame andmeid
+-- uuendame andmeid
 update Person
 set Age = 149
 where Id = 8
 
---?
+-- andemte sisestamise piirangute lisamine
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
 
