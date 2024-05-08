@@ -4,6 +4,8 @@
 2. SQL Serveris tekkivad vead - SQL Serveris tekkivad vead.txt
 3. Valed vastused SQL testis - w3guezz.txt
 4. SQL süntaks - SQL.sql
+5. kuidas GIT CMD-s sisse logida või filiaali luua - Git CMD.txt
+6. sõnade tõlkimine vene ja inglise keelde - ABsynavara.txt
 
 # Andmebaasid
 
