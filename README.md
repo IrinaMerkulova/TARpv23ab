@@ -1,5 +1,5 @@
 # Tehtud tööd  - Erialane Inglise keel
-1. Andmebaaside sõnavara - ? tegemata 
+1. Andmebaaside sõnavara - 
 2. SQL Serveris takkivad vead -
 3. Valed vaastused SQL testis - w3quizz.tzt
 4. SQL süntake - SQL.sql
