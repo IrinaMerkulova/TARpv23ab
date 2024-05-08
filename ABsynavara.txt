@@ -1,22 +1,22 @@
-Andmebaas - базаданных
-Andmebaasihaldur - админимстратор базы данных
-Andmebaasi haldamise tarkvara - Andmebaasi haldamise tarkvara
-Kirje - Вход 
-Väli - запрос
-Tabel - табель
-Päring - запрос
-Veerg - столбец 
-Rida - ряд
-Seosed - соединения
-Piirangud - пределы
-Primaarvõti - основной ключ
-Andmemudel - модель данных
-Varukoopia - резервное копирование
-Kasutusjuhend - руководство
-Turvalisus - безопастность
-Kättesaadavus - доступность
-Andmete õigusus - легитимность данных
-Sisestusvorm - форма заявки
+Andmebaas - базаданных - database
+Andmebaasihaldur - админимстратор базы данных - database admrnistrator
+Andmebaasi haldamise tarkvara - Andmebaasi haldamise tarkvara - 
+Kirje - Вход - input
+Väli - запрос - query
+Tabel - табель - table
+Päring - запрос - request
+Veerg - столбец - column
+Rida - ряд - row
+Seosed - соединения - connections
+Piirangud - пределы - limits
+Primaarvõti - основной ключ - primary key
+Andmemudel - модель данных - data model
+Varukoopia - резервное копирование - backup
+Kasutusjuhend - руководство - manual
+Turvalisus - безопастность - security
+Kättesaadavus - доступность - availabiliy
+Andmete õigusus - легитимность данных - data legitimacy
+Sisestusvorm - форма заявки - application from
 
 --------------------------------------------
 Näide - пример 
