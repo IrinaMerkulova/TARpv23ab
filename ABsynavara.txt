@@ -1,46 +1,46 @@
-Andmebaas - База данных
-Andmebaasihaldur - администратор базы данных
-Andmebaasi haldamise tarkvara - Программное обеспечение для управления базой данных
-Kirje - Запись
-Väli - Поле
-Tabel - Таблица
-Päring - Запрос
-Veerg - Графа
-Rida - Строка
-Seosed - Связи
-Piirangud - Ограничения
-Primaarvõti - Первичный ключ
-Andmemudel - Модель данных
-Varukoopia - Резервная копия
-Kasutusjuhend - Инструкция по применению
-Turvalisus - Безопасность
-Kättesaadavus - Доступность
-Andmete õigusus - Правосудие данных
-Sisestusvorm - Форма ввода
+Andmebaas - База данных - Database
+Andmebaasihaldur - администратор базы данных - Database administrator
+Andmebaasi haldamise tarkvara - Программное обеспечение для управления базой данных - Software for database management
+Kirje - Запись - Record
+Väli - Поле - Field
+Tabel - Таблица - Table
+Päring - Запрос - Request
+Veerg - Графа - Count
+Rida - Строка - Line
+Seosed - Связи - Connections
+Piirangud - Ограничения - Restrictions
+Primaarvõti - Первичный ключ - Primary key
+Andmemudel - Модель данных - Data Model
+Varukoopia - Резервная копия - Backup copy
+Kasutusjuhend - Инструкция по применению - Instructions for use
+Turvalisus - Безопасность - Safety
+Kättesaadavus - Доступность - Availability
+Andmete õigusus - Правосудие данных - Data Justice
+Sisestusvorm - Форма ввода - Input form
 
 --------------------------------------------
-Näide - Пример  
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Законодательство
-Paigaldus - Установка
-Hooldus - Уход 
-Lisamine - Добавление
-Kustutamine - Удаление
-Uuendamine - Обновление
-Sorteerimine - Сортировка
-Pärimine - Наследие
-Kasutaja - Пользователь
-Kasutajate õigused - Права пользователей
-Haldamine - Управление
-Pästik - тригер
-Käivita - Запустить
-Salvesta - Сохранить
-Sisesta - Введите
-Moodusa - режим
-laadi alla/laadi üles - скачать
-Kävitatud päring - Отобранный запрос
-Salvestatud protseduur - Записанная процедура
-Muutused - Изменения
-Tõrketeade - Сообщение об ошибке
-Värskendus - Обновление
+Näide - Пример -   
+Näidis - Образец - 
+Sõltuvus - Зависимость - 
+Seadustus - Законодательство - 
+Paigaldus - Установка - 
+Hooldus - Уход  - 
+Lisamine - Добавление - 
+Kustutamine - Удаление - 
+Uuendamine - Обновление - 
+Sorteerimine - Сортировка - 
+Pärimine - Наследие - 
+Kasutaja - Пользователь - 
+Kasutajate õigused - Права пользователей - 
+Haldamine - Управление - 
+Pästik - тригер - 
+Käivita - Запустить - 
+Salvesta - Сохранить - 
+Sisesta - Введите - 
+Moodusa - режим - 
+laadi alla/laadi üles - скачать - 
+Kävitatud päring - Отобранный запрос - 
+Salvestatud protseduur - Записанная процедура - 
+Muutused - Изменения - 
+Tõrketeade - Сообщение об ошибке - 
+Värskendus - Обновление - 
