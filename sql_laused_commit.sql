@@ -121,7 +121,7 @@ select * from Person where Email not like '%@%'
 -- ainult üks täht
 select * from Person where Email like '_@_.com'
 
--- vali * kõikidest isikutest, kelle nimi ei alga tähega W, A või S
+-- valib * kõikidest isikutest, kelle nimi ei alga tähega W, A või S
 select * from Person where Name like '[^WAS]%'
 --- kuvab andmed, kus linn on Gotham või New York ja vanuseväli on suurem kui 40
 select * from Person where (City = 'Gotham' or City = 'New York')
@@ -140,7 +140,7 @@ select top 50 percent * from Person
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
---?
+-- valib summa(kasti vanus tervikarvuks) kõigist isikutest
 select sum(cast(Age as int)) from Person
 
 --- kuvab kõige nooremat isikut
@@ -148,10 +148,8 @@ select min(cast(Age as int)) from Person
 --- kõige vanem isik
 select max(cast(Age as int)) from Person
 
+--- vali linn, summa(kasti vanus tervikarvuks) kui KoguVanus inimese rühmitades linnade järgi.
 select City, sum(cast(Age as int)) as TotalAge from Person group by City
-
-
-
 
 
 --- tund 3
