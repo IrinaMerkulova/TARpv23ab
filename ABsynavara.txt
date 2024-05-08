@@ -15,32 +15,32 @@ Varukoopia - Резервная копия -  Backup copy
 Kasutusjuhend - Руководство - Instructions 
 Turvalisus - Безопасность - Security
 Kättesaadavus - Доступность - Availability
-Andmete õigusus - Права данных -  Data accuracy
+Andmete õigusus - Права данных -  Data rights
 Sisestusvorm - Форма ввода - Input form
 
 --------------------------------------------
-Näide - Пример
-Näidis - Образец
-Sõltuvus - Зависимость
-Seadustus - Законость
-Paigaldus - Установка
-Hooldus - Обслуживание
-Lisamine - Добавление
-Kustutamine - Удаление
-Uuendamine - Обновление
-Sorteerimine - Сортировка
-Pärimine - Наследование
-Kasutaja - Пользователь
-Kasutajate õigused - Права пользователей
-Haldamine - Управление
-Pästik - Триггер
-Käivita - Запустить
-Salvesta - Сохранить
-Sisesta - Введите
-Moodusta - Формировать
-laadi alla/laadi üles - скачать/выгрузить
-Kävitatud päring - Запущеный запрос
-Salvestatud protseduur - Сохранённая процеруда
-Muutused - Изменения
-Tõrketeade - Сообщение об ошибке
-Värskendus - Обновление
+Näide - Пример - Example
+Näidis - Образец - Sample
+Sõltuvus - Зависимость - Dependancy
+Seadustus - Законость - Ruleset
+Paigaldus - Установка - Installation
+Hooldus - Обслуживание - Maintenance/ Service
+Lisamine - Добавление - ADD/Addition
+Kustutamine - Удаление - Remove/Delete
+Uuendamine - Обновление - Update
+Sorteerimine - Сортировка - Sort
+Pärimine - Наследование -  Succession
+Kasutaja - Пользователь - User
+Kasutajate õigused - Права пользователей - User rights
+Haldamine - Управление - Management
+Pästik - Триггер - Trigger
+Käivita - Запустить - Launch
+Salvesta - Сохранить - Save
+Sisesta - Введите - Insert
+Moodusta - Формировать - Form
+laadi alla/laadi üles - скачать/выгрузить - Download/Upload
+Kävitatud päring - Запущеный запрос - Request launched
+Salvestatud protseduur - Сохранённая процеруда - Saved procedure
+Muutused - Изменения - Changes
+Tõrketeade - Сообщение об ошибке - Error message
+Värskendus - Обновление -Update
