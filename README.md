@@ -4,10 +4,13 @@
 3. SQL süntaks - SQL.sql
 4. AB sõnavara - tehtud, tõlgisin eesti ja inglise keeles
 5. IngliseSQL - tehtud, kirjutasin mida tähendab funktsioonid
+6. GITcmd - muudetud minu andmeteks
+7. w3quizz.txt - kirjutasin õiged vastused testile, kus olid vigad
 
 
 # Andmebaasid 
 1. hotell.sql - andmebaasi hotellireserveerimine loomine
+2. autoTabel.sql - tegin oma autosalong
 
 
 
