@@ -185,7 +185,7 @@ select * from Person order by Age
 	
 --?
 select sum(cast(Age as int)) from Person
--- See päring arvutab kõikide tabeli "Person" kirjete vanuste summa.
+-- päring arvutab kõigi tabelis "Isik" olevate inimeste vanuse summa.
 
 --- kuvab kõige nooremat isikut
 select min(cast(Age as int)) from Person
