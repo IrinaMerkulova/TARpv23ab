@@ -154,11 +154,11 @@ select * from Person where Email not like '%@%'
 --- näitab, kelle on emailis ees ja peale @-märki
 -- ainult üks täht
 select * from Person where Email like '_@_.com'
--- Valib kõik kirjed tabelist "Person", mille veerg "Email" vastab mustrile, kus "@" sümbol järgneb täpselt ühele märgile, seejärel "@" ja seejärel mõni sümbol, mis lõpeb ".com"-ga.
+-- Valib tabelist Isik kõik kirjed, mille e-posti veerg vastab mustrile, kus "@" järgneb täpselt üks märk, seejärel "@" ja seejärel mis tahes märk, mis lõpeb numbriga ".com".
 	
 --?
 select * from Person where Name like '[^WAS]%'
--- Valib kõik kirjed tabelist "Person", mille nimi algab tähtedega, mis ei ole W, A ega S.
+-- Valib tabelist Isik kõik, mille nimi algab tähega W, A või S.
 	
 --- ?
 select * from Person where (City = 'Gotham' or City = 'New York')
