@@ -333,10 +333,10 @@ create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
 as begin
-	select FirstName, Gender, DepartmentId from Employees where Gender = @Gender
-	and DepartmentId = @DepartmentId
+select FirstName, Gender, DepartmentId from Employees where Gender = @Gender
+and DepartmentId = @DepartmentId
 end
--- Protseduur töötajate saamiseks soo ja osakonna järgi
+-- Töötajate hankimise taotlus soo ja osakonna järgi.
 
 --- kõik esimeses osakonnas meessoost töötavad isikud
 spGetEmployeesByGenderAndDepartment 'Male', 1
