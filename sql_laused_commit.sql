@@ -353,7 +353,7 @@ create proc spGetEmployeeCountByGender
 as begin
 	select @EmployeeCount = count(Id) from Employees where Gender = @Gender
 end
--- Protseduur töötajate arvu saamiseks soo järgi
+-- Palve saada töötajate arv soo järgi.
 	
 -- annab teada, palju on meessoost isikuid ning kuvab vastava stringi
 declare @TotalCount int
