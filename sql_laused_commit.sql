@@ -231,7 +231,7 @@ insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (3, 'HR', 'New York', 'Christie')
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (4, 'Other Deparment', 'Sydney', 'Cindrella')
--- lisab kirjed tabelisse "Department". Iga kirje esindab teavet konkreetse osakonna kohta.
+-- Päring lisab kirje osakonna tabelisse. Iga kirje on seotud konkreetse osakonnaga.
 
 select * from Department
 -- päring select * from Department toob kõik andmed tabelist "Department", kuvades teavet iga osakonna kohta.
