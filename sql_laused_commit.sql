@@ -398,7 +398,7 @@ end
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
--- Saada töötaja nimi tema ID järgi ja kuvada see
+-- Päring töötaja nime saamiseks ID järgi ja selle kuvamiseks.
 
 --?
 create proc spGetNameById2
