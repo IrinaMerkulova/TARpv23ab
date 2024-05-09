@@ -264,20 +264,20 @@ select distinct Name, DepartmentId from Employees
 	
 ---?
 select sum(cast(Salary as int)) from Employees
--- päring arvutab tabelis "Töötajad" olevate töötajate palkade summa.
+-- Päring arvutab tabelis "Töötajad" olevate töötajate palkade summa.
 
 ---?
 select min(cast(Salary as int)) from Employees
--- päring leiab tabelist Töötajad madalaima palga töötajate seas.
+-- Päring leiab tabelist Töötajad madalaima palga töötajate seas.
 
 alter table Employees
 add City nvarchar(25)
--- päring lisab tabelisse "Töötajad" uue veeru "Linn".
+-- Päring lisab tabelisse "Töötajad" uue veeru "Linn".
 
 alter table Employees
 add DepartmentId
 int null
--- päring lisab uue veeru "DepartmentId" tabelisse "Employees" tüübiga int ja lubab väärtuse NULL.
+-- Päring lisab int tüüpi tabelisse "Töötajad" veeru "OsakonnaId" ja lubab väärtuse NULL.
 
 --?
 alter table Employees
