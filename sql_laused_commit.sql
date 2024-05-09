@@ -286,7 +286,7 @@ add MiddleName nvarchar(30)
 	
 alter table Employees
 add LastName nvarchar(30)
--- päring lisab uue veeru "LastName" tabelisse "Employees" tüübiga nvarchar maksimaalse pikkusega 30 sümbolit.
+-- päring lisab tabelisse "Töötajad" uue veeru "Perekonnanimi" tüübiga nvarchar maksimaalse pikkusega 30.
 	
 update Employees set FirstName = 'Tom', MiddleName = 'Nick', LastName = 'Jones'
 where Id = 1
