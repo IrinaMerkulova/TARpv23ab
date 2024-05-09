@@ -383,7 +383,7 @@ end
 declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
--- Käivitada protseduur ja kuvada tulemus
+-- Päring käivitage protseduur ja kuvage tulemus.
 	
 --- ?
 create proc spGetNameById1
