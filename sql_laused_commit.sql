@@ -340,7 +340,7 @@ end
 
 --- kõik esimeses osakonnas meessoost töötavad isikud
 spGetEmployeesByGenderAndDepartment 'Male', 1
--- Saada kõik meessoost töötajad esimeses osakonnas
+-- Kutsuge kõik meestöötajad esimesse osakonda.
 	
 spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 -- Sama, kuid parameetrite nimetamisega
