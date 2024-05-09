@@ -321,13 +321,12 @@ select * from Department
 --- loome stored procedure, mis kuvab vaate
 create procedure spGetEmployees
 as begin
-	select FirstName, Gender from Employees
+select FirstName, Gender from Employees
 end
-
 spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
--- protseduur tagastab töötajate eesnimed ja sugu tabelist "Employees". 
+-- Päring tagastab töötajate nimed ja soo tabelist Töötajad. 
 
 --- 
 create proc spGetEmployeesByGenderAndDepartment
