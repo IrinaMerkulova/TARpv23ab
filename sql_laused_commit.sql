@@ -260,7 +260,7 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 ---?
 select distinct Name, DepartmentId from Employees
--- valib ainulaadsed töötajate nimed ja nende vastavad osakonna identifikaatorid tabelist "Employees".
+-- Päring valib tabelist Töötajad töötajate nimed ja neile vastavad osakonna ID-d.
 	
 ---?
 select sum(cast(Salary as int)) from Employees
