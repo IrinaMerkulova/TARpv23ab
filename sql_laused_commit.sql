@@ -145,7 +145,7 @@ select * from Person where Age between 30 and 50
 --- wildcard e näitab kõik g-tähega linnad
 select * from Person where City like 'n%'
 select * from Person where Email like '%@%'
--- Valib kõik isikud, kelle eesnimi ei sisalda tähti W, A ega S.
+-- Valib ainult need, kelle nimed ei sisalda tähti W, A või S.
 	
 -- n'itab kõiki, kellel ei ole @-märki emailis
 select * from Person where Email not like '%@%'
