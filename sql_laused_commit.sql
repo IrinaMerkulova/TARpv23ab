@@ -176,12 +176,12 @@ select top 3 Age, Name from Person
 	
 --- näitab esimesed 50% tabelis
 select top 50 percent * from Person
--- valib tabelist Isik esimesed kirjed ja sorteerib need.
+-- Valib tabelist Isik esimesed kirjed ja sorteerib need.
 
 --?
 select * from Person order by cast(Age as int)
 select * from Person order by Age
--- Mõlemad päringud sorteerivad kirjed tabelis "Person" vanuse järgi.
+-- Need päringud sorteerivad tabelis Isiku kirjeid vanuse järgi.
 	
 --?
 select sum(cast(Age as int)) from Person
