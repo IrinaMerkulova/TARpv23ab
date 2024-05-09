@@ -316,7 +316,7 @@ from Employees
 
 select * from Employees
 select * from Department
--- päring valib identifikaatori ja nime tabelist "Employees", kus nimi võib olla pärit veergudest "FirstName", "MiddleName" või "LastName". Teine ja kolmas päring lihtsalt valivad kõik andmed tabelitest "Employees" ja "Department".
+-- päring valib nime ka tabelist “Töötajad”, kus nimi tuleb võtta veergudest “Eesnimi”, “Isanimi” või “Perekonnanimi”. Teine ja kolmas päring valivad kõik andmed tabelitest Töötajad ja Osakond.
 
 --- loome stored procedure, mis kuvab vaate
 create procedure spGetEmployees
