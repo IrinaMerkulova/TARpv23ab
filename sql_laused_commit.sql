@@ -308,7 +308,7 @@ update Employees set FirstName = 'James', MiddleName = '007', LastName = 'Bond'
 where Id = 9
 update Employees set FirstName = NULL, MiddleName = NULL, LastName = 'Crowe'
 where Id = 10
--- päringud uuendavad teavet tabelis "Employees", määrates väärtused veergudele "FirstName", "MiddleName" ja "LastName" iga kirje jaoks vastava identifikaatori alusel.
+-- küsib värskendusteavet tabelis "Töötajad" ja annab neile iga kirje jaoks nimed "Eesnimi", "Kesknimi" ja "Perekonnanimi".
 
 --- igast reast võtab esimeses veerus täidetud lahtri ja kuvab ainult seda
 select Id, coalesce(FirstName, MiddleName, LastName) as Name
