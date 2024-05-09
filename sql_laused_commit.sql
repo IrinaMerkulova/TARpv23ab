@@ -260,11 +260,11 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 ---?
 select distinct Name, DepartmentId from Employees
--- Päring valib tabelist Töötajad töötajate nimed ja neile vastavad osakonna ID-d.
+-- Päring valib tabelist Töötajad töötajate nimed ja neile vastavad osakonna ID.
 	
 ---?
 select sum(cast(Salary as int)) from Employees
--- päring arvutab kõikide töötajate palkade summa tabelis "Employees".
+-- päring arvutab tabelis "Töötajad" olevate töötajate palkade summa.
 
 ---?
 select min(cast(Salary as int)) from Employees
