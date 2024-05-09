@@ -167,7 +167,7 @@ and Age >= 40
 	
 ---võtab kolm esimest rida
 select top 3 * from Person
--- Valib tabelist "Person" esimesed kolm kirjet.
+-- Võtab tabelist "Isik" esimesed 3 kirjet.
 	
 --- kolm esimest, aga tabeli järjestus on Age ja siis Name
 select * from Person
