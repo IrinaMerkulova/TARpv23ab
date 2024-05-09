@@ -282,7 +282,7 @@ int null
 --?
 alter table Employees
 add MiddleName nvarchar(30)
--- päring lisab uue veeru "MiddleName" tabelisse "Employees" tüübiga nvarchar maksimaalse pikkusega 30 sümbolit.
+-- päring lisab tabelisse "Töötajad" veeru "MiddleName" tüübiga nvarchar maksimaalse pikkusega 30.
 	
 alter table Employees
 add LastName nvarchar(30)
