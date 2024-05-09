@@ -412,6 +412,6 @@ end
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
 print 'Name of the employee = ' + @EmployeeName
--- Saada töötaja nimi tema ID järgi ja kuvada see
+-- Taotlege töötaja nime saamist tema ID-ga ja kuvage see.
 	
 select * from Employees
