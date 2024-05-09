@@ -377,7 +377,7 @@ create proc spTotalCount2
 as begin
 	select @TotalCount = count(Id) from Employees
 end
--- Protseduur kõigi töötajate arvu saamiseks
+-- Päring kõigi töötajate arvu saamiseks.
 	
 --- käivitame sp
 declare @TotalEmployees int
