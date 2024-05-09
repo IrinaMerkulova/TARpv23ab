@@ -107,7 +107,7 @@ add constraint CK_Person_Age check (Age > 0 and Age < 150)
 	
 insert into Person (Id, Name, Email, GenderId, Age)
 values (9, 'Test', 'Test', 2, 160)
--- Üritab sisestada kirjet tabelisse "Person" vale vanusega.
+-- Tabelisse “Isik” üritati sisestada vale vanusega rekord. See kood ei tööta.
 	
 --?
 select * from Person
