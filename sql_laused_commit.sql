@@ -149,7 +149,7 @@ select * from Person where Email like '%@%'
 	
 -- n'itab kõiki, kellel ei ole @-märki emailis
 select * from Person where Email not like '%@%'
--- Valib kõik kirjed tabelist "Person", mille veerg "Email" ei sisalda "@" sümbolit.
+-- See käsk valib tabelist Isik kõik kirjed, mille veerg Email ei sisalda sümbolit "@".
 	
 --- näitab, kelle on emailis ees ja peale @-märki
 -- ainult üks täht
