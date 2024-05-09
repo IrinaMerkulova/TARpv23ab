@@ -163,7 +163,7 @@ select * from Person where Name like '[^WAS]%'
 --- ?
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
--- Valib kõik isikud, kes elavad Gothami või New Yorgis ja on vanemad kui 40 aastat.
+-- Valib kõik, Gothamis või New Yorgis ja üle 40-aastased.
 	
 ---võtab kolm esimest rida
 select top 3 * from Person
