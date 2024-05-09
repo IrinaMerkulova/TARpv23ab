@@ -343,7 +343,7 @@ spGetEmployeesByGenderAndDepartment 'Male', 1
 -- Kutsuge kõik meestöötajad esimesse osakonda.
 	
 spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
--- Sama, kuid parameetrite nimetamisega
+-- Taotlus, kuid nimetamisparameetritega
 
 
 --?
