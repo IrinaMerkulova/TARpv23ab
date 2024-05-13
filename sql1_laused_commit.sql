@@ -46,3 +46,86 @@ Gender nvarchar(10),
 Salary nvarchar(50),
 DepartmentId int
 )
+-----------------------------------------------------------
+	               tabelite täitmine
+-----------------------------------------------------------
+-- sisestame andmed
+insert into Person (Id, Name, Email, GenderId)
+values (1, 'Supermees', 's@s.com', 2)
+insert into Person (Id, Name, Email, GenderId)
+values (2, 'Wonderwoman', 'w@w.com', 1)
+insert into Person (Id, Name, Email, GenderId)
+values (3, 'Batman', 'b@b.com', 2)
+insert into Person (Id, Name, Email, GenderId)
+values (4, 'Aquaman', 'a@a.com', 2)
+insert into Person (Id, Name, Email, GenderId)
+values (5, 'Catwoman', 'c@c.com', 1)
+insert into Person (Id, Name, Email, GenderId)
+values (6, 'Antman', 'ant"ant.com', 2)
+insert into Person (Id, Name, Email, GenderId)
+values (7, 'Spiderman', 'spider@spiderman.com', 2)
+
+insert into Person (Id, Name, Email)
+values (8, 'Test', 'Test')
+
+--parandas taotluse
+insert into Person (Id, Name, Email, GenderId, Age)
+values (9, 'Test', 'Test', 2, 149)
+
+--- võõrvõtme piirangu maha võtmine
+alter table Person
+drop constraint tblPerson_GenderId_FK
+	
+-- vaatame tabeli andmeid
+select * from Person
+-----------------------------------------------------------
+                      teines ​​tabel
+-----------------------------------------------------------
+-- sisestame väärtuse tabelisse
+insert into Gender (Id, Gender)
+values (3, 'Unknown')
+-- lisame võõrvõtme uuesti
+alter table Person
+add constraint DF_Person_GenderId
+default 3 for GenderId
+
+select * from Person
+-----------------------------------------------------------
+                      kolms ​​tabel
+-----------------------------------------------------------
+-- andmete sisestamine tabelisse
+insert into Department (Id, DepartmentName, Location, DepartmentHead)
+values (1, 'IT', 'London', 'Rick')
+insert into Department (Id, DepartmentName, Location, DepartmentHead)
+values (2, 'Payroll', 'Delhi', 'Ron')
+insert into Department (Id, DepartmentName, Location, DepartmentHead)
+values (3, 'HR', 'New York', 'Christie')
+insert into Department (Id, DepartmentName, Location, DepartmentHead)
+values (4, 'Other Deparment', 'Sydney', 'Cindrella')
+
+select * from Department
+-----------------------------------------------------------
+	               neljas tabel
+-----------------------------------------------------------
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (1, 'Tom', 'Male', 4000, 1)
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (2, 'Pam', 'Female', 3000, 1)
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (3, 'John', 'Male', 3500, 1)
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (4, 'Sam', 'Male', 4500, 2)
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (5, 'Todd', 'Male', 2800, 1)
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (6, 'Ben', 'Male', 7000, 1)
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (7, 'Sara', 'Female', 4800, 3)
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (8, 'Valarie', 'Female', 5500, 1)
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (9, 'James', 'Male', 6500, NULL)
+insert into Employees (Id, Name, Gender, Salary, DepartmentId)
+values (10, 'Russell', 'Male', 8800, NULL)
+
+select * from Employees
