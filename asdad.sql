@@ -1,16 +1,24 @@
+
+---добавляем новый столбец в таблицу
 ---lisame uue veeru tabelisse
 alter table Person
 add Age nvarchar(10)
 
+
+--обновить данные	
 --uuendame andmeid
 update Person
 set Age = 149
 where Id = 8
 
+	
+--создание ограничения
 --constraint loomine
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
-  
+
+	
+--удалить человека с ID 8 из таблицы
 --eemalda tabelist isik ID-ga 8 
 select * from Person
 go
@@ -18,31 +26,45 @@ delete from Person where Id = 8
 go
 select * from Person
 
+	
+--- добавляем в столбец
 --- lisame veeru juurde
 alter table Person
 add City nvarchar(25)
 
+	
+-- мы хотим знать всех, кто живет в Готэм-сити
 -- tahame tead kõiki, kes elavad Gothami linnas 
 select * from Person where City = 'Gotham'
 -- kõik, kes ei ela Gothamis
 select * from Person where City <> 'Gotham'
 select * from Person where City != 'Gotham'
 
+	
+-- указывает на людей определенного возраста
 -- näitab teatud vanusega inimesi
 select *from Person where Age = 100 or 
 Age = 50 or Age = 20
 select * from Person where Age in (100, 50, 20)
 
+	
+--- указывает на людей в определенном возрастном диапазоне
 --- näitab teatud vanusevahemikus olevaid inimesi
 select * from Person where Age between 30 and 50
 
+	
+--- подстановочный знак e показывает все города с буквой g.
 --- wildcard e näitab kõik g-tähega linnad
 select * from Person where City like 'n%'
 select * from Person where Email like '%@%'
 
+	
+-- высмеивает любого, у кого нет знака @ в электронной почте
 -- naitab kõiki, kellel ei ole @-märki emailis
 select * from Person where Email not like '%@%'
 
+--- показывает, кто находится в электронном письме до и после знака @
+-- всего одна буква
 --- näitab, kelle on emailis ees ja peale @-märki
 -- ainult üks täht
 select * from Person where Email like '_@_.com'
