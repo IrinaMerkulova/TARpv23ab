@@ -64,3 +64,14 @@ member_since date);
 
 Column, parameter, or variable #2: Cannot find data type veaform.
 -- See viga näitab, et andmeformaat ei vasta olemasolevale andmeformaadile. 
+
+8.
+create table reservation(
+id int primary key identity(1,1),
+date_in date,
+date_out date,
+made_by varchar (20),
+guest_id int);
+
+CREATE TABLE permission denied in database 'master'.
+-- See viga ütleb, et te töötate teises andmebaasis
