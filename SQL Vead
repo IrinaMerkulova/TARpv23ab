@@ -54,3 +54,13 @@ INSERT INTO guest(id, first_name, last_name, member_since)
 VALUES(4,'Timur', 'Basirov', '2024-05-11');
 Cannot insert explicit value for identity column in table 'guest' when IDENTITY_INSERT is set to OFF.
 -- See viga näitab, et te ei saa sisestada andmeid tabelisse, milles on 'identiteet'.
+
+7.
+CREATE TABLE guest(
+id int Primary key identity (1,1),
+first_name veaform (80),
+last_name veaform (80),
+member_since date);
+
+Column, parameter, or variable #2: Cannot find data type veaform.
+-- See viga näitab, et andmeformaat ei vasta olemasolevale andmeformaadile. 
