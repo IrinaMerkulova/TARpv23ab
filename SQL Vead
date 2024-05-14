@@ -7,5 +7,15 @@ description varchar(80),
 max_capacity int);
 
 Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement.
-probleem Tundmatu objekti tüübiga selles veas on viga, et käsk ei ole lõpuni täidetud. - Create table room_type(...
+-- probleem Tundmatu objekti tüübiga selles veas on viga, et käsk ei ole lõpuni täidetud. - Create table room_type(...
 
+2. 
+CREATE table room_type(
+id int PRIMARY KEY identity(1,1),
+description varchar(80),
+max_capacity int);
+
+There is already an object named 'room_type' in the database.
+-- See viga näitab, et selle nimega tabel on juba olemas, kui olete tabeli loonud õigete omadustega, võite julgelt tööd jätkata, kuid kui omadused ei vasta soovitud omadustele, saate tabeli kustutada, kasutades (Drop table ...).
+
+3.
