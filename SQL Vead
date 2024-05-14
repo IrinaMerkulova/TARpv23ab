@@ -36,3 +36,9 @@ foreign key (room_type_id) references room_type(id));
 
 Incorrect syntax near 'smoke'.
 -- See viga näitab, et päringus puudub koma pärast sõna 'smoke', sest probleem on süntaksis.
+
+5.
+SELECT * FROM reservation;
+
+Invalid object name 'reservation'
+-- See viga näitab, et reservation tabel on puudub 
