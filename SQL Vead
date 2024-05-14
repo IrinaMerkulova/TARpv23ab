@@ -1,0 +1,11 @@
+SQL Serveris tekkivad vead
+
+1. 
+create room_type(
+id int primary key identity(1,1),
+description varchar(80),
+max_capacity int);
+
+Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement.
+probleem Tundmatu objekti tüübiga selles veas on viga, et käsk ei ole lõpuni täidetud. - Create table room_type(...
+
