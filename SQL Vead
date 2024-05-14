@@ -23,3 +23,16 @@ INSERT INTO room_type (description , max_capacity)
 VALUES (1,'standard');
 Conversion failed when converting the varchar value 'standard' to data type int.
 -- See viga näitab, et andmed ei ole kirjutatud õiges järjekorras ja sql päring loeb 'standard' kui int väärtust.
+
+4. 
+CREATE TABLE room(
+id int Primary key identity(1,1),
+number varchar(10),
+name varchar(40)
+status varchar(10),
+smoke bit,
+room_type_id int,
+foreign key (room_type_id) references room_type(id));
+
+Incorrect syntax near 'smoke'.
+-- See viga näitab, et päringus puudub koma pärast sõna 'smoke', sest probleem on süntaksis.
