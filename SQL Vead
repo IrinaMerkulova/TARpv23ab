@@ -19,3 +19,7 @@ There is already an object named 'room_type' in the database.
 -- See viga näitab, et selle nimega tabel on juba olemas, kui olete tabeli loonud õigete omadustega, võite julgelt tööd jätkata, kuid kui omadused ei vasta soovitud omadustele, saate tabeli kustutada, kasutades (Drop table ...).
 
 3.
+INSERT INTO room_type (description , max_capacity) 
+VALUES (1,'standard');
+Conversion failed when converting the varchar value 'standard' to data type int.
+-- See viga näitab, et andmed ei ole kirjutatud õiges järjekorras ja sql päring loeb 'standard' kui int väärtust.
