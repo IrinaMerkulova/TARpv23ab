@@ -70,3 +70,14 @@ foreign key (reservation_id) references reservation(id));
 
 INSERT INTO occupied_room(check_in, check_out, room_id, reservation_id)
 VALUES ('2024-02-19 12:18:52', '2024-02-20 17:12:21', 1, 1);
+
+--hosted_at tabeli loomine
+CREATE TABLE hosted_at(
+id int Primary key identity (1,1),
+guest_id int,
+occupied_room_id int,
+FOREIGN KEY (guest_id) REFERENCES guest(id),
+FOREIGN KEY (occupied_room_id) REFERENCES occupied_room(id));
+
+INSERT INTO hosted_at(guest_id, occupied_room_id)
+VALUES (1, 1);
