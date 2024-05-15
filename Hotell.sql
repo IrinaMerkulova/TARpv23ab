@@ -32,3 +32,15 @@ member_since date);
 
 INSERT INTO guest(first_name, last_name, member_since)
 VALUES ('Timur', 'Basirov', '2024-02-19');
+
+--reservation tabeli loomine
+CREATE TABLE reservation(
+id int Primary key identity (1,1),
+date_in date,
+date_out date,
+made_by varchar (20),
+guest_id int,
+foreign key (guest_id) references guest(id));
+
+INSERT INTO reservation(date_in, date_out, made_by, guest_id)
+VALUES ('2024-02-19', '2024-02-20', 'HotellBasirov', 1);
