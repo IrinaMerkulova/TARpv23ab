@@ -1,10 +1,10 @@
 # Tehtud tööd - Erialane inglise keel
 
-1. Andmebaaside sõnavara - IngliseSQL.txt
-2. Valed vastused SQL testis - W3quizz
-3. SQL süntaks - SQL.sql
-4. Ab Sõnavara - ABsynavara.txt
-
+## Tehtud:
+- **ingliseSQL.txt** ja **ABsynavara.txt** Andmebaaside sõnavara
+- **hotell.sql** SQL Serveris tekkivad vead
+- **w3quizz.txt** Valed vastused SQL testis
+- **SQL.sql** SQL süntaks
 
 # Ülesanded
 
