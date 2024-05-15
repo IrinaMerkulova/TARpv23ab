@@ -1,6 +1,5 @@
 # Tehtud tööd - Erialane inglise keel
 
-## Tehtud:
 - **ingliseSQL.txt** ja **ABsynavara.txt** Andmebaaside sõnavara
 - **hotell.sql** SQL Serveris tekkivad vead
 - **w3quizz.txt** Valed vastused SQL testis
