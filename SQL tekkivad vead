@@ -1,0 +1,41 @@
+CREATE databas ExampleDB;
+Unknown object type 'databas' used in a CREATE, DROP, or ALTER statement. - Неизвестный тип объекта 'databas', используемый в операторе CREATE, DROP или ALTER.
+DROP DATABASE Tarpv2;
+Cannot drop the database 'Tarpv2', because it does not exist or you do not have permission. - Невозможно удалить базу данных 'Tarpv2', поскольку она не существует или у вас нет соответствующих разрешений.
+CREATE TABLE ExampleTable (
+    Id
+);
+The definition for column 'Id' must include a data type. - Определение для столбца 'Id' должно включать тип данных.
+CREATE TABLE Person (
+    -- столбцы таблицы
+);
+There is already an object named 'Person' in the database. - В базе данных уже существует объект с именем 'Person'.
+INSERT INTO dbo.Gender (GenderId, GenderName)
+VALUES (2, 'Female');
+Violation of PRIMARY KEY constraint 'PK__Gender__3214EC0790334F00'. Cannot insert duplicate key in object 'dbo.Gender'. The duplicate key value is (2). - Нарушение ограничения PRIMARY KEY 'PK__Gender__3214EC0790334F00'. Невозможно вставить дублирующийся ключ в объект 'dbo.Gender'. Дублирующееся значение ключа: (2).
+CREATE TABLE Orders (
+    OrderID int PRIMARY KEY,
+    CustomerID int FOREIGN KEY REFERENCES Customers(CustomerID),
+    OrderDate date
+);
+Incorrect syntax near the keyword 'foreign'. - Неправильный синтаксис около ключевого слова 'foreign'.
+ALTER TABLE Orders
+ADD CONSTRAINT FK_CustomerID
+FOREIGN KEY (CustomerID)
+REFERENCES Customers(CustomerID);
+Could not create constraint or index. See previous errors. - Не удалось создать ограничение или индекс. Смотрите предыдущие ошибки.
+ALTER TABLE TableName
+DROP CONSTRAINT ConstraintName;
+Could not drop constraint. See previous errors. - Не удалось удалить ограничение. Просмотрите предыдущие ошибки.
+CREATE TABLE ExampleTable (
+    Id int,
+    Name varchar(50),
+    Age int,
+    Id int  -- Дублирующееся название столбца
+);
+Column names in each table must be unique. Column name 'Age' in table 'Person' is specified more than once. - Имена столбцов в каждой таблице должны быть уникальными. Имя столбца 'Age' в таблице 'Person' указано более одного раза.
+SELECT * FROM TableName
+WHERE ColumnName = 160;
+Incorrect syntax near '160'. - Неправильный синтаксис около '160'.
+SELECT * FROM narva;
+Cannot find the object "narva" because it does not exist or you do not have permissions. - Не удается найти объект "narva", потому что он не существует или у вас нет соответствующих разрешений.
