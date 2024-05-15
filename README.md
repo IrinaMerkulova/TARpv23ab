@@ -2,7 +2,7 @@
 
 - **ingliseSQL.txt** ja **ABsynavara.txt** Andmebaaside sõnavara
 - **hotell.sql** SQL Serveris tekkivad vead
-- **w3quizz.txt** Valed vastused SQL testis
+- **W3quizz.txt** Valed vastused SQL testis
 - **SQL.sql** SQL süntaks
 
 # Ülesanded
