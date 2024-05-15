@@ -44,3 +44,16 @@ foreign key (guest_id) references guest(id));
 
 INSERT INTO reservation(date_in, date_out, made_by, guest_id)
 VALUES ('2024-02-19', '2024-02-20', 'HotellBasirov', 1);
+
+--reserved_room tabeli loomine
+CREATE TABLE reserved_room(
+id int Primary key identity (1,1),
+number_of_rooms int,
+room_type_id int,
+reservation_id int,
+status varchar(20),
+foreign key (room_type_id) references room_type(id),
+foreign key (reservation_id) references reservation(id));
+
+INSERT INTO reserved_room(number_of_rooms, room_type_id, reservation_id, status)
+VALUES ('100', 1, 1 , 'broneeritud');
