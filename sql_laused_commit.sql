@@ -1,16 +1,16 @@
 -- db loomine
 create database Tarpv23
 
---?
+--?Database Tarpv 23 loomine
 DRop DataBASE Tarpv23
 
---?
+--? DataBASE Tarpv23 kustutamine
 create table Gender
 (
 Id int NOT NULL primary key,
 Gender nvarchar(10) not null
 )
-
+--- Tabel Gender loomnine
 create table Person
 (
 Id int not null primary key,
@@ -18,17 +18,17 @@ Name nvarchar(25),
 Email nvarchar(30),
 GenderId int
 )
-
+---Tabel Person loomine. Sealpeabolema nimi, email jah gender
 --- andmete sisestamine tabelisse
 insert into Gender (Id, Gender)
 values (1, 'Female')
 insert into Gender (Id, Gender)
 values (2, 'Male')
 
---- ?
+--- ?Liisame Genderis id ja gender (Female, male)
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
-
+--- muudab tabeli "Person" nimeks "tblPerson_GenderId_FK". Lisab sekundaarse võtme GenderId tabelis Gender
 -- sisestame andmed
 insert into Person (Id, Name, Email, GenderId)
 values (1, 'Supermees', 's@s.com', 2)
