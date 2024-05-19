@@ -78,19 +78,19 @@ update Person
 set Age = 149
 where Id = 8
 
---?
+---See päring lisab piirangu (check constraint) tabeli "Person" veergu "Age"
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
-
+--väärtused veerus "Age" peavad olema suuremad kui 0 ja väiksemad kui 150
 insert into Person (Id, Name, Email, GenderId, Age)
 values (9, 'Test', 'Test', 2, 160)
 
---?
 select * from Person
 go
 delete from Person where Id = 8
 go
 select * from Person
+--Näitab tabelit "Person". Tabelist "Person" kustutatakse rida Id=8. Näitab tabelit pärast kustutamist Id=8
 
 --- lisame veeru juurde
 alter table Person
@@ -120,12 +120,16 @@ select * from Person where Email not like '%@%'
 --- näitab, kelle on emailis ees ja peale @-märki
 -- ainult üks täht
 select * from Person where Email like '_@_.com'
+--? --- näitab, kelle on emailis ees ja peale @-märki
 
---?
+	
 select * from Person where Name like '[^WAS]%'
---- ?
+--näitab kõik read tabelist "Person", kus veeru "Name" väärtus ei alga tähtedega "W", "A" või "S". 
+--Näitab ridu, kus nimed ei alga nende tähtedega.
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
+--- teostab andmete filtreerimise "Person" tabelist ja valib kõik read, kus veeru "City" väärtus on võrdne "Gotham" või "New York" 
+--ja veeru "Age" väärtus on suurem või võrdne 40-ga. 
 
 ---võtab kolm esimest rida
 select top 3 * from Person
@@ -136,11 +140,11 @@ select top 3 Age, Name from Person
 
 --- näitab esimesed 50% tabelis
 select top 50 percent * from Person
---?
+--?need päringud sorteerivad tabelis "Person" olevad andmed vanuse järgi
 select * from Person order by cast(Age as int)
 select * from Person order by Age
 
---?
+--?Näitab inmesi summarne vanus 
 select sum(cast(Age as int)) from Person
 
 --- kuvab kõige nooremat isikut
