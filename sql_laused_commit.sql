@@ -178,7 +178,7 @@ Salary nvarchar(50),
 DepartmentId int
 )
 
---?
+--? sisestame andmed tabelisse "Department"
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (1, 'IT', 'London', 'Rick')
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
@@ -213,12 +213,13 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
----?
+---? Näitab töötajate ja Id osakonna nimesid tabelist Employees 
 select distinct Name, DepartmentId from Employees
 
----?
+---?Näitab summaarset palk
 select sum(cast(Salary as int)) from Employees
----?
+---? kuvab väikseimat palka
+
 select min(cast(Salary as int)) from Employees
 
 
@@ -231,7 +232,7 @@ add DepartmentId
 int null
 
 
---?
+-- liisame uued  vergud Middle Name ja LastName lauale Employees
 alter table Employees
 add MiddleName nvarchar(30)
 
@@ -281,7 +282,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- 
+--- luuakse procedure, misjärel saame soo ja Id-osakonna töötajad
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
@@ -297,7 +298,7 @@ spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
---?
+--?protseduuri loomine, mille abil saame töötajate arvu soo järgi
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
@@ -319,7 +320,7 @@ declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
----?
+---? Protseduuri loomine töötajate koguarvu saamiseks
 create proc spTotalCount2
 @TotalCount int output
 as begin
@@ -330,7 +331,7 @@ declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
---- ?
+--- ? Protseduuri loomine töötajate nime saamiseks Id järgi
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
@@ -338,19 +339,19 @@ as begin
 	select @FirstName = FirstName from employees where Id = @Id
 end
 
---?
+--? Näitab Id 6-ga töötaja nime
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
 
---?
+--? Protseduuri loomine Id töötaja nime saamiseks
 create proc spGetNameById2
 @Id int
 as begin
 	return (select FirstName from Employees where Id = @Id)
 end
 
--- ?
+-- ? Protseduuri loomine, nimi ID  järgi
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
 print 'Name of the employee = ' + @EmployeeName
