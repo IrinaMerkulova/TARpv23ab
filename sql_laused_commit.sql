@@ -44,7 +44,7 @@ values (6, 'Antman', 'ant"ant.com', 2)
 insert into Person (Id, Name, Email, GenderId)
 values (7, 'Spiderman', 'spider@spiderman.com', 2)
 
--- 
+-- vaatame tabeli andmeid
 select * from Person
 
 --- 
