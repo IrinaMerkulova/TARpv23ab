@@ -51,7 +51,7 @@ select * from Person
 alter table Person
 drop constraint tblPerson_GenderId_FK
 
--- 
+-- sisestame väärtuse tabelisse
 insert into Gender (Id, Gender)
 values (3, 'Unknown')
 -- 
