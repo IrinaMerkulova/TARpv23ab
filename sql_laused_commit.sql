@@ -4,7 +4,7 @@ create database Tarpv23
 --DataBASE Tarpv23 kustutamine
 DRop DataBASE Tarpv23
 
---? 
+--?  Tabel Gender loomnine
 create table Gender
 (
 Id int NOT NULL primary key,
@@ -24,7 +24,7 @@ values (1, 'Female')
 insert into Gender (Id, Gender)
 values (2, 'Male')
 
---- ?
+--- ?Liisame Genderis id ja gender (Female, male)
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
 --- muudab tabeli "Person" nimeks "tblPerson_GenderId_FK". Lisab sekundaarse võtme GenderId tabelis Gender
