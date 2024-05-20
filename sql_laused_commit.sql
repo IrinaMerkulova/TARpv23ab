@@ -130,7 +130,7 @@ and Age >= 40
 --- väljastab 3 esimest väärtust tabelist Person
 select top 3 * from Person
 
---- 
+--- väljastab tabelist Person 3 esimest väärtust, kuid kõigepealt vanus ja siis nimi
 select * from Person
 select top 3 Age, Name from Person
 
