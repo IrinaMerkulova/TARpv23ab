@@ -278,7 +278,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- 
+--- luuakse procedure, misjärel saame soo ja Id-osakonna töötajad
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
