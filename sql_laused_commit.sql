@@ -84,12 +84,13 @@ add constraint CK_Person_Age check (Age > 0 and Age < 150)
 insert into Person (Id, Name, Email, GenderId, Age)
 values (9, 'Test', 'Test', 2, 160)
 
+--Näitab tabelit "Person". Tabelist "Person" kustutatakse rida Id=8. Näitab tabelit pärast kustutamist Id=8	
 select * from Person
 go
 delete from Person where Id = 8
 go
 select * from Person
---
+
 
 --- 
 alter table Person
