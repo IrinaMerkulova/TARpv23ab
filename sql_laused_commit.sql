@@ -127,7 +127,7 @@ select * from Person where Name like '[^WAS]%'
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
---- 
+--- väljastab 3 esimest väärtust tabelist Person
 select top 3 * from Person
 
 --- 
