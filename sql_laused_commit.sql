@@ -322,7 +322,7 @@ create proc spTotalCount2
 as begin
 	select @TotalCount = count(Id) from Employees
 end
---- 
+--- väärtuse väljund, mis on salvestatud muutujasse @TotalEmployees
 declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
