@@ -117,12 +117,10 @@ select * from Person where Email like '%@%'
 -- näitab kõiki, kellel ei ole @-märki emailis
 select * from Person where Email not like '%@%'
 
---- 
--- 
+-- näitab, kelle on emailis ees ja peale @-märki ainult üks täht
 select * from Person where Email like '_@_.com'
---?
 
-	
+--? Näitab ridu, kus nimed  algab  W,A,S tähtedega.
 select * from Person where Name like '[^WAS]%'
 --
 select * from Person where (City = 'Gotham' or City = 'New York')
