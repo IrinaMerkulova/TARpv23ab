@@ -92,7 +92,7 @@ go
 select * from Person
 
 
---- 
+---  lisame city tabelis Person
 alter table Person
 add City nvarchar(25)
 
