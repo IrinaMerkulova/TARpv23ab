@@ -114,7 +114,7 @@ select * from Person where Age between 30 and 50
 select * from Person where City like 'n%'
 select * from Person where Email like '%@%'
 
--- 
+-- näitab kõiki, kellel ei ole @-märki emailis
 select * from Person where Email not like '%@%'
 
 --- 
