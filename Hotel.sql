@@ -157,5 +157,22 @@ end;
 
 exec hostitud_külalise_kustutamine '7';
 
+-- Uue kasutaja lisamine tabelisse "Külaline" koos eesnime, perekonnanime ja kuupäevaga
+create procedure guest_lisamine
 
+@first_name varchar(80),
+@@ -169,7 +169,7 @@ select * from guest;
+
+end;
+exec guest_lisamine 'Gleb', 'Sotsev', '03-05-2024';
+
+-- Kasutaja eemaldamine tema ID järgi tabelist "Külaline".
+
+create procedure delete_guest
+@deleteID int
+
+-- Hosted_guest eemaldamine tabelist "Hosted_at" selle ID järgi
+
+create procedure hostitud_külalise_kustutamine
+@id int
 
