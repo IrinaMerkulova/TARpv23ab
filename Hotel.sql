@@ -95,3 +95,18 @@ select * from occupied_room
 insert into occupied_room (check_in, check_out, room_id, reservation_id)
 values ('2023-08-23','2023-12-01',1,1);
 
+
+--tabel hosted_at
+
+create table hosted_at(
+id int primary key identity(1,1),
+guest_id int,
+occupied_room_id int,
+
+foreign key (guest_id) references guest(id),
+foreign key (occupied_room_id) references occupied_room(id));
+
+insert into hosted_at (guest_id,occupied_room_id)
+values (1,1)
+
+select * from hosted_at 
