@@ -43,4 +43,21 @@ values ('Gleb', 'Sotsjov' , '2007-09-17');
 
 select * from guest
 
+--tabel reservation
+
+create table reservation(
+id int primary key identity(1,1),
+date_in date,
+date_out date,
+made_by varchar(20),
+guest_id int,
+FOREIGN KEY (guest_id) references guest(id));
+
+select * from reservation
+
+insert into reservation(date_in,date_out,made_by,guest_id)
+values ('2023-08-06', '2023-09-01', 'Gleb Sotsjov',1)
+
+
+
 
