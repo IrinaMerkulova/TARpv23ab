@@ -10,3 +10,20 @@ max_capacity int);
 select * from room_type;
 insert into room_type(description, max_capacity)
 values('SUPER LUX',1)
+
+--tabel room
+
+create table room(
+id int primary key identity(1,1),
+number varchar(10),
+name varchar(40),
+status varchar(10),
+smoke bit,
+room_type_id int,
+FOREIGN KEY (room_type_id) references room_type(id));
+
+select * from room
+select * from room_type
+
+insert into room(number,name,status,smoke,room_type_id)
+values ('E10', 'sv', 'open', 1, 1);
