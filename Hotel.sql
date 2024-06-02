@@ -142,4 +142,20 @@ end;
 
 exec delete_guest 12;
 
+-- hostitud külalise kustutamine
+
+create procedure hostitud_külalise_kustutamine
+@id int
+
+as
+begin
+select * from hosted_at;
+delete from hosted_at
+where id = @id;
+select * from hosted_at;
+end;
+
+exec hostitud_külalise_kustutamine '7';
+
+
 
