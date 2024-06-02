@@ -59,5 +59,19 @@ insert into reservation(date_in,date_out,made_by,guest_id)
 values ('2023-08-06', '2023-09-01', 'Gleb Sotsjov',1)
 
 
+--tabel reservation_room
+
+create table reservation_room(
+id int primary key identity(1,1),
+number_of_rooms int,
+room_type_id int,
+reservation_id int,
+status varchar(20),
+
+foreign key (room_type_id) references room_type(id),
+foreign key (reservation_id) references reservation(id));
+
+select * from reservation_room
+
 
 
