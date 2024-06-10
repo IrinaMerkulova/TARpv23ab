@@ -52,7 +52,7 @@ alter table Person
 drop constraint tblPerson_GenderId_FK 
 
 -- ?
-insert into Gender (Id, Gender)
+insert into Gender (Id, Gender) 
 values (3, 'Unknown')
 -- ?
 alter table Person
