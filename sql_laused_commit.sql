@@ -1,5 +1,5 @@
 -- db loomine 
-create database Tarpv23
+create database Tarpv23 
 
 --?
 DRop DataBASE Tarpv23 
