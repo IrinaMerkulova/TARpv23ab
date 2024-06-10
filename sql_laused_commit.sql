@@ -49,7 +49,7 @@ select * from Person
 
 --?
 alter table Person
-drop constraint tblPerson_GenderId_FK
+drop constraint tblPerson_GenderId_FK 
 
 -- ?
 insert into Gender (Id, Gender)
