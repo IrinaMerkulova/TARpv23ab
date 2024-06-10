@@ -1,4 +1,4 @@
--- db loomine
+-- db loomine 
 create database Tarpv23
 
 --?
