@@ -5,7 +5,7 @@ create database Tarpv23
 DRop DataBASE Tarpv23  
 
 --? 
-create table Gender
+create table Gender 
 (
 Id int NOT NULL primary key,
 Gender nvarchar(10) not null
