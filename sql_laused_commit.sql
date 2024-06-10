@@ -45,7 +45,7 @@ insert into Person (Id, Name, Email, GenderId)
 values (7, 'Spiderman', 'spider@spiderman.com', 2)  
 
 --?
-select * from Person
+select * from Person 
 
 --?
 alter table Person
