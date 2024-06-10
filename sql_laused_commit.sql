@@ -19,7 +19,7 @@ Email nvarchar(30),
 GenderId int
 )
 ---?
-insert into Gender (Id, Gender) 
+insert into Gender (Id, Gender)  
 values (1, 'Female')
 insert into Gender (Id, Gender)
 values (2, 'Male')
