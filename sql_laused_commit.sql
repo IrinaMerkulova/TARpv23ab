@@ -57,7 +57,7 @@ values (3, 'Unknown')
 -- ?
 alter table Person
 add constraint DF_Person_GenderId
-default 3 for GenderId
+default 3 for GenderId 
 
 
 ---- 2 tund
