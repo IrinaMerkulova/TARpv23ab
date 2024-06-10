@@ -25,7 +25,7 @@ insert into Gender (Id, Gender)
 values (2, 'Male')
 
 --- ?
-alter table Person add constraint tblPerson_GenderId_FK
+alter table Person add constraint tblPerson_GenderId_FK 
 foreign key (GenderId) references Gender(Id)
 --- muudab tabeli "Person" nimeks "tblPerson_GenderId_FK". Lisab sekundaarse võtme GenderId tabelis Gender
 -- sisestame andmed
