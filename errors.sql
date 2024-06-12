@@ -65,3 +65,7 @@ SELECT * FROM Klient;
 SELECT Vanus FROM Tootajad;
 --Msg 207, Level 16, State 1, Line 46
 --Invalid column name 'Vanus'.
+--Lahendus
+ALTER TABLE Tootajad
+ADD COLUMN Vanus INT;
+SELECT Vanus FROM Tootajad;
