@@ -29,13 +29,18 @@ INSERT INTO Tootajad (ID, Nimi) VALUES ('1', 'Bogdan');
 
 -- Ainulaadne võtme rikkumine
 -- Püütakse sisestada sama ID kaht korda
-INSERT INTO Tootajad  (ID, Nimi) VALUEs (1, 'Bog');
-INSERT INTO Tootajad(ID, Nimi)  VALUES (1, 'Art');
+INSERT INTO Tootajad  (ID, Nimi) VALUEs (1, 'Bogdan');
+INSERT INTO Tootajad(ID, Nimi)  VALUES (1, 'Artur');
 
 --Msg 544, Level 16, State 1, Line 24
 --Cannot insert explicit value for identity column in table 'Tootajad' when IDENTITY_INSERT is set to OFF.
 --Msg 544, Level 16, State 1, Line 25
 --Cannot insert explicit value for identity column in table 'Tootajad' when IDENTITY_INSERT is set to OFF.
+--Lahendus:
+INSERT INTO Tootajad  (ID, Nimi) VALUEs (1, 'Bogdan');
+INSERT INTO Tootajad(ID, Nimi)  VALUES (2, 'Artur');
+
+
 
 
 
