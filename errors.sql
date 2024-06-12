@@ -22,6 +22,9 @@ INSERT INTO Tootajad (ID, Nimi) VALUES ('üks', 'Bog');
 
 --Msg 245, Level 16, State 1, Line 16
 --Conversion failed when converting the varchar value 'üks' to data type int.
+--Lahendus:
+INSERT INTO Tootajad (ID, Nimi) VALUES ('1', 'Bogdan');
+
 
 
 -- Ainulaadne võtme rikkumine
