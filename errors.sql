@@ -47,9 +47,15 @@ INSERT INTO Tootajad(ID, Nimi)  VALUES (2, 'Artur');
 
 -- Tabeli mitteolemasolu 
 -- Püütakse valida andmeid tabelist mis ei eksisteeri
-SELECt * FROM Klient;
+SELECT * FROM Klient;
 --Msg 208, Level 16, State 1, Line 37
 --Invalid object name 'Klient'.
+--Lahendus
+CREATE TABLE Klient (
+    ID INT PRIMARY KEY  identity(1,1),
+    Nimi VARCHAR(100)
+)
+SELECT * FROM Klient;
 
 
 
