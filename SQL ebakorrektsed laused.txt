@@ -7,9 +7,10 @@
     room_type_id int,
     foreign key (room_type_id) references room_type(id));
     
-    Foreign key 'FK__room__room_type___24927208' references invalid table 'room_type'.
-   
+    Foreign key 'FK__room__room_type___24927208' references invalid table 'room_type'.   
     Could not create constraint or index. See previous errors.
+
+foreign key võti ei viita Primary key.  Looge tabelisse room_type Primary key
 2. create table occupied_room(
     id int PRIMARY KEY identity(1,1),
     check_in time,
@@ -22,6 +23,8 @@
     
     Foreign key 'FK__occupied___room___2F10007B' references invalid table 'room'.
     Could not create constraint or index. See previous errors.
+
+foreign key võti ei viita Primary key.  Looge tabelisse room Primary key
 3. CREATE room_type(
     id int Primary key identity(1,1),
     description varchar(80),
@@ -29,12 +32,14 @@
     
     Unknown object type 'room_type' used in a CREATE, DROP, or ALTER statement.
 
+kood puudub Table vahemikus CREATE ja room_type
 4. CREATE TABLE room_type(id int Primary key identity(1,1),
   description varchar80,max_capacity int) ;
   
   Column, parameter, or variable #2: Cannot find data type varchar80.
   Vale parameeter, kuna "varchar" ei sisalda sulgu. "varchar" ei saa olla ilma sulgudeta
 
+andmetüüp on kirjutatud valesti, õigesti varchar(80)
 5. create table reservation(
   id int primary key identity(1,1),
   date_in date,
@@ -42,10 +47,12 @@
   
   CREATE TABLE permission denied in database 'master'.
 
+käsk käivitati vales andmebaasis
 6. select  from reserved_room 
 
   Incorrect syntax near the keyword 'from'.
-  
+
+Kirjeid pole piisavalt *
 7. UPDATE Users
   SET LastName = 'Doe'
   WHERE ID = 1; 
