@@ -223,7 +223,7 @@ add DepartmentId
 int null
 
 
--- ?
+--tabeli muudatused
 alter table Employees
 add MiddleName nvarchar(30)
 
@@ -252,12 +252,13 @@ update Employees set FirstName = NULL, MiddleName = NULL, LastName = 'Crowe'
 where Id = 10
 
 
---- ?
+--- igast reast võtab esimeses veerus täidetud lahtri ja kuvab ainult seda
 select Id, coalesce(FirstName, MiddleName, LastName) as Name
 from Employees
 
 select * from Employees
 select * from Department
+
 
 
 
