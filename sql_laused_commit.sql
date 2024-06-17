@@ -331,20 +331,20 @@ as begin
 	select @FirstName = FirstName from employees where Id = @Id
 end
 
--- Otsib inimese nime tema ID, ID=6 nimi Ben
+-- Otsib inimese nime tema ID, ID=6 nimi Ben<
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
 
 
--- loob protseduuri, mis näitab inimese nime tema ID järgi ilma muutujata EmployeeName
+-- loob protseduuri, mis näitab inimese nime tema ID järgi ilma muutujata EmployeeName<
 create proc spGetNameById2
 @Id int
 as begin
 	return (select FirstName from Employees where Id = @Id)
 end
 
--- sisestab "EmployeeName" muutuja, mis sisaldab hiljem "spGetNameById2" andmeid ja prindib töötaja nime
+-- sisestab "EmployeeName" muutuja, mis sisaldab hiljem "spGetNameById2" andmeid ja prindib töötaja nime<
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
 print 'Name of the employee = ' + @EmployeeName
