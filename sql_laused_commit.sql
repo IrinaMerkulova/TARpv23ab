@@ -68,44 +68,44 @@ select * from Gender
 insert into Person (Id, Name, Email)
 values (8, 'Test', 'Test')
 
----lisame uue veeru tabelisse
+---lisame uue veeru tabelisse<
 alter table Person
 add Age nvarchar(10)
 
---uuendame andmeid
+--uuendame andmeid<
 update Person
 set Age = 149
 where Id = 8
 
---lisage tabel ja lisage andmed tabelisse
+--lisage tabel ja lisage andmed tabelisse<
 alter table Person
 add constraint CK_Person_Age check (Age > 0 and Age < 150)
 
 insert into Person (Id, Name, Email, GenderId, Age)
 values (9, 'Test', 'Test', 2, 160)
 
---Kustutab kirje tabelist, kus veeru "id" väärtus on 8
+--Kustutab kirje tabelist, kus veeru "id" väärtus on 8<
 select * from Person
 go
 delete from Person where Id = 8
 go
 select * from Person
 
---- lisame veeru juurde
+--- lisame veeru juurde<
 alter table Person
 add City nvarchar(25)
 
--- tahame tead kõiki, kes elavad Gothami linnas 
+-- tahame tead kõiki, kes elavad Gothami linnas <
 select * from Person where City = 'Gotham'
--- kõik, kes ei ela Gothamis
+-- kõik, kes ei ela Gothamis<
 select * from Person where City <> 'Gotham'
 select * from Person where City != 'Gotham'
 
--- näitab teatud vanusega inimesi
+-- näitab teatud vanusega inimesi<
 select *from Person where Age = 100 or 
 Age = 50 or Age = 20
 select * from Person where Age in (100, 50, 20)
---- näitab teatud vanusevahemikus olevaid inimesi
+--- näitab teatud vanusevahemikus olevaid inimesi<
 select * from Person where Age between 30 and 50
 
 --- wildcard e näitab kõik g-tähega linnad
