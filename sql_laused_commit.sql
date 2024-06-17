@@ -264,7 +264,7 @@ select * from Department
 
 
 
---- loome stored procedure, mis kuvab vaate
+--- loome stored procedure, mis kuvab vaate<
 create procedure spGetEmployees
 as begin
 	select FirstName, Gender from Employees
@@ -274,7 +274,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- 
+
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
@@ -283,7 +283,7 @@ as begin
 	and DepartmentId = @DepartmentId
 end
 
---- kõik esimeses osakonnas meessoost töötavad isikud
+--- kõik esimeses osakonnas meessoost töötavad isikud<
 spGetEmployeesByGenderAndDepartment 'Male', 1
 
 spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
