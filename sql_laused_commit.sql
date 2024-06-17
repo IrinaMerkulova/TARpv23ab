@@ -312,18 +312,18 @@ declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
---- loob protseduuri, kus saab teada, kui palju inimesi ettevõttes töötab
+--- loob protseduuri, kus saab teada, kui palju inimesi ettevõttes töötab<
 create proc spTotalCount2
 @TotalCount int output
 as begin
 	select @TotalCount = count(Id) from Employees
 end
---- käivitame sp
+--- käivitame sp<
 declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
- --- loob protseduuri, mis näitab inimese nime tema ID järgi
+ --- loob protseduuri, mis näitab inimese nime tema ID järgi<
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
