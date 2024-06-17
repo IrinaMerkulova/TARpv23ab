@@ -1,16 +1,16 @@
--- db loomine
+-- db loomine-
 create database Tarpv23
 
---kustatamine andmebaasi
+--kustatamine andmebaasi-
 DRop DataBASE Tarpv23
 
---tabeli loomine
+--tabeli loomine-
 create table Gender
 (
 Id int NOT NULL primary key,
 Gender nvarchar(10) not null
 )
---tabeli loomine Person
+--tabeli loomine Person-
 create table Person
 (
 Id int not null primary key,
@@ -19,17 +19,17 @@ Email nvarchar(30),
 GenderId int
 )
 
---- andmete sisestamine tabelisse
+--- andmete sisestamine tabelisse-
 insert into Gender (Id, Gender)
 values (1, 'Female')
 insert into Gender (Id, Gender)
 values (2, 'Male')
 
---- muudab tabelit 
+--- muudab tabelit -
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
 
--- sisestame andmed
+-- sisestame andmed-
 insert into Person (Id, Name, Email, GenderId)
 values (1, 'Supermees', 's@s.com', 2)
 insert into Person (Id, Name, Email, GenderId)
@@ -45,17 +45,17 @@ values (6, 'Antman', 'ant"ant.com', 2)
 insert into Person (Id, Name, Email, GenderId)
 values (7, 'Spiderman', 'spider@spiderman.com', 2)
 
--- vaatame tabeli andmeid 
+-- vaatame tabeli andmeid -
 select * from Person
 
---- võõrvõtme piirangu maha võtmine 
+--- võõrvõtme piirangu maha võtmine -
 alter table Person
 drop constraint tblPerson_GenderId_FK
 
--- sisestame väärtuse tabelisse 
+-- sisestame väärtuse tabelisse -
 insert into Gender (Id, Gender)
 values (3, 'Unknown')
--- lisame võõrvõtme uuesti
+-- lisame võõrvõtme uuesti -
 alter table Person
 add constraint DF_Person_GenderId
 default 3 for GenderId
