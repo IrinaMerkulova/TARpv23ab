@@ -25,10 +25,10 @@ values (1, 'Female')
 insert into Gender (Id, Gender)
 values (2, 'Male')
 
---- ?
+--- muudab tabelit 
 alter table Person add constraint tblPerson_GenderId_FK
 foreign key (GenderId) references Gender(Id)
---- muudab tabeli "Person" nimeks "tblPerson_GenderId_FK". Lisab sekundaarse võtme GenderId tabelis Gender
+
 -- sisestame andmed
 insert into Person (Id, Name, Email, GenderId)
 values (1, 'Supermees', 's@s.com', 2)
@@ -45,21 +45,20 @@ values (6, 'Antman', 'ant"ant.com', 2)
 insert into Person (Id, Name, Email, GenderId)
 values (7, 'Spiderman', 'spider@spiderman.com', 2)
 
---?
+-- vaatame tabeli andmeid 
 select * from Person
 
---?
+--- võõrvõtme piirangu maha võtmine 
 alter table Person
 drop constraint tblPerson_GenderId_FK
 
--- ?
+-- sisestame väärtuse tabelisse 
 insert into Gender (Id, Gender)
 values (3, 'Unknown')
--- ?
+-- lisame võõrvõtme uuesti
 alter table Person
 add constraint DF_Person_GenderId
 default 3 for GenderId
-
 
 ---- 2 tund
 
