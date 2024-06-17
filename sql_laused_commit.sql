@@ -153,7 +153,7 @@ select City, sum(cast(Age as int)) as TotalAge from Person group by City
 
 --- tund 3
 
---- loome uued tabelid
+--- loome uued tabelid<
 create table Department
 (
 Id int primary key,
@@ -171,7 +171,7 @@ Salary nvarchar(50),
 DepartmentId int
 )
 
---andmete lisamine
+--andmete lisamine<
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
 values (1, 'IT', 'London', 'Rick')
 insert into Department (Id, DepartmentName, Location, DepartmentHead)
@@ -206,12 +206,12 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
----- näitab töötajate nimi ja osakonna "Id"
+---- näitab töötajate nimi ja osakonna "Id"<
 select distinct Name, DepartmentId from Employees
 
------ näitab summarne töötajate palk
+----- näitab summarne töötajate palk<
 select sum(cast(Salary as int)) from Employees
----näitab  töötajate  minimaalne palk
+---näitab  töötajate  minimaalne palk<
 select min(cast(Salary as int)) from Employees
 
 
