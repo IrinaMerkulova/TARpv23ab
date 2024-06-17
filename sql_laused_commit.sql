@@ -125,24 +125,24 @@ select * from Person where Name like '[^WAS]%'
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
----võtab kolm esimest rida
+---võtab kolm esimest rida<
 select top 3 * from Person
 
---- kolm esimest, aga tabeli järjestus on Age ja siis Name
+--- kolm esimest, aga tabeli järjestus on Age ja siis Name<
 select * from Person
 select top 3 Age, Name from Person
 
---- näitab esimesed 50% tabelis
+--- näitab esimesed 50% tabelis<
 select top 50 percent * from Person
----- näitab inimesi vanuse järgi sorteeritud
+---- näitab inimesi vanuse järgi sorteeritud<
 select * from Person order by cast(Age as int)
 select * from Person order by Age
--- näitab inmesi summarne vanus
+-- näitab inmesi summarne vanus<
 select sum(cast(Age as int)) from Person
 
---- kuvab kõige nooremat isikut
+--- kuvab kõige nooremat isikut<
 select min(cast(Age as int)) from Person
---- kõige vanem isik
+--- kõige vanem isik<
 select max(cast(Age as int)) from Person
 
 select City, sum(cast(Age as int)) as TotalAge from Person group by City
