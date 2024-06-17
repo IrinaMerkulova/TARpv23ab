@@ -1,16 +1,16 @@
 -- db loomine
 create database Tarpv23
 
---?
+--kustatamine andmebaasi
 DRop DataBASE Tarpv23
 
---? 
+--tabeli loomine
 create table Gender
 (
 Id int NOT NULL primary key,
 Gender nvarchar(10) not null
 )
---- Tabel Gender loomnine
+--tabeli loomine Person
 create table Person
 (
 Id int not null primary key,
@@ -18,7 +18,8 @@ Name nvarchar(25),
 Email nvarchar(30),
 GenderId int
 )
----?
+
+--- andmete sisestamine tabelisse
 insert into Gender (Id, Gender)
 values (1, 'Female')
 insert into Gender (Id, Gender)
