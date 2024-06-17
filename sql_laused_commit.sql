@@ -108,20 +108,20 @@ select * from Person where Age in (100, 50, 20)
 --- näitab teatud vanusevahemikus olevaid inimesi<
 select * from Person where Age between 30 and 50
 
---- wildcard e näitab kõik g-tähega linnad
+--- wildcard e näitab kõik g-tähega linnad<
 select * from Person where City like 'n%'
 select * from Person where Email like '%@%'
 
--- näitab kõiki, kellel ei ole @-märki emailis
+-- näitab kõiki, kellel ei ole @-märki emailis<
 select * from Person where Email not like '%@%'
 
---- näitab, kelle on emailis ees ja peale @-märki
--- ainult üks täht
+--- näitab, kelle on emailis ees ja peale @-märki<
+-- ainult üks täht<
 select * from Person where Email like '_@_.com'
 
---otsib, kus veeru "Email" väärtus ei alga tähtedega W,A või S
+--otsib, kus veeru "Email" väärtus ei alga tähtedega W,A või S<
 select * from Person where Name like '[^WAS]%'
----näitab kõiki kirjeid tabelist, kus linn on 'Gotham', 'New York' ja 40 aastane või vanem
+---näitab kõiki kirjeid tabelist, kus linn on 'Gotham', 'New York' ja 40 aastane või vanem<
 select * from Person where (City = 'Gotham' or City = 'New York')
 and Age >= 40
 
