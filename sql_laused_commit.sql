@@ -290,7 +290,7 @@ spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
--- loome stored procedure, Hankige töötajate arv soo järgi
+-- loome stored procedure, Hankige töötajate arv soo järgi<
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
@@ -298,7 +298,7 @@ as begin
 	select @EmployeeCount = count(Id) from Employees where Gender = @Gender
 end
 
--- annab teada, palju on meessoost isikuid ning kuvab vastava stringi
+-- annab teada, palju on meessoost isikuid ning kuvab vastava stringi<
 declare @TotalCount int
 exec spGetEmployeeCountByGender 'Female', @TotalCount out
 if(@TotalCount = 0)
@@ -307,7 +307,7 @@ else
 	print '@TotalCount is not null'
 print @TotalCount
 
--- annab teada, palju on meessoost isikuid
+-- annab teada, palju on meessoost isikuid<
 declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
