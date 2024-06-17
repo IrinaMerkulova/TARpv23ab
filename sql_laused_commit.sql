@@ -84,27 +84,27 @@ add constraint CK_Person_Age check (Age > 0 and Age < 150)
 insert into Person (Id, Name, Email, GenderId, Age)
 values (9, 'Test', 'Test', 2, 160)
 
+--Kustutab kirje tabelist, kus veeru "id" väärtus on 8
 select * from Person
 go
 delete from Person where Id = 8
 go
 select * from Person
---?
 
+--- lisame veeru juurde
 alter table Person
 add City nvarchar(25)
 
--- ?
+-- tahame tead kõiki, kes elavad Gothami linnas 
 select * from Person where City = 'Gotham'
--- ?
+-- kõik, kes ei ela Gothamis
 select * from Person where City <> 'Gotham'
 select * from Person where City != 'Gotham'
 
--- ?
+-- näitab teatud vanusega inimesi
 select *from Person where Age = 100 or 
 Age = 50 or Age = 20
 select * from Person where Age in (100, 50, 20)
-
 --- ?
 select * from Person where Age between 30 and 50
 
