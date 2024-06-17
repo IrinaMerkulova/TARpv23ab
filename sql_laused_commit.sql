@@ -264,7 +264,7 @@ select * from Department
 
 
 
---- ?
+--- loome stored procedure, mis kuvab vaate
 create procedure spGetEmployees
 as begin
 	select FirstName, Gender from Employees
@@ -274,7 +274,7 @@ spGetEmployees
 exec spGetEmployees
 execute spGetEmployees
 
---- ?
+--- 
 create proc spGetEmployeesByGenderAndDepartment
 @Gender nvarchar(20),
 @DepartmentId int
@@ -283,14 +283,14 @@ as begin
 	and DepartmentId = @DepartmentId
 end
 
---- ?
+--- kõik esimeses osakonnas meessoost töötavad isikud
 spGetEmployeesByGenderAndDepartment 'Male', 1
 
 spGetEmployeesByGenderAndDepartment @DepartmentId =  1, @Gender = 'Male'
 
 
 
---?
+-- loome stored procedure, Hankige töötajate arv soo järgi
 create proc spGetEmployeeCountByGender
 @Gender nvarchar(20),
 @EmployeeCount int output
@@ -298,7 +298,7 @@ as begin
 	select @EmployeeCount = count(Id) from Employees where Gender = @Gender
 end
 
--- ?
+-- annab teada, palju on meessoost isikuid ning kuvab vastava stringi
 declare @TotalCount int
 exec spGetEmployeeCountByGender 'Female', @TotalCount out
 if(@TotalCount = 0)
@@ -307,23 +307,23 @@ else
 	print '@TotalCount is not null'
 print @TotalCount
 
--- ?
+-- annab teada, palju on meessoost isikuid
 declare @TotalCount int
 exec spGetEmployeeCountByGender @EmployeeCount = @TotalCount out, @Gender = 'Male'
 print @TotalCount
 
----? 
+--- loob protseduuri, kus saab teada, kui palju inimesi ettevõttes töötab
 create proc spTotalCount2
 @TotalCount int output
 as begin
 	select @TotalCount = count(Id) from Employees
 end
---- ?
+--- käivitame sp
 declare @TotalEmployees int
 execute spTotalCount2 @TotalEmployees output
 select @TotalEmployees
 
---- ? 
+ --- loob protseduuri, mis näitab inimese nime tema ID järgi
 create proc spGetNameById1
 @Id int,
 @FirstName nvarchar(50) output
@@ -331,19 +331,20 @@ as begin
 	select @FirstName = FirstName from employees where Id = @Id
 end
 
---? 
+-- Otsib inimese nime tema ID, ID=6 nimi Ben
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
 
---? 
+
+-- loob protseduuri, mis näitab inimese nime tema ID järgi ilma muutujata EmployeeName
 create proc spGetNameById2
 @Id int
 as begin
 	return (select FirstName from Employees where Id = @Id)
 end
 
--- ? 
+-- sisestab "EmployeeName" muutuja, mis sisaldab hiljem "spGetNameById2" andmeid ja prindib töötaja nime
 declare @EmployeeName nvarchar(50)
 exec @EmployeeName = spGetNameById2 1
 print 'Name of the employee = ' + @EmployeeName
