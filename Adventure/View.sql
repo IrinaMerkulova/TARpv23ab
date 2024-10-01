@@ -69,3 +69,50 @@ JOIN
     DimDepartmentGroup ON DimEmployee.DepartmentKey = DimDepartmentGroup.DepartmentGroupKey -- Õige liitmine osakonna võtme alusel
 GROUP BY 
     DepartmentGroupName; -- Grupeerime osakonna nime järgi
+
+--40 View uuendused
+
+-- Teeme vaate, mis tagastab peaaegu kõik veerud, aga va Salary veerg.
+CREATE VIEW vWEmployeesData 
+AS 
+SELECT EmployeeKey, FirstName, SickLeaveHours
+FROM DimEmployee;
+
+-- Kuvame andmed vaatest vWEmployeesData
+SELECT * FROM vWEmployeesData;
+
+-- Värskendame vaates vWEmployeesData töötaja nime
+UPDATE vWEmployeesData
+SET FirstName = 'Mikey'
+WHERE EmployeeKey = 2; -- Oletame, et EmployeeKey = 2 eksisteerib
+
+-- Kustutame töötaja, kelle EmployeeKey on 2
+DELETE FROM vWEmployeesData WHERE EmployeeKey = 2;
+
+-- Sisestame uue töötaja andmed vaatesse vWEmployeesData
+
+INSERT INTO DimEmployee(EmployeeKey, FirstName) VALUES (2, 'Mikey'); 
+
+-- Kuvame uuesti andmed vaatest vWEmployeesData
+SELECT * FROM vWEmployeesData;
+
+-- Loome vaate, et kuvada töötajaid osakondade järgi
+CREATE VIEW vwEmployeeDetailsByDepartment
+AS
+SELECT E.EmployeeKey, E.FirstName, E.SickLeaveHours, ST.SalesTerritoryRegion
+FROM DimEmployee E
+JOIN DimSalesTerritory ST
+ON E.SalesTerritoryKey = ST.SalesTerritoryKey; -- Liitmine müügiterritooriumi alusel
+
+-- Kuvame andmed vaatest vwEmployeeDetailsByDepartment
+SELECT * FROM vwEmployeeDetailsByDepartment;
+
+-- Kustutame vaate vwEmployeeDetailsByDepartment
+DROP VIEW vwEmployeeDetailsByDepartment;
+
+UPDATE vwEmployeeDetailsBySalesTerritoryRegion
+SET SalesTerritoryRegion = 'IT' WHERE FirstName = 'John';
+
+-- Kuvame andmed uuesti vaates vwEmployeeDetailsBySalesTerritoryRegion
+SELECT * FROM vwEmployeeDetailsBySalesTerritoryRegion;
+
