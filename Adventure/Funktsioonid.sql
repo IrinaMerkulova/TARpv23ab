@@ -55,3 +55,40 @@ as
 begin
 Return (Select FirstName from DimEmployee where EmployeeKey = @Id)
 END
+
+--34 Ajutised Tabelid
+--Kuidas luua Local Temporary tabelit
+Create Table #DimEmployee(EmployeeKey int, FirstName nvarchar(20))
+
+--Sisesta andmed ajutisse tabelisse
+Insert into #DimEmployee VALUES(1,'Mike')
+Insert into #DimEmployee VALUES(2,'John')
+Insert into #DimEmployee VALUES(3,'Todd')
+
+--Vaata tabeli sisu ajutise tabeli abil:
+Select * from #DimEmployee
+
+--Kuidas saame teada, et local temporary tabel on loodud?
+SELECT FirstName FROM AdventureWorksDW2019..sysobjects
+WHERE FirstName LIKE '#DimEmployee%';
+
+--Loome protseduri spCreateLocalTempTable
+Create procedure spCreateLocalTempTable
+
+as
+Begin
+Create Table #DimEmployee(EmployeeKey int, FirstName nvarchar(20));
+
+INSERT INTO #DimEmployee VALUES(1, 'Mike');
+INSERT INTO #DimEmployee VALUES(2, 'John');
+INSERT INTO #DimEmployee VALUES(3, 'Todd');
+
+Select * From #DimEmployee
+END
+
+--Kuidas luua globaalset ajutist tabelit
+CREATE TABLE ##EmployeeDetails(Id int, Name nvarchar(20))
+
+INSERT INTO ##EmployeeDetails(Id, Name)
+SELECT EmployeeKey, FirstName 
+FROM dbo.DimEmployee
