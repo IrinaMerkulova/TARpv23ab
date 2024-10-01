@@ -69,3 +69,30 @@ WHERE TABLE_NAME = 'DimEmployee';
 CREATE UNIQUE INDEX IX_DimEmployee_City
 ON DimEmployee (EmployeeNationalIDAlternateKey)
 WITH IGNORE_DUP_KEY
+
+--38 Indeksi plussid ja miinused
+
+-- Loome mitteklasterdatud indeksi BaseRate jaoks
+CREATE NONCLUSTERED INDEX IX_DimEmployee_BaseRate
+ON DimEmployee (BaseRate ASC)
+
+-- Kuvame töötajad, kelle BaseRate on vahemikus 4000 kuni 8000
+SELECT * FROM DimEmployee WHERE BaseRate > 4000 AND BaseRate < 8000
+
+-- Kustutame töötaja, kelle BaseRate on 2500
+DELETE FROM DimEmployee WHERE BaseRate = 2500
+
+-- Uuendame töötaja BaseRate väärtust 7500-lt 9000-le
+UPDATE DimEmployee SET BaseRate = 9000 WHERE BaseRate = 7500
+
+-- Kuvame kõik töötajad, sorteerituna BaseRate järgi kasvavas järjekorras
+SELECT * FROM DimEmployee ORDER BY BaseRate
+
+-- Kuvame kõik töötajad, sorteerituna BaseRate järgi kahanevas järjekorras
+SELECT * FROM DimEmployee ORDER BY BaseRate DESC
+
+-- Kuvame BaseRate ja nende arvu DimEmployee tabelis
+SELECT BaseRate, COUNT(BaseRate) AS Total
+FROM DimEmployee
+GROUP BY BaseRate
+
