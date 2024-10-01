@@ -64,4 +64,23 @@ Group by DeptName
 
 Select * from vWITDepartment_Employees
 Select * from vWEmployeesNonConfidentialData
-Select * fro
+--40
+CREATE VIEW vWEmployeesData 
+as
+SELECT Id, Name, Gender, DepartmentId
+from tblEmployee
+
+SELECT * FROM vWEmployeesData
+
+UPDATE vWEmployeesData
+SET Name = 'Mikey'
+WHERE Id = 2;
+
+DELETE FROM vWEmployeesData WHERE Id = 2;
+INSERT INTO vWEmployeesData VALUES (2, 'Mikey', 'Male', 2);
+
+select * from vWEmployeesByDepartment
+Select * from vWEmployeesByDepSrtment
+
+update vWEmployeesByDepartment
+set DeptName = 'IT' where Name = 'John'
