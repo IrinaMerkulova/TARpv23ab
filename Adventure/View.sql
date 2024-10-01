@@ -1,3 +1,4 @@
+--39 View SQL
 -- Kuvame kõik töötajad DimEmployee tabelist
 SELECT * FROM DimEmployee
 
