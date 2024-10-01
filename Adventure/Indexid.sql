@@ -33,3 +33,39 @@ ON DimEmployee(Gender DESC, BaseRate ASC);
 --Järgnev kood loob SQL-s mitte-klastreeritud indeksi Name veeru järgi DimEmployee tabelis
 Create NonClustered Index IX_DimEmployee_Name
 On DimEmployee (FirstName)
+
+--37.Unikaalne ja mitte-unikaalne Index
+
+-- Kuvame indeksite teavet DimEmployee tabeli kohta
+EXEC sp_helpIndex DimEmployee
+
+-- Lisame uusi töötajaid DimEmployee tabelisse
+INSERT INTO DimEmployee (FirstName, LastName, BaseRate, Gender)
+VALUES ('Mike', 'Sandoz', 4400, 'M')
+INSERT INTO DimEmployee (FirstName, LastName, BaseRate, Gender)
+VALUES ('John', 'Menco', 2500, 'M')
+
+-- Kuvame kõik töötajad DimEmployee tabelist
+SELECT * FROM DimEmployee
+
+-- Loome ainulaadse mitteklasterdatud indeksi FirstName ja LastName jaoks
+CREATE UNIQUE NONCLUSTERED INDEX UIX_DimEmployee_FirstName_LastName
+ON DimEmployee (FirstName, LastName)
+
+-- Lisame tabelisse ainulaadse piirangu EmployeeNationalIDAlternateKey jaoks
+ALTER TABLE DimEmployee 
+ADD CONSTRAINT UQ_DimEmployee_EmployeeNationalID
+UNIQUE NONCLUSTERED (EmployeeNationalIDAlternateKey);
+
+-- Kuvame piirangute teabe DimEmployee tabeli kohta
+EXECUTE SP_HELPCONSTRAINT DimEmployee
+
+-- Kuvame kõik veerud DimEmployee tabelis
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'DimEmployee';
+
+-- Loome ainulaadse indeksi EmployeeNationalIDAlternateKey jaoks
+CREATE UNIQUE INDEX IX_DimEmployee_City
+ON DimEmployee (EmployeeNationalIDAlternateKey)
+WITH IGNORE_DUP_KEY
