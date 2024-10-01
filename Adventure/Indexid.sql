@@ -1,6 +1,6 @@
 --Indexid.sql
 --Soovime leida kõik töölised, kelle palk on vahemikus 5000 kuni 7000
-Create index IX_tblEmployee_Salary
+Create index IX_DimEmployee_Salary
 on DimEmployee (BaseRate ASC)
 
 Select * from DimEmployee where BaseRate > 5000 and BaseRate < 7000
