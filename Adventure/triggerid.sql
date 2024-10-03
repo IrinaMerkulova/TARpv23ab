@@ -62,3 +62,42 @@ END
 
 -- Muudame tabeli nime
 sp_rename 'Test', 'NewTestTable';
+
+--93 Server Scoped DDL triggerid
+-- Loome andmebaasi ulatuses triggereid
+CREATE TRIGGER tr_DatabaseScopeTrigger
+ON DATABASE
+FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+AS
+BEGIN
+ROLLBACK
+PRINT 'You cannot create, alter or drop a table in the current database'
+END
+
+-- Keelame andmebaasi ulatuses trigger
+DISABLE TRIGGER tr_DatabaseScopeTrigger ON DATABASE
+
+-- Lubame andmebaasi ulatuses trigger
+ENABLE TRIGGER tr_DatabaseScopeTrigger ON DATABASE
+
+-- Proovime luua tabelit "test"
+CREATE TABLE test(id int);
+
+-- Loome serveri ulatuses triggereid
+CREATE TRIGGER tr_ServerScopeTrigger
+ON ALL SERVER
+FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+AS
+BEGIN
+ROLLBACK
+PRINT 'You cannot create, alter or drop a table in any database on the server'
+END
+
+-- Keelame serveri ulatuses trigger
+DISABLE TRIGGER tr_ServerScopeTrigger ON ALL SERVER
+
+-- Lubame serveri ulatuses trigger
+ENABLE TRIGGER tr_ServerScopeTrigger ON ALL SERVER
+
+-- Kustutame serveri ulatuses trigger
+DROP TRIGGER tr_ServerScopeTrigger ON ALL SERVER;
