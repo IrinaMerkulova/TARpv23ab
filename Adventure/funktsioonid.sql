@@ -48,6 +48,14 @@ begin
 return (select name from dbo.tblEmployees where Id = @Id)
 end;
 
+Alter Function fn_GetEmployeeNameById(@Id int)
+returns nvarchar(20)
+with SchemaBinding
+as
+begin
+return (select name from dbo.tblEmployees where Id = @Id)
+end;
+
 --34. funktsioonid
 
 Create Table #PersonDetails(Id int, Name nvarchar(20));
