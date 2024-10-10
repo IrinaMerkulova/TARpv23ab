@@ -45,3 +45,80 @@ SELECT Product, SUM(SaleAmount) as TotalSales
 FROM Sales
 GROUP BY Product
 HAVING Product in ('iPhone','Speakers')
+
+
+--87. Except operaator.rtf 
+--Loome ja sisestame andmed
+CREATE TABLE TableA (
+    Id INT PRIMARY KEY,
+    Name NVARCHAR(50),
+    Gender NVARCHAR(10)
+);
+GO
+
+INSERT INTO TableA (Id, Name, Gender)
+VALUES
+(1, 'Mark', 'Male'),
+(2, 'Mary', 'Female'),
+(3, 'Steve', 'Male'),
+(4, 'John', 'Male'),
+(5, 'Sara', 'Female');
+GO
+
+CREATE TABLE TableB (
+    Id INT PRIMARY KEY,
+    Name NVARCHAR(50),
+    Gender NVARCHAR(10)
+);
+GO
+
+INSERT INTO TableB (Id, Name, Gender)
+VALUES
+(4, 'John', 'Male'),
+(5, 'Sara', 'Female'),
+(6, 'Pam', 'Female'),
+(7, 'Rebeka', 'Female'),
+(8, 'Jordan', 'Male');
+GO
+
+SELECT * FROM TableA;
+SELECT * FROM TableB;
+
+--Pane tähele, et järgnev rida tagastab unikaalse ridade arvu vasakust tabelist, mida ei ole paremas tabelis.
+Select Id,Name,Gender
+From TableA
+Except
+Select Id,Name,Gender
+From TableB
+
+
+--Loome ja sisestame andmed
+Create table tblEmployees(
+Id int identity primary key,
+Name nvarchar(100),
+Gender nvarchar(10),
+Salary int)
+Go
+Insert into tblEmployees values ('Mark', 'Male', 52000)
+Insert into tblEmployees values ('Mary', 'Female', 55000)
+Insert into tblEmployees values ('Steve', 'Male', 45000)
+Insert into tblEmployees values ('John', 'Male', 40000)
+Insert into tblEmployees values ('Sara', 'Female', 48000)
+Insert into tblEmployees values ('Pam', 'Female', 60000)
+Insert into tblEmployees values ('Tom', 'Male', 58000)
+Insert into tblEmployees values ('Georg', 'Male', 65000)
+Insert into tblEmployees values ('Tina', 'Female', 67000)
+Insert into tblEmployees values ('Ben', 'Male', 80000)
+Go
+
+Select * from tblEmployees
+
+--Order by nõuet võib kasutada ainult kord peale paremat päringut:
+SELECT Id, Name, Gender, Salary
+FROM tblEmployees 
+WHERE Salary >= 50000
+Except 
+SELECT Id, Name, Gender, Salary
+FROM tblEmployees
+WHERE Salary >= 60000
+order by Name
