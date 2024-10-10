@@ -122,3 +122,35 @@ SELECT Id, Name, Gender, Salary
 FROM tblEmployees
 WHERE Salary >= 60000
 order by Name
+
+--88. Erinevus Except ja not in operaatoril
+-- Järgnev päring tagastab read vasakust päringust, mis ei ole paremas tabelis 
+Select Id, Name, Gender FROM TableA
+Except 
+Select Id, Name, Gender From TableB
+
+-- Sama tulemuse võib saavutada NOT IN operaatoriga
+SELECT Id, Name, Gender FROM TableA
+WHERE Id NOT IN (Select Id From TableB)
+
+-- Sisesta järgnev rida tabelisse TableA
+Insert Into TableA values (1, 'Mark', 'Male')
+
+-- Nüüd käivita järgnev EXCEPT päring
+
+SELECT Id, Name, Gender FROM TableA
+EXCEPT 
+SELECT Id,Name,Gender From TableB
+
+-- Nüüd käivita NOT IN operaatoriga kood
+Select Id, Name, Gender From TableA
+Where Id NOT IN (Select Id from TableB)
+
+-- Järgnevas päringus on meelega veergude arv erinev
+SELECT Id, Name, Gender From TableA
+EXCEPT
+Select Id, Name from TableB
+
+-- Järgnevas päringus alampäring tagastab mitu veergu
+Select Id, Name ,Gender From TableA
+Where Id NOT IN (Select Id, Name from TableB)
