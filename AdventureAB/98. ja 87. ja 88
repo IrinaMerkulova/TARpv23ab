@@ -32,6 +32,7 @@ Insert into TableB values(7,'Rebeka', 'Female')
 Insert into TableB values(8,'Jordan', 'Male')
 Go
 
+-- Valime kõik kirjed, mis on TableA-s, aga mitte TableB-s
 Select Id, Name, Gender
 From TableA
 Except
