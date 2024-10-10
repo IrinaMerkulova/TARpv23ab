@@ -49,6 +49,7 @@ Salary int
 )
 Go
 
+-- Lisame andmed töötajate tabelisse tblEmployees
 Insert into tblEmployees values('Mark', 'Male', 52000)
 Insert into tblEmployees values('Mary', 'Female', 55000)
 Insert into tblEmployees values('Steve', 'Male', 45000)
