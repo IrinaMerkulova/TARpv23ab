@@ -1,3 +1,5 @@
+--87,88,98
+
 CREATE TABLE TableA
 (
 Id INT PRIMARY KEY,
