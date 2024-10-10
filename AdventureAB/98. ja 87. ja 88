@@ -60,9 +60,9 @@ Insert into tblEmployees values('Tom', 'Male', 58000)
 Insert into tblEmployees values('George', 'Male', 65000)
 Insert into tblEmployees values('Tina', 'Female', 67000)
 Insert into tblEmployees values('Ben', 'Male', 80000)
-
 Go
 
+-- Valime töötajad, kelle palk on suurem või võrdne 50000, kuid väiksem kui 60000
 Select Id, Name, Gender, Salary
 From tblEmployees
 Where Salary >= 50000
