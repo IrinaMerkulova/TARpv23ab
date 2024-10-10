@@ -24,6 +24,7 @@ Gender nvarchar(10)
 )
 Go
 
+-- Lisame andmed tabelisse TableB
 Insert into TableB values(4,'John', 'Male')
 Insert into TableB values(5,'Sara', 'Female')
 Insert into TableB values(6,'Pam', 'Female')
