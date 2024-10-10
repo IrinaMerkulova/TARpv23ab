@@ -8,6 +8,7 @@ Gender nvarchar(10)
 )
 Go
 
+-- Lisame andmed tabelisse TableA
 Insert into TableA values(1,'Mark', 'Male')
 Insert into TableA values(2,'Mary', 'Female')
 Insert into TableA values(3,'Steve', 'Male')
