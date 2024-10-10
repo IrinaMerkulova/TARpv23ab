@@ -15,6 +15,7 @@ Insert into TableA values(3,'Steve', 'Male')
 Insert into TableA values(4,'John', 'Male')
 Insert into TableA values(5,'Sara', 'Female')
 
+-- Loome tabeli TableB
 Create Table TableB
 (
 id int primary key,
