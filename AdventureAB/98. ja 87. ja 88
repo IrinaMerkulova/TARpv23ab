@@ -32,14 +32,14 @@ Insert into TableB values(7,'Rebeka', 'Female')
 Insert into TableB values(8,'Jordan', 'Male')
 Go
 
--- Valime kõik kirjed, mis on TableA-s, aga mitte TableB-s
+-- Valime kõik kirjed, mis on TableA-s, aga mitte TableB
 Select Id, Name, Gender
 From TableA
 Except
 Select Id, Name, Gender
 from TableB
 
-
+-- Loome töötajate tabeli tblEmployees
 Create Table tblEmployees 
 (
 id int identity primary key,
